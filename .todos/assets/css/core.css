@@ -1,0 +1,245 @@
+/*https://scrollmagic.io/examples/basic/class_toggles.html*/
+
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px; 
+    padding: 0px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+:root {
+  /* https://www.colorxs.com/palette/color/royal-blue */
+  
+    --goldenrod-W5: #ECD290;
+    --goldenrod-W4: #E9C979;
+    --goldenrod-W3: #E5C063;
+    --goldenrod-W2: #E1B74D;
+    --goldenrod-W1: #DEAE36;
+    --goldenrod-0: #DAA520;
+    --goldenrod-B1: #AE841A;
+    --goldenrod-B2: #836313;
+    --goldenrod-B3: #6D5210;
+    --goldenrod-B4: #57420D;
+    --goldenrod-B5: #41310A;
+    --goldenrod-Q1: #526631; /*Dark Olive Green*/
+    --goldenrod-Q2: #1C4D3F; /*Brunswick Green*/
+    --goldenrod-S1: #20B2DA; /*Bright Cerulean*/
+    --goldenrod-S2: #4820DA; /*Electric Ultramarine*/
+
+    --teal-W5: #CCE6E6; /**/
+    --teal-W4: #B2D9D9; /**/
+    --teal-W3: #80C0C0; /**/
+    --teal-W2: #66B3B3; /**/
+    --teal-W1: #339999; /**/
+    --teal-0: #008080; /*Teal*/
+    --teal-B1: #006666; /**/
+    --teal-B2: #004D4D3; /**/
+    --teal-B3: #004040; /**/
+    --teal-B4: #002626; /**/
+    --teal-B5: #001A1A; /**/
+    /* --teal-Q1: #526631; 
+    --teal-Q2: #1C4D3F; 
+    --teal-S1: #20B2DA; 
+    --teal-S2: #4820DA;  */
+    
+    --royal-W5: #C6D2F6; /**/
+    --royal-W4: #A0B4F0; /**/
+    --royal-W3: #8DA5ED; /**/
+    --royal-W2: #6787E7; /**/
+    --royal-W1: #5478E4; /**/
+    --royal-0: #4169E1; /*Royal Blue*/
+    --royal-B1: #3454B4; /**/
+    --royal-B2: #273F87; /**/
+    --royal-B3: #203470; /**/
+    --royal-B4: #131F43; /**/
+    --royal-B5: #0D152D; /**/
+    /* --royal-Q1: #526631; 
+    --royal-Q2: #1C4D3F; 
+    --royal-S1: #20B2DA;
+    --royal-S2: #4820DA; */
+
+    --gray-W5: #F2F2F2; /**/
+    --gray-W4: #D9D9D9; /**/
+    --gray-W3: #CCCCCC; /**/
+    --gray-W2: #B2B2B2; /**/
+    --gray-W1: #999999; /**/
+    --gray-0: #7F7F7F; /*Gray*/
+    --gray-B1: #666666; /**/
+    --gray-B2: #4C4C4C; /**/
+    --gray-B3: #404040; /**/
+    --gray-B4: #262626; /**/
+    --gray-B5: #0D0D0D; /*343a40 */
+    /* --gray-Q1: #526631; 
+    --gray-Q2: #1C4D3F; 
+    --gray-S1: #20B2DA; 
+    --gray-S2: #4820DA;  */
+}
+
+/**/
+
+::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body { 
+    color: var(--gray-B3);
+    background-color: var(--gray-B5);
+    font-size: 10pt;
+} 
+h1 {
+    padding-bottom: 20px;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+label {
+  text-align: start;
+  color:var(--gray-B1);
+}
+a {
+  text-decoration: none;
+}
+
+/* default (outer) */
+.section {
+  margin: 0 50px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+.section-borders {
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color:  rgba(38, 38, 38, 0.850);
+}
+.self-center {
+  align-self: center;
+}
+.self-end {
+  align-self: end;
+}
+.section h2, .section p {
+  color: var(--gray-W3);
+  opacity: 1;
+}
+.section h2 {
+  padding-top: 45px;
+}
+.default-view {
+    width: 100%;
+    padding-top: 5px;
+    background-color: var(--goldenrod-W5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+.default-view-img {
+    width: 100%;
+    padding-top: 45px;
+    background-image: url(https://picsum.photos/g/3000/2000);
+    background-size: cover;
+    background-position: center;    
+    min-height: 98vh;
+}
+
+.right {
+  color: #F1DBA2;
+}
+.active {
+  font-size: 12pt;
+}
+
+  /* */
+
+  /*https://www.colorxs.com/palette/hex/55400c-816213-ae8319-daa520-e4b849-ebc975-f1dba2?scheme=monochromatic*/
+
+
+
+.topSpacer {
+  height: 80px;
+  position: sticky;
+  z-index: 1;
+  display: hidden;
+}
+
+/* IModal, ITable, ... */
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+.modal-title-dark {
+  color:white;
+}
+
+.f-sp-b {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px
+}
+.f-jc-e {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.form-control, .form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+.form-control:visited {
+  background-color: transparent;  
+}
+
+.fa-pen-to-square {
+  color: var(--gray-B2);
+}
+.fa-trash {
+  color: var(--gray-B2);
+}.fa-pen-to-square:hover {
+  color: var(--gray-W5);
+}
+.fa-trash:hover {
+  color: tomato;
+}
+.buttons {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.app-form {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+ul, li {
+  margin: 0;
+  padding: 0px;
+} 
+
+td {
+  vertical-align: top;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}

@@ -1,0 +1,102 @@
+/* inner */
+  
+.main {
+    display: flex;
+    padding: 45px 0px;
+    height: 100vh; /* Garante que a altura ocupa 100% */
+    width: 100vw; /* Garante que a largura ocupa 100% */
+  }
+  
+  .sidebar {
+    width: 10px; 
+    padding: 10px 15px;
+    padding-bottom: 5px;
+    display: flex;
+    color: var(--gray-W3);
+    background: var(--gray-B4);
+    border-right: 3px solid var(--gray-B3);
+    align-items: start;
+    transition: width 0.3s ease;
+  }
+  .sidebar-left {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+
+ 
+  .title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .menu-bars {
+    font-size: 15px;
+    height: 15px;
+    cursor: pointer;
+  } 
+
+  .menu-list {
+    width: 100%;
+    list-style: none;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  .menu-item {    
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background: var(--gray-B3);
+    color: var(--gray-W3);
+    text-align: center;
+  }
+  .menu-item a, .menu-item a:visited {
+    color:inherit;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background-color: var(--gray-B1);
+  } 
+  .main-content {
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o restante da largura */
+    padding: 5px 20px;
+    overflow-y: auto; /* Permite rolagem caso o conteúdo exceda a altura */
+  }
+  
+  .main-content p {
+    padding-top: 5px;
+  }
+
+  /**/
+
+.main-content {
+    background: var(--gray-B5);
+    color: var(--gray-W3);
+  }
+
+  
+  .title {
+    border-bottom: 1px solid var(--gray-W3);
+    width: 100%;
+  }
+  .main-content {
+    background: var(--gray-B4);
+    color: var(--gray-W3);
+  }
+
+
+  .active {
+    background: var(--gray-B3);
+    color: var(--gray-W5);
+    font-weight: bold;
+    text-align: end;
+  }

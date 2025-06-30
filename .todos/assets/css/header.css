@@ -1,0 +1,128 @@
+.header, .left, .publicLinks, .protectedLinks, .header-right {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.header a, .left a, .publicLinks a, .protectedLinks a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  padding: 2px;
+  font-size: .8rem;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  z-index:999;
+  position:fixed;
+  top:0;
+  background:var(--gray-B4);
+  border-bottom: 3px solid var(--gray-B3);
+}
+.footer {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position:fixed;
+    bottom:0;
+    background:var(--gray-B4);
+    border-top: 3px solid var(--gray-B3);
+  }
+.footer-links {
+    display: flex;
+    width: 50%;
+    gap:5px;
+    padding-left: 40px
+}
+.footer-links-right {
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    gap:5px
+}
+.footer span {
+    color: var(--gray-B3);
+    font-weight: bold;
+}
+
+.areas {
+    margin: 0;
+    padding: 0;
+    color: var(--gray-W5);
+}
+.areas p {
+    margin: 0;
+    padding: 0;
+    color: var(--gray-W1);
+}
+  .logo a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .logoImg {
+      max-height: 32px;
+      margin: 5px;
+  }
+
+/*a hover, visited*/
+a, a:visited, .header a, .header a:visited, .footer a, .footer a:visited {
+    color:var(--gray-B1);
+}
+a:hover, .header a:hover, .footer a:hover {
+    color:var(--gray-W3);
+}
+
+
+.left, .publicLinks, .protectedLinks {
+    justify-content: space-around;
+    align-items: center;
+}
+.left-brand {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.brandName {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.brandName span {
+    color: var(--gray-B1);
+}
+.logoImg {
+    height: 35px;
+}
+
+.hidden {
+    display: none;
+}
+.small {
+    font-size: small;
+}
+#txt-userName {
+    color: #F1DBA2;
+    cursor: pointer;
+}
+.country {
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: width, height .3s linear;
+}
+.country:hover {
+    width: 32px;
+    height: 32px;
+}
+
