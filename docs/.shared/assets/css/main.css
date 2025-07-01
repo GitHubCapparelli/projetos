@@ -7,9 +7,6 @@
   
   .sidebar {
     width: 45px; 
-    padding: 10px 5px;
-    height: 100vh; /* Garante que a altura ocupa 100% */
-    padding-bottom: 5px;
     display: flex;
     color: var(--gray-B4);
     background: var(--gray-W4);
@@ -19,7 +16,13 @@
   }
   .sidebar-left {
     display: flex;
-    height: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+  .sidebar-body {
+    display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
   } 
