@@ -160,7 +160,7 @@ body {
 
 /* Main content */
 .main-content {
-  margin-left: 60px;
+  /* margin-left: 60px; */
   padding: 2rem;
   transition: margin-left 0.3s;
 }
@@ -205,7 +205,7 @@ body {
   /* background-color: #e0e0e0; */
   background-color: #616060;
   z-index: 5;
-  padding: 0.75rem 1rem;
+  /* padding: 0.75rem 1rem; */
   height: 50px;
   /* Match .panel-header */
   display: flex;
