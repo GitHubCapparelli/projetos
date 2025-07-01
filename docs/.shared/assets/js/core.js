@@ -22,26 +22,27 @@ function openPanel(el) {
 
   // You can update this dynamically
   if (titleMap[panelType] === 'Tree View') {
-      document.getElementById('panelBody').innerHTML = `<ul class="treeview list-unstyled ps-2">
-<li>
-<span class="tree-toggle" onclick="toggleNode(this)">
-<i class="fas fa-caret-down me-1"></i>
-<i class="fas fa-file-alt me-1"></i> Screen1
-</span>
-<ul class="nested list-unstyled ps-3">
-<li><i class="fas fa-font me-1"></i> Label1</li>
-<li><i class="fas fa-hand-pointer me-1"></i> Button1</li>
-</ul>
-</li>
-<li>
-<span class="tree-toggle" onclick="toggleNode(this)">
-<i class="fas fa-caret-right me-1"></i>
-<i class="fas fa-file-alt me-1"></i> Screen2
-</span>
-<ul class="nested list-unstyled ps-3 d-none">
-<li><i class="fas fa-image me-1"></i> Image1</li>
-</ul>
-</li>
+      document.getElementById('panelBody').innerHTML = `
+<ul class="treeview list-unstyled ps-2">
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+    <i class="fas fa-caret-down me-1"></i>
+    <i class="fas fa-file-alt me-1"></i> Screen1
+    </span>
+    <ul class="nested list-unstyled ps-3">
+      <li><i class="fas fa-font me-1"></i> Label1</li>
+      <li><i class="fas fa-hand-pointer me-1"></i> Button1</li>
+    </ul>
+  </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+    <i class="fas fa-caret-right me-1"></i>
+    <i class="fas fa-file-alt me-1"></i> Screen2
+    </span>
+    <ul class="nested list-unstyled ps-3 d-none">
+      <li><i class="fas fa-image me-1"></i> Image1</li>
+    </ul>
+  </li>
 </ul>
 `;
   } else {

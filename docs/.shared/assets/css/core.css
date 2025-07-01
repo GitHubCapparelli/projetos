@@ -8,23 +8,6 @@
 }
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
-  
-    --goldenrod-W5: #ECD290;
-    --goldenrod-W4: #E9C979;
-    --goldenrod-W3: #E5C063;
-    --goldenrod-W2: #E1B74D;
-    --goldenrod-W1: #DEAE36;
-    --goldenrod-0: #DAA520;
-    --goldenrod-B1: #AE841A;
-    --goldenrod-B2: #836313;
-    --goldenrod-B3: #6D5210;
-    --goldenrod-B4: #57420D;
-    --goldenrod-B5: #41310A;
-    --goldenrod-Q1: #526631; /*Dark Olive Green*/
-    --goldenrod-Q2: #1C4D3F; /*Brunswick Green*/
-    --goldenrod-S1: #20B2DA; /*Bright Cerulean*/
-    --goldenrod-S2: #4820DA; /*Electric Ultramarine*/
-
     --teal-W5: #CCE6E6; /**/
     --teal-W4: #B2D9D9; /**/
     --teal-W3: #80C0C0; /**/
@@ -40,22 +23,6 @@
     --teal-Q2: #1C4D3F; 
     --teal-S1: #20B2DA; 
     --teal-S2: #4820DA;  */
-    
-    --royal-W5: #C6D2F6; /**/
-    --royal-W4: #A0B4F0; /**/
-    --royal-W3: #8DA5ED; /**/
-    --royal-W2: #6787E7; /**/
-    --royal-W1: #5478E4; /**/
-    --royal-0: #4169E1; /*Royal Blue*/
-    --royal-B1: #3454B4; /**/
-    --royal-B2: #273F87; /**/
-    --royal-B3: #203470; /**/
-    --royal-B4: #131F43; /**/
-    --royal-B5: #0D152D; /**/
-    /* --royal-Q1: #526631; 
-    --royal-Q2: #1C4D3F; 
-    --royal-S1: #20B2DA;
-    --royal-S2: #4820DA; */
 
     --gray-W5: #F2F2F2; /**/
     --gray-W4: #D9D9D9; /**/
@@ -83,7 +50,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
