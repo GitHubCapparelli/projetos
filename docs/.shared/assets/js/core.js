@@ -44,8 +44,7 @@ function openPanel(el) {
     </ul>
   </li>
 </ul>
-`;
-  } else {
+`;} else {
       document.getElementById('panelBody').innerHTML = `<p>Contents for <strong>${titleMap[panelType]}</strong> go here.</p>`;
   }
 
@@ -76,3 +75,16 @@ function toggleNode(el) {
   // Toggle nested visibility
   nextUL.classList.toggle('d-none');
 }
+
+///////////////////////////////////////////////////////////////////
+
+window.addEventListener('scroll', () => {
+  const bannerHeight = document.querySelector('.main-banner').offsetHeight;
+  const stickyHeader = document.querySelector('.main-header.sticky-header');
+
+  if (window.scrollY > bannerHeight) {
+    stickyHeader.classList.add('show');
+  } else {
+    stickyHeader.classList.remove('show');
+  }
+});

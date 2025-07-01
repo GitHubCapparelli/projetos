@@ -52,7 +52,6 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: system-ui, sans-serif;
 }
 
@@ -192,41 +191,63 @@ body {
 
 /* ---------------------------------------------------------------------------------- */
 
-/* Main content scroll area */
-.main-content {
-  position: relative;
-  transition: margin-left 0.3s;
-}
-
-/* Sticky header */
-.main-header {
-  position: sticky;
-  top: 0;
-  /* background-color: #e0e0e0; */
-  background-color: #616060;
-  z-index: 5;
-  /* padding: 0.75rem 1rem; */
+/* Remove margin/padding on header/footer */
+.main-header,
+.main-footer {
+  margin: 0;
+  padding: 0 1rem;
+  background-color: #e0e0e0;
   height: 50px;
-  /* Match .panel-header */
+  /* same height */
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
 }
 
-/* Main body content */
-.main-body {
-  min-height: calc(100vh - 200px);
-  /* Header + Footer */
-  background-color: #fff;
-  padding-bottom: 3rem;
+/* The sticky header is hidden initially by transform */
+.main-header.sticky-header.show {
+  transform: translateY(0);
 }
 
-/* Parallax footer */
-.main-footer {
+/* Large banner area */
+.main-banner {
+  height: 300px;
+  /* height of the banner */
+  overflow: hidden;
+  width: 100%;
   position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Scrollable content */
+.main-body {
+  margin-top: 300px;
+  /* push content below banner */
+  padding: 1rem 2rem;
+  /* content padding */
+  min-height: calc(100vh - 50px - 150px);
+  /* viewport minus sticky header & footer */
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Footer */
+.main-footer {
   height: 150px;
-  background-color: var(--teal-B4);
-  background-color: #616060;
+  background-color: #e0e0e0;
   background-attachment: fixed;
   background-image: linear-gradient(#e0e0e0, #d0d0d0);
   background-size: cover;
@@ -234,4 +255,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0 1rem;
 }
