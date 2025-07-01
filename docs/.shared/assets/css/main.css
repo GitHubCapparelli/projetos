@@ -10,6 +10,7 @@
   .sidebar {
     width: 45px; 
     padding: 10px 5px;
+    height: 100vh; /* Garante que a altura ocupa 100% */
     padding-bottom: 5px;
     display: flex;
     color: var(--gray-B4);
@@ -77,22 +78,10 @@
   }
 
   /**/
-
-.main-content {
-    background: var(--gray-W4);
-    color: var(--gray-B4);
-  }
-
-  
   .title {
     border-bottom: 1px solid var(--gray-W3);
     width: 100%;
   }
-  .main-content {
-    background: var(--gray-B4);
-    color: var(--gray-W3);
-  }
-
 
   .active {
     background: var(--gray-B3);
