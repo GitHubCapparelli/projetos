@@ -189,3 +189,46 @@ body {
   border-radius: 4px;
   padding-right: 5px;
 }
+
+
+/* Main content scroll area */
+.main-content {
+  position: relative;
+  transition: margin-left 0.3s;
+}
+
+/* Sticky header */
+.main-header {
+  position: sticky;
+  top: 0;
+  background-color: #e0e0e0;
+  z-index: 5;
+  padding: 0.75rem 1rem;
+  height: 50px;
+  /* Match .panel-header */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Main body content */
+.main-body {
+  min-height: calc(100vh - 200px);
+  /* Header + Footer */
+  background-color: #fff;
+  padding-bottom: 3rem;
+}
+
+/* Parallax footer */
+.main-footer {
+  position: relative;
+  height: 150px;
+  background-color: #e0e0e0;
+  background-attachment: fixed;
+  background-image: linear-gradient(#e0e0e0, #d0d0d0);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
