@@ -214,6 +214,10 @@ body {
   transition: transform 0.3s ease;
 }
 
+.main-header, .panel-header {
+  height: 150px;
+}
+
 /* The sticky header is hidden initially by transform */
 .main-header.sticky-header.show {
   transform: translateY(0);
