@@ -215,7 +215,7 @@ body {
 }
 
 .main-header, .panel-header {
-  height: 150px;
+  height: 80px;
 }
 
 /* The sticky header is hidden initially by transform */
