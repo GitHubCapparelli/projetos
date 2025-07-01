@@ -6,7 +6,7 @@
   }
   
   .sidebar {
-    width: 45px; 
+    width: 25px; 
     display: flex;
     color: var(--gray-B4);
     background: var(--gray-W4);
@@ -21,6 +21,7 @@
     justify-content: space-between;
   } 
   .sidebar-body {
+    background: var(--teal-W1);
     display: flex;
     height: 100vh;
     flex-direction: column;

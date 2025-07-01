@@ -9,7 +9,7 @@ function toogleMenu() {
       bar.style.width = '200px';
       btn.className = 'menu-x fa-solid fa-x';
     } else {
-      bar.style.width = '45px';
+      bar.style.width = '25px';
       btn.className = 'menu-bars fa-solid fa-bars';
     }
   }
