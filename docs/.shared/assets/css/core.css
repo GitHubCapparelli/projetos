@@ -202,8 +202,8 @@ body {
 .main-header {
   position: sticky;
   top: 0;
-  background-color: var(--teal-B4);
   /* background-color: #e0e0e0; */
+  background-color: #616060;
   z-index: 5;
   padding: 0.75rem 1rem;
   height: 50px;
@@ -225,8 +225,8 @@ body {
 .main-footer {
   position: relative;
   height: 150px;
-  background-color: #e0e0e0;
   background-color: var(--teal-B4);
+  background-color: #616060;
   background-attachment: fixed;
   background-image: linear-gradient(#e0e0e0, #d0d0d0);
   background-size: cover;
