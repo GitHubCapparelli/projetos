@@ -9,12 +9,12 @@
   
   .sidebar {
     width: 45px; 
-    padding: 10px 15px;
+    padding: 10px 5px;
     padding-bottom: 5px;
     display: flex;
-    color: var(--gray-W3);
-    background: var(--gray-B4);
-    border-right: 3px solid var(--gray-B3);
+    color: var(--gray-B4);
+    background: var(--gray-W4);
+    border-right: 3px solid var(--gray-W1);
     align-items: start;
     transition: width 0.3s ease;
   }
@@ -79,8 +79,8 @@
   /**/
 
 .main-content {
-    background: var(--gray-B5);
-    color: var(--gray-W3);
+    background: var(--gray-W4);
+    color: var(--gray-B4);
   }
 
   
