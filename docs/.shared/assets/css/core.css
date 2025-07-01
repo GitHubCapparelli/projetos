@@ -1,10 +1,7 @@
 /*https://scrollmagic.io/examples/basic/class_toggles.html*/
-
-/* You can add global styles to this file, and also import other style files */
 * {
     margin: 0px; 
     padding: 0px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
@@ -200,8 +197,7 @@ body {
 .main-header,
 .main-footer {
   background-color: #6d6c6c;
-  height: 50px;
-  /* same height */
+  height: 70px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
@@ -212,6 +208,12 @@ body {
   z-index: 10;
   transform: translateY(-100%);
   transition: transform 0.3s ease;
+}
+.panel-header {
+  height: 70px;
+}
+.main-footer {
+  height: 150px;
 }
 
 /* The sticky header is hidden initially by transform */
