@@ -12,7 +12,7 @@ function toogleMenu() {
       bdy.style.display = 'block';
     } else {
       bar.style.width   = '35px';
-      btn.className     = 'menu-bars fa-solid fa-bars';
+      btn.className     = 'menu-bars fa-solid fa-bars'; 
       bdy.style.display = 'none';
     }
   }
