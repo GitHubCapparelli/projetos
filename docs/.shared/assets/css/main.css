@@ -6,11 +6,12 @@
   }
   
   .sidebar {
-    width: 25px; 
+    width: 35px; 
+    padding: 5%;
     display: flex;
     color: var(--gray-B4);
     background: var(--gray-W4);
-    border-right: 3px solid var(--gray-W1);
+    border-right: 2px solid var(--gray-W1);
     align-items: start;
     transition: width 0.3s ease;
   }
