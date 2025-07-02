@@ -185,8 +185,8 @@ body { font-family    : system-ui, sans-serif; }
 /* Center banner using flexbox */
 .banner-container {
   display: flex;
-  justify-content: center;
-  padding-top: 1rem;
+  justify-content: end;
+  padding: 1rem;
 }
 
 .main-banner {
