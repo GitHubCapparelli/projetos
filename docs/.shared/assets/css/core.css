@@ -1,5 +1,5 @@
 /*https://scrollmagic.io/examples/basic/class_toggles.html*/
-* {
+*, html, body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -121,6 +121,7 @@ body {
 /* Sidebar Panel */
 .sidebarPanel {
   position: fixed;
+  padding: 1rem;
   top: 0;
   left: var(--sidebarButtons-width);
   width: 300px;
@@ -265,17 +266,12 @@ body.panel-open .sticky-header {
 }
 
 /* Main container adjusts with sidebar and panel */
-html, body {
-  padding: 0px;
-  margin: 0px; 
-}
 main {
   width: 100%;
   padding: 0px;
   margin: 0px;
   margin-left: var(--sidebarButtons-width);
   transition: margin-left 0.3s ease;
-  background-color: yellow;
 }
 
 body.panel-open main {
