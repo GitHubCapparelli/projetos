@@ -1,5 +1,7 @@
 /*https://scrollmagic.io/examples/basic/class_toggles.html*/
-*, html, body {
+*,
+html,
+body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -15,7 +17,8 @@
   --teal-W3: #80C0C0;
   --teal-W2: #66B3B3;
   --teal-W1: #339999;
-  --teal-0: #008080; /*Teal*/
+  --teal-0: #008080;
+  /*Teal*/
   --teal-B1: #006666;
   --teal-B2: #004D4D3;
   --teal-B3: #004040;
@@ -109,7 +112,7 @@ body {
   background-color: var(--verde-escuro);
 }
 
-.sidebarOptions .nav-item i { 
+.sidebarOptions .nav-item i {
   font-size: 1.25rem;
 }
 
@@ -156,6 +159,7 @@ body {
   overflow-y: auto;
   flex-grow: 1;
 }
+
 .nav-item:hover {
   background-color: #3a3a3a;
 }
@@ -195,7 +199,8 @@ body {
 .main-banner img {
   width: 100%;
   height: 100%;
-  object-fit: fill;   /* Force fit into 600x400 regardless of image size */
+  object-fit: fill;
+  /* Force fit into 600x400 regardless of image size */
   display: block;
 }
 
@@ -209,9 +214,10 @@ body {
   justify-content: start;
   z-index: 999;
 }
+
 .mainHeader-left {
   width: 50%;
-  margin: 1rem; 
+  margin: 1rem;
   flex-direction: column;
 }
 
@@ -276,7 +282,7 @@ body.panel-open main {
 
 .main-footer,
 .banner-container {
-  width: 100%; 
+  width: 100%;
   padding: 0px;
   margin: 0px;
   margin-left: 0;
