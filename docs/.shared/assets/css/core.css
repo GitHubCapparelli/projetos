@@ -196,8 +196,7 @@ body {
 .main-banner img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  /* Force fit into 600x400 regardless of image size */
+  object-fit: fill;   /* Force fit into 600x400 regardless of image size */
   display: block;
 }
 
@@ -273,13 +272,17 @@ body.panel-open main {
   margin-left: var(--sidebarButtons-width);
 }
 
-.main-header,
 .main-footer,
 .banner-container {
   width: 100%; 
   padding: 0px;
   margin: 0px;
   margin-left: 0;
+}
+
+.main-header{
+    width: 100%;
+    padding: 1rem;
 }
 
 .main-body {
