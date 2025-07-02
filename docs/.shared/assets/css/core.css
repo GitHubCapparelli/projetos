@@ -186,10 +186,11 @@ body { font-family    : system-ui, sans-serif; }
 .banner-container {
   display: flex;
   justify-content: end;
-  padding: 1rem;
+  align-items: end;
 }
 
 .main-banner {
+  padding: 1rem;
   width: var(--mainBanner-width);
   height: var(--mainBanner-height);
   background-color: #ddd;
