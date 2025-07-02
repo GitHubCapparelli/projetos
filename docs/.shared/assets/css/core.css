@@ -270,7 +270,7 @@ body.panel-open .sticky-header {
 /* Main container adjusts with sidebar and panel */
 body {
   padding: 0px;
-  margin: 0px;
+  margin: 0px; 
 }
 main {
   width: 100%;

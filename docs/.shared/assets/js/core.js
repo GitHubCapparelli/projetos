@@ -45,7 +45,7 @@ function openPanel(el) {
           <li><i class="fas fa-file-alt me-1"></i> RMAs</li>
         </ul>
       </li>
-      <li><i class="fas fa-file-code me-1"></i> app.js</li>
+      <li><i class="fas fa-file-code me-1"></i> app.js</li> 
     </ul>
   </li>
   <li>
