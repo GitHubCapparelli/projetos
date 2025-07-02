@@ -201,7 +201,9 @@ body {
 }
 
 /* Sticky Header */
+
 .main-header .mainHeader-left {
+  top: 0;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -213,6 +215,7 @@ body {
   background-color: #4C4C4C;
 }
 .mainHeader-left {
+  width: 50%;
   padding-left: 1rem; 
   flex-direction: column;
   background-color: #979797;
@@ -265,6 +268,10 @@ body.panel-open .sticky-header {
 }
 
 /* Main container adjusts with sidebar and panel */
+body {
+  padding: 0px;
+  margin: 0px;
+}
 main {
   width: 100%;
   padding: 0px;

@@ -25,27 +25,19 @@ function openPanel(el) {
   // You can update this dynamically
   if (titleMap[panelType] === 'Conteúdo') {
     document.getElementById('panelBody').innerHTML = `
+<li><i class="fas fa-file-alt me-1"></i> Apresentação</li>
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i> src
+      <i class="fas fa-folder-open me-1"></i> Telas
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i> Telas
-        </span>
-        <ul class="nested list-unstyled ps-3 d-none">
-          <li><i class="fas fa-file-alt me-1"></i> Acompanhamentos</li>
-          <li><i class="fas fa-file-alt me-1"></i> Acompanhamento</li>
-          <li><i class="fas fa-file-alt me-1"></i> Validações</li>
-          <li><i class="fas fa-file-alt me-1"></i> Substituições</li>
-          <li><i class="fas fa-file-alt me-1"></i> RMA</li>
-          <li><i class="fas fa-file-alt me-1"></i> RMAs</li>
-        </ul>
-      </li>
-      <li><i class="fas fa-file-alt me-1"></i> index.html</li>
-      <li><i class="fas fa-file-code me-1"></i> app.js</li>
+      <li><i class="fas fa-file-alt me-1"></i> Acompanhamentos</li>
+      <li><i class="fas fa-file-alt me-1"></i> Acompanhamento</li>
+      <li><i class="fas fa-file-alt me-1"></i> Validações</li>
+      <li><i class="fas fa-file-alt me-1"></i> Substituições</li>
+      <li><i class="fas fa-file-alt me-1"></i> RMA</li>
+      <li><i class="fas fa-file-alt me-1"></i> RMAs</li>
     </ul>
   </li>
   <li>
