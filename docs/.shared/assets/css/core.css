@@ -220,7 +220,7 @@ body {
 
 /* Large banner area */
 .main-banner {
-  height: 675px;
+  height: 685px;
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -237,7 +237,7 @@ body {
 .main-body {
   margin-top: 300px;
   /* push content below banner */
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   /* content padding */
   min-height: calc(100vh - 50px - 150px);
   /* viewport minus sticky header & footer */
