@@ -208,13 +208,11 @@ body {
   align-items: start;
   justify-content: start;
   z-index: 999;
-  background-color: #4C4C4C;
 }
 .mainHeader-left {
   width: 50%;
   margin: 1rem; 
   flex-direction: column;
-  background-color: #979797;
 }
 
 .sticky-header {
