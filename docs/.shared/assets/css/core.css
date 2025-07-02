@@ -236,10 +236,6 @@ body { font-family    : system-ui, sans-serif; }
 
 /* Scrollable content */
 .main-body {
-  /* margin-top: 300px; */
-  /* push content below banner */
-  /* padding: 1rem 2rem; */
-  /* content padding */
   min-height: calc(100vh - var(--topBars-height) - var(--footer-height));
   background-color: #fff;
   overflow-y: auto;
