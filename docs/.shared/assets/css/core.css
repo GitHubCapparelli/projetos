@@ -248,5 +248,5 @@ body.panel-open main {
 .main-body,
 .main-footer,
 .banner-container {
-  margin-left: inherit; /* Inherit from <main> */
+  margin-left: 0; /* Inherit from <main> */
 }
