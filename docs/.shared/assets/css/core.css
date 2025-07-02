@@ -182,55 +182,6 @@ body { font-family    : system-ui, sans-serif; }
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* Main content scroll area */
-.main-content {
-  position: relative;
-  transition: margin-left 0.3s;
-}
-
-/* Banner image */
-.main-banner {
-  width: 600px;
-  height: var(--banner-height);
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.main-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Sticky Header */
-.main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #343a40;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
-  z-index: 1000;
-}
-
-.main-header.show {
-  transform: translateY(0);
-}
-
-/* Main content for scroll */
-.main-body {
-  padding: 2rem;
-  min-height: 2000px;
-  background-color: #f8f9fa;
-}
 
 .main-footer {
   height: 150px;
@@ -245,3 +196,55 @@ body { font-family    : system-ui, sans-serif; }
   justify-content: center;
   position: relative;
 }
+
+
+
+        /* Center banner using flexbox */
+        .banner-container {
+          display: flex;
+          justify-content: center;
+          padding-top: 1rem;
+        }
+    
+        .main-banner {
+          width: var(--banner-width);
+          height: var(--banner-height);
+          background-color: #ddd;
+          overflow: hidden;
+          display: flex;
+        }
+    
+        .main-banner img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          /* Force fit into 600x400 regardless of image size */
+          display: block;
+        }
+    
+        /* Sticky Header */
+        .main-header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 60px;
+          background-color: #343a40;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: translateY(-100%);
+          transition: transform 0.3s ease;
+          z-index: 1000;
+        }
+    
+        .main-header.show {
+          transform: translateY(0);
+        }
+    
+        .main-body {
+          padding: 2rem;
+          min-height: 2000px;
+          background-color: #f8f9fa;
+        }
