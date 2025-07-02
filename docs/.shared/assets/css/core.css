@@ -5,6 +5,9 @@
 }
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
+    --verde-claro:  #cee5d5;
+    --verde-escuro: #0c7e2c;
+
     --teal-W5: #CCE6E6; /**/
     --teal-W4: #B2D9D9; /**/
     --teal-W3: #80C0C0; /**/
@@ -75,12 +78,15 @@ body {
   width: 100%;
   color: #fff;
   padding: 0.75rem 0.5rem;
-  /* padding-top: 0px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+
+.sidebar {
+  padding: 0px;
 }
 
 .sidebar .nav-item.active {
@@ -94,8 +100,7 @@ body {
   top: 0;
   width: 4px;
   height: 100%;
-  background-color: #742774;
-  /* PowerApps purple */
+  background-color: var(--verde-escuro);
 }
 
 .sidebar .nav-item i {
