@@ -66,6 +66,20 @@ function closePanel() {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
 }
 
+function togglePanel(el) {
+  const panel = document.getElementById('sidePanel');
+  const isVisible = panel.classList.contains('show');
+
+  if (isVisible) {
+    // Panel open → close it
+    closePanel();
+  } else {
+    // Panel closed → open with this button
+    openPanel(el);
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////
 
 function toggleNode(el) {
   const icon = el.querySelector('i');

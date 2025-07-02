@@ -18,18 +18,18 @@
     <div class="sidebar">
         <div class="sidebarOptions">
             <div class="sidebarOptions-top">
-                <div class="nav-item active" data-panel="tree" onclick="openPanel(this)" title="Menu">
+                <div class="nav-item active" data-panel="tree" onclick="togglePanel(this)" title="Menu">
                     <i class="fas fa-bars"></i>
                 </div>
-                <div class="nav-item" data-panel="insert" onclick="openPanel(this)" title="Inserir">
+                <div class="nav-item" data-panel="insert" onclick="togglePanel(this)" title="Inserir">
                     <i class="fas fa-plus-square"></i>
                 </div>
-                <div class="nav-item" data-panel="data" onclick="openPanel(this)" title="Dados">
+                <div class="nav-item" data-panel="data" onclick="togglePanel(this)" title="Dados">
                     <i class="fas fa-database"></i>
                 </div>
             </div>
             <div class="sidebarOptions-bottom">
-                <div class="nav-item" data-panel="settings" onclick="openPanel(this)" title="Dark mode">
+                <div class="nav-item" data-panel="settings" onclick="togglePanel(this)" title="Dark mode">
                     <i class="fa-solid fa-moon"></i>
                 </div>
             </div>
@@ -61,7 +61,7 @@
 
         <!-- Scrollable content -->
         <div class="main-body">
-            <p>Scroll down after the .XYZ banner.</p>
+            <p>Scroll down after the a..XYZ banner.</p>
             <p style="height: 1800px;">[Simulated long content]</p>
         </div>
 
