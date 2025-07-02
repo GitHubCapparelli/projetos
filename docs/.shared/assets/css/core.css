@@ -43,6 +43,8 @@
     --topBars-height: 65px;
     --footer-height: 250px;
     --sidebarButtons-width: 60px;
+    --mainBanner-width: 600px;
+    --mainBanner-height: 400px;
 }
 
 /**/
@@ -216,10 +218,12 @@ body { font-family    : system-ui, sans-serif; }
 
 /* Large banner area */
 .main-banner {
-  height: 340px;
+  width: var(--mainBanner-width);
+  height: var(--mainBanner-height);
   overflow: hidden;
-  width: calc(100vh - 60px);
+  width: calc(100vh - var(--sidebarButtons-width));
   position: relative;
+  text-align: end;
 }
 
 .banner-image {
