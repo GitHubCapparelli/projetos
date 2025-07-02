@@ -109,7 +109,7 @@ body {
   background-color: var(--verde-escuro);
 }
 
-.sidebarOptions .nav-item i {
+.sidebarOptions .nav-item i { 
   font-size: 1.25rem;
 }
 
