@@ -1,6 +1,6 @@
 /*https://scrollmagic.io/examples/basic/class_toggles.html*/
 * {
-    margin: 0px; 
+    margin: 0px;
     padding: 0px;
 }
 :root {
@@ -16,9 +16,9 @@
     --teal-B3: #004040; /**/
     --teal-B4: #002626; /**/
     --teal-B5: #001A1A; /**/
-    /* --teal-Q1: #526631; 
-    --teal-Q2: #1C4D3F; 
-    --teal-S1: #20B2DA; 
+    /* --teal-Q1: #526631;
+    --teal-Q2: #1C4D3F;
+    --teal-S1: #20B2DA;
     --teal-S2: #4820DA;  */
 
     --gray-W5: #F2F2F2; /**/
@@ -32,9 +32,9 @@
     --gray-B3: #404040; /**/
     --gray-B4: #262626; /**/
     --gray-B5: #0D0D0D; /*343a40 */
-    /* --gray-Q1: #526631; 
-    --gray-Q2: #1C4D3F; 
-    --gray-S1: #20B2DA; 
+    /* --gray-Q1: #526631;
+    --gray-Q2: #1C4D3F;
+    --gray-S1: #20B2DA;
     --gray-S2: #4820DA;  */
 }
 
@@ -155,7 +155,7 @@ body {
 /* Main content */
 .main-content {
   /* margin-left: 60px; */
-  padding: 2rem;
+  /* padding: 2rem; */
   transition: margin-left 0.3s;
 }
 
@@ -220,8 +220,7 @@ body {
 
 /* Large banner area */
 .main-banner {
-  height: 300px;
-  /* height of the banner */
+  height: 675px;
   overflow: hidden;
   width: 100%;
   position: relative;
