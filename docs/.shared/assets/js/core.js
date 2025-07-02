@@ -11,11 +11,11 @@ function openPanel(el) {
   // Set panel title/content
   const panelType = el.getAttribute('data-panel');
   const titleMap = {
-      tree: 'Tree View',
-      insert: 'Insert Items',
-      data: 'Data Sources',
-      media: 'Media Library',
-      settings: 'Settings'
+    tree: 'Tree View',
+    insert: 'Insert Items',
+    data: 'Data Sources',
+    media: 'Media Library',
+    settings: 'Settings'
   };
 
   document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
@@ -95,7 +95,7 @@ window.addEventListener('scroll', () => {
   const bannerHeight = document.querySelector('.main-banner').offsetHeight;
   const stickyHeader = document.querySelector('.main-header.sticky-header');
 
-  if (window.scrollY > bannerHeight) {
+  if (window.scrollY > bannerHeight / 2) {
     stickyHeader.classList.add('show');
   } else {
     stickyHeader.classList.remove('show');
