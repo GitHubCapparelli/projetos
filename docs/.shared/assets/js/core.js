@@ -22,32 +22,40 @@ function openPanel(el) {
 
   // You can update this dynamically
   if (titleMap[panelType] === 'Tree View') {
-      document.getElementById('panelBody').innerHTML = `
+    document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-    <i class="fas fa-caret-down me-1"></i>
-    <i class="fas fa-file-alt me-1"></i> Screen1
+      <i class="fas fa-folder-open me-1"></i> src
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li><i class="fas fa-font me-1"></i> Label1</li>
-      <li><i class="fas fa-hand-pointer me-1"></i> Button1</li>
+      <li>
+        <span class="tree-toggle" onclick="toggleNode(this)">
+          <i class="fas fa-folder me-1"></i> components
+        </span>
+        <ul class="nested list-unstyled ps-3 d-none">
+          <li><i class="fas fa-file-code me-1"></i> Header.js</li>
+          <li><i class="fas fa-file-code me-1"></i> Footer.js</li>
+        </ul>
+      </li>
+      <li><i class="fas fa-file-alt me-1"></i> index.html</li>
+      <li><i class="fas fa-file-code me-1"></i> app.js</li>
     </ul>
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-    <i class="fas fa-caret-right me-1"></i>
-    <i class="fas fa-file-alt me-1"></i> Screen2
+      <i class="fas fa-folder me-1"></i> assets
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
-      <li><i class="fas fa-image me-1"></i> Image1</li>
+      <li><i class="fas fa-file-image me-1"></i> logo.png</li>
+      <li><i class="fas fa-file-image me-1"></i> bg.jpg</li>
     </ul>
   </li>
 </ul>
-`;} else {
-      document.getElementById('panelBody').innerHTML = `<p>Contents for <strong>${titleMap[panelType]}</strong> go here.</p>`;
+`;
+  } else {
+    document.getElementById('panelBody').innerHTML = `<p>Contents for <strong>${titleMap[panelType]}</strong> go here.</p>`;
   }
-
 }
 
 function closePanel() {
@@ -60,21 +68,26 @@ function closePanel() {
 
 
 function toggleNode(el) {
-  const caret = el.querySelector('.fa-caret-down, .fa-caret-right');
-  const nextUL = el.nextElementSibling;
+  const icon = el.querySelector('i');
+  const folderIcon = el.querySelector('.fas.fa-folder, .fas.fa-folder-open');
+  const nested = el.nextElementSibling;
 
-  // Toggle caret icon
-  if (caret.classList.contains('fa-caret-down')) {
-      caret.classList.remove('fa-caret-down');
-      caret.classList.add('fa-caret-right');
-  } else {
-      caret.classList.remove('fa-caret-right');
-      caret.classList.add('fa-caret-down');
+  if (nested && nested.classList.contains('nested')) {
+    nested.classList.toggle('d-none');
+
+    // Toggle folder icon
+    if (folderIcon) {
+      if (folderIcon.classList.contains('fa-folder')) {
+        folderIcon.classList.remove('fa-folder');
+        folderIcon.classList.add('fa-folder-open');
+      } else {
+        folderIcon.classList.remove('fa-folder-open');
+        folderIcon.classList.add('fa-folder');
+      }
+    }
   }
-
-  // Toggle nested visibility
-  nextUL.classList.toggle('d-none');
 }
+
 
 ///////////////////////////////////////////////////////////////////
 
