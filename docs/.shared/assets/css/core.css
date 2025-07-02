@@ -250,6 +250,7 @@ body.panel-open main {
   padding: 0px;
   margin: 0px;
   margin-left: 0; /* Inherit from <main> */
+  margin-left: var(--sidebarButtons-width); 
 }
 
 .main-body {

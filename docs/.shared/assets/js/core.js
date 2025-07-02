@@ -132,11 +132,11 @@ function toggleDarkMode() {
 
   // Update icon
   if (newTheme === 'dark') {
-    themeIcon.classList.remove('fa-sun');
-    themeIcon.classList.add('fa-moon');
-  } else {
     themeIcon.classList.remove('fa-moon');
     themeIcon.classList.add('fa-sun');
+  } else {
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
   }
 }
 
