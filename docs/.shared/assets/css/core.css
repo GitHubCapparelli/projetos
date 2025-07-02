@@ -226,7 +226,6 @@ body { font-family    : system-ui, sans-serif; }
 }
 
 .main-body {
-  /* padding: 2rem; */
   min-height: 2000px;
   left: var(--sidebarButtons-width);
   background-color: #f8f9fa;
