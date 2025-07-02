@@ -257,6 +257,6 @@ body.panel-open main {
 
 .main-body {
   width: 100%;
-  padding: 1rem;
-  margin-left: 0; /* Inherit from <main> */
+  margin: 1rem;
+  /* margin-left: 0; Inherit from <main> */
 }
