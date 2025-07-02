@@ -13,7 +13,7 @@ function openPanel(el) {
   // Set panel title/content
   const panelType = el.getAttribute('data-panel');
   const titleMap = {
-    tree: 'Tree View',
+    tree: 'Conteúdo',
     insert: 'Insert Items',
     data: 'Data Sources',
     media: 'Media Library',
@@ -23,7 +23,7 @@ function openPanel(el) {
   document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
 
   // You can update this dynamically
-  if (titleMap[panelType] === 'Tree View') {
+  if (titleMap[panelType] === 'Conteúdo') {
     document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li>
