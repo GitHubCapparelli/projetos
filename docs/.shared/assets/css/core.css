@@ -223,9 +223,8 @@ body { font-family    : system-ui, sans-serif; }
   width: var(--mainBanner-width);
   height: var(--mainBanner-height);
   overflow: hidden;
-  width: calc(100vh - var(--sidebarButtons-width));
   position: relative;
-  text-align: end;
+  align-items: end;
 }
 
 .banner-image {
