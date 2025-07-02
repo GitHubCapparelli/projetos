@@ -155,7 +155,7 @@ body {
 }
 
 .sidebarPanel-body {
-  padding: 2rem;
+  padding: 1rem;
   overflow-y: auto;
   flex-grow: 1;
 }
@@ -227,7 +227,7 @@ body {
   width: 100%;
   margin-left: var(--sidebarButtons-width);
   height: 63px;
-  background-color: #343a40; 
+  background-color: #343a40;
   color: white;
   display: flex;
   align-items: center;
