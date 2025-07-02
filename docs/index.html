@@ -13,7 +13,7 @@
     <link href="/projetos/.shared/assets/css/all.fontAwesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-theme="light">
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebarOptions">
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="sidebarOptions-bottom">
-                <div class="nav-item" data-panel="settings" onclick="togglePanel(this)" title="Dark mode">
+                <div class="nav-item" data-panel="settings" onclick="toggleDarkMode()" title="Dark mode">
                     <i class="fa-solid fa-moon"></i>
                 </div>
             </div>
@@ -47,11 +47,12 @@
         </div>
     </div>
     <main>
-        <div class="main-header" id="stickyHeader">
+        <div id="stickyHeader" class="sticky-header">
             <h5 class="mb-0">Sticky Header: You Scrolled Past the Banner</h5>
         </div>
-
-        <!-- Banner -->
+        <div>
+            <h5 class="mb-0">Main Header: Add your content here....</h5>
+        </div>
         <div class="banner-container">
             <div class="main-banner">
                 <img src="/projetos/.shared/assets/img/banners/sedes-fachada.avif" alt="Banner" />
@@ -60,7 +61,7 @@
 
         <!-- Scrollable content -->
         <div class="main-body">
-            <p>Scroll down after the a.XYZ banner.</p>
+            <p>Scroll down after the ab.XYZ banner.</p>
             <p style="height: 1800px;">[Simulated long content]</p>
         </div>
 

@@ -185,7 +185,7 @@ body { font-family    : system-ui, sans-serif; }
 }
 
 /* Sticky Header */
-.main-header {
+.sticky-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -202,12 +202,12 @@ body { font-family    : system-ui, sans-serif; }
   z-index: 999; /* less than sidebar (z-index: 1000) */
 }
 
-body.panel-open .main-header {
+body.panel-open .sticky-header {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - (var(--sidebarButtons-width) + 300px));
 }
 
-.main-header.show {
+.sticky-header.show {
   transform: translateY(0);
 }
 
