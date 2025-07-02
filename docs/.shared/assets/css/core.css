@@ -245,3 +245,13 @@ main {
 body.panel-open main {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
 }
+
+.main-header,
+.main-body,
+.main-footer,
+.banner-container {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 0; /* Inherit from <main> */
+}
