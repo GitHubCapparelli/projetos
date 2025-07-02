@@ -235,18 +235,13 @@ body.panel-open .main-header {
 
 /* Main container adjusts with sidebar and panel */
 main {
+  width: 100%;
   padding: 0px;
+  margin: 0px;
   margin-left: var(--sidebarButtons-width);
   transition: margin-left 0.3s ease;
 }
 
 body.panel-open main {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
-}
-
-.main-header,
-.main-body,
-.main-footer,
-.banner-container {
-  margin-left: 0; /* Inherit from <main> */
 }
