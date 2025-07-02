@@ -278,6 +278,7 @@ main {
   margin: 0px;
   margin-left: var(--sidebarButtons-width);
   transition: margin-left 0.3s ease;
+  background-color: yellow;
 }
 
 body.panel-open main {

@@ -45,7 +45,6 @@ function openPanel(el) {
           <li><i class="fas fa-file-alt me-1"></i> RMAs</li>
         </ul>
       </li>
-      <li><i class="fas fa-file-code me-1"></i> app.js</li> 
     </ul>
   </li>
   <li>
@@ -53,8 +52,7 @@ function openPanel(el) {
       <i class="fas fa-folder me-1"></i> Outros
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
-      <li><i class="fas fa-file-image me-1"></i> logo.png</li>
-      <li><i class="fas fa-file-image me-1"></i> bg.jpg</li>
+      <li><i class="fas fa-file-image me-1"></i> ...</li>
     </ul>
   </li>
 </ul>
