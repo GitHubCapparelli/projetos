@@ -40,9 +40,9 @@
     --gray-S1: #20B2DA;
     --gray-S2: #4820DA;  */
 
-    --topBars-height: 65px;
+    --topBars-height: 60px;
     --footer-height: 250px;
-    --sidebarButtons-width: 60px;
+    --sidebarButtons-width: 50px;
     --mainBanner-width: 600px;
     --mainBanner-height: 400px;
 }
@@ -193,8 +193,7 @@ body { font-family    : system-ui, sans-serif; }
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  position: relative; 
-  /* absolute ? */
+  position: absolute; 
   width: 100%;
   top: 0;
   left: var(--sidebarButtons-width);
