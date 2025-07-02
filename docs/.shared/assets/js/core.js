@@ -92,13 +92,14 @@ function toggleNode(el) {
 ///////////////////////////////////////////////////////////////////
 
 window.addEventListener('scroll', () => {
+  const header = document.getElementById('stickyHeader');
   const bannerHeight = document.querySelector('.main-banner').offsetHeight;
-  const stickyHeader = document.querySelector('.main-header.sticky-header');
 
-  if (window.scrollY > bannerHeight / 2) {
-    stickyHeader.classList.add('show');
+  if (window.scrollY > bannerHeight) {
+    header.classList.add('show');
   } else {
-    stickyHeader.classList.remove('show');
+    header.classList.remove('show');
   }
 });
+
 
