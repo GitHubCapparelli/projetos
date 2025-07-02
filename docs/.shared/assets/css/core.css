@@ -68,12 +68,10 @@ body {
   z-index: 1000;
   transition: width 0.3s;
 }
-
 .sidebar .top-section {
   width: 100%;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
-
 .sidebar .nav-item {
   width: 100%;
   color: #fff;
