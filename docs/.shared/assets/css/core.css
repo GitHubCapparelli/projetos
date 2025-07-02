@@ -58,20 +58,6 @@ html { scroll-behavior: smooth; }
 body { font-family    : system-ui, sans-serif; }
 
 /* Sidebar */
-.sidebarOptions {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--sidebarButtons-width);
-  height: 100vh;
-  background-color: var(--bs-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  transition: width 0.3s;
-}
 .sidebarOptions .sidebarOptions-top {
   width: 100%;
 }
@@ -87,13 +73,24 @@ body { font-family    : system-ui, sans-serif; }
 }
 
 .sidebarOptions {
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 0px;
+  width: var(--sidebarButtons-width);
+  height: 100vh;
+  background-color: var(--bs-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: width 0.3s;
 }
 
 .sidebarOptions .nav-item.active {
   background-color: #383838;
 }
-
 .sidebarOptions .nav-item.active::before {
   content: '';
   position: absolute;
@@ -103,17 +100,14 @@ body { font-family    : system-ui, sans-serif; }
   height: 100%;
   background-color: var(--verde-escuro);
 }
-
 .sidebarOptions .nav-item i {
   font-size: 1.25rem;
 }
-
 .sidebarOptions .sidebarOptions-bottom {
   width: 100%;
   text-align: center;
 }
-
-/* Panel */
+/* Sidebar Panel */
 .sidebarPanel {
   position: fixed;
   top: 0;
@@ -127,11 +121,9 @@ body { font-family    : system-ui, sans-serif; }
   z-index: 1000;
   transition: transform 0.3s ease;
 }
-
 .sidebarPanel.show {
   display: flex;
 }
-
 .sidebarPanel .sidebarPanel-header {
   padding: 1rem;
   background-color: #e0e0e0;
@@ -140,12 +132,10 @@ body { font-family    : system-ui, sans-serif; }
   align-items: center;
   justify-content: space-between;
 }
-
 .sidebarPanel .sidebarPanel-header h6 {
   margin: 0;
   font-weight: 600;
 }
-
 .sidebarPanel-panel .sidebarPanel-body {
   padding: 1rem;
   overflow-y: auto;
@@ -176,10 +166,9 @@ body { font-family    : system-ui, sans-serif; }
 /* Center banner using flexbox */
 .banner-container {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 }
-
 .main-banner {
   padding: 1rem;
   width: var(--mainBanner-width);
@@ -258,15 +247,5 @@ body.panel-open main {
 .main-body,
 .main-footer,
 .banner-container {
-  margin-left: 0;
-  /* Inherit from <main> */
-}
-
-main {
-  margin-left: var(--sidebarButtons-width);
-  transition: margin-left 0.3s ease;
-}
-
-body.panel-open main {
-  margin-left: calc(var(--sidebarButtons-width) + 300px);
+  margin-left: inherit; /* Inherit from <main> */
 }
