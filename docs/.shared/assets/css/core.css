@@ -62,7 +62,6 @@ body { font-family    : system-ui, sans-serif; }
   width: var(--sidebarButtons-width);
   height: 100vh;
   background-color: var(--bs-dark);
-  /* border-right: 1px solid #1a1a1a; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,14 +106,8 @@ body { font-family    : system-ui, sans-serif; }
 }
 
 .sidebar .bottom-section {
-  margin-bottom: 1rem;
   width: 100%;
   text-align: center;
-}
-
-.sidebar .bottom-section .nav-item {
-  border-top: 1px solid #444;
-  padding-top: 1rem;
 }
 
 /* Panel */
@@ -198,7 +191,8 @@ body { font-family    : system-ui, sans-serif; }
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  position: fixed;
+  position: relative; 
+  /* absolute ? */
   width: 100%;
   top: 0;
   left: var(--sidebarButtons-width);
