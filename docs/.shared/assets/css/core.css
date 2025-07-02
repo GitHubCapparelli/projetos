@@ -124,7 +124,7 @@ body { font-family    : system-ui, sans-serif; }
   border-right: 1px solid #ccc;
   display: none;
   flex-direction: column;
-  z-index: 900;
+  z-index: 1000;
   transition: transform 0.3s ease;
 }
 
