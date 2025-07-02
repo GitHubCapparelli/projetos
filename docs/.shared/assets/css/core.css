@@ -201,15 +201,18 @@ body {
 }
 
 /* Sticky Header */
-.main-header {
+.main-header .mainHeader-left {
   padding: 1rem;
   width: 100%;
-  margin-left: var(--sidebarButtons-width);
   height: 120px;
   display: flex;
   align-items: start;
   justify-content: start;
   z-index: 999;
+}
+.mainHeader-left {
+  /* margin-left: var(--sidebarButtons-width); */
+  flex-direction: column;
 }
 
 .sticky-header {
