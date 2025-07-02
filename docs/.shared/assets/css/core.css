@@ -233,8 +233,7 @@ body {
   align-items: start;
   justify-content: start;
   z-index: 999;
-  background-color: silver;
-  /* less than sidebar (z-index: 1000) */
+  background-color: #CCCCCC;
 }
 
 .sticky-header {
