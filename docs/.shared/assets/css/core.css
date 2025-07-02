@@ -93,7 +93,7 @@ body {
 
 .sidebarOptions .nav-item {
   width: 100%;
-  color: var(--bs-light);
+  color: var(--bs-dark);
   padding: 0.75rem 0.5rem;
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@ body {
   padding: 0px;
   width: var(--sidebarButtons-width);
   height: 100vh;
-  background-color: var(--bs-dark);
+  background-color: var(--bs-light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +119,7 @@ body {
 }
 
 .sidebarOptions .nav-item.active {
-  background-color: var(--bs-dark);
+  background-color: var(--bs-light);
 }
 
 .sidebarOptions .nav-item.active::before {
@@ -303,11 +303,9 @@ body.panel-open main {
   padding: 0px;
   margin: 0px;
   margin-left: 0;
-  margin-left: 0;
 }
 
 .main-body {
   width: 100%;
   margin: 1rem;
-  /* margin-left: 0; Inherit from <main> */
 }
