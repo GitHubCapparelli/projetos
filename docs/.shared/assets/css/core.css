@@ -121,7 +121,6 @@ body {
 /* Sidebar Panel */
 .sidebarPanel {
   position: fixed;
-  padding: 1rem;
   top: 0;
   left: var(--sidebarButtons-width);
   width: 300px;
@@ -152,12 +151,11 @@ body {
   font-weight: 600;
 }
 
-.sidebarPanel-panel .sidebarPanel-body {
+.sidebarPanel-body {
   padding: 2rem;
   overflow-y: auto;
   flex-grow: 1;
 }
-
 .nav-item:hover {
   background-color: #3a3a3a;
 }
