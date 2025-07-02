@@ -11,52 +11,31 @@
   --verde-escuro: #0c7e2c;
 
   --teal-W5: #CCE6E6;
-  /**/
   --teal-W4: #B2D9D9;
-  /**/
   --teal-W3: #80C0C0;
-  /**/
   --teal-W2: #66B3B3;
-  /**/
   --teal-W1: #339999;
-  /**/
-  --teal-0: #008080;
-  /*Teal*/
+  --teal-0: #008080; /*Teal*/
   --teal-B1: #006666;
-  /**/
   --teal-B2: #004D4D3;
-  /**/
   --teal-B3: #004040;
-  /**/
   --teal-B4: #002626;
-  /**/
   --teal-B5: #001A1A;
-  /**/
   /* --teal-Q1: #526631;
     --teal-Q2: #1C4D3F;
     --teal-S1: #20B2DA;
     --teal-S2: #4820DA;  */
 
   --gray-W5: #F2F2F2;
-  /**/
   --gray-W4: #D9D9D9;
-  /**/
   --gray-W3: #CCCCCC;
-  /**/
   --gray-W2: #B2B2B2;
-  /**/
   --gray-W1: #999999;
-  /**/
   --gray-0: #7F7F7F;
-  /*Gray*/
   --gray-B1: #666666;
-  /**/
   --gray-B2: #4C4C4C;
-  /**/
   --gray-B3: #404040;
-  /**/
   --gray-B4: #262626;
-  /**/
   --gray-B5: #0D0D0D;
   /*343a40 */
   /* --gray-Q1: #526631;
@@ -70,8 +49,6 @@
   --mainBanner-width: 600px;
   --mainBanner-height: 400px;
 }
-
-/**/
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -93,7 +70,7 @@ body {
 
 .sidebarOptions .nav-item {
   width: 100%;
-  color: var(--bs-dark);
+  color: var(--bs-light);
   padding: 0.75rem 0.5rem;
   display: flex;
   flex-direction: column;
@@ -109,7 +86,7 @@ body {
   padding: 0px;
   width: var(--sidebarButtons-width);
   height: 100vh;
-  background-color: var(--bs-light);
+  background-color: var(--bs-dark);
   border-right: 1px solid #ccc;  display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +96,7 @@ body {
 }
 
 .sidebarOptions .nav-item.active {
-  background-color: var(--bs-light);
+  background-color: var(--bs-dark);
 }
 
 .sidebarOptions .nav-item.active::before {
@@ -127,7 +104,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 4px;
+  width: 3px;
   height: 100%;
   background-color: var(--verde-escuro);
 }
@@ -175,7 +152,7 @@ body {
 }
 
 .sidebarPanel-panel .sidebarPanel-body {
-  padding: 1rem;
+  padding: 2rem;
   overflow-y: auto;
   flex-grow: 1;
 }
@@ -226,6 +203,7 @@ body {
 
 /* Sticky Header */
 .main-header {
+  padding: 1rem;
   width: 100%;
   margin-left: var(--sidebarButtons-width);
   height: 120px;
