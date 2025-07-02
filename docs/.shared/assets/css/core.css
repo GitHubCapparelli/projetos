@@ -210,7 +210,6 @@ body {
   align-items: start;
   justify-content: start;
   z-index: 999;
-  background-color: #CCCCCC;
 }
 
 .sticky-header {
