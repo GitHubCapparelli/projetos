@@ -88,3 +88,4 @@ window.addEventListener('scroll', () => {
     stickyHeader.classList.remove('show');
   }
 });
+

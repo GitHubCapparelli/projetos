@@ -194,8 +194,7 @@ body {
 }
 
 /* Remove margin/padding on header/footer */
-.main-header,
-.main-footer {
+.main-header {
   background-color: #6d6c6c;
   height: 70px;
   display: flex;
