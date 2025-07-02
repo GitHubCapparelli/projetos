@@ -58,7 +58,7 @@ html { scroll-behavior: smooth; }
 body { font-family    : system-ui, sans-serif; }
 
 /* Sidebar */
-.sidebar {
+.sidebarOptions {
   position: fixed;
   top: 0;
   left: 0;
@@ -72,10 +72,10 @@ body { font-family    : system-ui, sans-serif; }
   z-index: 1000;
   transition: width 0.3s;
 }
-.sidebar .top-section {
+.sidebarOptions .sidebarOptions-top {
   width: 100%;
 }
-.sidebar .nav-item {
+.sidebarOptions .nav-item {
   width: 100%;
   color: var(--bs-light);
   padding: 0.75rem 0.5rem;
@@ -86,15 +86,15 @@ body { font-family    : system-ui, sans-serif; }
   cursor: pointer;
 }
 
-.sidebar {
+.sidebarOptions {
   padding: 0px;
 }
 
-.sidebar .nav-item.active {
+.sidebarOptions .nav-item.active {
   background-color: #383838;
 }
 
-.sidebar .nav-item.active::before {
+.sidebarOptions .nav-item.active::before {
   content: '';
   position: absolute;
   left: 0;
@@ -104,17 +104,17 @@ body { font-family    : system-ui, sans-serif; }
   background-color: var(--verde-escuro);
 }
 
-.sidebar .nav-item i {
+.sidebarOptions .nav-item i {
   font-size: 1.25rem;
 }
 
-.sidebar .bottom-section {
+.sidebarOptions .sidebarOptions-bottom {
   width: 100%;
   text-align: center;
 }
 
 /* Panel */
-.side-panel {
+.sidebarPanel {
   position: fixed;
   top: 0;
   left: var(--sidebarButtons-width);
@@ -128,11 +128,11 @@ body { font-family    : system-ui, sans-serif; }
   transition: transform 0.3s ease;
 }
 
-.side-panel.show {
+.sidebarPanel.show {
   display: flex;
 }
 
-.side-panel .panel-header {
+.sidebarPanel .sidebarPanel-header {
   padding: 1rem;
   background-color: #e0e0e0;
   border-bottom: 1px solid #ccc;
@@ -141,12 +141,12 @@ body { font-family    : system-ui, sans-serif; }
   justify-content: space-between;
 }
 
-.side-panel .panel-header h6 {
+.sidebarPanel .sidebarPanel-header h6 {
   margin: 0;
   font-weight: 600;
 }
 
-.side-panel .panel-body {
+.sidebarPanel-panel .sidebarPanel-body {
   padding: 1rem;
   overflow-y: auto;
   flex-grow: 1;

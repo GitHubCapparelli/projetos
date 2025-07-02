@@ -15,34 +15,35 @@
 
 <body>
     <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="top-section">
-            <div class="nav-item active" data-panel="tree" onclick="openPanel(this)" title="Menu">
-                <i class="fas fa-bars"></i>
+     <div class="sidebar">
+        <div class="sidebarOptions">
+            <div class="sidebarOptions-top">
+                <div class="nav-item active" data-panel="tree" onclick="openPanel(this)" title="Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-item" data-panel="insert" onclick="openPanel(this)" title="Inserir">
+                    <i class="fas fa-plus-square"></i>
+                </div>
+                <div class="nav-item" data-panel="data" onclick="openPanel(this)" title="Dados">
+                    <i class="fas fa-database"></i>
+                </div>
             </div>
-            <div class="nav-item" data-panel="insert" onclick="openPanel(this)" title="Inserir">
-                <i class="fas fa-plus-square"></i>
-            </div>
-            <div class="nav-item" data-panel="data" onclick="openPanel(this)" title="Dados">
-                <i class="fas fa-database"></i>
+            <div class="sidebarOptions-bottom">
+                <div class="nav-item" data-panel="settings" onclick="openPanel(this)" title="Dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
             </div>
         </div>
-        <div class="bottom-section">
-            <div class="nav-item" data-panel="settings" onclick="openPanel(this)" title="Dark mode">
-                <i class="fa-solid fa-moon"></i>
+        <div id="sidePanel" class="sidebarPanel">
+            <div class="sidebarPanel-header">
+                <h6 id="panelTitle">Tree View</h6>
+                <button class="btn btn-sm btn-outline-secondary" onclick="closePanel()">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-        </div>
-    </div>
-    <!-- Slide-out Panel -->
-    <div id="sidePanel" class="side-panel">
-        <div class="panel-header">
-            <h6 id="panelTitle">Tree View</h6>
-            <button class="btn btn-sm btn-outline-secondary" onclick="closePanel()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="panel-body" id="panelBody">
-            <p>This is the content area for the selected panel.</p>
+            <div class="sidebarPanel-body" id="panelBody">
+                <p>This is the content area for the selected panel.</p>
+            </div>
         </div>
     </div>
     <main class="container-fluid">
