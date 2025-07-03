@@ -60,7 +60,8 @@ body {
 
 html        { scroll-behavior: smooth; }
 body        { font-family: system-ui, sans-serif; }
-a           { text-decoration: none; }
+
+a, li a, ul li a { text-decoration: none; }
 /* a:hover  { text-decoration: underline; } */
 
 /* Sidebar */
