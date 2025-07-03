@@ -206,10 +206,11 @@ body.panel-open .sticky-header {
 }
 
 .stickyHeader-inner {
-  width: 100%;
-  margin: 3px;
+  width: calc(100% - var(--sidebarButtons-width));
+  margin: 1px;
   padding: 3px;
   display: flex;
+  color: var(--gray-W5);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -218,9 +219,9 @@ body.panel-open .sticky-header {
 }
 .stickyHeader-inner h6 { font-style: italic; }
 
-body.panel-open .stickyHeader-inner {
+/* body.panel-open .stickyHeader-inner {
   width: calc(100% - (var(--sidebarButtons-width) + 300px));
-}
+} */
 
 .main-header {
   width: 100%;
