@@ -268,7 +268,7 @@ body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - 300px - var(--sidebarButtons-width));
 }
-/* body.panel-open .stickyHeader-inner
+body.panel-open .stickyHeader-inner
 {
   width: calc(100% - 300px - var(--sidebarButtons-width));
-} */
+}
