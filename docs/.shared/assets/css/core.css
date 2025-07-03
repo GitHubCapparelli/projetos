@@ -185,7 +185,7 @@ a:hover  { text-decoration: underline; }
 .sticky-header.show { transform: translateY(0); }
 
 .stickyHeader-inner {
-  width: 100% - var(--sidebarButtons-width);
+  width: 100%;
   padding: 5px;
   display: flex;
   color: var(--gray-W5);
@@ -269,7 +269,7 @@ body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - 300px - var(--sidebarButtons-width));
 }
-body.panel-open .stickyHeader-inner
+/* body.panel-open .stickyHeader-inner
 {
   width: calc(100% - var(--sidebarButtons-width));
-}
+} */
