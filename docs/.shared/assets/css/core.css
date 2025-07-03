@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: var(--bs-gray-300);
 }
 
 :root {
@@ -111,6 +112,7 @@ a:hover  { text-decoration: underline; }
 }
 .sidebarPanel-header {
   padding: 1rem;
+  height: var(--topBars-height);
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
@@ -150,6 +152,7 @@ a:hover  { text-decoration: underline; }
   position: fixed;
   top: 0;
   left: 0;
+  height: var(--topBars-height);
   width: calc(100% - var(--sidebarButtons-width));
   margin-left: var(--sidebarButtons-width);
   display: flex;
@@ -158,6 +161,7 @@ a:hover  { text-decoration: underline; }
   transform: translateY(-100%);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   z-index: 999;   /* less than sidebar (z-index: 1000) */
+  background-color: var(--bs-gray-300);
 }
 .sticky-header.show { transform: translateY(0); }
 
@@ -170,7 +174,6 @@ a:hover  { text-decoration: underline; }
   justify-content: center;
   align-items: center;
   background-color: var(--verde-escuro);
-  border-radius: 10px;
 }
 .stickyHeader-inner h6 { font-style: italic; }
 
