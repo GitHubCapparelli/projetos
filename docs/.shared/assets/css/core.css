@@ -206,7 +206,7 @@ body.panel-open .sticky-header {
 }
 
 .stickyHeader-inner {
-  width: calc(100% - (var(--sidebarButtons-width) + 4px));
+  width: calc(100% - (var(--sidebarButtons-width) + 3px));
   margin: 1px;
   padding: 3px;
   display: flex;
@@ -219,8 +219,13 @@ body.panel-open .sticky-header {
 }
 .stickyHeader-inner h6 { font-style: italic; }
 
-body.panel-open .stickyHeader-inner {
-  width: calc(100% - 4px);
+body.panel-open .stickyHeader-inner,
+body.panel-open .main-header,
+body.panel-open .main-banner,
+body.panel-open .main-body,
+body.panel-open .main-footer
+{
+  width: calc(100% - 3px);
 }
 
 .main-header {
@@ -245,24 +250,18 @@ body.panel-open .stickyHeader-inner {
   align-items: end;
 }
 
-
-
-.banner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .main-banner {
   width: var(--mainBanner-width);
   height: var(--mainBanner-height);
   overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-banner img {
-  width: 100%;
-  height: 100%;
+  /* width: var(--mainBanner-width);
+  height: var(--mainBanner-height); */
   object-fit: fill;
   display: block;
 }
