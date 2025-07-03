@@ -180,7 +180,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: calc(100% - var(--sidebarButtons-width));
   margin-left: var(--sidebarButtons-width);
   display: flex;
   justify-content: space-between;
@@ -206,9 +206,9 @@ main {
 .stickyHeader-inner h6 { font-style: italic; }
 
 .main-header {
-  width: 100%;
-  /* height: 120px; */
-  padding: 1rem;
+  width: calc(100% - var(--sidebarButtons-width));
+  /* height: 120px;  */
+  padding: .5rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -229,8 +229,8 @@ main {
 }
 
 .main-banner {
-  width: var(--mainBanner-width);
-  height: var(--mainBanner-height);
+  width: calc(100% - var(--sidebarButtons-width));
+  /* height: var(--mainBanner-height); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,8 +246,8 @@ main {
 }
 
 .main-body {
-  width: 100%;
-  margin: 1rem;
+  width: calc(100% - var(--sidebarButtons-width));
+  padding: 1rem;
   min-height: 2000px;
   left: var(--sidebarButtons-width);
   background-color: lightblue;
@@ -255,7 +255,7 @@ main {
 
 /* Footer */
 .main-footer {
-  width: 100%;
+  width: calc(100% - var(--sidebarButtons-width));
   height: var(--footer-height);
   padding: 0px;
   margin: 0px;
