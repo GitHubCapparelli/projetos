@@ -58,10 +58,11 @@ body {
   display: none;
 }
 
-html        { scroll-behavior: smooth; }
-body        { font-family: system-ui, sans-serif; }
-
-a, li a, ul li a { text-decoration: none; }
+html    { scroll-behavior: smooth; }
+body    { font-family: system-ui, sans-serif; }
+a, 
+li a, 
+ul li a { text-decoration: none; }
 /* a:hover  { text-decoration: underline; } */
 
 /* Sidebar */
