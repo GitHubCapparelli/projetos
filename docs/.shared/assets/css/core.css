@@ -197,12 +197,12 @@ a:hover  { text-decoration: underline; }
 .stickyHeader-inner h6 { font-style: italic; }
 
 .main-header {
+  margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
   height: var(--topBars-height);
-  padding: .5rem;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   z-index: 999;
   background-color: var(--verde-claro);
 }
@@ -220,8 +220,8 @@ a:hover  { text-decoration: underline; }
 }
 
 .main-banner {
+  margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
-  /* height: var(--mainBanner-height); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,6 +237,7 @@ a:hover  { text-decoration: underline; }
 }
 
 .main-body {
+  margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
   padding: 1rem;
   min-height: 2000px;
@@ -246,6 +247,7 @@ a:hover  { text-decoration: underline; }
 
 /* Footer */
 .main-footer {
+  margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
   height: var(--footer-height);
   padding: 0px;
