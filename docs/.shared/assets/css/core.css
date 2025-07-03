@@ -206,7 +206,7 @@ main {
 
 .main-header {
   width: calc(100% - var(--sidebarButtons-width));
-  /* height: 120px;  */
+  height: var(--topBars-height);
   padding: .5rem;
   display: flex;
   justify-content: space-between;
@@ -277,7 +277,7 @@ body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - 300px - var(--sidebarButtons-width));
 }
-/* body.panel-open .stickyHeader-inner
+body.panel-open .stickyHeader-inner
 {
-  width: calc(100% - 2px);
-} */
+  width: calc(100% - 300px - var(--sidebarButtons-width));
+}
