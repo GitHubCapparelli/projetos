@@ -230,7 +230,7 @@ a:hover  { text-decoration: underline; }
   background-color: lightyellow;
 }
 
-.main-banner img {
+.main-banner-img {
   width: var(--mainBanner-width);
   height: var(--mainBanner-height);
   object-fit: fill;
