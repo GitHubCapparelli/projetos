@@ -66,14 +66,6 @@ ul li a {
 }
 a:hover  { text-decoration: underline; } 
 
-main {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  margin-left: var(--sidebarButtons-width);
-  transition: margin-left 0.3s ease;
-}
-
 /* Sidebar */
 .sidebarOptions {
   position: fixed;
@@ -265,10 +257,6 @@ main {
 }
 
 /* Adjusts with sidebar and panel */
-body.panel-open main {
-  margin-left: var(--sidebarButtons-width);
-}
-
 body.panel-open .sticky-header,
 body.panel-open .main-header,
 body.panel-open .main-banner,
@@ -277,7 +265,7 @@ body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - 300px - var(--sidebarButtons-width));
 }
-body.panel-open .stickyHeader-inner
+/* body.panel-open .stickyHeader-inner
 {
   width: calc(100% - 300px - var(--sidebarButtons-width));
-}
+} */
