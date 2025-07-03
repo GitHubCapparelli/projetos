@@ -48,8 +48,6 @@ ul li a {
 }
 a:hover  { text-decoration: underline; } 
 
-h1       { color: var(--verde-escuro); }
-
 /* ---------------------------------------------------------------------------------- */
 /* Sidebar */
 .sidebarOptions {
@@ -134,7 +132,7 @@ h1       { color: var(--verde-escuro); }
   flex-grow: 1;
 }
 .nav-item:hover {
-  color: var(--verde-claro);
+  color: var(--verde-escuro);
 }
 .nav-item .label {
   font-size: 0.7rem;
@@ -146,7 +144,7 @@ h1       { color: var(--verde-escuro); }
   cursor: pointer;
 }
 .treeview li span:hover {
-  color: var(--verde-claro);
+  color: var(--verde-escuro);
   border-radius: 4px;
   padding-right: 5px;
 }
@@ -176,7 +174,7 @@ h1       { color: var(--verde-escuro); }
   color: var(--bs-gray-300);
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   background-color: var(--verde-escuro);
 }
 .stickyHeader-inner h6 { font-style: italic; }
@@ -203,7 +201,7 @@ h1       { color: var(--verde-escuro); }
   justify-content: start;
   align-items: end;
 }
-.mainHeader-left h6  { color: var(--bs-gray-500); }
+.mainHeader-left h6  { color: var(--verde-claro); }
 .mainHeader-right h5 { color: var(--verde-escuro); }
 
 .main-banner {
@@ -229,6 +227,8 @@ h1       { color: var(--verde-escuro); }
   min-height: 2000px;
   left: var(--sidebarButtons-width);
 }
+
+.main-body-section h1       { color: var(--verde-escuro); }
 
 /* Footer */
 .main-footer {
