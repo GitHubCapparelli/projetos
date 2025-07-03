@@ -228,8 +228,8 @@ ul li a { text-decoration: none; }
   background-color: #343a40;
   color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   transform: translateY(-100%);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   z-index: 999;
@@ -247,8 +247,9 @@ body.panel-open .sticky-header {
 
 .stickyHeader-inner {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: var(--verde-escuro);
   border-radius: 5px;
 }
