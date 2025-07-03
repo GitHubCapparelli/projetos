@@ -218,7 +218,7 @@ body.panel-open .sticky-header {
   border-radius: 5px;
 }
 
-.main-header .mainHeader-left, .mainHeader-right {
+.main-header {
   width: 100%;
   height: 120px;
   display: flex;
@@ -228,11 +228,17 @@ body.panel-open .sticky-header {
 }
 .mainHeader-left {
   margin: 1rem;
+  display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 .mainHeader-right {
   margin-right: 1rem;
+  display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: end;
 }
 
 
