@@ -4,9 +4,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html, body {
-  background-color: var(--bs-gray-300);  
-}
+html, body { background-color: var(--bs-gray-300); }
 
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
