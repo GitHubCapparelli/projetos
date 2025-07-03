@@ -50,7 +50,7 @@ body {
   --footer-height: 250px;
   --sidebarButtons-width: 40px;
   --mainBanner-width: 600px;
-  --mainBanner-height: 400px;
+  --mainBanner-height: 300px;
 }
 
 ::-webkit-scrollbar {
