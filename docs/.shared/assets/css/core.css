@@ -60,8 +60,11 @@ html    { scroll-behavior: smooth; }
 body    { font-family: system-ui, sans-serif; }
 a,
 li a,
-ul li a { text-decoration: none; }
-/* a:hover  { text-decoration: underline; } */
+ul li a { 
+  color: var(--verde-escuro);
+  text-decoration: none; 
+}
+a:hover  { text-decoration: underline; } 
 
 main {
   width: 100%;
