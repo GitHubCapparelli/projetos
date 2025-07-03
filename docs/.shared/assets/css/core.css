@@ -180,11 +180,12 @@ a:hover  { text-decoration: underline; }
   transform: translateY(-100%);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   z-index: 999;   /* less than sidebar (z-index: 1000) */
+  background-color: red;
 }
 .sticky-header.show { transform: translateY(0); }
 
 .stickyHeader-inner {
-  width: calc(100% - var(--sidebarButtons-width));
+  width: 100% - var(--sidebarButtons-width;
   padding: 5px;
   display: flex;
   color: var(--gray-W5);
@@ -248,7 +249,7 @@ a:hover  { text-decoration: underline; }
 /* Footer */
 .main-footer {
   margin-left: var(--sidebarButtons-width);
-  width: calc(100% - var(--sidebarButtons-width));
+  width: 100%;
   height: var(--footer-height);
   padding: 0px;
   margin: 0px;
