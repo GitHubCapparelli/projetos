@@ -192,7 +192,7 @@ main {
 .sticky-header.show { transform: translateY(0); }
 
 .stickyHeader-inner {
-  width: calc(100% - (var(--sidebarButtons-width) + 2px));
+  width: calc(100% - var(--sidebarButtons-width));
   margin: 1px;
   padding: 3px;
   display: flex;
@@ -278,7 +278,7 @@ body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - 300px);
 }
-body.panel-open .stickyHeader-inner
+/* body.panel-open .stickyHeader-inner
 {
   width: calc(100% - 2px);
-}
+} */
