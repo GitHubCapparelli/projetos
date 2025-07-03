@@ -210,6 +210,9 @@ body.panel-open .sticky-header {
 }
 
 .stickyHeader-inner {
+  width: 100%;
+  margin: 3px;
+  padding: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,6 +220,7 @@ body.panel-open .sticky-header {
   background-color: var(--verde-escuro);
   border-radius: 5px;
 }
+.stickyHeader-inner h6 { font-style: italic; }
 
 .main-header {
   width: 100%;
