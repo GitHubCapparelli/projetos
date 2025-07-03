@@ -193,15 +193,14 @@ main {
 
 .stickyHeader-inner {
   width: calc(100% - var(--sidebarButtons-width));
-  margin: 1px;
-  padding: 3px;
+  padding: 5px;
   display: flex;
   color: var(--gray-W5);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--verde-escuro);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .stickyHeader-inner h6 { font-style: italic; }
 
@@ -276,7 +275,7 @@ body.panel-open .main-banner,
 body.panel-open .main-body,
 body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
-  width: calc(100% - 300px);
+  width: calc(100% - 300px - var(--sidebarButtons-width));
 }
 /* body.panel-open .stickyHeader-inner
 {

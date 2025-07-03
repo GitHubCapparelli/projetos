@@ -28,13 +28,13 @@ function openPanel(el) {
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i> PAIF
+      <i class="fas fa-folder-open me-1"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-3">
       <li><a href="/projetos/SAIF/"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i> Telas
+          <i class="fas fa-folder me-1"></i>Telas
         </span>
         <ul class="nested list-unstyled ps-3 d-none">
           <li><a href="/projetos/SAIF/pages/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
@@ -49,10 +49,10 @@ function openPanel(el) {
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i> Outros
+      <i class="fas fa-folder me-1"></i>Outros
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
-      <li><i class="fas fa-file-image me-1"></i> ...</li>
+      <li><i class="fas fa-file-image me-1"></i>...</li>
     </ul>
   </li>
 </ul>
