@@ -1,11 +1,3 @@
-/*https://scrollmagic.io/examples/basic/class_toggles.html*/
-*, html, body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-html, body { background-color: var(--bs-gray-300); }
-
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
   --verde-claro: #cee5d5;
@@ -36,8 +28,18 @@ html, body { background-color: var(--bs-gray-300); }
   display: none;
 }
 
-html    { scroll-behavior: smooth; }
-body    { font-family: system-ui, sans-serif; }
+/* ---------------------------------------------------------------------------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body  { background-color: var(--bs-gray-300); }
+html        { scroll-behavior: smooth; }
+body        { font-family: system-ui, sans-serif; }
+
 a,
 li a,
 ul li a { 
@@ -46,6 +48,7 @@ ul li a {
 }
 a:hover  { text-decoration: underline; } 
 
+/* ---------------------------------------------------------------------------------- */
 /* Sidebar */
 .sidebarOptions {
   position: fixed;
