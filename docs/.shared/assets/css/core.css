@@ -44,7 +44,7 @@
     --gray-S1: #20B2DA;
     --gray-S2: #4820DA;  */
 
-  --topBars-height: 80px;
+  --topBars-height: 60px;
   --footer-height: 250px;
   --sidebarButtons-width: 40px;
   --mainBanner-width: 600px;
@@ -199,6 +199,7 @@ a:hover  { text-decoration: underline; }
 
 .main-header {
   margin-left: var(--sidebarButtons-width);
+  padding: .5rem;
   width: calc(100% - var(--sidebarButtons-width));
   height: var(--topBars-height);
   display: flex;
@@ -270,5 +271,5 @@ body.panel-open .main-footer {
 }
 body.panel-open .stickyHeader-inner
 {
-  width: calc(100% - 300px - var(--sidebarButtons-width));
+  width: calc(100% - var(--sidebarButtons-width));
 }
