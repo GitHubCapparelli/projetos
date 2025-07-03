@@ -185,7 +185,7 @@ a:hover  { text-decoration: underline; }
 .sticky-header.show { transform: translateY(0); }
 
 .stickyHeader-inner {
-  width: 100% - var(--sidebarButtons-width;
+  width: 100% - var(--sidebarButtons-width);
   padding: 5px;
   display: flex;
   color: var(--gray-W5);
