@@ -221,7 +221,7 @@ a:hover  { text-decoration: underline; }
 .main-body {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
-  padding: 1rem;
+  padding: .5rem;
   min-height: 2000px;
   left: var(--sidebarButtons-width);
 }
