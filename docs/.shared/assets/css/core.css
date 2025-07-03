@@ -16,11 +16,11 @@
   --teal-B4: #002626;
   --teal-B5: #001A1A;
 
-  --topBars-height: 60px;
-  --footer-height: 250px;
-  --sidebarButtons-width: 40px;
-  --mainBanner-width: 600px;
-  --mainBanner-height: 300px;
+  --topBars-height        : 60px;
+  --footer-height         : 250px;
+  --sidebarButtons-width  : 40px;
+  --mainBanner-width      : 800px;
+  --mainBanner-height     : 400px;
 }
 
 ::-webkit-scrollbar {
@@ -132,7 +132,7 @@ a:hover  { text-decoration: underline; }
   flex-grow: 1;
 }
 .nav-item:hover {
-  background-color: var(--bs-gray-700);
+  color: var(--verde-claro);
 }
 .nav-item .label {
   font-size: 0.7rem;
@@ -144,7 +144,7 @@ a:hover  { text-decoration: underline; }
   cursor: pointer;
 }
 .treeview li span:hover {
-  background-color: var(--bs-gray-900);
+  color: var(--verde-claro);
   border-radius: 4px;
   padding-right: 5px;
 }
@@ -174,7 +174,7 @@ a:hover  { text-decoration: underline; }
   color: var(--bs-gray-300);
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   background-color: var(--verde-escuro);
 }
 .stickyHeader-inner h6 { font-style: italic; }
@@ -201,6 +201,8 @@ a:hover  { text-decoration: underline; }
   justify-content: start;
   align-items: end;
 }
+.mainHeader-left h6  { color: var(--bs-gray-500); }
+.mainHeader-right h6 { color: var(--verde-escuro); }
 
 .main-banner {
   margin-left: var(--sidebarButtons-width);
