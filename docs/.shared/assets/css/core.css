@@ -281,11 +281,10 @@ a:hover  { text-decoration: underline; }
     background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
   }
   .section4 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - logo.webp');
+    background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
   }
   .section5 {
     background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1350&q=80');
-    /* background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1350&q=80'); */
   }
 
   /* Content box */
