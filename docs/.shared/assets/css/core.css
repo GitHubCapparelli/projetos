@@ -211,6 +211,7 @@ a:hover  { text-decoration: underline; }
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
 .main-banner-img {
@@ -228,6 +229,7 @@ a:hover  { text-decoration: underline; }
   padding: .5rem;
   min-height: 2000px;
   left: var(--sidebarButtons-width);
+  transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
 .main-body-section h1 { color: var(--verde-escuro); }
@@ -244,6 +246,7 @@ a:hover  { text-decoration: underline; }
   justify-content: center;
   border-top: 1px solid #ccc;
   background-color: var(--verde-escuro);
+  transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
 /* Adjusts with sidebar and panel */
