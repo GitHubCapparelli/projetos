@@ -230,7 +230,7 @@ a:hover  { text-decoration: underline; }
   left: var(--sidebarButtons-width);
 }
 
-.main-body-section h1       { color: var(--verde-escuro); }
+.main-body-section h1 { color: var(--verde-escuro); }
 
 /* Footer */
 .main-footer {
