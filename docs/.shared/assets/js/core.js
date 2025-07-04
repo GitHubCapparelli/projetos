@@ -112,7 +112,7 @@ window.addEventListener('scroll', () => {
   const header = document.getElementById('stickyHeader');
   const bannerHeight = document.querySelector('.main-banner').offsetHeight;
 
-  if (window.scrollY > 100 ) { //bannerHeight) {
+  if (window.scrollY > 60 ) { //bannerHeight) {
     header.classList.add('show');
   } else {
     header.classList.remove('show');
