@@ -264,7 +264,7 @@ body.panel-open .main-footer {
     margin: 0; padding: 0; height: 100%;
     font-family: Arial, sans-serif;
   }
-  
+
  .parallax-section {
     position: relative;
     height: 100vh; /* full viewport height */
@@ -280,7 +280,7 @@ body.panel-open .main-footer {
 
   /* Each section different background */
   .section1 {
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+    background-image: url('/projetos/.shared/assets/img/telas/telaAcompanhamentos.png');
   }
   .section2 {
     background-image: url('https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1350&q=80');
@@ -289,6 +289,9 @@ body.panel-open .main-footer {
     background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1350&q=80');
   }
   .section4 {
+    background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1350&q=80');
+  }
+  .section5 {
     background-image: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1350&q=80');
   }
 
