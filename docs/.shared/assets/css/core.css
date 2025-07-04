@@ -271,7 +271,7 @@ body.panel-open .main-footer {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
