@@ -226,8 +226,8 @@ a:hover  { text-decoration: underline; }
 .main-body {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
-  padding: .5rem;
-  min-height: 2000px;
+  /* padding: .5rem; */
+  /* min-height: 2000px; */
   left: var(--sidebarButtons-width);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
@@ -271,7 +271,7 @@ body.panel-open .main-footer {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fill;
     display: flex;
     align-items: center;
     justify-content: center;
