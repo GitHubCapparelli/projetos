@@ -325,7 +325,7 @@ body.panel-open .main-footer {
   z-index: 0;
 }
 
-.main-body-section {
+.main-body-section, .main-banner {
   position: relative;
   z-index: 1; /* make sure content is above blurred bg */
 }
