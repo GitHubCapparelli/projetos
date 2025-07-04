@@ -120,7 +120,7 @@ a:hover  { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--teal-0);
+  background-color: var(--verde-escuro);
 }
 .sidebarPanel-header h6 {
   margin: 0;
@@ -219,7 +219,7 @@ a:hover  { text-decoration: underline; }
   object-fit: fill;
   display: block;
   border: 2px solid var(--verde-escuro);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .main-body {
@@ -243,7 +243,7 @@ a:hover  { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   border-top: 1px solid #ccc;
-  background-color: var(--teal-0);
+  background-color: var(--verde-escuro);
 }
 
 /* Adjusts with sidebar and panel */
