@@ -120,7 +120,7 @@ a:hover  { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--bs-gray-500);
+  background-color: var(--bs-gray-300);
 }
 .sidebarPanel-header h6 {
   margin: 0;
@@ -241,6 +241,7 @@ a:hover  { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   border-top: 1px solid #ccc;
+  background-color: var(--bs-gray-300);
 }
 
 /* Adjusts with sidebar and panel */
