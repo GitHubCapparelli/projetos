@@ -163,6 +163,7 @@ a:hover  { text-decoration: underline; }
   transform: translateY(-100%);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   z-index: 999;   /* less than sidebar (z-index: 1000) */
+  border-bottom: 2px solid #ccc;
 }
 .sticky-header.show { transform: translateY(0); }
 
@@ -202,7 +203,7 @@ a:hover  { text-decoration: underline; }
   align-items: end;
 }
 .mainHeader-left h6  { color: var(--verde-claro); }
-.mainHeader-right h5 { color: var(--verde-escuro); }
+.mainHeader-left h5, .mainHeader-right h5 { color: var(--verde-escuro); }
 
 .main-banner {
   margin-left: var(--sidebarButtons-width);
@@ -219,7 +220,7 @@ a:hover  { text-decoration: underline; }
   height: var(--mainBanner-height);
   object-fit: fill;
   display: block;
-  border: 2px solid var(--verde-escuro);
+  border: 3px solid black;
   border-radius: 5px;
 }
 
