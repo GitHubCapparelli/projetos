@@ -226,8 +226,6 @@ a:hover  { text-decoration: underline; }
 .main-body {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
-  /* padding: .5rem; */
-  /* min-height: 2000px; */
   left: var(--sidebarButtons-width);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
@@ -296,13 +294,9 @@ a:hover  { text-decoration: underline; }
     padding: .5rem;
   }
 
-
-
 /* Adjusts with sidebar and panel */
-body.panel-open .parallax-section,
 body.panel-open .sticky-header,
 body.panel-open .main-header,
-body.panel-open .main-banner,
 body.panel-open .main-body,
 body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
