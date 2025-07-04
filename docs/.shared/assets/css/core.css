@@ -261,7 +261,8 @@ body.panel-open .main-footer {
 
 /*  */
   body, html {
-    margin: 0; padding: 0; height: 100%;
+    margin: 0; padding: 0; 
+    /* height: 100%; */
     /* font-family: Arial, sans-serif; */
   }
 
@@ -305,27 +306,3 @@ body.panel-open .main-footer {
     width: 100%;
     padding: .5rem;
   }
-
-
-  .parallax-section {
-  position: relative;
-  overflow: hidden; /* make sure the blur doesn't overflow */
-}
-
-.parallax-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: inherit; /* same background as parent */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(6px);
-  transform: scale(1.05); /* scale up slightly to avoid edges showing */
-  z-index: 0;
-}
-
-.main-body-section, .main-banner {
-  position: relative;
-  z-index: 1; /* make sure content is above blurred bg */
-}
