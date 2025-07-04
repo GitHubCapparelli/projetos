@@ -302,4 +302,5 @@ body.panel-open .main-footer {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     /* max-width: 700px; */
     width: 100%;
+    padding: .5rem;
   }
