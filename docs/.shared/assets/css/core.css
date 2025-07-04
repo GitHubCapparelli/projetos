@@ -266,7 +266,6 @@ a:hover  { text-decoration: underline; }
     align-items: center;
     justify-content: center;
     padding: 20px;
-    margin-left: var(--sidebarButtons-width);
   }
 
   /* Each section different background */
