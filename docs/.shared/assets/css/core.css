@@ -11,7 +11,7 @@
   --teal-0: #008080;
   /*Teal*/
   --teal-B1: #006666;
-  --teal-B2: #004D4D3;
+  --teal-B2: #004D4D;
   --teal-B3: #004040;
   --teal-B4: #002626;
   --teal-B5: #001A1A;
@@ -120,7 +120,7 @@ a:hover  { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--bs-gray-300);
+  background-color: var(--teal-0);
 }
 .sidebarPanel-header h6 {
   margin: 0;
@@ -218,6 +218,8 @@ a:hover  { text-decoration: underline; }
   height: var(--mainBanner-height);
   object-fit: fill;
   display: block;
+  border: 2px solid var(--verde-escuro);
+  border-radius: 10px;
 }
 
 .main-body {
@@ -241,7 +243,7 @@ a:hover  { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   border-top: 1px solid #ccc;
-  background-color: var(--bs-gray-300);
+  background-color: var(--teal-0);
 }
 
 /* Adjusts with sidebar and panel */
