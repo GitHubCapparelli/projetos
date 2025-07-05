@@ -230,6 +230,9 @@ a:hover  { text-decoration: underline; }
   width: calc(100% - var(--sidebarButtons-width));
   left: var(--sidebarButtons-width);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .main-body-section h1 { color: var(--verde-escuro); }
