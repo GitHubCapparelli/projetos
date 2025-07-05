@@ -205,7 +205,7 @@ a:hover  { text-decoration: underline; }
   align-items: end;
   background-color: var(--verde-claro);
 }
-.mainHeader-left h6  { color: var(--bs-gray-300); }
+.mainHeader-left h6  { color: var(--bs-gray-700); }
 .mainHeader-left h5, .mainHeader-right h5 { color: var(--verde-escuro); }
 
 .main-banner {
