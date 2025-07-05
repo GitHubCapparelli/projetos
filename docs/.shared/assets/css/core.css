@@ -247,7 +247,7 @@ a:hover  { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid black;
   background-color: var(--verde-escuro);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
