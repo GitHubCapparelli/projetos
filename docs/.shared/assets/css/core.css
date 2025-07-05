@@ -270,13 +270,13 @@ a:hover  { text-decoration: underline; }
 
   /* Each section different background */
   .section1 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
+    background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
   }
   .section2 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
+    background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
   }
   .section3 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
+    background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
   }
   .section4 {
     background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
