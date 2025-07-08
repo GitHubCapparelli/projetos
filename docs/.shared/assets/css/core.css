@@ -116,11 +116,11 @@ a:hover  { text-decoration: underline; }
 .sidebarPanel-header {
   padding: 1rem;
   height: var(--topBars-height);
-  border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--verde-escuro);
+  border-bottom: 2px solid black;
 }
 .sidebarPanel-header h6 {
   margin: 0;
@@ -180,6 +180,7 @@ a:hover  { text-decoration: underline; }
 }
 .stickyHeader-inner h6 { font-style: italic; }
 
+/* ---------------------------------------------------------------------------------- */
 .main-header {
   margin-left: var(--sidebarButtons-width);
   padding: .5rem;
@@ -207,6 +208,7 @@ a:hover  { text-decoration: underline; }
 .mainHeader-left h6  { color: var(--bs-gray-700); }
 .mainHeader-left h5, .mainHeader-right h5 { color: var(--verde-escuro); }
 
+/* ---------------------------------------------------------------------------------- */
 .main-banner {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
@@ -226,14 +228,16 @@ a:hover  { text-decoration: underline; }
   border-radius: 5px;
 }
 
+/* ---------------------------------------------------------------------------------- */
 .main-body {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
   left: var(--sidebarButtons-width);
-  transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2px;
+  background-color: black;
+  transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
 .main-body-section h1 { color: var(--verde-escuro); }
@@ -288,12 +292,13 @@ a:hover  { text-decoration: underline; }
   }
 
   /* Content box */
-  .main-body-section {
+  .section-content {
     background: rgba(255,255,255,0.9);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     width: 100%;
-    padding: .5rem;
+    padding: 1rem .5rem;
+    overflow-y: auto;
   }
 
 /* Adjusts with sidebar and panel */
