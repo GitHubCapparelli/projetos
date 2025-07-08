@@ -302,6 +302,9 @@ a:hover  { text-decoration: underline; }
   width: 10px;
   display: block;
 }
+.section-content h1 {
+  color: var(--verde-escuro);
+}
 
 /* Adjusts with sidebar and panel */
 body.panel-open .sticky-header,
