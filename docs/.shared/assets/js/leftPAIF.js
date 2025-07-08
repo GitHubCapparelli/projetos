@@ -34,9 +34,9 @@ function openPanel(el) {
       <li><a href="/projetos/SAIF/"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Telas
+          <i class="fas fa-folder-open me-1"></i>Telas
         </span>
-        <ul class="nested list-unstyled ps-3 d-none">
+        <ul class="nested list-unstyled ps-3">
           <li><a href="/projetos/SAIF/pages/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
           <li><a href="/projetos/SAIF/pages/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
           <li><a href="/projetos/SAIF/pages/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
