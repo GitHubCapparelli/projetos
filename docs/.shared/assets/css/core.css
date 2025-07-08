@@ -130,6 +130,7 @@ a:hover  { text-decoration: underline; }
   padding: 1rem;
   overflow-y: auto;
   flex-grow: 1;
+  background-color: var(--verde-claro);
 }
 .nav-item:hover {
   color: var(--verde-escuro);
