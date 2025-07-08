@@ -212,7 +212,7 @@ a:hover  { text-decoration: underline; }
 /* ---------------------------------------------------------------------------------- */
 .main-banner {
   /* margin-left: var(--sidebarButtons-width); */
-  width: calc(100% - var(--sidebarButtons-width));
+  width: 100%;
   height: calc(var(--mainBanner-height) + 40px);
   display: flex;
   justify-content: center;
