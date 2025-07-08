@@ -268,7 +268,7 @@ a:hover  { text-decoration: underline; }
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 20px;
   }
 
   /* Each section different background */
@@ -285,11 +285,11 @@ a:hover  { text-decoration: underline; }
     background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
   }
 
-  /* Content box */
+  /* Contents */
   .section-content {
-    background: rgba(255,255,255,0.9);
+    background: rgba(206,229,213,0.9);
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(12,126,44,0.2);
     width: 100%;
     padding: 1rem .5rem;
     overflow-y: auto;
