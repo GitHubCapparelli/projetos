@@ -291,6 +291,7 @@ a:hover  { text-decoration: underline; }
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(12,126,44,0.2);
     width: 100%;
+    height: 20vh;
     padding: 1rem .5rem;
     overflow-y: auto;
   }
