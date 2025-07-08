@@ -310,6 +310,10 @@ a:hover  { text-decoration: underline; }
   padding: 1rem .5rem;
   overflow-y: auto;
 }
+.section-content::-webkit-scrollbar {
+  width: 10px;
+  display: block;
+}
 
 /* Adjusts with sidebar and panel */
 body.panel-open .sticky-header,
