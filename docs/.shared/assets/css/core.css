@@ -213,7 +213,6 @@ a:hover  { text-decoration: underline; }
 .main-banner {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
-  height: calc(var(--mainBanner-height) + 40px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,7 +274,7 @@ a:hover  { text-decoration: underline; }
 
   /* Each section different background */
 .backImage1 {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');  
+  background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
 }
 .backImage2 {
   background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
