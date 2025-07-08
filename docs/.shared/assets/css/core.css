@@ -272,16 +272,16 @@ a:hover  { text-decoration: underline; }
   }
 
   /* Each section different background */
-  .section1 {
+  .backImage1 {
     background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
   }
-  .section2 {
+  .backImage2 {
     background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
   }
-  .section3 {
+  .backImage3 {
     background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
   }
-  .section4 {
+  .backImage4 {
     background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
   }
 
