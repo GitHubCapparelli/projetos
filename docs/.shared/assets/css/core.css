@@ -104,7 +104,7 @@ a:hover  { text-decoration: underline; }
   left: var(--sidebarButtons-width);
   width: 300px;
   height: 100vh;
-  border-right: 1px solid #ccc;
+  border-right: 2px solid black;
   display: none;
   flex-direction: column;
   z-index: 1000;
@@ -258,12 +258,6 @@ a:hover  { text-decoration: underline; }
 }
 
 /*  */
-  body, html {
-    margin: 0; padding: 0; 
-    /* height: 100%; */
-    /* font-family: Arial, sans-serif; */
-  }
-
  .parallax-section {
     position: relative;
     height: 100vh; /* full viewport height */
