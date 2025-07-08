@@ -211,7 +211,7 @@ a:hover  { text-decoration: underline; }
 
 /* ---------------------------------------------------------------------------------- */
 .main-banner {
-  margin-left: var(--sidebarButtons-width);
+  /* margin-left: var(--sidebarButtons-width); */
   width: calc(100% - var(--sidebarButtons-width));
   height: calc(var(--mainBanner-height) + 40px);
   display: flex;
@@ -309,6 +309,7 @@ a:hover  { text-decoration: underline; }
 /* Adjusts with sidebar and panel */
 body.panel-open .sticky-header,
 body.panel-open .main-header,
+/* body.panel-open .main-banner, */
 body.panel-open .main-body,
 body.panel-open .main-footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);

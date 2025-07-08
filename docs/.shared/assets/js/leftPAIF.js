@@ -23,12 +23,11 @@ function openPanel(el) {
   document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
 
   // You can update this dynamically
-  if (titleMap[panelType] === 'Conteúdo') {
-    document.getElementById('panelBody').innerHTML = `
+  document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>PAIF
+      <i class="fas fa-folder-open me-1"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-3">
       <li><a href="/projetos/SAIF/"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
@@ -57,9 +56,6 @@ function openPanel(el) {
   </li>
 </ul>
 `;
-  } else {
-    document.getElementById('panelBody').innerHTML = `<p>Contents for <strong>${titleMap[panelType]}</strong> go here.</p>`;
-  }
 }
 
 function closePanel() {
