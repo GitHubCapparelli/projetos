@@ -49,7 +49,7 @@ function openPanel(el) {
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Outros
+      <i class="fas fa-folder me-1"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
       <li><i class="fas fa-file-image me-1"></i>...</li>
