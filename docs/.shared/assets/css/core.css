@@ -273,29 +273,43 @@ a:hover  { text-decoration: underline; }
   }
 
   /* Each section different background */
-  .backImage1 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
+.backImage1 {
+  position: relative;
+  overflow: hidden;
+}
+.backImage1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1; 
   }
-  .backImage2 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
-  }
-  .backImage3 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
-  }
-  .backImage4 {
-    background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
-  }
+.backImage2 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
+}
+.backImage3 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
+}
+.backImage4 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
+}
 
-  /* Contents */
-  .section-content {
-    background: rgba(206,229,213,0.9);
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(12,126,44,0.2);
-    width: 100%;
-    height: 20vh;
-    padding: 1rem .5rem;
-    overflow-y: auto;
-  }
+/* Contents */
+.section-content {
+  background: rgba(206,229,213,0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(12,126,44,0.2);
+  width: 100%;
+  height: 20vh;
+  padding: 1rem .5rem;
+  overflow-y: auto;
+}
 
 /* Adjusts with sidebar and panel */
 body.panel-open .sticky-header,
