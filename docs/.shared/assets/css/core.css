@@ -282,12 +282,12 @@ a:hover  { text-decoration: underline; }
   background-color: lightcoral;
 }
 .footer-id {
-  padding-right: 0 5px;
+  padding-right: 5px;
   font-size: 10px;
   align-items: center;
 }
 .footer-id p {
-  text-align: center;
+  text-align: end;
 }
 /*  */
  .parallax-section {
