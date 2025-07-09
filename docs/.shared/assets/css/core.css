@@ -271,14 +271,14 @@ a:hover  { text-decoration: underline; }
   align-items: start;
 }
 .footer-top {
-  height: calc(var(--footer-height) - 60px);
+  height: calc(var(--footer-height) - 30px);
   background-color: lightblue;
 }
 .footer-top-section {
   padding: 0 10px;
 }
 .footer-bottom, .footer-id {
-  height: 40px;
+  height: 20px;
   align-items: end;
   background-color: lightcoral;
 }
