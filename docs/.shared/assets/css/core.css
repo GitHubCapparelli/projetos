@@ -212,7 +212,7 @@ a:hover  { text-decoration: underline; }
 }
 .header-titles {
   padding-left: 10px;
-  align-items: center;
+  justify-content: center;
 }
 .header-titles h6  { color: var(--bs-gray-700); }
 .header-titles h5, .mainHeader-right h5 { color: var(--verde-escuro); }
@@ -267,15 +267,14 @@ a:hover  { text-decoration: underline; }
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 .footer-top {
-  height: calc(var(--footer-height) - 20px);
+  height: calc(var(--footer-height) - 60px);
   background-color: lightblue;
 }
 .footer-top-section {
   align-items: start;
 }
 .footer-bottom, .footer-id {
-  height: 20px;
-  align-items: end;
+  height: 40px;
   background-color: lightcoral;
 }
 .footer-id {
