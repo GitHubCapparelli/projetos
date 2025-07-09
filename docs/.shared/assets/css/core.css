@@ -284,7 +284,7 @@ a:hover  { text-decoration: underline; }
 .footer-id {
   padding-right: 5px;
   font-size: 10px;
-  align-items: center;
+  align-items: end;
 }
 .footer-id p {
   text-align: end;
