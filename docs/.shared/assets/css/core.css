@@ -275,13 +275,16 @@ a:hover  { text-decoration: underline; }
   background-color: lightblue;
 }
 .footer-top-section {
-  align-items: start;
+  padding: 0 10px;
 }
 .footer-bottom, .footer-id {
   height: 40px;
+  align-items: end;
   background-color: lightcoral;
 }
 .footer-id {
+  padding: 0 10px;
+  font-size: small;
   align-items: end;
 }
 /*  */
