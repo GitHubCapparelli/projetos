@@ -264,7 +264,7 @@ a:hover  { text-decoration: underline; }
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   background-color: var(--verde-escuro);
 }
-.footer-top, .footer-bottom, .footer-id {
+.footer-top, .footer-bottom {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -276,18 +276,13 @@ a:hover  { text-decoration: underline; }
 .footer-top-section {
   padding: 0 5px;
 }
-.footer-bottom, .footer-id {
+.footer-bottom {
   height: 15px;
-  align-items: end;
   background-color: lightcoral;
 }
 .footer-id {
   padding-right: 5px;
   font-size: 10px;
-  align-items: end;
-}
-.footer-id p {
-  text-align: end;
 }
 /*  */
  .parallax-section {
