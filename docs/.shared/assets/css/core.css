@@ -272,7 +272,6 @@ a:hover  { text-decoration: underline; }
 }
 .footer-top {
   height: calc(var(--footer-height) - 15px);
-  background-color: lightblue;
 }
 .footer-top-section {
   padding: 0 5px;
