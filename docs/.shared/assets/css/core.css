@@ -282,7 +282,7 @@ a:hover  { text-decoration: underline; }
   background-color: lightcoral;
 }
 .footer-id {
-  padding: 0 5px;
+  padding-right: 0 5px;
   font-size: 10px;
   align-items: end;
 }
