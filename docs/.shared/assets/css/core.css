@@ -271,20 +271,20 @@ a:hover  { text-decoration: underline; }
   align-items: start;
 }
 .footer-top {
-  height: calc(var(--footer-height) - 30px);
+  height: calc(var(--footer-height) - 15px);
   background-color: lightblue;
 }
 .footer-top-section {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .footer-bottom, .footer-id {
-  height: 20px;
+  height: 15px;
   align-items: end;
   background-color: lightcoral;
 }
 .footer-id {
-  padding: 0 10px;
-  font-size: small;
+  padding: 0 5px;
+  font-size: smaller;
   align-items: end;
 }
 /*  */
