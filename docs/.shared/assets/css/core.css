@@ -283,8 +283,11 @@ a:hover  { text-decoration: underline; }
 }
 .footer-id {
   padding: 0 5px;
-  font-size: smaller;
+  font-size: 9px;
   align-items: end;
+}
+.footer-id p {
+  text-align: end;
 }
 /*  */
  .parallax-section {
