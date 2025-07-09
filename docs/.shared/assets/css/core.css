@@ -248,7 +248,7 @@ a:hover  { text-decoration: underline; }
 }
 
 /* Footer */
-.footer, .footer-top, .footer-bottom {
+.footer, .footer-top, .footer-bottom, .footer-id {
   width: calc(100% - var(--sidebarButtons-width));
   display: flex;
   justify-content: space-between;
@@ -266,12 +266,17 @@ a:hover  { text-decoration: underline; }
   height: calc(var(--footer-height) - 20px);
   background-color: lightblue;
 }
-.footer-bottom {
+.footer-top-section {
+  align-items: start;
+}
+.footer-bottom, .footer-id {
   height: 20px;
   align-items: end;
   background-color: lightcoral;
 }
-
+.footer-id {
+  align-items: end;
+}
 /*  */
  .parallax-section {
     position: relative;
