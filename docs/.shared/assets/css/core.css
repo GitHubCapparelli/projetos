@@ -253,13 +253,13 @@ a:hover  { text-decoration: underline; }
 
 /* Footer */
 .footer {
+  height: var(--footer-height);
   width: calc(100% - var(--sidebarButtons-width));
+  margin-left: var(--sidebarButtons-width);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-left: var(--sidebarButtons-width);
-  height: var(--footer-height);
   border-top: 2px solid black;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   background-color: var(--verde-escuro);
