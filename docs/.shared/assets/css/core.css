@@ -284,10 +284,10 @@ a:hover  { text-decoration: underline; }
 .footer-id {
   padding-right: 0 5px;
   font-size: 10px;
-  align-items: end;
+  align-items: center;
 }
 .footer-id p {
-  text-align: end;
+  text-align: center;
 }
 /*  */
  .parallax-section {
