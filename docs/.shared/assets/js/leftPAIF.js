@@ -106,9 +106,8 @@ function toggleNode(el) {
 
 window.addEventListener('scroll', () => {
   const header = document.getElementById('stickyHeader');
-  const bannerHeight = document.querySelector('.main-banner').offsetHeight;
 
-  if (window.scrollY > 60 ) { //bannerHeight) {
+  if (window.scrollY > 60 ) { 
     header.classList.add('show');
   } else {
     header.classList.remove('show');

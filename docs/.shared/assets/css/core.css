@@ -210,6 +210,10 @@ a:hover  { text-decoration: underline; }
   width: 50px;
   height: 50px;
 }
+.header-titles {
+  padding-left: 10px;
+  align-items: center;
+}
 .header-titles h6  { color: var(--bs-gray-700); }
 .header-titles h5, .mainHeader-right h5 { color: var(--verde-escuro); }
 
