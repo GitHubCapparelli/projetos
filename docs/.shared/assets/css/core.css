@@ -280,9 +280,17 @@ a:hover  { text-decoration: underline; }
   height: 15px;
   background-color: lightcoral;
 }
-.footer-id {
+.footer-bottom-section {
+  padding-left: 5px;
+  font-size: 10px;
+}
+.footer-bottom-section-right {
   padding-right: 5px;
   font-size: 10px;
+  text-align: right;
+}
+.footer p {
+  margin: 0;
 }
 /*  */
  .parallax-section {
