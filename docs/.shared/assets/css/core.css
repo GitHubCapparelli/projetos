@@ -49,6 +49,27 @@ ul li a {
 a:hover  { text-decoration: underline; } 
 
 /* ---------------------------------------------------------------------------------- */
+.nav-item:hover {
+  color: var(--verde-escuro);
+}
+
+.nav-item .label {
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.treeview li {
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.treeview li span:hover {
+  color: var(--verde-escuro);
+  border-radius: 4px;
+  padding-right: 5px;
+}
+
+/* ---------------------------------------------------------------------------------- */
 /* Sidebar */
 .sidebarOptions {
   position: fixed;
@@ -97,6 +118,7 @@ a:hover  { text-decoration: underline; }
   width: 100%;
   text-align: center;
 }
+
 /* Sidebar Panel */
 .sidebarPanel {
   position: fixed;
@@ -132,23 +154,6 @@ a:hover  { text-decoration: underline; }
   flex-grow: 1;
   background-color: var(--verde-claro);
 }
-.nav-item:hover {
-  color: var(--verde-escuro);
-}
-.nav-item .label {
-  font-size: 0.7rem;
-  margin-top: 0.2rem;
-}
-
-.treeview li {
-  margin-bottom: 0.3rem;
-  cursor: pointer;
-}
-.treeview li span:hover {
-  color: var(--verde-escuro);
-  border-radius: 4px;
-  padding-right: 5px;
-}
 
 /* ---------------------------------------------------------------------------------- */
 /* Sticky Header */
@@ -182,6 +187,7 @@ a:hover  { text-decoration: underline; }
 .stickyTop-titles h6 { font-style: italic; }
 
 /* ---------------------------------------------------------------------------------- */
+/* Main Header */
 .header {
   margin-left: var(--sidebarButtons-width);
   padding: .5rem;
@@ -218,6 +224,7 @@ a:hover  { text-decoration: underline; }
 .header-titles h5, .mainHeader-right h5 { color: var(--verde-escuro); }
 
 /* ---------------------------------------------------------------------------------- */
+/* Top banner */
 .mainBanner {
   /* margin-left: var(--sidebarButtons-width); */
   width: 100%;
@@ -240,6 +247,7 @@ a:hover  { text-decoration: underline; }
 }
 
 /* ---------------------------------------------------------------------------------- */
+/* Contents */
 .pageContent {
   margin-left: var(--sidebarButtons-width);
   width: calc(100% - var(--sidebarButtons-width));
@@ -250,7 +258,52 @@ a:hover  { text-decoration: underline; }
   background-color: black;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
+.sectionContent {
+  background: rgba(206, 229, 213, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(12, 126, 44, 0.2);
+  width: 100%;
+  height: 90vh;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.sectionContent::-webkit-scrollbar {
+  width: 10px;
+  display: block;
+}
+.sectionContent h1 {
+  color: var(--verde-escuro);
+}
 
+/* ---------------------------------------------------------------------------------- */
+/*  */
+ .parallax-section {
+    position: relative;
+    height: 100vh; /* full viewport height */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+.backImage1 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
+}
+.backImage2 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
+}
+.backImage3 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
+}
+.backImage4 {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
+}
+
+/* ---------------------------------------------------------------------------------- */
 /* Footer */
 .footer {
   height: var(--footer-height);
@@ -270,6 +323,9 @@ a:hover  { text-decoration: underline; }
   justify-content: space-between;
   align-items: start;
 }
+.footer p {
+  margin: 0;
+}
 .footer-top {
   height: calc(var(--footer-height) - 15px);
 }
@@ -286,58 +342,11 @@ a:hover  { text-decoration: underline; }
 }
 .footer-bottom-section-right {
   padding-right: 5px;
-  font-size: 10px;
+  font-size: 10pt;
   text-align: right;
 }
-.footer p {
-  margin: 0;
-}
-/*  */
- .parallax-section {
-    position: relative;
-    height: 100vh; /* full viewport height */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
 
-  /* Each section different background */
-.backImage1 {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
-}
-.backImage2 {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
-}
-.backImage3 {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
-}
-.backImage4 {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
-}
-
-/* Contents */
-.sectionContent {
-  background: rgba(206,229,213,0.9);
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(12,126,44,0.2);
-  width: 100%;
-  height: 90vh;
-  padding: 1rem;
-  overflow-y: auto;
-}
-.sectionContent::-webkit-scrollbar {
-  width: 10px;
-  display: block;
-}
-.sectionContent h1 {
-  color: var(--verde-escuro);
-}
-
+/* ---------------------------------------------------------------------------------- */
 /* Adjusts with sidebar and panel */
 body.panel-open .stickHeader,
 body.panel-open .header,
