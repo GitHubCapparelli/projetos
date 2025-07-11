@@ -281,11 +281,11 @@ a:hover  { text-decoration: underline; }
 }
 
 .tag {
-  padding: 5px;
-  margin-right: 5px;
-  font-size: x-small;
-  font-weight: bold;
-  color: var(--bs-light);
+  padding: 3px 8px;
+  margin-right: 8px;
+  font-size: xx-small;
+  /* font-weight: bold; */
+  color: var(--verde-claro);
   background-color: var(--verde-escuro);
 }
 
