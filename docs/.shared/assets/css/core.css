@@ -332,7 +332,7 @@ a:hover {
   font-size: x-small;
   font-weight: bold;
   color: var(--verde-claro);
-  background-color: var(--bs-gray-500);
+  background-color: var(--bs-gray-600);
   cursor: pointer;
 }
 
