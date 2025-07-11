@@ -286,7 +286,7 @@ a:hover  { text-decoration: underline; }
   font-size: x-small;
   font-weight: bold;
   color: var(--verde-claro);
-  background-color: var(--verde-escuro);
+  background-color: var(--bs-gray-700);
   cursor: pointer;
 }
 
