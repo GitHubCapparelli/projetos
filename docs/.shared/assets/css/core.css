@@ -281,10 +281,10 @@ a:hover  { text-decoration: underline; }
 }
 
 .tag {
-  padding: 3px 8px;
-  margin-right: 8px;
-  font-size: xx-small;
-  /* font-weight: bold; */
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: x-small;
+  font-weight: bold;
   color: var(--verde-claro);
   background-color: var(--verde-escuro);
 }
