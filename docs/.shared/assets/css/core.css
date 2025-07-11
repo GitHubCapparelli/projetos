@@ -275,6 +275,16 @@ a:hover  { text-decoration: underline; }
   color: var(--verde-escuro);
 }
 
+.tags {
+  margin: 0;
+}
+.tag {
+  padding: 0 5px;
+  font-size: x-small;
+  /* background-color: var(--verde-escuro); */
+  border: .5px solid var(--verde-escuro);
+}
+
 /* ---------------------------------------------------------------------------------- */
 /*  */
  .parallax-section {
