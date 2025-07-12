@@ -406,6 +406,11 @@ a:hover {
   align-items: start;
 }
 
+.footer-top {
+  padding: 0 10px;
+  height: calc(var(--footer-height) - 15px);
+}
+
 .footer-top-left,
 .footer-top-center,
 .footer-top-right {
@@ -434,9 +439,9 @@ a:hover {
   align-items: end;
 }
 
-.footer-top {
-  padding: 0 10px;
-  height: calc(var(--footer-height) - 15px);
+.mapImage { 
+  width: 100%;
+  height: calc(var(--footer-height) - 70px);
 }
 
 .footer-bottom {
@@ -453,10 +458,6 @@ a:hover {
   padding-right: 5px;
   cursor: pointer;
   text-align: center;
-}
-.mapImage { 
-  width: 100%;
-  height: calc(var(--footer-height) - 70px);
 }
 
 /* ---------------------------------------------------------------------------------- */
