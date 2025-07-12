@@ -299,7 +299,7 @@ a:hover {
   left: var(--sidebarButtons-width);
   display: flex;
   flex-direction: column;
-  gap: .5px;
+  /* gap: .5px; */
   background-color: black;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
@@ -384,7 +384,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid black;
+  /* border-top: 2px solid black; */
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   background-color: var(--verde-escuro);
 }
