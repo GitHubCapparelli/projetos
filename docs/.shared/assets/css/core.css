@@ -184,7 +184,7 @@ a:hover {
 .rightPanel {
   position: fixed;
   top: 0;
-  left: var(--sidebarButtons-width);
+  left: calc(100vw - 300px);
   width: 300px;
   height: 100vh;
   border-left: 1px solid black;

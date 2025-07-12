@@ -96,25 +96,25 @@ window.addEventListener('scroll', () => {
 
 
 //////////////////////////////////////////////////////////////////////
-function openRightPanel(el) {
+function showNote(el) {
   const panel = document.getElementById('rightPanel');
   panel.classList.add('show');
   document.body.classList.add('panel-open');
 
   // Set panel title/content
-  const panelType = el.getAttribute('data-panel');
-  const titleMap = {
-    test: 'rightPanel-title'
+  const noteKey = el.getAttribute('noteKey');
+  const noteTitle = {
+    test: 'Teste'
   };
-  const contentMap = {
+  const noteValue = {
     test: `<h1>Teste</h1>`
   };
 
-  document.getElementById('rightPanel-title').textContent = titleMap[panelType] || 'Titulo...';
-  document.getElementById('rightPanel-body').innerHTML    = contentMap[panelType] || 'body...';
+  document.getElementById('rightPanel-title').textContent = noteTitle[noteKey] || 'Titulo...';
+  document.getElementById('rightPanel-body').innerHTML    = noteValue[noteKey] || 'body...';
 }
 
-function closeRightPanel() {
+function hideNote() {
   document.getElementById('rightPanel').classList.remove('show');
   document.body.classList.remove('panel-open');
 }
