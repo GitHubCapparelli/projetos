@@ -1,3 +1,10 @@
+const noteTitle = {
+  test: 'Teste'
+};
+const noteValue = {
+  test: `<h1>Teste</h1>`
+};
+
 ///////////////////////////////////////////////////////////////////
 
 function openPanel(el) {
@@ -99,22 +106,12 @@ window.addEventListener('scroll', () => {
 function showNote(el) {
   const panel = document.getElementById('rightPanel');
   panel.classList.add('show');
-  document.body.classList.add('panel-open');
 
-  // Set panel title/content
   const noteKey = el.getAttribute('noteKey');
-  const noteTitle = {
-    test: 'Teste'
-  };
-  const noteValue = {
-    test: `<h1>Teste</h1>`
-  };
-
-  document.getElementById('rightPanel-title').textContent = noteTitle[noteKey] || 'Titulo...';
-  document.getElementById('rightPanel-body').innerHTML    = noteValue[noteKey] || 'body...';
+  document.getElementById('rightPanel-title').textContent = noteTitle[noteKey];
+  document.getElementById('rightPanel-body').innerHTML    = noteValue[noteKey];
 }
 
 function hideNote() {
   document.getElementById('rightPanel').classList.remove('show');
-  document.body.classList.remove('panel-open');
 }
