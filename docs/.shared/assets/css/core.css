@@ -167,7 +167,7 @@ a:hover {
 
 .sidebarPanel-header h6 {
   margin: 0;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .sidebarPanel-body {
@@ -395,6 +395,14 @@ a:hover {
 
 .footer a:hover {
   text-decoration: underline;
+}
+.footer h6 {
+  margin: 0px;
+  color: var(--verde-claro);
+  font-style: italic;
+}
+.footer-bottom-right h6 {
+  text-align: center;
 }
 
 .footer-top,
