@@ -400,6 +400,7 @@ a:hover {
 .footer a {
   color: var(--verde-claro);
   text-decoration: none;
+  font-size: small;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -441,10 +442,10 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-/* .footer-top-center img {
-  width: 50%;
-  height: 50%;
-} */
+.footer-top-center img {
+  width: 200px;
+  height: 200px;
+}
 .footer-top-right {
   justify-content: center;
   align-items: center;
