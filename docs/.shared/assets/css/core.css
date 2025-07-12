@@ -427,7 +427,6 @@ a:hover {
 }
 
 .footer-top-left,
-.footer-top-center,
 .footer-top-right {
   width: 33%;
   height: 100%;
@@ -438,25 +437,20 @@ a:hover {
   justify-content: start;
   align-items: start;
 }
-.footer-top-center {
-  justify-content: center;
-  align-items: center;
-}
-.footer-top-center img {
-  width: 200px;
-  height: 200px;
-}
 .footer-top-right {
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: small;
 }
-
 .mapImage { 
   width: 100%;
   height: calc(var(--footer-height) - 70px);
   border-radius: 10px;
+}
+.footer-top-ritht img {
+  width: 200px;
+  height: 200px;
 }
 
 .footer-bottom {
