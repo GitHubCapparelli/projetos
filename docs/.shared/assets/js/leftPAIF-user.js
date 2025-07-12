@@ -26,6 +26,14 @@ function openPanel(el) {
       <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
     </ul>
   </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder-open me-1"></i>Veja também
+    </span>
+    <ul class="nested list-unstyled ps-3">
+      <li><a href="/projetos"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
+    </ul>
+  </li>  
 </ul>
 `;
 }

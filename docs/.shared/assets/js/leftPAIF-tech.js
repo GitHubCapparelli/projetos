@@ -21,6 +21,14 @@ function openPanel(el) {
       <li><a href="#"><i class="fas fa-file-alt me-1"></i>...</li>
     </ul>
   </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder-open me-1"></i>Veja também
+    </span>
+    <ul class="nested list-unstyled ps-3">
+      <li><a href="/projetos"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
+    </ul>
+  </li>
 </ul>
 `;
 }
