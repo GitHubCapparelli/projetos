@@ -11,16 +11,16 @@ function openPanel(el) {
   document.body.classList.add('panel-open');
 
   // Set panel title/content
-  const panelType = el.getAttribute('data-panel');
-  const titleMap = {
-    tree: 'Conteúdo',
-    insert: 'Insert Items',
-    data: 'Data Sources',
-    media: 'Media Library',
-    settings: 'Settings'
-  };
+  // const panelType = el.getAttribute('data-panel');
+  // const titleMap = {
+  //   tree: 'Manual do usuário',
+  //   insert: 'Insert Items',
+  //   data: 'Data Sources',
+  //   media: 'Media Library',
+  //   settings: 'Settings'
+  // };
 
-  document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
+  // document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
 
   // You can update this dynamically
   document.getElementById('panelBody').innerHTML = `
