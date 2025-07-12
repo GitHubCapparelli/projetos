@@ -10,43 +10,19 @@ function openPanel(el) {
   panel.classList.add('show');
   document.body.classList.add('panel-open');
 
-  // Set panel title/content
-  const panelType = el.getAttribute('data-panel');
-  const titleMap = {
-    tree: 'Conteúdo',
-    insert: 'Insert Items',
-    data: 'Data Sources',
-    media: 'Media Library',
-    settings: 'Settings'
-  };
-
-  document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
-
-  // You can update this dynamically
-  if (titleMap[panelType] === 'Conteúdo') {
-    document.getElementById('panelBody').innerHTML = `
+  document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-1"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li><a href="#"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
-      <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Projetos
-        </span>
-        <ul class="nested list-unstyled ps-3 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-1"></i>PAIF</li>
-        </ul>
-      </li>
+      <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Manual técnico</li>
+      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Manual do usuário</a></li>
     </ul>
   </li>
 </ul>
 `;
-  } else {
-    document.getElementById('panelBody').innerHTML = `<p>Contents for <strong>${titleMap[panelType]}</strong> go here.</p>`;
-  }
 }
 
 function closePanel() {
@@ -97,9 +73,8 @@ function toggleNode(el) {
 
 window.addEventListener('scroll', () => {
   const header = document.getElementById('stickyHeader');
-  const bannerHeight = document.querySelector('.main-banner').offsetHeight;
 
-  if (window.scrollY > 60 ) { //bannerHeight) {
+  if (window.scrollY > 60 ) { 
     header.classList.add('show');
   } else {
     header.classList.remove('show');

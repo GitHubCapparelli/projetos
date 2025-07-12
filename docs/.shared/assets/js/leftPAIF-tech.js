@@ -10,52 +10,19 @@ function openPanel(el) {
   panel.classList.add('show');
   document.body.classList.add('panel-open');
 
-  // Set panel title/content
-  const panelType = el.getAttribute('data-panel');
-  const titleMap = {
-    tree: 'PROJETOS',
-    insert: 'Insert Items',
-    data: 'Data Sources',
-    media: 'Media Library',
-    settings: 'Settings'
-  };
-
-  document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
-
-  // You can update this dynamically
-  if (titleMap[panelType] === 'PROJETOS') {
-    document.getElementById('panelBody').innerHTML = `
+  document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
-  <li>
-    <ul class="nested list-unstyled ps-3">
-      <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>PROJETOS
-        </span>
-        <ul class="nested list-unstyled ps-3 d-none">
-          <li><a href="/projetos/SAIF/pages/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
-          <li><a href="/projetos/SAIF/pages/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
-          <li><a href="/projetos/SAIF/pages/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
-          <li><a href="/projetos/SAIF/pages/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
-          <li><a href="/projetos/SAIF/pages/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
-          <li><a href="/projetos/SAIF/pages/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Outros
+      <i class="fas fa-folder-open me-1"></i>Funcionalidades
     </span>
-    <ul class="nested list-unstyled ps-3 d-none">
-      <li><i class="fas fa-file-image me-1"></i>...</li>
+    <ul class="nested list-unstyled ps-3">
+      <li><a href="#"><i class="fas fa-file-alt me-1"></i>...</li>
     </ul>
   </li>
 </ul>
 `;
-  } else {
-    document.getElementById('panelBody').innerHTML = `<p>Contents for <strong>${titleMap[panelType]}</strong> go here.</p>`;
-  }
 }
 
 function closePanel() {
@@ -106,9 +73,8 @@ function toggleNode(el) {
 
 window.addEventListener('scroll', () => {
   const header = document.getElementById('stickyHeader');
-  const bannerHeight = document.querySelector('.main-banner').offsetHeight;
 
-  if (window.scrollY > 60 ) { //bannerHeight) {
+  if (window.scrollY > 60 ) { 
     header.classList.add('show');
   } else {
     header.classList.remove('show');

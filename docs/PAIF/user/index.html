@@ -156,7 +156,184 @@
                 <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
                     <img class="mapImage" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes" title="Sede SEDES (515 Norte)">
                     <h6>Venha nos visitar</h6>
+                </a><!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAIF - Tela Acompanhamentos</title>
+
+    <link href="/projetos/.shared/assets/img/logo/gdf.png" rel="icon" type="image/x-icon">
+
+    <link href="/projetos/.shared/assets/css/core.css" rel="stylesheet">
+    <link href="/projetos/.shared/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/projetos/.shared/assets/css/all.fontAwesome.min.css" rel="stylesheet">
+</head>
+
+<body data-bs-theme="light">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebarOptions">
+            <div class="sidebarOptions-top">
+                <div class="nav-item active" data-panel="tree" onclick="togglePanel(this)" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="sidebarOptions-bottom">
+                <div class="nav-item" data-panel="settings" onclick="toggleDarkMode()" title="Dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+        <div id="sidePanel" class="sidebarPanel">
+            <div class="sidebarPanel-header">
+                <h6 id="panelTitle">Manual do usuário</h6>
+                <button class="btn btn-sm" onclick="closePanel()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="sidebarPanel-body" id="panelBody"></div>
+        </div>
+    </div>
+    <div id="stickyHeader" class="stickyTop">
+        <div class="stickyTop-titles">
+            <h5 class="mb-0">PAIF – Serviço de Proteção e Atendimento Integral à Família</h5>
+            <h6 class="mb-0">-- Tela Acompanhamentos : consulta do dados atualizados de atendimento da unidade assistencial --</h6>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-left">
+            <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
+            <div class="header-titles">
+                <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
+                <h5 class="mb-0">PAIF – Serviço de Proteção e Atendimento Integral à Família</h5>
+            </div>
+        </div>
+        <div class="header-right">
+            <h5 class="mb-0">Apresentação </h5>
+        </div>
+    </div>
+    <div class="pageContent">
+        <div class="mainBanner">
+            <img class="mainBannerImage" src="/projetos/.shared/assets/img/telas/telaAcompanhamentos.png" alt="Banner" />
+        </div>
+        <div class="parallax-section backCrasArte">
+            <div class="sectionContent">
+                <p class="tags"><span class="tag">Público alvo</span><span class="tag">Audiência</span><span class="tag">Atores</span><span class="tag">Perfis</span></p>
+                <h1 class="mb-0 mt-0">A quem interessa ?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+            </div>
+        </div>
+        <div class="parallax-section backCrasBanner">
+            <div class="sectionContent">
+                <p class="tags"><span class="tag">Objetivos</span><span class="tag">Justificativas</span><span class="tag">Atribuições</span></p>
+                <h1 class="mb-0 mt-0">A que se destina ?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+            </div>
+        </div>
+        <div class="parallax-section backCrasLogo">
+            <div class="sectionContent">
+                <p class="tags"><span class="tag">Detalhes</span><span class="tag">Variações</span></p>
+                <h1 class="mb-0 mt-0">Outras informações relevantes...</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+            </div>
+        </div>
+        <div class="parallax-section backCrasArte">
+            <div class="sectionContent">
+                <p class="tags"><span class="tag">Referências cruzadas</span></p>
+                <h1 class="mb-0 mt-0">Veja também:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt tenetur aspernatur, illum ducimus
+                    accusantium provident cumque nostrum recusandae voluptate nesciunt nihil distinctio delectus tempore sapiente a vel!
+                    Necessitatibus, a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit quae alias. Tempora nulla non, omnis
+                    incidunt, eligendi repellat veniam nobis, amet modi excepturi nemo odio iure in. Perspiciatis, in.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum dolorem odio perspiciatis, libero minima
+                    nemo ipsam harum iure impedit numquam corporis corrupti commodi vitae, cupiditate atque ad voluptatem adipisci.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <h6>Links úteis</h6>
+                <ul>
+                    <li><a href="https://sei.df.gov.br/sei/" target="_blank" rel="noopener noreferrer">SEI</a></li>
+                    <li><a href="https://sistemas2.df.gov.br/Prontuario/Home" target="_blank" rel="noopener noreferrer">SIDIS</a></li>
+                    <li><a href="https://sistemas2.df.gov.br/PortalDeServicos/GaleriaSistemas" target="_blank" rel="noopener noreferrer">Portal de sistemas</a></li>
+                </ul>
+                <ul class="mt-3">
+                    <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank" rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
+                </ul>
+            </div>
+            <div class="footer-top-right">
+                <h6>-- Venha nos visitar --</h6>
+                <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
+                    <img class="img-map" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada" title="SEDES (515 Norte)">
+                    Google Maps
                 </a>
+            </div>
+            <div class="footer-top-right">
+                <img class="img-logo" src="/projetos/.shared/assets/img/sedes/sedes-logo-redondo.png" alt="sedes-logo-redondo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
+            <span class="footer-bottom-right">v.1.0</span>
+        </div>
+    </div>
+    <script src="/projetos/.shared/assets/js/core.js"></script>
+    <script src="/projetos/.shared/assets/js/leftPAIF-user.js"></script>
+    <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
             </div>
         </div>
         <div class="footer-bottom">
