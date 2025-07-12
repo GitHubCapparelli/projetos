@@ -180,13 +180,13 @@ a:hover {
 
 /* ---------------------------------------------------------------------------------- */
 
-/* Off Panel */
+/* Right Panel */
 .rightPanel {
   position: fixed;
-  top: 0;
-  left: calc(100vw - 300px);
   width: 300px;
-  height: 100vh;
+  top: var(--topBars-height);
+  left: calc(100vw - 300px);
+  height: calc(100vh - var(--topBars-height));
   border-left: 1px solid black;
   display: none;
   flex-direction: column;
