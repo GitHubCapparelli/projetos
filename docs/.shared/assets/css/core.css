@@ -222,8 +222,9 @@ a:hover {
 
 .note {
   text-decoration: wavy;
-  /* font-family: 'Courier New', Courier, monospace; */
   color: var(--verde-escuro);
+  font-weight: bold;
+  font-style: italic;
   cursor: pointer;
 }
 
