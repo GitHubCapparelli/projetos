@@ -220,6 +220,11 @@ a:hover {
   background-color: var(--verde-claro);
 }
 
+.note {
+  text-decoration: wavy;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 /* ---------------------------------------------------------------------------------- */
 /* Sticky Header */
 .stickyTop {
