@@ -83,7 +83,7 @@ a:hover {
 
 /* ---------------------------------------------------------------------------------- */
 /* Sidebar */
-.sidebarOptions {
+.leftMenu {
   position: fixed;
   top: 0;
   left: 0;
@@ -99,11 +99,11 @@ a:hover {
   transition: width 0.3s;
 }
 
-.sidebarOptions .sidebarOptions-top {
+.leftMenu .leftMenu-top {
   width: 100%;
 }
 
-.sidebarOptions .nav-item {
+.leftMenu .nav-item {
   width: 100%;
   color: var(--bs-light);
   padding: 0.75rem 0.5rem;
@@ -114,11 +114,11 @@ a:hover {
   cursor: pointer;
 }
 
-.sidebarOptions .nav-item.active {
+.leftMenu .nav-item.active {
   background-color: var(--bs-dark);
 }
 
-.sidebarOptions .nav-item.active::before {
+.leftMenu .nav-item.active::before {
   content: '';
   position: absolute;
   left: 0;
@@ -128,18 +128,18 @@ a:hover {
   background-color: var(--verde-escuro);
 }
 
-.sidebarOptions .nav-item i {
+.leftMenu .nav-item i {
   font-size: 1.25rem;
 }
 
-.sidebarOptions-bottom {
+.leftMenu-bottom {
   width: 100%;
   padding-bottom: 20px;
   text-align: center;
 }
 
 /* Sidebar Panel */
-.sidebarPanel {
+.leftPanel {
   position: fixed;
   top: 0;
   left: var(--sidebarButtons-width);
@@ -152,11 +152,11 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
-.sidebarPanel.show {
+.leftPanel.show {
   display: flex;
 }
 
-.sidebarPanel-header {
+.leftPanel-header {
   padding: 1rem;
   height: var(--topBars-height);
   display: flex;
@@ -166,12 +166,12 @@ a:hover {
   background-color: var(--verde-escuro);
 }
 
-.sidebarPanel-header h6 {
+.leftPanel-header h6 {
   margin: 0;
   font-weight: bold;
 }
 
-.sidebarPanel-body {
+.leftPanel-body {
   padding: 1rem;
   overflow-y: auto;
   flex-grow: 1;
