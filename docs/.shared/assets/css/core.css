@@ -401,7 +401,7 @@ a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: pink;
+  border: 1px dashed silver;
 }
 .footer-top-left {
   justify-content: center;
