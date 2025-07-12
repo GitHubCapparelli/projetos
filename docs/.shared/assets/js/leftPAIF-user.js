@@ -10,19 +10,6 @@ function openPanel(el) {
   panel.classList.add('show');
   document.body.classList.add('panel-open');
 
-  // Set panel title/content
-  // const panelType = el.getAttribute('data-panel');
-  // const titleMap = {
-  //   tree: 'Manual do usuário',
-  //   insert: 'Insert Items',
-  //   data: 'Data Sources',
-  //   media: 'Media Library',
-  //   settings: 'Settings'
-  // };
-
-  // document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
-
-  // You can update this dynamically
   document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>

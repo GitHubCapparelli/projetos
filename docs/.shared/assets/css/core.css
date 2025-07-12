@@ -162,8 +162,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--verde-claro);
   background-color: var(--verde-escuro);
-  /* border-bottom: 2px solid black; */
 }
 
 .sidebarPanel-header h6 {
@@ -192,7 +192,6 @@ a:hover {
   transform: translateY(-100%);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   z-index: 999;
-  /* border-bottom: 2px solid black; */
 }
 
 .stickyTop.show {
@@ -227,7 +226,6 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  /* border-bottom: 2px solid black; */
   background-color: var(--verde-claro);
 }
 
@@ -264,7 +262,7 @@ a:hover {
 }
 
 .header-titles h5,
-.mainHeader-right h5 {
+.header-right h5 {
   color: var(--verde-escuro);
 }
 
@@ -299,7 +297,6 @@ a:hover {
   left: var(--sidebarButtons-width);
   display: flex;
   flex-direction: column;
-  /* gap: .5px; */
   background-color: black;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
@@ -384,7 +381,6 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* border-top: 2px solid black; */
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
   background-color: var(--verde-escuro);
 }
