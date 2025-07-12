@@ -426,9 +426,10 @@ a:hover {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
 }
 .footer-bottom-section img { 
+  width: 250px;
   height: calc(var(--footer-height) - 60);
 }
 
