@@ -343,7 +343,6 @@ a:hover {
 .parallax-section {
   position: relative;
   height: 100vh;
-  /* full viewport height */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -406,6 +405,7 @@ a:hover {
 }
 .footer h6 {
   margin: 0px;
+  padding-bottom: 10px;
   color: var(--verde-claro);
   font-style: italic;
 }
@@ -443,12 +443,10 @@ a:hover {
 .footer-top-center {
   justify-content: center;
   align-items: center;
-  position: fixed;
-  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.footer-top-center img {
+  width: 50%;
+  height: 50%;
 }
 .footer-top-right {
   justify-content: center;
