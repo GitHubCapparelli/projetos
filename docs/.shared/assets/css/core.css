@@ -452,6 +452,7 @@ a:hover {
   justify-content: center;
   align-items: end;
   text-align: center;
+  font-size: small;
 }
 
 .mapImage { 
