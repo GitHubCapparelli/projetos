@@ -429,8 +429,8 @@ a:hover {
   background-size: cover;
 }
 .mapImage { 
-  width: 50%;
-  height: calc(var(--footer-height) - 60);
+  width: 250px;
+  height: 250px;
 }
 
 /* ---------------------------------------------------------------------------------- */
