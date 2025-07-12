@@ -36,12 +36,12 @@ function openPanel(el) {
           <i class="fas fa-folder-open me-1"></i>Telas
         </span>
         <ul class="nested list-unstyled ps-3">
-          <li><a href="/projetos/SAIF/pages/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
-          <li><a href="/projetos/SAIF/pages/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
-          <li><a href="/projetos/SAIF/pages/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
-          <li><a href="/projetos/SAIF/pages/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
-          <li><a href="/projetos/SAIF/pages/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
-          <li><a href="/projetos/SAIF/pages/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
+          <li><a href="/projetos/SAIF/pages/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
+          <li><a href="/projetos/SAIF/pages/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
+          <li><a href="/projetos/SAIF/pages/telas/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
+          <li><a href="/projetos/SAIF/pages/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
+          <li><a href="/projetos/SAIF/pages/telas/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
+          <li><a href="/projetos/SAIF/pages/telas/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
         </ul>
       </li>
     </ul>
