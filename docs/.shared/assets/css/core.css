@@ -138,7 +138,7 @@ a:hover {
   text-align: center;
 }
 
-/* Sidebar Panel */
+/* Left Panel */
 .leftPanel {
   position: fixed;
   top: 0;
@@ -172,6 +172,48 @@ a:hover {
 }
 
 .leftPanel-body {
+  padding: 1rem;
+  overflow-y: auto;
+  flex-grow: 1;
+  background-color: var(--verde-claro);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Off Panel */
+.rightPanel {
+  position: fixed;
+  top: 0;
+  left: var(--sidebarButtons-width);
+  width: 300px;
+  height: 100vh;
+  border-left: 1px solid black;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.rightPanel.show {
+  display: flex;
+}
+
+.rightPanel-header {
+  padding: 1rem;
+  height: var(--topBars-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--verde-claro);
+  background-color: var(--verde-escuro);
+}
+
+.rightPanel-header h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.rightPanel-body {
   padding: 1rem;
   overflow-y: auto;
   flex-grow: 1;

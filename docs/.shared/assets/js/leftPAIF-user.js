@@ -94,3 +94,27 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+//////////////////////////////////////////////////////////////////////
+function openRightPanel(el) {
+  const panel = document.getElementById('rightPanel');
+  panel.classList.add('show');
+  document.body.classList.add('panel-open');
+
+  // Set panel title/content
+  const panelType = el.getAttribute('data-panel');
+  const titleMap = {
+    test: 'rightPanel-title'
+  };
+  const contentMap = {
+    test: `<h1>Teste</h1>`
+  };
+
+  document.getElementById('rightPanel-title').textContent = titleMap[panelType] || 'Titulo...';
+  document.getElementById('rightPanel-body').innerHTML    = contentMap[panelType] || 'body...';
+}
+
+function closeRightPanel() {
+  document.getElementById('rightPanel').classList.remove('show');
+  document.body.classList.remove('panel-open');
+}
