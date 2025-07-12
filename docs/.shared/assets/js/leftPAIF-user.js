@@ -1,8 +1,10 @@
 const noteTitle = {
-  test: 'Teste'
+  test: 'Teste',
+  test2: 'Teste 2'
 };
 const noteValue = {
-  test: `<h1>Teste</h1>`
+  test: `<h1>Teste</h1>`,
+  test2: `<h1>Teste 2</h1>`
 };
 
 ///////////////////////////////////////////////////////////////////
