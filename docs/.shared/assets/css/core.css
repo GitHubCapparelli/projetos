@@ -385,8 +385,16 @@ a:hover {
   background-color: var(--verde-escuro);
 }
 
-.footer p {
+.footer p { 
   margin: 0;
+}
+.footer a {
+  color: var(--verde-claro);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer-top,
@@ -408,7 +416,7 @@ a:hover {
   border: 1px dashed silver;
 }
 .footer-top-left {
-  justify-content: center;
+  justify-content: start;
   align-items: start;
 }
 .footer-top-center {
