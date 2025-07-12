@@ -354,20 +354,24 @@ a:hover {
   padding: 20px;
 }
 
-.backImage1 {
+.backCrasArte {
   background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
 }
 
-.backImage2 {
+.backCrasBanner {
   background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
 }
 
-.backImage3 {
+.backCrasLogo {
   background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
 }
 
-.backImage4 {
+.backCrasVarjao {
   background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
+}
+
+.backSedesFachada {
+  background-image: url('/projetos/.shared/assets/img/sedes/sedes-fachada.avif');
 }
 
 /* ---------------------------------------------------------------------------------- */
