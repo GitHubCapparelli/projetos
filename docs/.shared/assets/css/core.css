@@ -183,14 +183,14 @@ a:hover {
 /* Right Panel */
 .rightPanel {
   position: fixed;
-  top: 0;
-  left: calc(100vw - 300px);
   width: 300px;
-  height: 100vh;
+  top: calc(var(--topBars-height) + 10px);
+  height: calc(100vh - var(--topBars-height) - 20px);
+  left: calc(100vw - 300px);
   border-left: 1px solid black;
   display: none;
   flex-direction: column;
-  z-index: 990;
+  z-index: 1000;
   transition: transform 0.3s ease;
 }
 
