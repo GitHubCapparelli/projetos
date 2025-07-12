@@ -14,30 +14,26 @@
 </head>
 
 <body data-bs-theme="light">
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="sidebarOptions">
-            <div class="sidebarOptions-top">
+    <div class="leftBar">
+        <div class="leftMenu">
+            <div class="leftMenu-top">
                 <div class="nav-item active" data-panel="tree" onclick="togglePanel(this)" title="Menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            <div class="sidebarOptions-bottom">
-                <div class="nav-item" data-panel="settings" onclick="toggleDarkMode()" title="Dark mode">
-                    <i class="fa-solid fa-moon"></i>
-                </div>
-            </div>
         </div>
-        <div id="sidePanel" class="sidebarPanel">
-            <div class="sidebarPanel-header">
-                <h6 id="panelTitle">Conteúdo</h6>
+        <div id="leftPanel" class="leftPanel">
+            <div class="leftPanel-header">
+                <h6 id="leftPanel-title">Conteúdo</h6>
                 <button class="btn btn-sm" onclick="closePanel()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="sidebarPanel-body" id="panelBody"></div>
+            <div class="leftPanel-body" id="leftPanel-body"></div>
         </div>
     </div>
+
+
     <div id="stickyHeader" class="stickyTop">
         <div class="stickyTop-titles">
             <h5 class="mb-0">GERVIS – Gerência de Vigilância Socioassistencial</h5>

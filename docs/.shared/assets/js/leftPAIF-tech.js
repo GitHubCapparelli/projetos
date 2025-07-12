@@ -6,11 +6,11 @@ function openPanel(el) {
   el.classList.add('active');
 
   // Show panel
-  const panel = document.getElementById('sidePanel');
+  const panel = document.getElementById('leftPanel');
   panel.classList.add('show');
   document.body.classList.add('panel-open');
 
-  document.getElementById('panelBody').innerHTML = `
+  document.getElementById('leftPanel-body').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
   <li>
@@ -26,7 +26,7 @@ function openPanel(el) {
 }
 
 function closePanel() {
-  document.getElementById('sidePanel').classList.remove('show');
+  document.getElementById('leftPanel').classList.remove('show');
   document.body.classList.remove('panel-open');
 
   // Remove active state
@@ -34,7 +34,7 @@ function closePanel() {
 }
 
 function togglePanel(el) {
-  const panel = document.getElementById('sidePanel');
+  const panel = document.getElementById('leftPanel');
   const isVisible = panel.classList.contains('show');
 
   if (isVisible) {
