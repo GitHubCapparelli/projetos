@@ -385,6 +385,10 @@ a:hover {
   background-color: var(--verde-escuro);
 }
 
+.footer p {
+  margin: 0;
+}
+
 .footer-top,
 .footer-bottom {
   width: 100%;
@@ -411,14 +415,15 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
+  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer-top-right {
   justify-content: center;
   align-items: end;
-}
-
-.footer p {
-  margin: 0;
 }
 
 .footer-top {
@@ -439,14 +444,7 @@ a:hover {
 .footer-bottom-right {
   padding-right: 5px;
   cursor: pointer;
-  text-align: right;
-}
-.footer-top-center {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  text-align: center;
 }
 .mapImage { 
   width: 100%;
