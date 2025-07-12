@@ -187,7 +187,7 @@ a:hover {
   top: calc(var(--topBars-height) + 10px);
   height: calc(100vh - var(--topBars-height) - 20px);
   left: calc(100vw - 300px);
-  border-left: 1px solid black;
+  border: 1px solid black;
   display: none;
   flex-direction: column;
   z-index: 1000;
