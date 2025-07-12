@@ -399,11 +399,8 @@ a:hover {
 }
 
 .footer-top {
+  padding: 0 10px;
   height: calc(var(--footer-height) - 15px);
-}
-
-.footer-top-section {
-  padding: 0 5px;
 }
 
 .footer-bottom {
@@ -411,17 +408,17 @@ a:hover {
   font-size: 10px;
 }
 
-.footer-bottom-section {
+.footer-bottom-left {
   padding-left: 5px;
   cursor: pointer;
 }
 
-.footer-bottom-section-right {
+.footer-bottom-right {
   padding-right: 5px;
   cursor: pointer;
   text-align: right;
 }
-.footer-top-section-backImage {
+.footer-top-center {
   background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
   background-attachment: fixed;
   background-position: center;
@@ -429,8 +426,8 @@ a:hover {
   background-size: cover;
 }
 .mapImage { 
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: calc(var(--footer-height) - 100px);
 }
 
 /* ---------------------------------------------------------------------------------- */
