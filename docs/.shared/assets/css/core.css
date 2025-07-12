@@ -382,7 +382,6 @@ a:hover {
   align-items: center;
   border-top: 2px solid black;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
-  color: var(--verde-claro);
   background-color: var(--verde-escuro);
 }
 
@@ -391,6 +390,7 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  color: var(--verde-claro);
   align-items: start;
 }
 
