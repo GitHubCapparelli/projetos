@@ -25,33 +25,18 @@ function openPanel(el) {
   // You can update this dynamically
   document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
+  <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Manual do usuário
+      <i class="fas fa-folder-open me-1"></i>Telas
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li><a href="/projetos/SAIF/"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
-      <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder-open me-1"></i>Telas
-        </span>
-        <ul class="nested list-unstyled ps-3">
-          <li><a href="/projetos/PAIF/pages/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
-          <li><a href="/projetos/PAIF/pages/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
-          <li><a href="/projetos/PAIF/pages/telas/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
-          <li><a href="/projetos/PAIF/pages/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
-          <li><a href="/projetos/PAIF/pages/telas/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
-          <li><a href="/projetos/PAIF/pages/telas/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Mais...
-    </span>
-    <ul class="nested list-unstyled ps-3 d-none">
-      <li><i class="fas fa-file-image me-1"></i>...</li>
+      <li><a href="/projetos/PAIF/pages/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
+      <li><a href="/projetos/PAIF/pages/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
+      <li><a href="/projetos/PAIF/pages/telas/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
+      <li><a href="/projetos/PAIF/pages/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
+      <li><a href="/projetos/PAIF/pages/telas/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
+      <li><a href="/projetos/PAIF/pages/telas/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
     </ul>
   </li>
 </ul>
