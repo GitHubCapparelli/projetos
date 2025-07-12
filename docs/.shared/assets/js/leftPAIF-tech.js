@@ -13,7 +13,7 @@ function openPanel(el) {
   // Set panel title/content
   const panelType = el.getAttribute('data-panel');
   const titleMap = {
-    tree: 'Conteúdo',
+    tree: 'PROJETOS',
     insert: 'Insert Items',
     data: 'Data Sources',
     media: 'Media Library',
@@ -23,23 +23,32 @@ function openPanel(el) {
   document.getElementById('panelTitle').textContent = titleMap[panelType] || 'Panel';
 
   // You can update this dynamically
-  if (titleMap[panelType] === 'Conteúdo') {
+  if (titleMap[panelType] === 'PROJETOS') {
     document.getElementById('panelBody').innerHTML = `
 <ul class="treeview list-unstyled ps-2">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>PAIF
-    </span>
     <ul class="nested list-unstyled ps-3">
-      <li><a href="#"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Projetos
+          <i class="fas fa-folder me-1"></i>PROJETOS
         </span>
         <ul class="nested list-unstyled ps-3 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-1"></i>PAIF</li>
+          <li><a href="/projetos/SAIF/pages/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
+          <li><a href="/projetos/SAIF/pages/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
+          <li><a href="/projetos/SAIF/pages/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
+          <li><a href="/projetos/SAIF/pages/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
+          <li><a href="/projetos/SAIF/pages/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
+          <li><a href="/projetos/SAIF/pages/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
         </ul>
       </li>
+    </ul>
+  </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder me-1"></i>Outros
+    </span>
+    <ul class="nested list-unstyled ps-3 d-none">
+      <li><i class="fas fa-file-image me-1"></i>...</li>
     </ul>
   </li>
 </ul>

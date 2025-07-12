@@ -336,7 +336,7 @@ a:hover {
   color: var(--verde-claro);
   background-color: var(--bs-gray-600);
   border-radius: 4px;
-  cursor: pointer;
+  cursor: default;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -461,12 +461,12 @@ a:hover {
 
 .footer-bottom-left {
   padding-left: 5px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .footer-bottom-right {
   padding-right: 5px;
-  cursor: pointer;
+  cursor: default;
   text-align: center;
 }
 
