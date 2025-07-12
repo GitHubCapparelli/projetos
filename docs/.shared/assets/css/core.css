@@ -398,11 +398,23 @@ a:hover {
 .footer-top-center,
 .footer-top-right {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: pink;
+}
+.footer-top-left {
+  justify-content: center;
+  align-items: start;
+}
+.footer-top-center {
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  position: fixed;
+}
+.footer-top-right {
+  justify-content: center;
+  align-items: end;
 }
 
 .footer p {
