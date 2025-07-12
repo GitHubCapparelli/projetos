@@ -211,6 +211,7 @@ a:hover {
   background-color: var(--verde-escuro);
 }
 
+.footer-top-section h6,
 .stickyTop-titles h6 {
   font-style: italic;
 }
@@ -394,6 +395,7 @@ a:hover {
 
 .footer p {
   margin: 0;
+  color: var(--verde-claro);
 }
 
 .footer-top {
@@ -418,6 +420,16 @@ a:hover {
   padding-right: 5px;
   cursor: pointer;
   text-align: right;
+}
+.footer-top-section-backImage {
+  background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-bottom-section img { 
+  width: 100%;
 }
 
 /* ---------------------------------------------------------------------------------- */
