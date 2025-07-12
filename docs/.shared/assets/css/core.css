@@ -299,7 +299,7 @@ a:hover {
   left: var(--sidebarButtons-width);
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: .5px;
   background-color: black;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
