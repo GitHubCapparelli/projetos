@@ -402,6 +402,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: pink;
 }
 
 .footer p {
