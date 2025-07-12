@@ -432,15 +432,14 @@ a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .footer-top-left {
   width: 33%;
-  justify-content: start;
   align-items: start;
 }
 .footer-top-right {
   width: 33%;
-  justify-content: center;
   align-items: center;
   text-align: center;
   font-size: small;
@@ -451,8 +450,8 @@ a:hover {
   border-radius: 10px;
 }
 .img-logo {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer-bottom {
