@@ -20,7 +20,7 @@ const menuHTML = {
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-1"></i>Funcionalidades
     </span>
-    <ul class="nested list-unstyled ps-3">
+    <ul class="nested list-unstyled ps-3 d-none">
       <li><a href="#"><i class="fas fa-file-alt me-1"></i>...</li>
     </ul>
   </li>
@@ -28,7 +28,7 @@ const menuHTML = {
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-1"></i>Veja também
     </span>
-    <ul class="nested list-unstyled ps-3">
+    <ul class="nested list-unstyled ps-3 d-none">
       <li><a href="/projetos"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
     </ul>
   </li>
@@ -69,11 +69,27 @@ const menuHTML = {
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder-open me-1"></i>Cad Único - Distribuição Territorial
+    </span>
+    <ul class="nested list-unstyled ps-3 d-none">
+      <li><a href="#"><i class="fas fa-file-alt me-1"></i>Manual técnico</li>
+    </ul>
+  </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-1"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-3">
       <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Manual técnico</li>
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Manual do usuário</a></li>
+    </ul>
+  </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder-open me-1"></i>PAEFI
+    </span>
+    <ul class="nested list-unstyled ps-3 d-none">
+      <li><a href="#"><i class="fas fa-file-alt me-1"></i>Proposta de implementação</li>
     </ul>
   </li>
 </ul>`
