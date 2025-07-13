@@ -105,6 +105,7 @@ window.addEventListener('scroll', () => {
 
 
 //////////////////////////////////////////////////////////////////////
+
 function showNote(el) {
   const panel = document.getElementById('rightPanel');
   panel.classList.add('show');

@@ -186,8 +186,10 @@ a:hover {
   width: 300px;
   top: calc(var(--topBars-height) + 10px);
   height: calc(100vh - var(--topBars-height) - 20px);
-  left: calc(100vw - 300px);
-  border: 1px solid black;
+  left: calc(100vw - 300px - 20);
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(12, 126, 44, 0.2);
   display: none;
   flex-direction: column;
   z-index: 1000;
