@@ -13,11 +13,11 @@
     <link href="/projetos/.shared/assets/css/all.fontAwesome.min.css" rel="stylesheet">
 </head>
 
-<body data-bs-theme="light">
+<body domain="projetos">
     <div class="leftBar">
         <div class="leftMenu">
             <div class="leftMenu-top">
-                <div class="nav-item active" data-panel="tree" onclick="togglePanel(this)" title="Menu">
+                <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -25,7 +25,7 @@
         <div id="leftPanel" class="leftPanel">
             <div class="leftPanel-header">
                 <h6 id="leftPanel-title">Conteúdo</h6>
-                <button class="btn btn-sm" onclick="closePanel()">
+                <button class="btn btn-sm" onclick="closeLeftPanel()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -33,13 +33,6 @@
         </div>
     </div>
 
-
-    <div id="stickyHeader" class="stickyTop">
-        <div class="stickyTop-titles">
-            <h5 class="mb-0">GERVIS – Gerência de Vigilância Socioassistencial</h5>
-            <h6 class="mb-0">-- Soluções --</h6>
-        </div>
-    </div>
     <div class="header">
         <div class="header-left">
             <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
@@ -52,6 +45,7 @@
             <h5 class="mb-0">Soluções</h5>
         </div>
     </div>
+
     <div class="pageContent">
         <div class="parallax-section backSedesFachada">
             <div class="sectionContent">
@@ -134,6 +128,7 @@
             </div>
         </div>
     </div>
+
     <div class="footer">
         <div class="footer-top">
             <div class="footer-top-left">
@@ -163,8 +158,26 @@
             <span class="footer-bottom-right">v.1.0</span>
         </div>
     </div>
-    <script src="/projetos/.shared/assets/js/core.js"></script>
-    <script src="/projetos/.shared/assets/js/leftProjetos.js"></script>
+
+    <div id="stickyTop" class="stickyTop">
+        <div class="stickyTop-titles">
+            <h5 class="mb-0">GERVIS – Gerência de Vigilância Socioassistencial</h5>
+            <h6 class="mb-0">-- Soluções --</h6>
+        </div>
+    </div>
+
+    <div id="rightPanel" class="rightPanel">
+        <div class="rightPanel-header">
+            <h6 id="rightPanel-title"></h6>
+            <button class="btn btn-sm" onclick="hideNote()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="rightPanel-body" id="rightPanel-body"></div>
+    </div>
+
+    <script src="/projetos/.shared/assets/js/pageContext.js"></script>
+    <script src="/projetos/.shared/assets/js/shared.js"></script>
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
