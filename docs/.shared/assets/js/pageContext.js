@@ -69,7 +69,7 @@ const menuHTML = {
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Cad Único - Distribuição Territorial
+      <i class="fas fa-folder-open me-1"></i>Cad Único - Dist. Territorial
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
       <li><a href="#"><i class="fas fa-file-alt me-1"></i>Manual técnico</li>
