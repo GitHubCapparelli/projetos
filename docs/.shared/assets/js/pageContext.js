@@ -29,7 +29,7 @@ const menuHTML = {
       <i class="fas fa-folder-open me-1"></i>Veja também
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
-      <li><a href="/projetos"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
+      <li><a href="/projetos/"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
     </ul>
   </li>
 </ul>`,
@@ -40,7 +40,7 @@ const menuHTML = {
       <i class="fas fa-folder-open me-1"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
+      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
           <i class="fas fa-folder-open me-1"></i>Telas
@@ -61,7 +61,7 @@ const menuHTML = {
       <i class="fas fa-folder me-1"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
-      <li><a href="/projetos"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
+      <li><a href="/projetos/"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
     </ul>
   </li>
 </ul>`,
