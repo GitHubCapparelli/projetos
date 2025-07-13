@@ -1,50 +1,43 @@
-const noteTitle = {
-  test: 'Teste',
-  test2: 'Teste 2'
-};
-const noteValue = {
-  test: `<h1>Teste</h1>`,
-  test2: `<h1>Teste 2</h1>`
-};
+///////////////////////////////////////////////////////////////////
+// Dark mode 
+function setDarkMode(theme) {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme !== theme) {
+    toggleDarkMode());
+  }
+}
+
+function toggleDarkMode() {
+  const currentTheme = document.body.getAttribute('data-bs-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+  document.body.setAttribute('data-bs-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+
+  const themeIcon = document.querySelector('[data-panel="settings"] i');
+  if (themeIcon) {
+    if (newTheme === 'dark') {
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+    } else {
+      themeIcon.classList.remove('fa-sun');
+      themeIcon.classList.add('fa-moon');
+    }
+  }
+}
 
 ///////////////////////////////////////////////////////////////////
+// left (menu) sidebar
 
 function openPanel(el) {
-  // Set active state
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
-  // Show panel
+  document.getElementById('leftPanel-body').innerHTML = menuHTML[menuKey];
+
   const panel = document.getElementById('leftPanel');
   panel.classList.add('show');
   document.body.classList.add('panel-open');
-
-  document.getElementById('leftPanel-body').innerHTML = `
-<ul class="treeview list-unstyled ps-2">
-  <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
-  <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Telas
-    </span>
-    <ul class="nested list-unstyled ps-3">
-      <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
-      <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
-      <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
-      <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
-      <li><a href="/projetos/PAIF/user/telas/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
-      <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
-    </ul>
-  </li>
-  <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Veja também
-    </span>
-    <ul class="nested list-unstyled ps-3">
-      <li><a href="/projetos"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
-    </ul>
-  </li>  
-</ul>
-`;
 }
 
 function closePanel() {
@@ -67,6 +60,7 @@ function togglePanel(el) {
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+// left (sidebar) menu tree-view
 
 function toggleNode(el) {
   const icon = el.querySelector('i');
@@ -90,9 +84,11 @@ function toggleNode(el) {
 }
 
 ///////////////////////////////////////////////////////////////////
-
+// event listeners
+// 
+// stick header on scroll
 window.addEventListener('scroll', () => {
-  const header = document.getElementById('stickyHeader');
+  const header = document.getElementById('stickyTop');
 
   if (window.scrollY > 60 ) { 
     header.classList.add('show');
@@ -101,18 +97,32 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
 //////////////////////////////////////////////////////////////////////
-
+// right (notes) side box
 function showNote(el) {
   const panel = document.getElementById('rightPanel');
   panel.classList.add('show');
 
-  const noteKey = el.getAttribute('noteKey');
-  document.getElementById('rightPanel-title').textContent = noteTitle[noteKey];
-  document.getElementById('rightPanel-body').innerHTML    = noteValue[noteKey];
+  const key = el.getAttribute('noteKey');
+  document.getElementById('rightPanel-title').textContent = noteTitle[key];
+  document.getElementById('rightPanel-body').innerHTML    = noteHTML[key];
 }
 
 function hideNote() {
   document.getElementById('rightPanel').classList.remove('show');
 }
+
+//////////////////////////////////////////////////////////////////////
+// init
+window.addEventListener('DOMContentLoaded', () => {
+  switch (document.body.getAttribute('domain')) {
+    case 'user'       : menuKey = 'userApres';  setDarkMode('light'); break;
+    case 'user.telas' : menuKey = 'userTelas';  setDarkMode('light'); break;
+    case 'tech'       : menuKey = 'techApres';  setDarkMode(localStorage.getItem('theme')); break;
+    case 'projetos'   : menuKey = 'projetos';   setDarkMode('light'); break;
+    default:            menuKey = '';           setDarkMode('light'); break;
+  };
+});
+
+///////////////////////////////////////////////////////////////////
+
