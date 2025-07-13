@@ -324,9 +324,9 @@ a:hover {
 /* ---------------------------------------------------------------------------------- */
 /* Top banner */
 .mainBanner {
-  /* margin-left: var(--sidebarButtons-width); */
   width: 100%;
-  height: calc(var(--mainBanner-height) + 40px);
+  height: calc(100vh - var(--mainBanner-height));
+  /* height: calc(var(--mainBanner-height) + 40px); */
   display: flex;
   justify-content: center;
   align-items: center;
