@@ -53,9 +53,9 @@ function toggleLeftPanel(el) {
   const isVisible = panel.classList.contains('show');
 
   if (isVisible) {
-    closePanel();
+    closeLeftPanel();
   } else {
-    openPanel(el);
+    openLeftPanel(el);
   }
 }
 
