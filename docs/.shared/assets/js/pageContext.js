@@ -12,7 +12,7 @@ const noteHTML = {
 };
 
 const menuHTML = {
-  techApres = ``,
+  techApres = `Not implemented`,
   userApres = `
 <ul class="treeview list-unstyled ps-2">
   <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>

@@ -3,7 +3,7 @@
 function setDarkMode(theme) {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme !== theme) {
-    toggleDarkMode());
+    toggleDarkMode();
   }
 }
 
