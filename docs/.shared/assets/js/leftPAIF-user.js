@@ -60,10 +60,8 @@ function togglePanel(el) {
   const isVisible = panel.classList.contains('show');
 
   if (isVisible) {
-    // Panel open → close it
     closePanel();
   } else {
-    // Panel closed → open with this button
     openPanel(el);
   }
 }
