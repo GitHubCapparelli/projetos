@@ -68,7 +68,7 @@
             </div>
             <div id="box_1" class="box-collapse collapse">
                 <div class="box-body">
-                    This is the first accordion body content...xxx
+                    This is the first accordion body content...
                 </div>
             </div>
 
@@ -184,12 +184,12 @@
         function initBoxAccordions() {
             document.querySelectorAll('.box-header-left').forEach(header => {
                 const targetSelector = header.getAttribute('data-bs-target');
-                const collapseEl     = document.querySelector(targetSelector);
+                const collapseEl = document.querySelector(targetSelector);
 
                 if (!collapseEl) return;
                 const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
 
-                const toggleBtn  = header.querySelector('.toggle-btn');
+                const toggleBtn = header.querySelector('.toggle-btn');
                 collapseEl.addEventListener('show.bs.collapse', () => {
                     toggleBtn.classList.replace('fa-plus', 'fa-minus');
                     header.classList.remove('collapsed');
@@ -207,7 +207,7 @@
                     header.classList.add('collapsed');
                 }
 
-                const body    = collapseEl.querySelector('.box-body');
+                const body = collapseEl.querySelector('.box-body');
                 const copyBtn = header.querySelector('.copy-btn');
                 copyBtn?.addEventListener('click', (e) => {
                     e.preventDefault();
