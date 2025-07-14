@@ -13,6 +13,7 @@
 
 .box-header {
     width: 100%;
+    margin-top: 0.5rem;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -47,4 +48,5 @@
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     background: #fff;
+    margin-bottom: 0.5rem;
 }
