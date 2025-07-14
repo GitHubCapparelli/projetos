@@ -60,7 +60,7 @@
 
 
             <div class="box-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#box_1">
-                <i class="box-btn toggle-box-btn fa-solid fa-plus"></i>
+                <i class="box-btn toggle-btn fa-solid fa-plus"></i>
                 <h6>Title Box 2 | </h6>
                 <i class="copy-btn fa-solid fa-clipboard"></i>
             </div>
@@ -182,32 +182,31 @@
         function initBoxAccordions() {
             document.querySelectorAll('.box-header').forEach(header => {
                 const targetSelector = header.getAttribute('data-bs-target');
-                const collapseEl = document.querySelector(targetSelector);
+                const collapseEl     = document.querySelector(targetSelector);
                 if (!collapseEl) return;
 
-                const toggleIcon = header.querySelector('.toggle-box-btn i');
-                const copyBtn = header.querySelector('.copy-btn');
-                const body = collapseEl.querySelector('.box-body');
-                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
-
+                const toggleBtn = header.querySelector('.toggle-btn');
                 collapseEl.addEventListener('show.bs.collapse', () => {
-                    toggleIcon.classList.replace('fa-plus', 'fa-minus');
+                    toggleBtn.classList.replace('fa-plus', 'fa-minus');
                     box.classList.remove('collapsed');
                 });
-
                 collapseEl.addEventListener('hide.bs.collapse', () => {
-                    toggleIcon.classList.replace('fa-minus', 'fa-plus');
+                    toggleBtn.classList.replace('fa-minus', 'fa-plus');
                     box.classList.add('collapsed');
                 });
 
                 if (collapseEl.classList.contains('show')) {
-                    toggleIcon.classList.replace('fa-plus', 'fa-minus');
+                    toggleBtn.classList.replace('fa-plus', 'fa-minus');
                     box.classList.remove('collapsed');
                 } else {
-                    toggleIcon.classList.replace('fa-minus', 'fa-plus');
+                    toggleBtn.classList.replace('fa-minus', 'fa-plus');
                     box.classList.add('collapsed');
                 }
 
+                const body = collapseEl.querySelector('.box-body');
+                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+                const copyBtn = header.querySelector('.copy-btn');
+                
                 copyBtn?.addEventListener('click', (e) => {
                     e.stopPropagation();
                     if (!body) return;
