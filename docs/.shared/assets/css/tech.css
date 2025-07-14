@@ -2,26 +2,62 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.accordion-header-custom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
+ .custom-accordion .accordion-header-custom {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.75rem 1rem;
+     background-color: #f8f9fa;
+     border: 1px solid #ddd;
+     border-radius: 0.375rem;
+     /* slightly rounded corners */
+     cursor: pointer;
+     user-select: none;
+     transition: background-color 0.3s ease;
+ }
 
-.icon-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    margin-left: 0.5rem;
-    color: #333;
-    font-size: 1rem;
-    cursor: pointer;
-}
+ .custom-accordion .accordion-header-custom:hover {
+     background-color: #e9ecef;
+ }
 
-.icon-btn:hover {
-    color: #007bff;
-}
+ /* Remove border radius for middle items */
+ .custom-accordion .accordion-item:not(:last-child) .accordion-header-custom {
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+     border-bottom: none;
+ }
+
+ .custom-accordion .accordion-body {
+     border: 1px solid #ddd;
+     border-top: none;
+     padding: 1rem;
+     border-radius: 0 0 0.375rem 0.375rem;
+     background-color: #fff;
+     color: #333;
+ }
+
+ .custom-accordion .icon-btn {
+     background: none;
+     border: none;
+     padding: 0;
+     margin-left: 0.5rem;
+     color: #333;
+     font-size: 1.1rem;
+     cursor: pointer;
+     transition: color 0.3s ease;
+     user-select: none;
+ }
+
+ .custom-accordion .icon-btn:focus {
+     outline: none;
+     color: #0056b3;
+ }
+
+ .custom-accordion .icon-btn:hover {
+     color: #0d6efd;
+ }
+
+ /* Prevent the toggle icon button from focusing (so clicks bubble to header) */
+ .custom-accordion .icon-btn.toggle-icon-btn {
+     pointer-events: none;
+ }

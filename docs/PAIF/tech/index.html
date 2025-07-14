@@ -59,24 +59,45 @@
             <h1 class="mb-0 mt-0">Introdução</h1>
 
 
-<div class="accordion" id="customAccordion">
-    <div class="accordion-item border-0">
-        <div class="accordion-header-custom" data-bs-toggle="collapse" data-bs-target="#collapseBody"
-            aria-expanded="false" aria-controls="collapseBody">
-            <span>Exemplo</span>
+<div id="accordionExample" class="accordion custom-accordion">
+    <div class="accordion-item">
+        <div class="accordion-header-custom" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="false" aria-controls="collapseOne" tabindex="0">
+            <span>Topic Title 1</span>
             <div>
-                <button class="icon-btn" id="toggleIconBtn" tabindex="-1" aria-label="Toggle">
-                    <i class="fas fa-chevron-down" id="toggleIcon"></i>
+                <!-- toggle icon is just visual, handled by JS and bootstrap collapse -->
+                <button class="icon-btn toggle-icon-btn" aria-hidden="true" tabindex="-1">
+                    <i class="fas fa-chevron-down"></i>
                 </button>
-                <button class="icon-btn" id="copyBtn" aria-label="Copy">
+                <button class="icon-btn copy-btn" aria-label="Copy content">
                     <i class="fas fa-copy"></i>
                 </button>
             </div>
         </div>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                This is the body content of the first accordion. You can copy this text to clipboard using the copy
+                button.
+            </div>
+        </div>
+    </div>
 
-        <div id="collapseBody" class="accordion-collapse collapse" data-bs-parent="#customAccordion">
-            <div class="accordion-body border border-top-0" id="accordionContent">
-                This is the body content of the accordion. You can copy this text to clipboard using the copy button.
+    <div class="accordion-item mt-3">
+        <div class="accordion-header-custom" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo" tabindex="0">
+            <span>Topic Title 2</span>
+            <div>
+                <button class="icon-btn toggle-icon-btn" aria-hidden="true" tabindex="-1">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <button class="icon-btn copy-btn" aria-label="Copy content">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                This is the body content of the second accordion. It is separate and independently collapsible.
             </div>
         </div>
     </div>
@@ -176,26 +197,81 @@
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    const collapseEl = document.getElementById('collapseBody');
-    const toggleIcon = document.getElementById('toggleIcon');
+    /**
+     * Initialize the accordion controls: toggle icon & copy button
+     * @param {HTMLElement} accordionEl The root accordion container element
+     */
+    function initAccordionControls(accordionEl) {
+        if (!accordionEl) return;
 
-    collapseEl.addEventListener('show.bs.collapse', () => {
-        toggleIcon.classList.remove('fa-chevron-down');
-        toggleIcon.classList.add('fa-chevron-up');
-    });
+        // Find all accordion items inside the container
+        const items = accordionEl.querySelectorAll('.accordion-item');
 
-    collapseEl.addEventListener('hide.bs.collapse', () => {
-        toggleIcon.classList.remove('fa-chevron-up');
-        toggleIcon.classList.add('fa-chevron-down');
-    });
+        items.forEach(item => {
+            const header = item.querySelector('.accordion-header-custom');
+            const collapseEl = item.querySelector('.accordion-collapse');
+            const toggleIcon = header.querySelector('.toggle-icon-btn i');
+            const copyBtn = header.querySelector('.copy-btn');
+            const body = collapseEl.querySelector('.accordion-body');
 
-    document.getElementById('copyBtn').addEventListener('click', () => {
-        const text = document.getElementById('accordionContent').innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            alert('Content copied to clipboard!');
-        }).catch(err => {
-            console.error('Clipboard copy failed:', err);
+            // Bootstrap Collapse instance for this item
+            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+
+            // Toggle icon update based on collapse state
+            collapseEl.addEventListener('show.bs.collapse', () => {
+                toggleIcon.classList.remove('fa-chevron-down');
+                toggleIcon.classList.add('fa-chevron-up');
+                header.setAttribute('aria-expanded', 'true');
+            });
+
+            collapseEl.addEventListener('hide.bs.collapse', () => {
+                toggleIcon.classList.remove('fa-chevron-up');
+                toggleIcon.classList.add('fa-chevron-down');
+                header.setAttribute('aria-expanded', 'false');
+            });
+
+            // Initialize icon state based on initial collapse state
+            if (collapseEl.classList.contains('show')) {
+                toggleIcon.classList.remove('fa-chevron-down');
+                toggleIcon.classList.add('fa-chevron-up');
+                header.setAttribute('aria-expanded', 'true');
+            } else {
+                toggleIcon.classList.remove('fa-chevron-up');
+                toggleIcon.classList.add('fa-chevron-down');
+                header.setAttribute('aria-expanded', 'false');
+            }
+
+            // Copy button click handler
+            copyBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // prevent collapse toggle
+
+                if (!body) return;
+
+                navigator.clipboard.writeText(body.innerText).then(() => {
+                    // Show a temporary tooltip or alert for feedback
+                    copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                    setTimeout(() => {
+                        copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+                    }, 1500);
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                    alert('Failed to copy content');
+                });
+            });
+
+            // Optional: allow keyboard toggle on header
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    bsCollapse.toggle();
+                }
+            });
         });
+    }
+
+    // Init all accordions with class .custom-accordion on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.custom-accordion').forEach(initAccordionControls);
     });
 </script>
 
