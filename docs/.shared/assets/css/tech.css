@@ -23,6 +23,8 @@
 }
 
 .box-header-left {
+    margin: 0;
+    padding: 0;
     justify-content: start;
 }
 
