@@ -366,6 +366,7 @@ a:hover {
   height: calc(100vh - var(--topBars-height));
   padding: 1rem;
   overflow-y: auto;
+  margin: 20px 40px;
 }
 
 /* .paralaxSectionContent::-webkit-scrollbar {
@@ -405,7 +406,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 40px;
+  padding: 20px;
 }
 
 .backCrasArte {
