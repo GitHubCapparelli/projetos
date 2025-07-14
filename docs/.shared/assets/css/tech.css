@@ -3,7 +3,8 @@
 }
 
 
-.box-header, .box-buttons {
+.box-header,
+.box-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
