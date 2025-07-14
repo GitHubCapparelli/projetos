@@ -216,7 +216,6 @@
                     if (!body) return;
 
                     navigator.clipboard.writeText(body.innerText.trim()).then(() => {
-                        const original = copyBtn.innerHTML;
                         copyBtn.classList.replace('fa-clipboard', 'fa-check');
                         setTimeout(() => { copyBtn.classList.replace('fa-check', 'fa-clipboard'); }, 1500);
                     }).catch(() => {
