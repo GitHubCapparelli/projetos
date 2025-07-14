@@ -21,6 +21,7 @@
     transition: background-color 0.3s ease;
 }
 .box-header-left {
+    justify-content: start;
     gap: 1rem;
 }
 .box-header-left h6 {
