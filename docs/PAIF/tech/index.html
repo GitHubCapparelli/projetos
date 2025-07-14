@@ -66,7 +66,7 @@
             </div>
             <div id="box_1" class="box-collapse collapse">
                 <div class="box-body">
-                    This is the first accordion body content.
+                    This is the first accordion body content .....
                 </div>
             </div>
 
@@ -213,10 +213,8 @@
 
                     navigator.clipboard.writeText(body.innerText.trim()).then(() => {
                         const original = copyBtn.innerHTML;
-                        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
-                        setTimeout(() => {
-                            copyBtn.innerHTML = original;
-                        }, 1500);
+                        copyBtn.classList.replace('fa-clipboard', 'fa-check');
+                        setTimeout(() => { copyBtn.classList.replace('fa-check', 'fa-clipboard'); }, 1500);
                     }).catch(() => {
                         alert('Copy failed');
                     });
