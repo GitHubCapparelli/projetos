@@ -169,7 +169,7 @@
 <script>
 function initBoxAccordions() {
     document.querySelectorAll('.box-header').forEach(header => {
-        const button = header.querySelector('.box-button');
+        const button = header.querySelector('.box-buttons');
         const targetSelector = button.getAttribute('data-bs-target');
         const collapseEl = document.querySelector(targetSelector);
         //if (!collapseEl) return;
