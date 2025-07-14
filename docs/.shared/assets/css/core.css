@@ -2,6 +2,7 @@
   /* https://www.colorxs.com/palette/color/royal-blue */
   --verde-claro: #cee5d5;
   --verde-escuro: #0c7e2c;
+  --verde-mais-escuro: #074318;
 
   --teal-W5: #CCE6E6;
   --teal-W4: #B2D9D9;
@@ -508,7 +509,7 @@ a:hover {
 }
 
 .footer-bottom {
-  color: var(--verde-claro);
+  color: var(--verde-mais-escuro);
   font-weight: bold;
   height: 15px;
   font-size: 10px;
