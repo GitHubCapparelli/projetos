@@ -3,19 +3,26 @@
 }
 
 
-.box-header {
+.box-header,
+.box-header-left {
     width: auto;
     padding: .5rem;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
     gap: 0.5rem;
+    cursor: pointer;
+}
+.box-header {
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.box-header-left {
+    justify-content: start;
 }
 
 .box-header h6 {
