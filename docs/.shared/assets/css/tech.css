@@ -3,45 +3,51 @@
 }
 
 
-.custom-accordion .accordion-button {
+.box-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 3rem;
-    /* room for icons */
-    user-select: none;
+    width: 100%;
+    background: #f8f9fa;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    text-align: left;
 }
 
-.custom-accordion .icon-group {
+.box-button.collapsed {
+    background: #e9ecef;
+}
+
+.box-btns {
     position: absolute;
     right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     gap: 0.75rem;
-    align-items: center;
 }
 
-.custom-accordion .icon-btn {
+.box-btn {
     background: none;
     border: none;
     color: #333;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 0;
     margin: 0;
-    transition: color 0.3s ease;
 }
 
-.custom-accordion .icon-btn:hover {
+.box-btn:hover {
     color: #0d6efd;
 }
 
-.custom-accordion .icon-btn:focus {
-    outline: none;
-    color: #0d6efd;
+.box-body {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    background: #fff;
 }
 
-/* Override default accordion icon */
-.custom-accordion .accordion-button::after {
-    display: none;
-}
 
