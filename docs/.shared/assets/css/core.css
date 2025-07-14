@@ -201,7 +201,7 @@ a:hover {
 
 .rightPanel-header {
   padding: 1rem;
-  height: var(--topBars-height);
+  height: calc(var(--topBars-height) / 2);
   display: flex;
   align-items: center;
   justify-content: space-between;

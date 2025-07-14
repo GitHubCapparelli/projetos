@@ -29,7 +29,7 @@ function toggleDarkMode() {
 ///////////////////////////////////////////////////////////////////
 // left (menu) sidebar
 
-function openLeftPanel(el) {
+function showLeftPanel(el) {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
@@ -40,7 +40,7 @@ function openLeftPanel(el) {
   document.body.classList.add('panel-open');
 }
 
-function closeLeftPanel() {
+function hideLeftPanel() {
   document.getElementById('leftPanel').classList.remove('show');
   document.body.classList.remove('panel-open');
 
@@ -53,9 +53,9 @@ function toggleLeftPanel(el) {
   const isVisible = panel.classList.contains('show');
 
   if (isVisible) {
-    closeLeftPanel();
+    hideLeftPanel();
   } else {
-    openLeftPanel(el);
+    showLeftPanel(el);
   }
 }
 
