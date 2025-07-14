@@ -394,8 +394,8 @@ a:hover {
   box-shadow: 0 8px 20px rgba(12, 126, 44, 0.2);
   width: 100%;
   height: calc(100vh - var(--topBars-height) - 30px);
-  /* height: 90%; */
   padding: 1rem;
+  margin: 0px 30px;
   overflow-y: auto;
 }
 
