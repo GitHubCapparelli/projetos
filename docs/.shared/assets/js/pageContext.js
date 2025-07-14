@@ -20,7 +20,7 @@ const menuHTML = {
       <i class="fas fa-folder-open me-1"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
+      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Introdução</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
           <i class="fas fa-folder me-1"></i>Telas
@@ -52,7 +52,7 @@ const menuHTML = {
       <i class="fas fa-folder-open me-1"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-3">
-      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
+      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Introdução</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
           <i class="fas fa-folder-open me-1"></i>Telas
@@ -92,6 +92,7 @@ const menuHTML = {
       <i class="fas fa-folder-open me-1"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-3">
+      <li><a href="/projetos/PAIF"><i class="fas fa-file-alt me-1"></i>Apresentação</li>
       <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Manual técnico</li>
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Manual do usuário</a></li>
     </ul>
