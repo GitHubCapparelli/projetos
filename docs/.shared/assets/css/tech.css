@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem;
 }
 
 .box-header {
@@ -22,9 +22,12 @@
     transition: background-color 0.3s ease;
 }
 
+.box-header h6 {
+    text-align: end;
+}
 .box-buttons {
-    font-size: 1.1rem;
-    gap: 1rem;
+    /* font-size: 1.1rem; */
+    gap: 20px;
 }
 
 .box-buttons.collapsed {
