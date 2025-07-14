@@ -1,3 +1,34 @@
 .sectionContent p {
     font-family: 'Times New Roman', Times, serif;
 }
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.accordion-body {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 1rem;
+    display: none;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 0.5rem;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    color: #007bff;
+}

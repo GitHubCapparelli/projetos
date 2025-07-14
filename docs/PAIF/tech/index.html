@@ -63,6 +63,27 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
                 error repellat totam assumenda excepturi sit.</p>
+            
+            <div id="customAccordion" class="mb-3">
+                <div class="accordion-header" id="accordionTitle">
+                    <span>Topic Title</span>
+                    <div>
+                        <button class="icon-btn" id="toggleBtn" aria-label="Toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <button class="icon-btn" id="copyBtn" aria-label="Copy">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="accordion-body" id="accordionBody">
+                    <p id="accordionContent">
+                        This is the body content of the accordion. You can copy this text to clipboard using the copy button.
+                    </p>
+                </div>
+            </div>
+
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
                 error repellat totam assumenda excepturi sit.</p>
@@ -148,5 +169,27 @@
     <script src="/projetos/.shared/assets/js/pageContext.js"></script>
     <script src="/projetos/.shared/assets/js/shared.js"></script>
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const accordionBody = document.getElementById('accordionBody');
+    const accordionIcon = toggleBtn.querySelector('i');
+
+    toggleBtn.addEventListener('click', () => {
+        const isVisible = accordionBody.style.display === 'block';
+        accordionBody.style.display = isVisible ? 'none' : 'block';
+        accordionIcon.classList.toggle('fa-chevron-down', isVisible);
+        accordionIcon.classList.toggle('fa-chevron-up', !isVisible);
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', () => {
+        const textToCopy = document.getElementById('accordionContent').innerText;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            alert("Content copied to clipboard!");
+        }).catch(err => {
+            console.error("Copy failed", err);
+        });
+    });
+</script>    
 
 </html>
