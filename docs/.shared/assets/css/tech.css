@@ -5,18 +5,19 @@
 
 .box-header {
     width: auto;
-    padding: 0px .5rem;
+    padding: .5rem;
     display: flex;
     justify-content: start;
     align-items: center;
     background-color: #f8f9fa;
-    gap : 0.5rem;
+    gap: 0.5rem;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .box-header h6 {
     margin: 0;
     padding: 0;
