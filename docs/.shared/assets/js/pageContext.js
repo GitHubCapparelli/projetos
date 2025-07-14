@@ -84,7 +84,7 @@ const menuHTML = {
       <i class="fas fa-folder me-1"></i>Dist. Territorial - Cadastro Único
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</li>
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
     </ul>
   </li>
   <li>
@@ -92,9 +92,9 @@ const menuHTML = {
       <i class="fas fa-folder me-1"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
-      <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</li>
-      <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</li>
-      <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</li>
+      <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
+      <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
+      <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
     </ul>
   </li>
   <li>
@@ -102,7 +102,7 @@ const menuHTML = {
       <i class="fas fa-folder me-1"></i>PAEFI
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</li>
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
     </ul>
   </li>
 </ul>`
