@@ -363,7 +363,7 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(12, 126, 44, 0.2);
   width: 100%;
-  height: 90vh;
+  height: calc(100vh - var(--topBars-height));
   padding: 1rem;
   overflow-y: auto;
 }
@@ -397,7 +397,7 @@ a:hover {
 /*  */
 .parallax-section {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -405,7 +405,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .backCrasArte {
@@ -442,23 +442,27 @@ a:hover {
   background-color: var(--verde-escuro);
 }
 
-.footer p { 
+.footer p {
   margin: 0;
 }
+
 .footer ul,
 .footer ul li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .footer a {
   color: var(--verde-claro);
   text-decoration: none;
   font-size: small;
 }
+
 .footer a:hover {
   text-decoration: underline;
 }
+
 .footer h6 {
   margin: 0px;
   padding: 5px 0px;
@@ -488,21 +492,25 @@ a:hover {
   flex-direction: column;
   justify-content: start;
 }
+
 .footer-top-left {
   width: 33%;
   align-items: start;
 }
+
 .footer-top-right {
   width: 33%;
   align-items: center;
   text-align: center;
   font-size: small;
 }
-.img-map { 
+
+.img-map {
   width: 100%;
   height: calc(var(--footer-height) - 70px);
   border-radius: 10px;
 }
+
 .img-logo {
   width: 100px;
   height: 100px;
@@ -539,6 +547,7 @@ body.panel-open .footer {
 .btn-hide {
   color: var(--verde-claro);
 }
+
 .btn-hide:hover {
   color: black;
   border: 1px solid black;
