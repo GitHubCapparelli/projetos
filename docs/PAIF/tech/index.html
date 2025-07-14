@@ -57,12 +57,12 @@
             <span class="tags"><span class="tag">Público alvo</span><span class="tag">Audiência</span><span
                     class="tag">Atores</span><span class="tag">Perfis</span></span>
             <h1 class="mb-0 mt-0">Introdução</h1>
-            
+
             <div class="accordion" id="customAccordion">
                 <div class="accordion-item border-0">
                     <div class="accordion-header-custom" data-bs-toggle="collapse" data-bs-target="#collapseBody"
                         aria-expanded="false" aria-controls="collapseBody">
-                        <span>Topic Title</span>
+                        <span>Exemplo</span>
                         <div>
                             <button class="icon-btn" id="toggleIconBtn" tabindex="-1" aria-label="Toggle">
                                 <i class="fas fa-chevron-down" id="toggleIcon"></i>
@@ -174,27 +174,25 @@
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    const collapseEl = document.getElementById('collapseBody');
-    const toggleIcon = document.getElementById('toggleIcon');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const accordionBody = document.getElementById('accordionBody');
+        const accordionIcon = toggleBtn.querySelector('i');
 
-    collapseEl.addEventListener('show.bs.collapse', () => {
-        toggleIcon.classList.remove('fa-chevron-down');
-        toggleIcon.classList.add('fa-chevron-up');
-    });
-
-    collapseEl.addEventListener('hide.bs.collapse', () => {
-        toggleIcon.classList.remove('fa-chevron-up');
-        toggleIcon.classList.add('fa-chevron-down');
-    });
-
-    document.getElementById('copyBtn').addEventListener('click', () => {
-        const text = document.getElementById('accordionContent').innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            alert('Content copied to clipboard!');
-        }).catch(err => {
-            console.error('Clipboard copy failed:', err);
+        toggleBtn.addEventListener('click', () => {
+            const isVisible = accordionBody.style.display === 'block';
+            accordionBody.style.display = isVisible ? 'none' : 'block';
+            accordionIcon.classList.toggle('fa-chevron-down', isVisible);
+            accordionIcon.classList.toggle('fa-chevron-up', !isVisible);
         });
-    });
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const textToCopy = document.getElementById('accordionContent').innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Content copied to clipboard!");
+            }).catch(err => {
+                console.error("Copy failed", err);
+            });
+        });
 </script>
 
 </html>
