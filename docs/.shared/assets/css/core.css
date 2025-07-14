@@ -385,7 +385,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  margin: 30px;
 }
 
 .paralaxSectionContent {
@@ -393,8 +393,8 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(12, 126, 44, 0.2);
   width: 100%;
-  /* height: calc(100vh - var(--topBars-height) - 30px); */
-  height: 90%;
+  height: calc(100vh - var(--topBars-height) - 30px);
+  /* height: 90%; */
   padding: 1rem;
   overflow-y: auto;
 }
