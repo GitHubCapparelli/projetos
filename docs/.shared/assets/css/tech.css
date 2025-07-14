@@ -10,6 +10,7 @@
     align-items: center;
     background-color: #f8f9fa;
     cursor: pointer;
+    gap: 0.5rem;
 }
 
 .box-header {
@@ -22,6 +23,7 @@
 }
 
 .box-header h6 {
+    width: auto;
     margin: 0;
     padding: 0;
     font-style: italic;
