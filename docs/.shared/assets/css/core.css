@@ -506,6 +506,7 @@ a:hover {
 }
 
 .footer-bottom {
+  color: var(--bs-gray-dark);
   height: 15px;
   font-size: 10px;
 }
