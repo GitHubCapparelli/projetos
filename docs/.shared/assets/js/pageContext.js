@@ -15,18 +15,30 @@ const menuHTML = {
   techApres: `Not implemented`,
   userApres: `
 <ul class="treeview list-unstyled ps-2">
-  <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Funcionalidades
+      <i class="fas fa-folder-open me-1"></i>Manual do usuário
     </span>
-    <ul class="nested list-unstyled ps-3 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-1"></i>...</li>
+    <ul class="nested list-unstyled ps-3">
+      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-1"></i>Apresentação</a></li>
+      <li>
+        <span class="tree-toggle" onclick="toggleNode(this)">
+          <i class="fas fa-folder me-1"></i>Telas
+        </span>
+        <ul class="nested list-unstyled ps-3 d-none">
+          <li><a href="/projetos/PAIF/pages/telaAcompanhamentos.html"><i class="fas fa-file-alt me-1"></i>Acompanhamentos</li>
+          <li><a href="/projetos/PAIF/pages/telaAcompanhamento.html"><i class="fas fa-file-alt me-1"></i>Acompanhamento</a></li>
+          <li><a href="/projetos/PAIF/pages/telaValidacoes.html"><i class="fas fa-file-alt me-1"></i>Validações</a></li>
+          <li><a href="/projetos/PAIF/pages/telaSubstituicoes.html"><i class="fas fa-file-alt me-1"></i>Substituições</a></li>
+          <li><a href="/projetos/PAIF/pages/telaRMA.html"><i class="fas fa-file-alt me-1"></i>RMA</a></li>
+          <li><a href="/projetos/PAIF/pages/telaRMAs.html"><i class="fas fa-file-alt me-1"></i>RMAs</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Veja também
+      <i class="fas fa-folder me-1"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-1"></i>Outras soluções GERVIS</li>
@@ -69,10 +81,10 @@ const menuHTML = {
 <ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Cad Único - Dist. Territorial
+      <i class="fas fa-folder me-1"></i>Dist. Territorial Cad. Único
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-1"></i>Manual técnico</li>
+      <li><a href="#"><i class="fas fa-file-alt me-1"></i>Apresentação</li>
     </ul>
   </li>
   <li>
@@ -86,7 +98,7 @@ const menuHTML = {
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>PAEFI
+      <i class="fas fa-folder me-1"></i>PAEFI
     </span>
     <ul class="nested list-unstyled ps-3 d-none">
       <li><a href="#"><i class="fas fa-file-alt me-1"></i>Proposta de implementação</li>
