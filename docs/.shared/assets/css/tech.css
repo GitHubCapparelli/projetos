@@ -2,44 +2,42 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
- .custom-accordion .accordion-button {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding-right: 3rem;
-     /* room for icons */
-     user-select: none;
- }
-
- .custom-accordion .icon-group {
-     position: absolute;
-     right: 1rem;
-     display: flex;
-     gap: 0.75rem;
-     align-items: center;
- }
-
- .custom-accordion .icon-btn {
-     background: none;
-     border: none;
-     color: #333;
-     font-size: 1.1rem;
-     cursor: pointer;
-     padding: 0;
-     margin: 0;
-     transition: color 0.3s ease;
- }
-
- .custom-accordion .icon-btn:hover {
-     color: #0d6efd;
- }
-
- .custom-accordion .icon-btn:focus {
-     outline: none;
-     color: #0d6efd;
- }
-
- /* Override default accordion icon */
- .custom-accordion .accordion-button::after {
-     display: none;
- }
+        .custom-accordion .accordion-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 3rem;
+            user-select: none;
+        }
+    
+        .custom-accordion .icon-group {
+            position: absolute;
+            right: 1rem;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+    
+        .custom-accordion .icon-btn {
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+    
+        .custom-accordion .icon-btn:hover {
+            color: #0d6efd;
+        }
+    
+        .custom-accordion .icon-btn:focus {
+            outline: none;
+            color: #0d6efd;
+        }
+    
+        .custom-accordion .accordion-button::after {
+            display: none;
+        }

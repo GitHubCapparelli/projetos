@@ -59,30 +59,51 @@
             <h1 class="mb-0 mt-0">Introdução</h1>
 
 
-            <div class="accordion custom-accordion" id="accordionExample">
-                <div class="accordion-item mt-3">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Topic Title 4
-                            <div class="icon-group">
-                                <button class="icon-btn toggle-icon-btn" aria-hidden="true" tabindex="-1">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <button class="icon-btn copy-btn" aria-label="Copy content">
-                                    <i class="fa-solid fa-clipboard"></i>
-                                </button>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            This is the body content of the second accordion. It is separate and independently collapsible.
-                        </div>
-                    </div>
+<div class="accordion custom-accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne">
+                Topic Title 1
+                <div class="icon-group">
+                    <button class="icon-btn toggle-icon-btn" tabindex="-1">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="icon-btn copy-btn">
+                        <i class="fas fa-copy"></i>
+                    </button>
                 </div>
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                This is the first accordion body content.
             </div>
+        </div>
+    </div>
+
+    <div class="accordion-item mt-3">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo">
+                Topic Title 2
+                <div class="icon-group">
+                    <button class="icon-btn toggle-icon-btn" tabindex="-1">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="icon-btn copy-btn">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                This is the second accordion body content.
+            </div>
+        </div>
+    </div>
+</div>
 
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
@@ -178,74 +199,56 @@
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
 <script>
-function initAccordionControls(accordionEl) {
-    if (!accordionEl) return;
+    function initAccordionControls(accordionEl) {
+        if (!accordionEl) return;
 
-    const items = accordionEl.querySelectorAll('.accordion-item');
+        const items = accordionEl.querySelectorAll('.accordion-item');
 
-    items.forEach(item => {
-        const collapseEl = item.querySelector('.accordion-collapse');
-        const toggleIcon = item.querySelector('.toggle-icon-btn i');
-        const copyBtn = item.querySelector('.copy-btn');
-        const body = collapseEl.querySelector('.accordion-body');
-        const button = item.querySelector('.accordion-button');
+        items.forEach(item => {
+            const collapseEl = item.querySelector('.accordion-collapse');
+            const toggleIcon = item.querySelector('.toggle-icon-btn i');
+            const copyBtn = item.querySelector('.copy-btn');
+            const body = collapseEl.querySelector('.accordion-body');
+            const button = item.querySelector('.accordion-button');
 
-        // Bootstrap Collapse instance
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
 
-        // Update icon on show/hide
-        collapseEl.addEventListener('show.bs.collapse', () => {
-            toggleIcon.classList.remove('fa-plus');
-            toggleIcon.classList.add('fa-minus');
-            button.classList.remove('collapsed');
-            button.setAttribute('aria-expanded', 'true');
-        });
+            collapseEl.addEventListener('show.bs.collapse', () => {
+                toggleIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                button.classList.remove('collapsed');
+            });
 
-        collapseEl.addEventListener('hide.bs.collapse', () => {
-            toggleIcon.classList.remove('fa-minus');
-            toggleIcon.classList.add('fa-plus');
-            button.classList.add('collapsed');
-            button.setAttribute('aria-expanded', 'false');
-        });
+            collapseEl.addEventListener('hide.bs.collapse', () => {
+                toggleIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                button.classList.add('collapsed');
+            });
 
-        // Initialize icon based on collapse state
-        if (collapseEl.classList.contains('show')) {
-            toggleIcon.classList.remove('fa-plus');
-            toggleIcon.classList.add('fa-minus');
-            button.classList.remove('collapsed');
-            button.setAttribute('aria-expanded', 'true');
-        } else {
-            toggleIcon.classList.remove('fa-minus');
-            toggleIcon.classList.add('fa-plus');
-            button.classList.add('collapsed');
-            button.setAttribute('aria-expanded', 'false');
-        }
+            // Initialize icon state
+            if (collapseEl.classList.contains('show')) {
+                toggleIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                button.classList.remove('collapsed');
+            } else {
+                toggleIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                button.classList.add('collapsed');
+            }
 
-        // Copy button click
-        copyBtn.addEventListener('click', e => {
-            e.stopPropagation(); // prevent accordion toggle
-
-            if (!body) return;
-
-            navigator.clipboard.writeText(body.innerText).then(() => {
-                // Feedback: swap icon temporarily
-                const original = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fas fa-check"></i>';
-                setTimeout(() => {
-                    copyBtn.innerHTML = original;
-                }, 1500);
-            }).catch(err => {
-                console.error('Copy failed:', err);
-                alert('Failed to copy content.');
+            // Copy button
+            copyBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                navigator.clipboard.writeText(body.innerText).then(() => {
+                    const original = copyBtn.innerHTML;
+                    copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                    setTimeout(() => {
+                        copyBtn.innerHTML = original;
+                    }, 1500);
+                }).catch(() => alert('Copy failed'));
             });
         });
-    });
-}
+    }
 
-// Initialize on DOM load
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.custom-accordion').forEach(initAccordionControls);
-});
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.custom-accordion').forEach(initAccordionControls);
+    });
 </script>
 
 </html>
