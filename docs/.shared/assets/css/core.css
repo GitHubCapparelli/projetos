@@ -23,10 +23,10 @@
   --mainBanner-height: 400px;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
   display: none;
-}
+} */
 
 /* ---------------------------------------------------------------------------------- */
 
