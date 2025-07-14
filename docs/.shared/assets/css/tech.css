@@ -4,6 +4,7 @@
 
 
 .box-header {
+    width: auto;
     padding: 0px .5rem;
     display: flex;
     justify-content: start;
