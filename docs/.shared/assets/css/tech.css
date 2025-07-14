@@ -41,6 +41,17 @@
     color: var(--verde-escuro);
 }
 
+.copy-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.box-header:not(.collapsed) .copy-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .box-body {
     padding: 0.5rem;
     border: 1px solid #dee2e6;
