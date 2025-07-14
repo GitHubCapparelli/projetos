@@ -3,17 +3,13 @@
 }
 
 
-.box-header,
-.box-buttons {
+.box-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     background-color: #f8f9fa;
-}
-
-.box-header {
-    width: 100%;
-    margin: 0.5rem 0px;
+    gap : 20px;
+    /* margin: 0.5rem 0px; */
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -21,23 +17,9 @@
     transition: background-color 0.3s ease;
 }
 
-.box-header h6 {
-    text-align: end;
-}
-.box-buttons {
-    /* font-size: 1.1rem; */
-    gap: 20px;
-}
-
-.box-buttons.collapsed {
-    background: #e9ecef;
-}
-
 .box-btn {
-    background: none;
-    border: none;
     color: #333;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     cursor: pointer;
 }
 
