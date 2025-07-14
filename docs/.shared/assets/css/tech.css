@@ -10,7 +10,7 @@
     justify-content: start;
     align-items: center;
     background-color: #f8f9fa;
-    gap : 20px;
+    gap : 0.5rem;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
