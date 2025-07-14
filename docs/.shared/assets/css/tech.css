@@ -5,27 +5,20 @@
 
 .box-header,
 .box-header-left {
-    width: auto;
-    padding: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
-    gap: 0.5rem;
     cursor: pointer;
 }
+
 .box-header {
     width: 100%;
+    padding: .5rem;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     transition: background-color 0.3s ease;
-}
-
-.box-header-left {
-    margin: 0;
-    padding: 0;
-    justify-content: start;
 }
 
 .box-header h6 {
