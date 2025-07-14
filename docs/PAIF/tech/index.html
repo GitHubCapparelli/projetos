@@ -167,8 +167,8 @@
 <script>
 function initBoxAccordions() {
     document.querySelectorAll('.box-header').forEach(header => {
-        const button = header.querySelector('.box-buttons');
-        const targetSelector = button.getAttribute('data-bs-target');
+        const box = header.querySelector('.box-header');
+        const targetSelector = box.getAttribute('data-bs-target');
         const collapseEl = document.querySelector(targetSelector);
         //if (!collapseEl) return;
 
@@ -177,30 +177,28 @@ function initBoxAccordions() {
         const body = collapseEl.querySelector('.box-body');
         const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
 
-        // Update icon on show/hide
         collapseEl.addEventListener('show.bs.collapse', () => {
             toggleIcon.classList.replace('fa-plus', 'fa-minus');
-            button.classList.remove('collapsed');
+            box.classList.remove('collapsed');
         });
 
         collapseEl.addEventListener('hide.bs.collapse', () => {
             toggleIcon.classList.replace('fa-minus', 'fa-plus');
-            button.classList.add('collapsed');
+            box.classList.add('collapsed');
         });
 
-        // Set icon on page load
         if (collapseEl.classList.contains('show')) {
             toggleIcon.classList.replace('fa-plus', 'fa-minus');
-            button.classList.remove('collapsed');
+            box.classList.remove('collapsed');
         } else {
             toggleIcon.classList.replace('fa-minus', 'fa-plus');
-            button.classList.add('collapsed');
+            box.classList.add('collapsed');
         }
 
-        // Handle copy button
         copyBtn?.addEventListener('click', (e) => {
             e.stopPropagation();
             if (!body) return;
+
             navigator.clipboard.writeText(body.innerText.trim()).then(() => {
                 const original = copyBtn.innerHTML;
                 copyBtn.innerHTML = '<i class="fas fa-check"></i>';
