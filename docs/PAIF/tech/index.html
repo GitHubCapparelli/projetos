@@ -61,7 +61,7 @@
 
             <div class="box-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#box_1">
                 <i class="box-btn toggle-box-btn fa-solid fa-plus"></i>
-                <h6>Title Box 2 | </h6> 
+                <h6>Title Box 2 | </h6>
                 <i class="copy-btn fa-solid fa-clipboard"></i>
             </div>
             <div id="box_1" class="box-collapse collapse">
@@ -70,41 +70,55 @@
                 </div>
             </div>
 
-            
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium dolores
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae itaque. Amet magni a laudantium
+                dolores
                 similique, totam iste nobis ipsa repellat omnis optio nam rem eum? Quibusdam, vitae possimus?</p>
             <p style="height: 1000px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
                 error repellat totam assumenda excepturi sit.</p>
         </div>
     </div>
@@ -164,56 +178,55 @@
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
 
-<script>
-function initBoxAccordions() {
-    document.querySelectorAll('.box-header').forEach(header => {
-        const box = header.querySelector('.box-header');
-        const targetSelector = box.getAttribute('data-bs-target');
-        const collapseEl = document.querySelector(targetSelector);
-        //if (!collapseEl) return;
+    <script>
+        function initBoxAccordions() {
+            document.querySelectorAll('.box-header').forEach(header => {
+                const targetSelector = header.getAttribute('data-bs-target');
+                const collapseEl = document.querySelector(targetSelector);
+                if (!collapseEl) return;
 
-        const toggleIcon = header.querySelector('.toggle-box-btn i');
-        const copyBtn = header.querySelector('.copy-btn');
-        const body = collapseEl.querySelector('.box-body');
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+                const toggleIcon = header.querySelector('.toggle-box-btn i');
+                const copyBtn = header.querySelector('.copy-btn');
+                const body = collapseEl.querySelector('.box-body');
+                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
 
-        collapseEl.addEventListener('show.bs.collapse', () => {
-            toggleIcon.classList.replace('fa-plus', 'fa-minus');
-            box.classList.remove('collapsed');
-        });
+                collapseEl.addEventListener('show.bs.collapse', () => {
+                    toggleIcon.classList.replace('fa-plus', 'fa-minus');
+                    box.classList.remove('collapsed');
+                });
 
-        collapseEl.addEventListener('hide.bs.collapse', () => {
-            toggleIcon.classList.replace('fa-minus', 'fa-plus');
-            box.classList.add('collapsed');
-        });
+                collapseEl.addEventListener('hide.bs.collapse', () => {
+                    toggleIcon.classList.replace('fa-minus', 'fa-plus');
+                    box.classList.add('collapsed');
+                });
 
-        if (collapseEl.classList.contains('show')) {
-            toggleIcon.classList.replace('fa-plus', 'fa-minus');
-            box.classList.remove('collapsed');
-        } else {
-            toggleIcon.classList.replace('fa-minus', 'fa-plus');
-            box.classList.add('collapsed');
+                if (collapseEl.classList.contains('show')) {
+                    toggleIcon.classList.replace('fa-plus', 'fa-minus');
+                    box.classList.remove('collapsed');
+                } else {
+                    toggleIcon.classList.replace('fa-minus', 'fa-plus');
+                    box.classList.add('collapsed');
+                }
+
+                copyBtn?.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (!body) return;
+
+                    navigator.clipboard.writeText(body.innerText.trim()).then(() => {
+                        const original = copyBtn.innerHTML;
+                        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                        setTimeout(() => {
+                            copyBtn.innerHTML = original;
+                        }, 1500);
+                    }).catch(() => {
+                        alert('Copy failed');
+                    });
+                });
+            });
         }
 
-        copyBtn?.addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (!body) return;
-
-            navigator.clipboard.writeText(body.innerText.trim()).then(() => {
-                const original = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fas fa-check"></i>';
-                setTimeout(() => {
-                    copyBtn.innerHTML = original;
-                }, 1500);
-            }).catch(() => {
-                alert('Copy failed');
-            });
-        });
-    });
-}
-
-document.addEventListener('DOMContentLoaded', initBoxAccordions);
-</script>
+        document.addEventListener('DOMContentLoaded', initBoxAccordions);
+    </script>
 
 
 </html>
