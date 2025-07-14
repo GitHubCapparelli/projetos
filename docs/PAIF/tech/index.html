@@ -178,14 +178,14 @@
 
         items.forEach(item => {
             const collapseEl = item.querySelector('.accordion-collapse');
-            if (!collapseEl) return; // ✅ safely skip if not found
+            //if (!collapseEl) return; // ✅ safely skip if not found
 
             const toggleIcon = item.querySelector('.toggle-icon-btn i');
             const copyBtn = item.querySelector('.copy-btn');
             const body = collapseEl.querySelector('.accordion-body');
             const button = item.querySelector('.accordion-button');
 
-            if (!body || !copyBtn || !toggleIcon || !button) return; // ✅ also safe check
+            //if (!body || !copyBtn || !toggleIcon || !button) return; // ✅ also safe check
 
             const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
 
