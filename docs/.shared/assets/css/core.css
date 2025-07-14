@@ -340,7 +340,6 @@ a:hover {
   height: var(--mainBanner-height);
   object-fit: fill;
   display: block;
-  /* border: 3px solid black; */
   border-radius: 5px;
 }
 
@@ -352,7 +351,7 @@ a:hover {
   left: var(--sidebarButtons-width);
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
@@ -506,7 +505,7 @@ a:hover {
 }
 
 .footer-bottom {
-  color: var(--bs-gray-dark);
+  color: black;
   height: 15px;
   font-size: 10px;
 }
