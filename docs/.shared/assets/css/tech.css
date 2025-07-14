@@ -15,6 +15,7 @@
     cursor: pointer;
 }
 .box-header {
+    width: 100%;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
