@@ -64,24 +64,28 @@
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum dolor
                 error repellat totam assumenda excepturi sit.</p>
             
-            <div id="customAccordion" class="mb-3">
-                <div class="accordion-header" id="accordionTitle">
-                    <span>Topic Title</span>
-                    <div>
-                        <button class="icon-btn" id="toggleBtn" aria-label="Toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <button class="icon-btn" id="copyBtn" aria-label="Copy">
-                            <i class="fas fa-copy"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="accordion-body" id="accordionBody">
-                    <p id="accordionContent">
-                        This is the body content of the accordion. You can copy this text to clipboard using the copy button.
-                    </p>
-                </div>
+<div class="accordion" id="customAccordion">
+    <div class="accordion-item border-0">
+        <div class="accordion-header-custom" data-bs-toggle="collapse" data-bs-target="#collapseBody"
+            aria-expanded="false" aria-controls="collapseBody">
+            <span>Topic Title</span>
+            <div>
+                <button class="icon-btn" id="toggleIconBtn" tabindex="-1" aria-label="Toggle">
+                    <i class="fas fa-chevron-down" id="toggleIcon"></i>
+                </button>
+                <button class="icon-btn" id="copyBtn" aria-label="Copy">
+                    <i class="fas fa-copy"></i>
+                </button>
             </div>
+        </div>
+
+        <div id="collapseBody" class="accordion-collapse collapse" data-bs-parent="#customAccordion">
+            <div class="accordion-body border border-top-0" id="accordionContent">
+                This is the body content of the accordion. You can copy this text to clipboard using the copy button.
+            </div>
+        </div>
+    </div>
+</div>
 
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
@@ -171,25 +175,27 @@
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    const toggleBtn = document.getElementById('toggleBtn');
-    const accordionBody = document.getElementById('accordionBody');
-    const accordionIcon = toggleBtn.querySelector('i');
+    const collapseEl = document.getElementById('collapseBody');
+    const toggleIcon = document.getElementById('toggleIcon');
 
-    toggleBtn.addEventListener('click', () => {
-        const isVisible = accordionBody.style.display === 'block';
-        accordionBody.style.display = isVisible ? 'none' : 'block';
-        accordionIcon.classList.toggle('fa-chevron-down', isVisible);
-        accordionIcon.classList.toggle('fa-chevron-up', !isVisible);
+    collapseEl.addEventListener('show.bs.collapse', () => {
+        toggleIcon.classList.remove('fa-chevron-down');
+        toggleIcon.classList.add('fa-chevron-up');
+    });
+
+    collapseEl.addEventListener('hide.bs.collapse', () => {
+        toggleIcon.classList.remove('fa-chevron-up');
+        toggleIcon.classList.add('fa-chevron-down');
     });
 
     document.getElementById('copyBtn').addEventListener('click', () => {
-        const textToCopy = document.getElementById('accordionContent').innerText;
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            alert("Content copied to clipboard!");
+        const text = document.getElementById('accordionContent').innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Content copied to clipboard!');
         }).catch(err => {
-            console.error("Copy failed", err);
+            console.error('Clipboard copy failed:', err);
         });
     });
-</script>    
+</script>
 
 </html>
