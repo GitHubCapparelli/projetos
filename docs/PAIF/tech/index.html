@@ -183,30 +183,30 @@
             document.querySelectorAll('.box-header').forEach(header => {
                 const targetSelector = header.getAttribute('data-bs-target');
                 const collapseEl     = document.querySelector(targetSelector);
-                if (!collapseEl) return;
 
-                const toggleBtn = header.querySelector('.toggle-btn');
+                if (!collapseEl) return;
+                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+
+                const toggleBtn  = header.querySelector('.toggle-btn');
                 collapseEl.addEventListener('show.bs.collapse', () => {
                     toggleBtn.classList.replace('fa-plus', 'fa-minus');
-                    box.classList.remove('collapsed');
+                    header.classList.remove('collapsed');
                 });
                 collapseEl.addEventListener('hide.bs.collapse', () => {
                     toggleBtn.classList.replace('fa-minus', 'fa-plus');
-                    box.classList.add('collapsed');
+                    header.classList.add('collapsed');
                 });
 
                 if (collapseEl.classList.contains('show')) {
                     toggleBtn.classList.replace('fa-plus', 'fa-minus');
-                    box.classList.remove('collapsed');
+                    header.classList.remove('collapsed');
                 } else {
                     toggleBtn.classList.replace('fa-minus', 'fa-plus');
-                    box.classList.add('collapsed');
+                    header.classList.add('collapsed');
                 }
 
-                const body = collapseEl.querySelector('.box-body');
-                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+                const body    = collapseEl.querySelector('.box-body');
                 const copyBtn = header.querySelector('.copy-btn');
-                
                 copyBtn?.addEventListener('click', (e) => {
                     e.stopPropagation();
                     if (!body) return;
