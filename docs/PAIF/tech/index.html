@@ -59,8 +59,8 @@
             <h1 class="mb-0 mt-0">Introdução</h1>
 
 
-            <div class="box-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#box_1">
-                <div class="box-header-left">
+            <div class="box-header">
+                <div class="box-header-left collapsed" data-bs-toggle="collapse" data-bs-target="#box_1">
                     <i class="box-btn toggle-btn fa-solid fa-plus"></i>
                     <h6>Title Box 2</h6>
                 </div>
@@ -182,7 +182,7 @@
 
     <script>
         function initBoxAccordions() {
-            document.querySelectorAll('.box-header').forEach(header => {
+            document.querySelectorAll('.box-header-left').forEach(header => {
                 const targetSelector = header.getAttribute('data-bs-target');
                 const collapseEl     = document.querySelector(targetSelector);
 
