@@ -176,25 +176,27 @@
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
 <script>
-        const toggleBtn = document.getElementById('toggleBtn');
-        const accordionBody = document.getElementById('accordionBody');
-        const accordionIcon = toggleBtn.querySelector('i');
+    const collapseEl = document.getElementById('collapseBody');
+    const toggleIcon = document.getElementById('toggleIcon');
 
-        toggleBtn.addEventListener('click', () => {
-            const isVisible = accordionBody.style.display === 'block';
-            accordionBody.style.display = isVisible ? 'none' : 'block';
-            accordionIcon.classList.toggle('fa-chevron-down', isVisible);
-            accordionIcon.classList.toggle('fa-chevron-up', !isVisible);
-        });
+    collapseEl.addEventListener('show.bs.collapse', () => {
+        toggleIcon.classList.remove('fa-chevron-down');
+        toggleIcon.classList.add('fa-chevron-up');
+    });
 
-        document.getElementById('copyBtn').addEventListener('click', () => {
-            const textToCopy = document.getElementById('accordionContent').innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                alert("Content copied to clipboard!");
-            }).catch(err => {
-                console.error("Copy failed", err);
-            });
+    collapseEl.addEventListener('hide.bs.collapse', () => {
+        toggleIcon.classList.remove('fa-chevron-up');
+        toggleIcon.classList.add('fa-chevron-down');
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', () => {
+        const text = document.getElementById('accordionContent').innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Content copied to clipboard!');
+        }).catch(err => {
+            console.error('Clipboard copy failed:', err);
         });
+    });
 </script>
 
 </html>
