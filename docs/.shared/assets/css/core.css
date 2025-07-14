@@ -507,7 +507,7 @@ a:hover {
 }
 
 .footer-bottom {
-  color: black;
+  color: var(--verde-claro);
   font-weight: bold;
   height: 15px;
   font-size: 10px;
