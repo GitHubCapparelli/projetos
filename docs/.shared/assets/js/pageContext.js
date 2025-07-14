@@ -87,13 +87,14 @@ const menuHTML = {
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</li>
     </ul>
   </li>
+  <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder me-1"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
-      <li><a href="/projetos/PAIF"><i class="fas fa-file-alt me-1"></i>Apresentação</li>
-      <li><a href="/projetos/PAIF/tech"><i class="fas fa-file-alt me-2"></i>Manual técnico</li>
-      <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
+      <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</li>
+      <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</li>
+      <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</li>
     </ul>
   </li>
   <li>
