@@ -208,7 +208,9 @@
                 const body    = collapseEl.querySelector('.box-body');
                 const copyBtn = header.querySelector('.copy-btn');
                 copyBtn?.addEventListener('click', (e) => {
+                    e.preventDefault();
                     e.stopPropagation();
+
                     if (!body) return;
 
                     navigator.clipboard.writeText(body.innerText.trim()).then(() => {
