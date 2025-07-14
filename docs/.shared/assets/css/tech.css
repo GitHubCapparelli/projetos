@@ -5,24 +5,25 @@
 
 .box-header,
 .box-header-left {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
     cursor: pointer;
-    gap: 0.5rem;
 }
 
 .box-header {
-    width: 100%;
     padding: .5rem;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
-
-.box-header h6 {
+.box-header-left {
+    gap: 1rem;
+}
+.box-header-left h6 {
     width: auto;
     margin: 0;
     padding: 0;
