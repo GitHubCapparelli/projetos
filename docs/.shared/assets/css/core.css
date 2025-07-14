@@ -530,3 +530,11 @@ body.panel-open .footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
   width: calc(100% - 300px - var(--sidebarButtons-width));
 }
+
+.btn-hide {
+  color: var(--verde-claro);
+}
+.btn-hide:hover {
+  color: black;
+  border: 1px solid black;
+}
