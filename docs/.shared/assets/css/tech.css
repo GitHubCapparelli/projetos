@@ -7,6 +7,9 @@
 .sectionContent p {
     font-family: 'Times New Roman', Times, serif;
 }
+.sectionContent h1 {
+    color: var(--color-primary);
+}
 
 .footer-top-right {
     justify-content: center;
