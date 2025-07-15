@@ -238,34 +238,33 @@ const footerHTML = {
   projetos: ``
 };
 
-const leftBarHTML = `
-<div class="leftMenu">
-    <div class="leftMenu-top">
-        <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </div>
-</div>
-<div id="leftPanel" class="leftPanel">
-    <div class="leftPanel-header">
-        <h6 id="leftPanel-title"></h6>
-        <button class="btn btn-sm btn-hide" onclick="hideLeftPanel()">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <div class="leftPanel-body" id="leftPanel-body"></div>
-</div>
-`;
-
-const rightPanelHTML = `
-<div class="rightPanel-header">
-    <h6 id="rightPanel-title"></h6>
-    <button class="btn btn-sm btn-hide" onclick="hideNote()">
-        <i class="fas fa-times"></i>
-    </button>
-</div>
-<div class="rightPanel-body" id="rightPanel-body"></div>
-`;
+const constHTML = {
+  leftBar: `
+  <div class="leftMenu">
+      <div class="leftMenu-top">
+          <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </div>
+  </div>
+  <div id="leftPanel" class="leftPanel">
+      <div class="leftPanel-header">
+          <h6 id="leftPanel-title"></h6>
+          <button class="btn btn-sm btn-hide" onclick="hideLeftPanel()">
+              <i class="fas fa-times"></i>
+          </button>
+      </div>
+      <div class="leftPanel-body" id="leftPanel-body"></div>
+  </div>`,
+  rightPanel: `
+  <div class="rightPanel-header">
+      <h6 id="rightPanel-title"></h6>
+      <button class="btn btn-sm btn-hide" onclick="hideNote()">
+          <i class="fas fa-times"></i>
+      </button>
+  </div>
+  <div class="rightPanel-body" id="rightPanel-body"></div>`
+};
 
 
 

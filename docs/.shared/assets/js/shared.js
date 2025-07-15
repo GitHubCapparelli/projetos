@@ -133,8 +133,8 @@ function initialize(domain) {
 
     case 'user.telas':
       menuKey = 'userTelas';
-      document.getElementById('leftBar').innerHTML    = leftBarHTML;
-      document.getElementById('rightPanel').innerHTML = rightPanelHTML;
+      document.getElementById('leftBar').innerHTML    = constHTML['leftBar'];
+      document.getElementById('rightPanel').innerHTML = constHTML['rightPanel'];
       document.getElementById('footer').innerHTML     = footerHTML[menuKey];
       setDarkMode('light');
       break;
