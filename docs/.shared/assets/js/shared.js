@@ -115,38 +115,39 @@ function hideNote() {
 //////////////////////////////////////////////////////////////////////
 // init
 window.addEventListener('DOMContentLoaded', () => {
-  const domain = document.body.getAttribute('domain');
-  alert(domain);
-  
+  initialize(document.body.getAttribute('domain'));
+});
+
+function initialize(domain) {
   switch (domain) {
-    case 'tech'       : 
-      menuKey = 'techApres';  
+    case 'tech':
+      menuKey = 'techApres';
       initBoxes();
-      setDarkMode(localStorage.getItem('theme')); 
+      setDarkMode(localStorage.getItem('theme'));
       break;
 
-    case 'user'       : 
-      menuKey = 'userApres';  
-      setDarkMode('light'); 
+    case 'user':
+      menuKey = 'userApres';
+      setDarkMode('light');
       break;
 
-    case 'user.telas' : 
-      menuKey = 'userTelas';  
+    case 'user.telas':
+      menuKey = 'userTelas';
       document.getElementById('footer').innerHTML = footerHTML[menuKey];
-      setDarkMode('light'); 
+      setDarkMode('light');
       break;
 
-    case 'projetos'   : 
-      menuKey = 'projetos';   
-      setDarkMode('light'); 
+    case 'projetos':
+      menuKey = 'projetos';
+      setDarkMode('light');
       break;
 
-    default:            
-      menuKey = '';           
-      setDarkMode('light'); 
+    default:
+      menuKey = '';
+      setDarkMode('light');
       break;
   };
-});
+}
 
 ///////////////////////////////////////////////////////////////////
 
