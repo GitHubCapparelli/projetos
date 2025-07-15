@@ -17,17 +17,13 @@
 .box-header {
     width: 25%;
     padding: 0.25rem;
+    color: var(--color-primary);
     cursor: pointer;
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--color-secondary);
     border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-.box-header.collapsed {
-    background-color: #e9ecef;
 }
 .box-header:not(.collapsed) .copy-btn {
     opacity: 1;
@@ -39,11 +35,8 @@
     font-style: italic;
 }
 
-.box-btn {
-    color: #333;
-    cursor: pointer;
-}
-.box-btn:hover { color: var(--color-primary); }
+.box-btn { cursor: pointer; }
+.box-btn:hover { color: var(--color-primary-dark); }
 
 .copy-btn {
     opacity: 0;
