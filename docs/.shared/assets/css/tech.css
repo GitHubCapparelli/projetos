@@ -10,12 +10,13 @@
     margin-bottom: 1rem;
 }
 .box-header {
-    width: 100%;
-    padding: .5rem;
+    width: 200px;
+    padding: 0.5rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    gap: 0.5rem;
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
