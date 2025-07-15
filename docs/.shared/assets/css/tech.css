@@ -1,7 +1,10 @@
+:root {
+    --navPanel-width: 450px;
+}
+
 .sectionContent p {
     font-family: 'Times New Roman', Times, serif;
 }
-
 
 .box-header,
 .box-header-left {
@@ -20,6 +23,10 @@
     border-top-right-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
+.box-header.collapsed {
+    background-color: #e9ecef;
+}
+
 .box-header-left {
     justify-content: start;
     gap: 1rem;

@@ -1,16 +1,16 @@
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
-  --verde-claro: #cee5d5;
-  --verde-escuro: #0c7e2c;
-  --verde-mais-escuro: #074318;
+  --color-secondary: #80C0C0;
+  --color-primary: #008080;
+  --color-primary-dark: #004040;
 
+  /*Teal*/
   --teal-W5: #CCE6E6;
   --teal-W4: #B2D9D9;
   --teal-W3: #80C0C0;
   --teal-W2: #66B3B3;
   --teal-W1: #339999;
   --teal-0: #008080;
-  /*Teal*/
   --teal-B1: #006666;
   --teal-B2: #004D4D;
   --teal-B3: #004040;
@@ -22,6 +22,8 @@
   --sidebarButtons-width: 40px;
   --mainBanner-width: 800px;
   --mainBanner-height: 400px;
+  --navPanel-width: 300px;
+  --notePanel-width: 300px;
 }
 
 /* ::-webkit-scrollbar {
@@ -53,7 +55,7 @@ body {
 a,
 li a,
 ul li a {
-  color: var(--verde-escuro);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -63,7 +65,7 @@ a:hover {
 
 /* ---------------------------------------------------------------------------------- */
 .nav-item:hover {
-  color: var(--verde-escuro);
+  color: var(--color-primary);
 }
 
 .nav-item .label {
@@ -77,7 +79,7 @@ a:hover {
 }
 
 .treeview li span:hover {
-  color: var(--verde-escuro);
+  color: var(--color-primary);
   border-radius: 4px;
   padding-right: 5px;
 }
@@ -126,7 +128,7 @@ a:hover {
   top: 0;
   width: 3px;
   height: 100%;
-  background-color: var(--verde-escuro);
+  background-color: var(--color-primary);
 }
 
 .leftMenu .nav-item i {
@@ -144,7 +146,7 @@ a:hover {
   position: fixed;
   top: 0;
   left: var(--sidebarButtons-width);
-  width: 300px;
+  width: var(--navPanel-width);
   height: 100vh;
   border-right: 1px solid black;
   display: none;
@@ -163,8 +165,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--verde-claro);
-  background-color: var(--verde-escuro);
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .leftPanel-header h6 {
@@ -176,7 +178,7 @@ a:hover {
   padding: 1rem;
   overflow-y: auto;
   flex-grow: 1;
-  background-color: var(--verde-claro);
+  background-color: var(--color-secondary);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -184,10 +186,10 @@ a:hover {
 /* Right Panel */
 .rightPanel {
   position: fixed;
-  width: 300px;
+  width: var(--notePanel-width);
   top: calc(var(--topBars-height) + 10px);
   height: calc(100vh - var(--topBars-height) - 20px);
-  left: calc(100vw - 300px - 20px);
+  left: calc(100vw - var(--notePanel-width) - 20px);
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   display: none;
@@ -206,10 +208,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--verde-claro);
+  color: var(--color-secondary);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: var(--verde-escuro);
+  background-color: var(--color-primary);
 }
 
 .rightPanel-header h6 {
@@ -223,12 +225,12 @@ a:hover {
   flex-grow: 1;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: var(--verde-claro);
+  background-color: var(--color-secondary);
 }
 
 .note {
   text-decoration: wavy;
-  color: var(--verde-escuro);
+  color: var(--color-primary);
   font-weight: bold;
   font-style: italic;
   cursor: pointer;
@@ -263,7 +265,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--verde-escuro);
+  background-color: var(--color-primary);
 }
 
 .footer-top-section h6,
@@ -282,7 +284,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  background-color: var(--verde-claro);
+  background-color: var(--color-secondary);
 }
 
 .header-left,
@@ -319,7 +321,7 @@ a:hover {
 
 .header-titles h5,
 .header-right h5 {
-  color: var(--verde-escuro);
+  color: var(--color-primary);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -331,7 +333,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: var(--verde-claro);
+  background-color: var(--color-secondary);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
@@ -367,7 +369,7 @@ a:hover {
   margin-right: 10px;
   font-size: x-small;
   font-weight: bold;
-  color: var(--verde-claro);
+  color: var(--color-secondary);
   background-color: var(--bs-gray-600);
   border-radius: 4px;
   cursor: default;
@@ -405,7 +407,7 @@ a:hover {
 
 .paralaxSectionContent h1 {
   margin: 0px;
-  color: var(--verde-escuro);
+  color: var(--color-primary);
 }
 
 .backCrasArte {
@@ -439,7 +441,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
-  background-color: var(--verde-escuro);
+  background-color: var(--color-primary);
 }
 
 .footer p {
@@ -454,7 +456,7 @@ a:hover {
 }
 
 .footer a {
-  color: var(--verde-claro);
+  color: var(--color-secondary);
   text-decoration: none;
   font-size: small;
 }
@@ -466,7 +468,7 @@ a:hover {
 .footer h6 {
   margin: 0px;
   padding: 5px 0px;
-  color: var(--verde-claro);
+  color: var(--color-secondary);
   font-style: italic;
 }
 
@@ -475,7 +477,7 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: var(--verde-claro);
+  color: var(--color-secondary);
   align-items: start;
   gap: 20px;
 }
@@ -517,7 +519,7 @@ a:hover {
 }
 
 .footer-bottom {
-  color: var(--verde-mais-escuro);
+  color: var(--color-primary-dark);
   font-weight: bold;
   height: 15px;
   font-size: 10px;
@@ -541,14 +543,16 @@ body.panel-open .header,
 body.panel-open .pageContent,
 body.panel-open .footer {
   margin-left: calc(var(--sidebarButtons-width) + 300px);
-  width: calc(100% - 300px - var(--sidebarButtons-width));
+  width: calc(100% - var(--navPanel-width) - var(--sidebarButtons-width));
 }
 
 .btn-hide {
-  color: var(--verde-claro);
+  color: var(--color-secondary);
 }
 
 .btn-hide:hover {
   color: black;
   border: 1px solid black;
 }
+
+

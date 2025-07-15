@@ -116,9 +116,13 @@ function hideNote() {
 // init
 window.addEventListener('DOMContentLoaded', () => {
   switch (document.body.getAttribute('domain')) {
+    case 'tech'       : 
+      menuKey = 'techApres';  
+      initBoxes();
+      setDarkMode(localStorage.getItem('theme')); 
+      break;
     case 'user'       : menuKey = 'userApres';  setDarkMode('light'); break;
     case 'user.telas' : menuKey = 'userTelas';  setDarkMode('light'); break;
-    case 'tech'       : menuKey = 'techApres';  setDarkMode(localStorage.getItem('theme')); break;
     case 'projetos'   : menuKey = 'projetos';   setDarkMode('light'); break;
     default:            menuKey = '';           setDarkMode('light'); break;
   };
@@ -126,3 +130,56 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ///////////////////////////////////////////////////////////////////
 
+function initBoxes() {
+  document.querySelectorAll('.box-header-left').forEach(header => {
+    const selector  = header.getAttribute('data-bs-target');
+    const collapser = document.querySelector(selector);
+
+    const toggleBtn = header.querySelector('.toggle-btn');
+    const copyBtn   = header.querySelector('.copy-btn');
+    const body      = collapser.querySelector('.box-body') || collapser;
+
+    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapser, { toggle: false });
+
+    // Toggle on header click
+    header.addEventListener('click', () => {
+      bsCollapse.toggle();
+    });
+
+    collapser.addEventListener('show.bs.collapse', () => {
+      toggleBtn?.classList.replace('fa-plus', 'fa-minus');
+      header.classList.remove('collapsed');
+    });
+
+    collapser.addEventListener('hide.bs.collapse', () => {
+      toggleBtn?.classList.replace('fa-minus', 'fa-plus');
+      header.classList.add('collapsed');
+    });
+
+    // Initial state
+    if (collapser.classList.contains('show')) {
+      toggleBtn?.classList.replace('fa-plus', 'fa-minus');
+      header.classList.remove('collapsed');
+    } else {
+      toggleBtn?.classList.replace('fa-minus', 'fa-plus');
+      header.classList.add('collapsed');
+    }
+
+    // Copy button
+    copyBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      navigator.clipboard.writeText(body.innerText.trim()).then(() => {
+        copyBtn.classList.replace('fa-clipboard', 'fa-check');
+        setTimeout(() => {
+          copyBtn.classList.replace('fa-check', 'fa-clipboard');
+        }, 1500);
+      }).catch(() => {
+        alert('Copy failed');
+      });
+    });
+  });
+};
+
+///////////////////////////////////////////////////////////////////

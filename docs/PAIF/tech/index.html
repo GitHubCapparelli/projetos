@@ -9,7 +9,9 @@
     <link href="/projetos/.shared/assets/img/logo/gdf.png" rel="icon" type="image/x-icon">
 
     <link href="/projetos/.shared/assets/css/core.css" rel="stylesheet">
+    <link href="/projetos/.shared/assets/css/paif.css" rel="stylesheet">
     <link href="/projetos/.shared/assets/css/tech.css" rel="stylesheet">
+    
     <link href="/projetos/.shared/assets/css/bootstrap.css" rel="stylesheet">
     <link href="/projetos/.shared/assets/css/all.fontAwesome.min.css" rel="stylesheet">
 </head>
@@ -57,30 +59,26 @@
             <span class="tags"><span class="tag">Público alvo</span><span class="tag">Audiência</span><span
                     class="tag">Atores</span><span class="tag">Perfis</span></span>
             <h1 class="mb-0 mt-0">Introdução</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
+                error repellat totam assumenda excepturi sit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor
+                error repellat totam assumenda excepturi sit.</p>
 
-
-            <div class="box-header">
-                <div class="box-header-left collapsed" data-bs-toggle="collapse" data-bs-target="#box_1">
+            <div class="box">
+                <div class="box-header box-header-left collapsed" data-bs-target="#box_1">
                     <i class="box-btn toggle-btn fa-solid fa-plus"></i>
-                    <h6>Title Box 2</h6>
+                    <h6>Title Box 1</h6>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard"></i>
                 </div>
-                <i class="box-btn copy-btn fa-solid fa-clipboard"></i>
-            </div>
-            <div id="box_1" class="box-collapse collapse">
-                <div class="box-body">
+                <div id="box_1" class="box-body box-collapse collapse">
                     This is the first accordion body content...
                 </div>
             </div>
 
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
-                dolor
-                error repellat totam assumenda excepturi sit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
-                dolor
-                error repellat totam assumenda excepturi sit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
                 dolor
@@ -179,54 +177,5 @@
     <script src="/projetos/.shared/assets/js/shared.js"></script>
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 
-
-    <script>
-        function initBoxAccordions() {
-            document.querySelectorAll('.box-header-left').forEach(header => {
-                const targetSelector = header.getAttribute('data-bs-target');
-                const collapseEl = document.querySelector(targetSelector);
-
-                if (!collapseEl) return;
-                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
-
-                const toggleBtn = header.querySelector('.toggle-btn');
-                collapseEl.addEventListener('show.bs.collapse', () => {
-                    toggleBtn.classList.replace('fa-plus', 'fa-minus');
-                    header.classList.remove('collapsed');
-                });
-                collapseEl.addEventListener('hide.bs.collapse', () => {
-                    toggleBtn.classList.replace('fa-minus', 'fa-plus');
-                    header.classList.add('collapsed');
-                });
-
-                if (collapseEl.classList.contains('show')) {
-                    toggleBtn.classList.replace('fa-plus', 'fa-minus');
-                    header.classList.remove('collapsed');
-                } else {
-                    toggleBtn.classList.replace('fa-minus', 'fa-plus');
-                    header.classList.add('collapsed');
-                }
-
-                const body = collapseEl.querySelector('.box-body');
-                const copyBtn = header.querySelector('.copy-btn');
-                copyBtn?.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    if (!body) return;
-
-                    navigator.clipboard.writeText(body.innerText.trim()).then(() => {
-                        copyBtn.classList.replace('fa-clipboard', 'fa-check');
-                        setTimeout(() => { copyBtn.classList.replace('fa-check', 'fa-clipboard'); }, 1500);
-                    }).catch(() => {
-                        alert('Copy failed');
-                    });
-                });
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', initBoxAccordions);
-    </script>
-
-
+</body>
 </html>
