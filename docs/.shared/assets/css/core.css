@@ -370,7 +370,7 @@ a:hover {
   font-size: x-small;
   font-weight: bold;
   color: var(--color-secondary);
-  background-color: var(--bs-gray-600);
+  background-color: var(--color-primary-dark);
   border-radius: 4px;
   cursor: default;
 }
