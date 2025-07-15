@@ -1,8 +1,13 @@
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
+    --color-black: rgb(20, 20, 20);
+
     --color-secondary: rgb(128, 192, 192);
     --color-primary: rgb(0, 128, 128);
     --color-primary-dark: rgb(0, 64, 64);
+    
+    --color-parallax-back: rgba(0, 128, 128, 0.9);
+    --color-shadow: rgba(0, 128, 128, 0.5);
   
     /* Teal */
     --teal-W5: rgb(204, 230, 230);
@@ -55,13 +60,12 @@ body {
 a,
 li a,
 ul li a {
-  /* color: var(--color-primary); */
+  color: var(--color-black);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-primary);
-  /* text-decoration: underline; */
+  color: var(--color-primary-dark);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -192,7 +196,7 @@ a:hover {
   height: calc(100vh - var(--topBars-height) - 20px);
   left: calc(100vw - var(--notePanel-width) - 20px);
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px var(--color-shadow);
   display: none;
   flex-direction: column;
   z-index: 1000;
@@ -391,9 +395,9 @@ a:hover {
 }
 
 .paralaxSectionContent {
-  background-color: rgba(var(--color-secondary), 0.9);
+  background-color: var(--color-parallax-back);
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(var(--color-primary), 0.2);
+  box-shadow: 0 8px 20px var(--color-shadow);
   width: 100%;
   height: calc(100vh - var(--topBars-height) - 20px);
   padding: 1rem;

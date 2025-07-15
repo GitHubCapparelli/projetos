@@ -3,6 +3,9 @@
     --color-secondary: rgb(206, 229, 213);
     --color-primary: rgb(12, 126, 44);
     --color-primary-dark: rgb(14, 95, 37);
+    
+    --color-parallax-back: rgba(12, 126, 44, 0.9);
+    --color-shadow: rgba(12, 126, 44, 0.5);
 
     --footer-height: 250px;
 }
