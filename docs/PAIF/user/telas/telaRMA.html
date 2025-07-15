@@ -16,22 +16,12 @@
 </head>
 
 <body domain="user.telas">
-    <div class="leftBar">
-        <div class="leftMenu">
-            <div class="leftMenu-top">
-                <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </div>
-        <div id="leftPanel" class="leftPanel">
-            <div class="leftPanel-header">
-                <h6 id="leftPanel-title"></h6>
-                <button class="btn btn-sm btn-hide" onclick="hideLeftPanel()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="leftPanel-body" id="leftPanel-body"></div>
+    <div id="leftBar" class="leftBar"></div>
+
+    <div id="stickyTop" class="stickyTop">
+        <div class="stickyTop-titles">
+            <h5 class="mb-0">PAIF – Serviço de Proteção e Atendimento Integral à Família</h5>
+            <h6 class="mb-0">-- Tela RMA --</h6>
         </div>
     </div>
 
@@ -44,7 +34,7 @@
             </div>
         </div>
         <div class="header-right">
-            <h5 class="mb-0">Em construção</h5>
+            <h5 class="mb-0">Aguarde...</h5>
         </div>
     </div>
 
@@ -52,29 +42,14 @@
         <div class="building">
             <div class="icon">🚧</div>
             <h1>Página em Construção </h1>
-            <p>Estamos trabalhando para trazer algo incrível para você. Volte em breve!</p>
+            <p>Estamos trabalhando para trazer algo incrível para você.</p>
+            <p>Volte em breve!</p>
             <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i>  Voltar</a>
         </div>
     </div>
 
     <div id="footer" class="footer"></div>
-
-    <div id="stickyTop" class="stickyTop">
-        <div class="stickyTop-titles">
-            <h5 class="mb-0">PAIF – Serviço de Proteção e Atendimento Integral à Família</h5>
-            <h6 class="mb-0">-- Tela RMA --</h6>
-        </div>
-    </div>
-
-    <div id="rightPanel" class="rightPanel">
-        <div class="rightPanel-header">
-            <h6 id="rightPanel-title"></h6>
-            <button class="btn btn-sm btn-hide" onclick="hideNote()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="rightPanel-body" id="rightPanel-body"></div>
-    </div>
+    <div id="rightPanel" class="rightPanel"></div>
 
     <script src="/projetos/.shared/assets/js/pageContext.js"></script>
     <script src="/projetos/.shared/assets/js/shared.js"></script>
