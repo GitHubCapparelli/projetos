@@ -16,7 +16,7 @@
 
 .box-header {
     width: 25%;
-    padding: 0.25rem;
+    /* padding: 0.25rem 0px; */
     color: var(--color-primary);
     cursor: pointer;
     display: flex;
@@ -40,6 +40,7 @@
 
 .copy-btn {
     opacity: 0;
+    margin-left: 1rem;
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
