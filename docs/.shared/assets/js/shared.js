@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', () => {
 ///////////////////////////////////////////////////////////////////
 
 function initBoxes() {
-  document.querySelectorAll('.box-header-left').forEach(header => {
+  document.querySelectorAll('.box-header').forEach(header => {
     const selector  = header.getAttribute('data-bs-target');
     const collapser = document.querySelector(selector);
 

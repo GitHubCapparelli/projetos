@@ -6,17 +6,16 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.box-header,
-.box-header-left {
+.box {
+    margin-bottom: 1rem;
+}
+.box-header {
     width: 100%;
+    padding: .5rem;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-}
-
-.box-header {
-    padding: .5rem;
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-top-left-radius: 0.5rem;
@@ -29,7 +28,7 @@
 
 .box-header-left {
     justify-content: start;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 .box-header-left h6 {
     width: auto;
@@ -44,7 +43,7 @@
 }
 
 .box-btn:hover {
-    color: var(--verde-escuro);
+    color: var(--color-primary);
 }
 
 .copy-btn {
