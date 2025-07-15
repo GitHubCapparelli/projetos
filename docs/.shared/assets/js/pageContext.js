@@ -12,7 +12,50 @@ const noteHTML = {
 };
 
 const menuHTML = {
-  techApres: `Not implemented`,
+  techApres: `
+<ul class="treeview list-unstyled ps-1">
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder-open me-1"></i>Manual técnico
+    </span>
+    <ul class="nested list-unstyled ps-2">
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Requerimentos e especificações</a></li>
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Arquitetura, escopo e restrições</a></li>
+      <li>
+        <span class="tree-toggle" onclick="toggleNode(this)">
+          <i class="fas fa-folder me-1"></i>Casos de uso
+        </span>
+        <ul class="nested list-unstyled ps-3 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Acompanhamento de atendimentos</li>
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Manutenção de acompanhamentos</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Validação mensal</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Registro de substituições</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Processamento mensal de dados</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Consolidação de dados mensais</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Envio mensal de dados ao MDS</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
+      <li>
+        <span class="tree-toggle" onclick="toggleNode(this)">
+          <i class="fas fa-folder me-1"></i>Apêndices
+        </span>
+        <ul class="nested list-unstyled ps-3 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Propostas de melhoria</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span class="tree-toggle" onclick="toggleNode(this)">
+      <i class="fas fa-folder me-1"></i>Mais...
+    </span>
+    <ul class="nested list-unstyled ps-2 d-none">
+      <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</li>
+    </ul>
+  </li>
+</ul>`,
   userApres: `
 <ul class="treeview list-unstyled ps-1">
   <li>
