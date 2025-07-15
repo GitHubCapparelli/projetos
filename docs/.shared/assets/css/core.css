@@ -566,29 +566,17 @@ body.panel-open .footer {
 /* building */
 .building {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
 }
-
-.building h1 {
-  font-size: 3rem;
-  color: #ff9800;
-}
-
-.building p {
-  font-size: 1.2rem;
-}
-
+.building h1 { color: var(--color-primary); }
+.building p  { font-size: 1.2rem; }
+.building a  { cursor: pointer; }
 .building .icon {
   font-size: 5rem;
-  color: #ff9800;
-  margin-bottom: 20px;
+  /* color: #ff9800;
+  margin-bottom: 20px; */
 }
