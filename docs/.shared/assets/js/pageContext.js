@@ -47,6 +47,12 @@ const menuHTML = {
             </span>
             <ul class="nested list-unstyled ps-4 d-none">
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamentos</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamento</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Validações</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Substituições</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela RMA</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela RMAs</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Outras</a></li>
             </ul>
           </li>
           <li>
@@ -54,7 +60,11 @@ const menuHTML = {
               <i class="fas fa-folder me-2"></i>Ações do sistema
             </span>
             <ul class="nested list-unstyled ps-4 d-none">
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente e memória</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Carga e edição dos dados</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação e crítica dos dados</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Funções de apoio e suporte</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Funções administrativas</a></li>
             </ul>
           </li>
         </ul>
