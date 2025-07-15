@@ -65,16 +65,18 @@ const menuHTML = {
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</a></li>
         </ul>
       </li>
     </ul>
   </li>
+</ul>
+<ul class="treeview list-unstyled ps-4">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-2"></i>Mais...
+      <i class="fas fa-folder-open me-2"></i>Mais...
     </span>
-    <ul class="nested list-unstyled ps-4 d-none">
+    <ul class="nested list-unstyled ps-4">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
