@@ -55,12 +55,13 @@ body {
 a,
 li a,
 ul li a {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--color-primary);
+  /* text-decoration: underline; */
 }
 
 /* ---------------------------------------------------------------------------------- */

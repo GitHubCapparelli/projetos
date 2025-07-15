@@ -84,7 +84,7 @@ const menuHTML = {
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-2"></i>Mais...
+      <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
@@ -118,7 +118,7 @@ const menuHTML = {
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-2"></i>Mais...
+      <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
@@ -152,7 +152,7 @@ const menuHTML = {
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-2"></i>Mais...
+      <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
