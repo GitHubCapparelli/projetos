@@ -397,13 +397,13 @@ a:hover {
 }
 
 .paralaxSectionContent {
-  background-color: var(--color-parallax-back);
-  border-radius: 10px;
-  box-shadow: 0 8px 20px var(--color-shadow);
   width: 100%;
-  height: calc(100vh - var(--topBars-height) - 20px);
   padding: 1rem;
   margin: 0px 20px;
+  height: calc(100vh - var(--topBars-height) - 20px);
+  background-color: var(--color-parallax-back);
+  box-shadow: 0 8px 20px var(--color-shadow);
+  border-radius: 10px;
   overflow-y: auto;
 }
 
