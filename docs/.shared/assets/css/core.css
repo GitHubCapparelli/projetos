@@ -574,9 +574,11 @@ body.panel-open .footer {
 }
 .building h1 { color: var(--color-primary); }
 .building p  { font-size: 1.2rem; }
-.building a  { cursor: pointer; }
+.building a  
+{ 
+  cursor: pointer; 
+  color: var(--color-primary);
+}
 .building .icon {
   font-size: 5rem;
-  /* color: #ff9800;
-  margin-bottom: 20px; */
 }
