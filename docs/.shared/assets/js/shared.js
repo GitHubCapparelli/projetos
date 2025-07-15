@@ -115,7 +115,10 @@ function hideNote() {
 //////////////////////////////////////////////////////////////////////
 // init
 window.addEventListener('DOMContentLoaded', () => {
-  switch (document.body.getAttribute('domain')) {
+  const domain = document.body.getAttribute('domain');
+  alert(domain);
+  
+  switch (domain) {
     case 'tech'       : 
       menuKey = 'techApres';  
       initBoxes();
