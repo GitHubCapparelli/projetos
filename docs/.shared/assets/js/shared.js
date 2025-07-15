@@ -172,8 +172,14 @@ function initBoxes() {
 
       navigator.clipboard.writeText(body.innerText.trim()).then(() => {
         copyBtn.classList.replace('fa-clipboard', 'fa-check');
+
+        const bgColor = body.style.backgroundColor;
+        const sdColor = getComputedStyle(document.documentElement).getPropertyValue('--color-secondary').trim();
+        body.style.backgroundColor = sdColor;
+        
         setTimeout(() => {
           copyBtn.classList.replace('fa-check', 'fa-clipboard');
+          body.style.backgroundColor = bgColor;
         }, 1500);
       }).catch(() => {
         alert('Copy failed');
