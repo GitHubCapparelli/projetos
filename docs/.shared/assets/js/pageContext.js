@@ -11,6 +11,8 @@ const noteHTML = {
   test2: `<h1>Teste 2</h1>`
 };
 
+
+
 const menuHTML = {
   techApres: `
 <ul class="treeview list-unstyled p-0 m-0">
@@ -188,5 +190,60 @@ const menuHTML = {
     </ul>
   </li>
 </ul>`
+};
+
+
+
+const footerHTML = {
+  techApres: ``,
+  userApres: ``,
+  userTelas: `<div class="footer-top">
+<div class="footer-top-left">
+    <h6>Links úteis</h6>
+    <ul>
+        <li><a href="https://sei.df.gov.br/sei/" target="_blank" rel="noopener noreferrer">SEI</a></li>
+        <li><a href="https://sistemas2.df.gov.br/Prontuario/Home" target="_blank"
+                rel="noopener noreferrer">SIDIS</a></li>
+        <li><a href="https://sistemas2.df.gov.br/Prontuario/ProntuarioHome?filtro=AssistenciaSocial"
+                target="_blank" rel="noopener noreferrer">Prontuário Assistencial</a></li>
+        <li><a href="https://sistemas2.df.gov.br/PortalDeServicos/GaleriaSistemas" target="_blank"
+                rel="noopener noreferrer">Outros sistemas</a></li>
+    </ul>
+    <ul class="mt-3">
+        <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
+    </ul>
+</div>
+<div class="footer-top-left">
+    <h6>SharePoint sites</h6>
+    <ul>
+        <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                rel="noopener noreferrer">GERVIS</a>
+        </li>
+    </ul>
+</div>
+<div class="footer-top-right">
+    <h6>-- Venha nos visitar --</h6>
+    <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
+        <img class="img-map" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
+            title="SEDES (515 Norte)">
+        Google Maps
+    </a>
+</div>
+</div>
+<div class="footer-bottom">
+<span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
+<span class="footer-bottom-right">v.1.0</span>
+</div>`,
+  projetos: ``
+};
+
+
+
+const template = {
+  techApres: ``,
+  userApres: ``,
+  userTelas: ``,
+  projetos: ``
 };
 

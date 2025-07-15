@@ -121,10 +121,27 @@ window.addEventListener('DOMContentLoaded', () => {
       initBoxes();
       setDarkMode(localStorage.getItem('theme')); 
       break;
-    case 'user'       : menuKey = 'userApres';  setDarkMode('light'); break;
-    case 'user.telas' : menuKey = 'userTelas';  setDarkMode('light'); break;
-    case 'projetos'   : menuKey = 'projetos';   setDarkMode('light'); break;
-    default:            menuKey = '';           setDarkMode('light'); break;
+
+    case 'user'       : 
+      menuKey = 'userApres';  
+      setDarkMode('light'); 
+      break;
+
+    case 'user.telas' : 
+      menuKey = 'userTelas';  
+      document.getElementById('footer').innerHTML = footerHTML[key];
+      setDarkMode('light'); 
+      break;
+
+    case 'projetos'   : 
+      menuKey = 'projetos';   
+      setDarkMode('light'); 
+      break;
+
+    default:            
+      menuKey = '';           
+      setDarkMode('light'); 
+      break;
   };
 });
 
