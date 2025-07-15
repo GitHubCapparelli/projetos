@@ -13,7 +13,7 @@ const noteHTML = {
 
 const menuHTML = {
   techApres: `
-<ul class="treeview list-unstyled">
+<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-2"></i>Manual técnico
@@ -71,7 +71,7 @@ const menuHTML = {
     </ul>
   </li>
 </ul>
-<ul class="treeview list-unstyled mt-0">
+<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-2"></i>Mais...
