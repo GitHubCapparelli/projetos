@@ -13,12 +13,12 @@ const noteHTML = {
 
 const menuHTML = {
   techApres: `
-<ul class="treeview list-unstyled ps-2">
+<ul class="treeview list-unstyled ps-3">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
       <i class="fas fa-folder-open me-2"></i>Manual técnico
     </span>
-    <ul class="nested list-unstyled ps-2">
+    <ul class="nested list-unstyled ps-3">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Requerimentos e especificações</a></li>
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Arquitetura, escopo e restrições</a></li>
@@ -26,7 +26,7 @@ const menuHTML = {
         <span class="tree-toggle" onclick="toggleNode(this)">
           <i class="fas fa-folder me-2"></i>Casos de uso
         </span>
-        <ul class="nested list-unstyled ps-2 d-none">
+        <ul class="nested list-unstyled ps-3 d-none">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Acompanhamento de atendimentos</li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Manutenção de acompanhamentos</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação mensal</a></li>
@@ -40,12 +40,12 @@ const menuHTML = {
         <span class="tree-toggle" onclick="toggleNode(this)">
           <i class="fas fa-folder me-2"></i>Código
         </span>
-        <ul class="nested list-unstyled ps-2 d-none">
+        <ul class="nested list-unstyled ps-3 d-none">
           <li>
             <span class="tree-toggle" onclick="toggleNode(this)">
               <i class="fas fa-folder me-2"></i>Ações do usuário
             </span>
-            <ul class="nested list-unstyled ps-2 d-none">
+            <ul class="nested list-unstyled ps-3 d-none">
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamentos</a></li>
             </ul>
           </li>
@@ -53,7 +53,7 @@ const menuHTML = {
             <span class="tree-toggle" onclick="toggleNode(this)">
               <i class="fas fa-folder me-2"></i>Ações do sistema
             </span>
-            <ul class="nested list-unstyled ps-2 d-none">
+            <ul class="nested list-unstyled ps-3 d-none">
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente</a></li>
             </ul>
           </li>
@@ -65,7 +65,7 @@ const menuHTML = {
         </span>
         <ul class="nested list-unstyled ps-2 d-none">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-2></i>Propostas de melhoria</li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</li>
         </ul>
       </li>
     </ul>
