@@ -65,7 +65,7 @@ a:hover {
 
 /* ---------------------------------------------------------------------------------- */
 .nav-item:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 .nav-item .label {
@@ -79,7 +79,7 @@ a:hover {
 }
 
 .treeview li span:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   border-radius: 4px;
   padding-right: 5px;
 }
