@@ -1,21 +1,21 @@
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
-  --color-secondary: #80C0C0;
-  --color-primary: #008080;
-  --color-primary-dark: #004040;
-
-  /*Teal*/
-  --teal-W5: #CCE6E6;
-  --teal-W4: #B2D9D9;
-  --teal-W3: #80C0C0;
-  --teal-W2: #66B3B3;
-  --teal-W1: #339999;
-  --teal-0: #008080;
-  --teal-B1: #006666;
-  --teal-B2: #004D4D;
-  --teal-B3: #004040;
-  --teal-B4: #002626;
-  --teal-B5: #001A1A;
+    --color-secondary: rgb(128, 192, 192);
+    --color-primary: rgb(0, 128, 128);
+    --color-primary-dark: rgb(0, 64, 64);
+  
+    /* Teal */
+    --teal-W5: rgb(204, 230, 230);
+    --teal-W4: rgb(178, 217, 217);
+    --teal-W3: rgb(128, 192, 192);
+    --teal-W2: rgb(102, 179, 179);
+    --teal-W1: rgb(51, 153, 153);
+    --teal-0: rgb(0, 128, 128);
+    --teal-B1: rgb(0, 102, 102);
+    --teal-B2: rgb(0, 77, 77);
+    --teal-B3: rgb(0, 64, 64);
+    --teal-B4: rgb(0, 38, 38);
+    --teal-B5: rgb(0, 26, 26);
 
   --topBars-height: 60px;
   --footer-height: 180px;
@@ -390,7 +390,7 @@ a:hover {
 }
 
 .paralaxSectionContent {
-  background-color: rgba(var(--color-primary), 0.9);
+  background-color: rgba(var(--color-secondary), 0.9);
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(var(--color-primary), 0.2);
   width: 100%;

@@ -1,8 +1,8 @@
 :root {
     /* https://www.colorxs.com/palette/color/royal-blue */
-    --color-secondary: #cee5d5;
-    --color-primary: #0c7e2c;
-    --color-primary-dark: #0e5f25;
+    --color-secondary: rgb(206, 229, 213);
+    --color-primary: rgb(12, 126, 44);
+    --color-primary-dark: rgb(14, 95, 37);
 
     --footer-height: 250px;
 }
