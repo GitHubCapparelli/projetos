@@ -1,9 +1,15 @@
 :root {
+    --footer-height: 150px;
+
     --navPanel-width: 450px;
 }
 
 .sectionContent p {
     font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-top-right {
+    justify-content: center;
 }
 
 .box { margin-bottom: 1rem; }
@@ -16,7 +22,6 @@
     align-items: center;
     gap: 0.5rem;
     background-color: var(--color-secondary);
-    /* border: 1px solid var(--color-primary); */
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
