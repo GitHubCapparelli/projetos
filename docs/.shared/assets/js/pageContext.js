@@ -13,10 +13,10 @@ const noteHTML = {
 
 const menuHTML = {
   techApres: `
-<ul class="treeview list-unstyled ps-1">
+<ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Manual técnico
+      <i class="fas fa-folder-open me-2"></i>Manual técnico
     </span>
     <ul class="nested list-unstyled ps-2">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
@@ -24,55 +24,55 @@ const menuHTML = {
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Arquitetura, escopo e restrições</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Casos de uso
+          <i class="fas fa-folder me-2"></i>Casos de uso
         </span>
-        <ul class="nested list-unstyled ps-3 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Acompanhamento de atendimentos</li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Manutenção de acompanhamentos</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Validação mensal</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Registro de substituições</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Processamento mensal de dados</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Consolidação de dados mensais</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Envio mensal de dados ao MDS</a></li>
+        <ul class="nested list-unstyled ps-2 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Acompanhamento de atendimentos</li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Manutenção de acompanhamentos</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação mensal</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Registro de substituições</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Processamento mensal de dados</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Consolidação de dados mensais</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Envio mensal de dados ao MDS</a></li>
         </ul>
       </li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Código
+          <i class="fas fa-folder me-2"></i>Código
         </span>
-        <ul class="nested list-unstyled ps-4 d-none">
+        <ul class="nested list-unstyled ps-2 d-none">
           <li>
             <span class="tree-toggle" onclick="toggleNode(this)">
-              <i class="fas fa-folder me-1"></i>Ações do usuário
+              <i class="fas fa-folder me-2"></i>Ações do usuário
             </span>
-            <ul class="nested list-unstyled ps-4 d-none">
-              <li><a href="#"><i class="fas fa-file-alt me-4"></i>Tela Acompanhamentos</a></li>
+            <ul class="nested list-unstyled ps-2 d-none">
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamentos</a></li>
             </ul>
           </li>
           <li>
             <span class="tree-toggle" onclick="toggleNode(this)">
-              <i class="fas fa-folder me-1"></i>Ações do sistema
+              <i class="fas fa-folder me-2"></i>Ações do sistema
             </span>
-            <ul class="nested list-unstyled ps-4 d-none">
-              <li><a href="#"><i class="fas fa-file-alt me-4"></i>Configuração do ambiente</a></li>
+            <ul class="nested list-unstyled ps-2 d-none">
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente</a></li>
             </ul>
           </li>
         </ul>
       </li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Apêndices
+          <i class="fas fa-folder me-2"></i>Apêndices
         </span>
-        <ul class="nested list-unstyled ps-3 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Falhas conhecidas</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-3"></i>Propostas de melhoria</li>
+        <ul class="nested list-unstyled ps-2 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2></i>Propostas de melhoria</li>
         </ul>
       </li>
     </ul>
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Mais...
+      <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</li>
@@ -80,31 +80,31 @@ const menuHTML = {
   </li>
 </ul>`,
   userApres: `
-<ul class="treeview list-unstyled ps-1">
+<ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Manual do usuário
+      <i class="fas fa-folder-open me-2"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-2">
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
       <li>
         <span class="tree-toggle" onclick="toggleNode(this)">
-          <i class="fas fa-folder me-1"></i>Telas
+          <i class="fas fa-folder me-2"></i>Telas
         </span>
-        <ul class="nested list-unstyled ps-3 d-none">
-          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-3"></i>Acompanhamentos</li>
-          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-3"></i>Acompanhamento</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-3"></i>Validações</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-3"></i>Substituições</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaRMA.html"><i class="fas fa-file-alt me-3"></i>RMA</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-3"></i>RMAs</a></li>
+        <ul class="nested list-unstyled ps-2 d-none">
+          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-2"></i>Acompanhamentos</li>
+          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-2"></i>Acompanhamento</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-2"></i>Validações</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-2"></i>Substituições</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaRMA.html"><i class="fas fa-file-alt me-2"></i>RMA</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-2"></i>RMAs</a></li>
         </ul>
       </li>
     </ul>
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Mais...
+      <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</li>
@@ -112,10 +112,10 @@ const menuHTML = {
   </li>
 </ul>`,
   userTelas: `
-<ul class="treeview list-unstyled ps-1">
+<ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder-open me-1"></i>Manual do usuário
+      <i class="fas fa-folder-open me-2"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-2">
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
@@ -123,20 +123,20 @@ const menuHTML = {
         <span class="tree-toggle" onclick="toggleNode(this)">
           <i class="fas fa-folder-open me-2"></i>Telas
         </span>
-        <ul class="nested list-unstyled ps-3">
-          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-3"></i>Acompanhamentos</li>
-          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-3"></i>Acompanhamento</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-3"></i>Validações</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-3"></i>Substituições</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaRMA.html"><i class="fas fa-file-alt me-3"></i>RMA</a></li>
-          <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-3"></i>RMAs</a></li>
+        <ul class="nested list-unstyled ps-2">
+          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-2"></i>Acompanhamentos</li>
+          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-2"></i>Acompanhamento</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-2"></i>Validações</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-2"></i>Substituições</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaRMA.html"><i class="fas fa-file-alt me-2"></i>RMA</a></li>
+          <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-2"></i>RMAs</a></li>
         </ul>
       </li>
     </ul>
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Mais...
+      <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</li>
@@ -144,10 +144,10 @@ const menuHTML = {
   </li>
 </ul>`,
   projetos: `
-<ul class="treeview list-unstyled ps-1">
+<ul class="treeview list-unstyled ps-2">
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>Dist. Territorial - Cadastro Único
+      <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
@@ -155,7 +155,7 @@ const menuHTML = {
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>PAIF
+      <i class="fas fa-folder me-2"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
       <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
@@ -165,7 +165,7 @@ const menuHTML = {
   </li>
   <li>
     <span class="tree-toggle" onclick="toggleNode(this)">
-      <i class="fas fa-folder me-1"></i>PAEFI
+      <i class="fas fa-folder me-2"></i>PAEFI
     </span>
     <ul class="nested list-unstyled ps-2 d-none">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
