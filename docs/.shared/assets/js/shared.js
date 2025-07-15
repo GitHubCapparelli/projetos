@@ -180,7 +180,7 @@ function initBoxes() {
         setTimeout(() => {
           copyBtn.classList.replace('fa-check', 'fa-clipboard');
           body.style.backgroundColor = bgColor;
-        }, 300);
+        }, 500);
       }).catch(() => {
         alert('Copy failed');
       });
