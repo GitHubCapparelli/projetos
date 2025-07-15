@@ -1,13 +1,15 @@
+import * as pageItems from './pageItems.js';
+
 ///////////////////////////////////////////////////////////////////
 // Dark mode 
-function setDarkMode(theme) {
+export function setDarkMode(theme) {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme !== theme) {
     toggleDarkMode();
   }
 }
 
-function toggleDarkMode() {
+export function toggleDarkMode() {
   const currentTheme = document.body.getAttribute('data-bs-theme');
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
@@ -29,7 +31,7 @@ function toggleDarkMode() {
 ///////////////////////////////////////////////////////////////////
 // left (menu) sidebar
 
-function showLeftPanel(el) {
+export function showLeftPanel(el) {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
@@ -40,7 +42,7 @@ function showLeftPanel(el) {
   document.body.classList.add('panel-open');
 }
 
-function hideLeftPanel() {
+export function hideLeftPanel() {
   document.getElementById('leftPanel').classList.remove('show');
   document.body.classList.remove('panel-open');
 
@@ -48,7 +50,7 @@ function hideLeftPanel() {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
 }
 
-function toggleLeftPanel(el) {
+export function toggleLeftPanel(el) {
   const panel = document.getElementById('leftPanel');
   const isVisible = panel.classList.contains('show');
 
@@ -62,7 +64,7 @@ function toggleLeftPanel(el) {
 //////////////////////////////////////////////////////////////////////////////////
 // left (sidebar) menu tree-view
 
-function toggleNode(el) {
+export function toggleNode(el) {
   const icon = el.querySelector('i');
   const folderIcon = el.querySelector('.fas.fa-folder, .fas.fa-folder-open');
   const nested = el.nextElementSibling;
@@ -83,23 +85,9 @@ function toggleNode(el) {
   }
 }
 
-///////////////////////////////////////////////////////////////////
-// event listeners
-// 
-// stick header on scroll
-window.addEventListener('scroll', () => {
-  const header = document.getElementById('stickyTop');
-
-  if (window.scrollY > 60 ) { 
-    header.classList.add('show');
-  } else {
-    header.classList.remove('show');
-  }
-});
-
 //////////////////////////////////////////////////////////////////////
 // right (notes) side box
-function showNote(el) {
+export function showNote(el) {
   const panel = document.getElementById('rightPanel');
   panel.classList.add('show');
 
@@ -108,76 +96,13 @@ function showNote(el) {
   document.getElementById('rightPanel-body').innerHTML    = noteHTML[key];
 }
 
-function hideNote() {
+export function hideNote() {
   document.getElementById('rightPanel').classList.remove('show');
 }
 
-//////////////////////////////////////////////////////////////////////
-// init
-window.addEventListener('DOMContentLoaded', () => {
-  initialize(document.body.getAttribute('domain'));
-});
-
-function initialize(domain) {
-  switch (domain) {
-    case 'tech':
-      menuKey = 'techApres';
-      initBoxes();
-      setDarkMode(localStorage.getItem('theme'));
-      break;
-
-    case 'user':
-      menuKey = 'userApres';
-      setDarkMode('light');
-      break;
-
-    case 'user.telas':
-      menuKey = 'userTelas';
-      document.getElementById('leftBar').innerHTML    = constHTML.leftBar;
-      document.getElementById('rightPanel').innerHTML = constHTML.rightPanel;
-      document.getElementById('footer').innerHTML     = footerHTML[menuKey];
-
-      const tela = document.body.getAttribute('tela');
-      document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
-      document.getElementById('header').innerHTML     = getHeaderHTML(tela);
-
-      setDarkMode('light');
-      break;
-
-    case 'projetos':
-      menuKey = 'projetos';
-      setDarkMode('light');
-      break;
-
-    default:
-      menuKey = '';
-      setDarkMode('light');
-      break;
-  };
-}
-
-function getStickyHTML(tela) {
-  return `<div class="stickyTop-titles">
-            <h5 class="mb-0">${paifName}</h5>
-            <h6 class="mb-0">${paifTitles[tela]}</h6>
-          </div>`;
-}
-
-function getHeaderHTML(tela) {
-  return `<div class="header-left">
-              <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
-              <div class="header-titles">
-                  <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
-                  <h5 class="mb-0">${paifName}</h5>
-              </div>
-          </div>
-          <div class="header-right">
-              <h5 class="mb-0">${paifTag[tela]}</h5>
-          </div>`;
-}
 ///////////////////////////////////////////////////////////////////
 
-function initBoxes() {
+export function initBoxes() {
   document.querySelectorAll('.box-header').forEach(header => {
     const selector  = header.getAttribute('data-bs-target');
     const collapser = document.querySelector(selector);

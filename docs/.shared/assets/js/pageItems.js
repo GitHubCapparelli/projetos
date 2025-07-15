@@ -1,10 +1,10 @@
 // dynamic variables
-var menuKey = '';
+export var menuKey = '';
 
 // constants
-const paifName = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
+export const paifName = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
 
-const paifTags = {
+export const paifTags = {
   telaAcompanhamentos   : 'Tela Acompanhamentos',
   telaAcompanhamento    : 'Tela Acompanhamento',
   telaValidacoes        : 'Tela Validações',
@@ -13,7 +13,7 @@ const paifTags = {
   telaRMAS              : 'Tela RMAs'
 }
 
-const paifTitles = {
+export const paifTitles = {
   telaAcompanhamentos   : `-- ${paifTags.telaAcompanhamentos} : acompanhamento dos dados de atendimentos familiares --`,
   telaAcompanhamento    : `-- ${paifTags.telaAcompanhamento} : inclusão e/ou alteração dos dados de atendimentos familiares --`,
   telaValidacoes        : `-- ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
@@ -23,16 +23,16 @@ const paifTitles = {
 }
 
 // 'dictionaries'
-const noteTitle = {
+export const noteTitle = {
   test: 'Teste',
   test2: 'Teste 2'
 };
-const noteHTML = {
+export const noteHTML = {
   test: `<h1>Teste</h1>`,
   test2: `<h1>Teste 2</h1>`
 };
 
-const menuHTML = {
+export const menuHTML = {
   techApres: `
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
@@ -211,7 +211,7 @@ const menuHTML = {
 </ul>`
 };
 
-const footerHTML = {
+export const footerHTML = {
   techApres: ``,
   userApres: ``,
   userTelas: `<div class="footer-top">
@@ -255,7 +255,7 @@ const footerHTML = {
   projetos: ``
 };
 
-const constHTML = {
+export const constHTML = {
   leftBar: `
 <div class="leftMenu">
     <div class="leftMenu-top">
