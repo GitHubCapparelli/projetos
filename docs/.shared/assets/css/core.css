@@ -399,7 +399,7 @@ a:hover {
 .paralaxSectionContent {
   width: 100%;
   padding: 1rem;
-  margin: 0px 20px;
+  margin: 2rem;
   height: calc(100vh - var(--topBars-height) - 20px);
   background-color: var(--color-parallax-back);
   box-shadow: 0 8px 20px var(--color-shadow);
