@@ -115,7 +115,8 @@ function hideNote() {
 //////////////////////////////////////////////////////////////////////
 // init
 window.addEventListener('DOMContentLoaded', () => {
-  switch (document.body.getAttribute('domain')) {
+  const domain = document.body.getAttribute('domain');
+  switch (domain) {
     case 'tech'       : 
       menuKey = 'techApres';  
       initBoxes();
@@ -129,7 +130,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     case 'user.telas' : 
       menuKey = 'userTelas';  
-      document.getElementById('footer').innerHTML = footerHTML[key];
+      document.getElementById('footer').innerHTML = footerHTML[domain];
       setDarkMode('light'); 
       break;
 
