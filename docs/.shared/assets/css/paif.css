@@ -4,8 +4,8 @@
     --color-primary: rgb(12, 126, 44);
     --color-primary-dark: rgb(14, 95, 37);
     
-    /* cor primária + transparência */
-    --color-parallax-back: rgba(12, 126, 44, 0.9);
+    /* cor secundária + transparência */
+    --color-parallax-back: rgba(206, 229, 213, 0.9);
     --color-shadow: rgba(12, 126, 44, 0.5);
 
     --footer-height: 250px;

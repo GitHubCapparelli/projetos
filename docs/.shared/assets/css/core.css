@@ -5,9 +5,10 @@
     --color-secondary: rgb(128, 192, 192);
     --color-primary: rgb(0, 128, 128);
     --color-primary-dark: rgb(0, 64, 64);
-    
-    --color-parallax-back: rgba(0, 128, 128, 0.9);
-    --color-shadow: rgba(0, 128, 128, 0.5);
+
+    /* cor secundária + transparência */
+    --color-parallax-back: rgba(128, 192, 192, 0.9);
+    --color-shadow: rgba(128, 192, 192, 0.5);
   
     /* Teal */
     --teal-W5: rgb(204, 230, 230);
