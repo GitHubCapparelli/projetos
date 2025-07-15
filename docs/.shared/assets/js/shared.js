@@ -133,9 +133,14 @@ function initialize(domain) {
 
     case 'user.telas':
       menuKey = 'userTelas';
-      document.getElementById('leftBar').innerHTML    = constHTML['leftBar'];
-      document.getElementById('rightPanel').innerHTML = constHTML['rightPanel'];
+      document.getElementById('leftBar').innerHTML    = constHTML.leftBar;
+      document.getElementById('rightPanel').innerHTML = constHTML.rightPanel;
       document.getElementById('footer').innerHTML     = footerHTML[menuKey];
+
+      const tela = document.body.getAttribute('tela');
+      document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
+      document.getElementById('header').innerHTML     = getHeaderHTML(tela);
+
       setDarkMode('light');
       break;
 
@@ -151,6 +156,25 @@ function initialize(domain) {
   };
 }
 
+function getStickyHTML(tela) {
+  return `<div class="stickyTop-titles">
+            <h5 class="mb-0">${paifName}</h5>
+            <h6 class="mb-0">${paifTitles[tela]}</h6>
+          </div>`;
+}
+
+function getHeaderHTML(tela) {
+  return `<div class="header-left">
+              <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
+              <div class="header-titles">
+                  <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
+                  <h5 class="mb-0">${paifName}</h5>
+              </div>
+          </div>
+          <div class="header-right">
+              <h5 class="mb-0">${paifTag[tela]}</h5>
+          </div>`;
+}
 ///////////////////////////////////////////////////////////////////
 
 function initBoxes() {

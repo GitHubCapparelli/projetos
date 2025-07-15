@@ -2,6 +2,27 @@
 var menuKey = '';
 
 // constants
+const paifName = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
+
+const paifTags = {
+  telaAcompanhamentos   : 'Tela Acompanhamentos',
+  telaAcompanhamento    : 'Tela Acompanhamento',
+  telaValidacoes        : 'Tela Validações',
+  telaSubstituicoes     : 'Tela Substituiçoes',
+  telaRMA               : 'Tela RMA',
+  telaRMAS              : 'Tela RMAs'
+}
+
+const paifTitles = {
+  telaAcompanhamentos   : `-- ${paifTags.telaAcompanhamentos} : acompanhamento dos dados de atendimentos familiares --`,
+  telaAcompanhamento    : `-- ${paifTags.telaAcompanhamento} : inclusão e/ou alteração dos dados de atendimentos familiares --`,
+  telaValidacoes        : `-- ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
+  telaSubstituicoes     : `-- ${paifTags.telaSubstituicoes} : registro de períodos de substituição da gerência da unidade assistencial --`,
+  telaRMA               : `-- ${paifTags.telaRMA} : registro mensal de dados requeridos pelo MDS --`,
+  telaRMAS              : `-- ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`
+}
+
+// 'dictionaries'
 const noteTitle = {
   test: 'Teste',
   test2: 'Teste 2'
@@ -10,8 +31,6 @@ const noteHTML = {
   test: `<h1>Teste</h1>`,
   test2: `<h1>Teste 2</h1>`
 };
-
-
 
 const menuHTML = {
   techApres: `
@@ -191,8 +210,6 @@ const menuHTML = {
   </li>
 </ul>`
 };
-
-
 
 const footerHTML = {
   techApres: ``,
