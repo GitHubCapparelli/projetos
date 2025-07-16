@@ -141,6 +141,14 @@ function formatTitle(tela) {
 ///////////////////////////////////////////////////////////////////
 
 function initialize() {
+  switch (domain) {
+    case 'projetos'         : menuKey = 'projetos';       break;
+    case 'paif'             : menuKey = 'paif';           break;
+    case 'paif.tech'        : menuKey = 'paifTech';       break;
+    case 'paif.user'        : menuKey = 'paifUser';       break;
+    case 'paif.user.telas'  : menuKey = 'paifUserTelas';  break;
+    default                 : menuKey = '';               break;
+  }
   initializeHead();
   initializeBody();
   initializeEvents();
@@ -172,8 +180,8 @@ function initializeHead() {
 
   appendStyles(pageItems.sharedStyles);
 
-  if (pageItems.domainStyles[domain]) {
-    appendStyles(pageItems.domainStyles[domain]);
+  if (pageItems.domainStyles[menuKey]) {
+    appendStyles(pageItems.domainStyles[menuKey]);
   }
 }
 
@@ -182,15 +190,6 @@ function initializeBody() {
     document.title = (domain === 'projetos') 
                    ? 'GERVIS - Soluções' 
                    : `PAIF - ${formatTitle(tela)}`;
-  }
-
-  switch (domain) {
-    case 'projetos'         : menuKey = 'projetos';       break;
-    case 'paif'             : menuKey = 'paif';           break;
-    case 'paif.tech'        : menuKey = 'paifTech';       break;
-    case 'paif.user'        : menuKey = 'paifUser';       break;
-    case 'paif.user.telas'  : menuKey = 'paifUserTelas';  break;
-    default                 : menuKey = '';               break;
   }
 
   if (menuKey === 'paifTech') {
