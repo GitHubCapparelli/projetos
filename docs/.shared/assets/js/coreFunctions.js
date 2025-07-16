@@ -1,3 +1,4 @@
+import * as app  from './pageItems.js';
 import * as dict from './notes.js';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -35,7 +36,7 @@ export function showLeftPanel(el, menuKey) {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
-  document.getElementById('leftPanel-body').innerHTML = menuHTML[menuKey];
+  document.getElementById('leftPanel-body').innerHTML = app.menuHTML[menuKey];
 
   const panel = document.getElementById('leftPanel');
   panel.classList.add('show');
