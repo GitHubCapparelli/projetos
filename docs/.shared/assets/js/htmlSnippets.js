@@ -191,7 +191,7 @@ export const paifUserFooter = `<div class="footer-top">
 
 export const sharedMenu = `<div class="leftMenu">
     <div class="leftMenu-top">
-        <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
+        <div class="nav-item active" data-panel="tree" title="Menu">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
@@ -199,7 +199,7 @@ export const sharedMenu = `<div class="leftMenu">
 <div id="leftPanel" class="leftPanel">
     <div class="leftPanel-header">
         <h6 id="leftPanel-title"></h6>
-        <button class="btn btn-sm btn-hide" onclick="hideLeftPanel()">
+        <button class="btn btn-sm btn-hide">
             <i class="fas fa-times"></i>
         </button>
     </div>
@@ -208,7 +208,7 @@ export const sharedMenu = `<div class="leftMenu">
 
 export const sharedBox = `<div class="rightPanel-header">
     <h6 id="rightPanel-title"></h6>
-    <button class="btn btn-sm btn-hide" onclick="hideNote()">
+    <button class="btn btn-sm btn-hide">
         <i class="fas fa-times"></i>
     </button>
 </div>
