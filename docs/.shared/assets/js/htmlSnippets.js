@@ -1,4 +1,4 @@
-export const projetosMenu = '<ul class="treeview list-unstyled p-0 m-0">
+export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
@@ -25,13 +25,13 @@ export const projetosMenu = '<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
     </ul>
   </li>
-</ul>';
+</ul>`;
 
-export const paifMenu = '';
+export const paifMenu = ``;
 
-export const paifUserMenu = '';
+export const paifUserMenu = ``;
 
-export const paifUserTelasMenu = '<ul class="treeview list-unstyled p-0 m-0">
+export const paifUserTelasMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual do usuário
@@ -63,9 +63,9 @@ export const paifUserTelasMenu = '<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
-</ul>';
+</ul>`;
 
-export const paifTechMenu = '<ul class="treeview list-unstyled p-0 m-0">
+export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual técnico
@@ -142,15 +142,15 @@ export const paifTechMenu = '<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
-</ul>';
+</ul>`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// ç
 
-export const projetosFooter = '';
+export const projetosFooter = ``;
 
-export const paifTechFooter = '';
+export const paifTechFooter = ``;
 
-export const paifUserFooter = '<div class="footer-top">
+export const paifUserFooter = `<div class="footer-top">
 <div class="footer-top-left">
     <h6>Links úteis</h6>
     <ul>
@@ -187,11 +187,11 @@ export const paifUserFooter = '<div class="footer-top">
 <div class="footer-bottom">
 <span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
 <span class="footer-bottom-right">v.1.0</span>
-</div>';
+</div>`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// ç
 
-export const sharedMenu = '<div class="leftMenu">
+export const sharedMenu = `<div class="leftMenu">
     <div class="leftMenu-top">
         <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
             <i class="fa-solid fa-bars"></i>
@@ -206,15 +206,15 @@ export const sharedMenu = '<div class="leftMenu">
         </button>
     </div>
     <div class="leftPanel-body" id="leftPanel-body"></div>
-</div>';
+</div>`;
 
-export const sharedBox = '<div class="rightPanel-header">
+export const sharedBox = `<div class="rightPanel-header">
     <h6 id="rightPanel-title"></h6>
     <button class="btn btn-sm btn-hide" onclick="hideNote()">
         <i class="fas fa-times"></i>
     </button>
 </div>
-<div class="rightPanel-body" id="rightPanel-body"></div>';
+<div class="rightPanel-body" id="rightPanel-body"></div>`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
