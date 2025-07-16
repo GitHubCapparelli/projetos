@@ -193,14 +193,14 @@ function initializeBody() {
     default                 : menuKey = '';               break;
   }
 
-  if (menuKey === 'techApres') {
+  if (menuKey === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
     initBoxes();
   } else {
     coreFuncs.setDarkMode('light');
   };
 
-  if (menuKey === 'userTelas') {
+  if (menuKey === 'paifUserTelas') {
       document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
       document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
       document.getElementById('footer').innerHTML     = pageItems.footerHTML[menuKey];
