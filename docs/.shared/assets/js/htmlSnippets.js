@@ -29,9 +29,7 @@ export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
 
 export const paifMenu = ``;
 
-export const paifUserMenu = ``;
-
-export const paifUserTelasMenu = `<ul class="treeview list-unstyled p-0 m-0">
+export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual do usuário
