@@ -226,7 +226,12 @@ function initializeEvents() {
     el.addEventListener('click', coreFuncs.hideLeftPanel);
   });
 
-  // hide right panel
+  // show note - right panel
+  document.querySelectorAll('.note').forEach(el => {
+    el.addEventListener('click', () => { coreFuncs.showNote(el); });
+  });
+
+  // hide note - right panel
   document.querySelectorAll('[data-action="hide-note"]').forEach(el => {
     el.addEventListener('click', coreFuncs.hideNote);
   });
