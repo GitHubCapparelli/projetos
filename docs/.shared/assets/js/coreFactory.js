@@ -119,11 +119,11 @@ function initTreeToggles() {
   });
 
   document.querySelectorAll('.leftPanel .btn-hide').forEach(el => {
-    el.addEventListener('click', hideLeftPanel);
+    el.addEventListener('click', coreFuncs.hideLeftPanel);
   });
 
   document.querySelectorAll('.rightPanel .btn-hide').forEach(el => {
-    el.addEventListener('click', hideNote);
+    el.addEventListener('click', coreFuncs.hideNote);
   });
 }
 
