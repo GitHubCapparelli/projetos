@@ -3,7 +3,7 @@ import * as coreFuncs from './coreFunctions.js';
 
 const domain   = document.body.getAttribute('domain');
 const tela     = document.body.getAttribute('tela');
-const building = document.body.getAttribute('building');
+const building = document.body.hasAttribute('building');
 
 var menuKey = '';
 
