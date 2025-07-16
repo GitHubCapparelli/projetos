@@ -15,20 +15,6 @@ const namespaces = { // template
 export const paifName = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
 export const favIco   = '/projetos/.shared/assets/img/logo/gdf.png';
 
-export const sharedStyles = [
-  '/projetos/.shared/assets/css/core.css',
-  '/projetos/.shared/assets/css/bootstrap.css',
-  '/projetos/.shared/assets/css/all.fontAwesome.min.css'
-];
-
-export const domainStyles = {
-  // projetos: ``, // core
-  paif          : ['/projetos/.shared/assets/css/paif.css'],
-  paifTech      : ['/projetos/.shared/assets/css/tech.css'],
-  paifUser      : ['/projetos/.shared/assets/css/paif.css'],
-  paifUserTelas : ['/projetos/.shared/assets/css/paif.css']
-};
-
 export const menuHTML = {
   projetos      : html.projetosMenu,
   paif          : html.paifMenu,
@@ -48,6 +34,20 @@ export const footerHTML = {
 export const sharedHTML = {
   leftBar       : html.sharedMenu,
   rightPanel    : html.sharedBox
+};
+
+export const sharedStyles = [
+  '/projetos/.shared/assets/css/core.css',
+  '/projetos/.shared/assets/css/bootstrap.css',
+  '/projetos/.shared/assets/css/all.fontAwesome.min.css'
+];
+
+export const domainStyles = {
+  // projetos: ``, // core
+  paif          : ['/projetos/.shared/assets/css/paif.css'],
+  paifTech      : ['/projetos/.shared/assets/css/tech.css'],
+  paifUser      : ['/projetos/.shared/assets/css/paif.css'],
+  paifUserTelas : ['/projetos/.shared/assets/css/paif.css']
 };
 
 export const paifTags = {
