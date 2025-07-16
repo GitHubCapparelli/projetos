@@ -2,46 +2,28 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página em Construção</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #ff9800;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        .icon {
-            font-size: 5rem;
-            color: #ff9800;
-            margin-bottom: 20px;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
-    <div class="icon">🚧</div>
-    <h1>Página em Construção </h1>
-    <h3>PAIF - Tela Acompanhamento </h3>
-    <p>Estamos trabalhando para trazer algo incrível para você. Volte em breve!</p>
+<body domain="user.telas" tela="telaAcompanhamento" building>
+    <noscript>
+        <div class="no-js no-js-warning">Habilite o JavaScript do seu navegador para acessar o conteúdo desta página.</div>
+    </noscript>
+
+    <div id="leftBar" class="leftBar js-only"></div>
+    <div id="stickyTop" class="stickyTop js-only"></div>
+    <div id="header" class="header js-only"></div>
+
+    <div id="pageContent" class="pageContent js-only">
+        <!-- Insira o conteúdo da página aqui -->
+    </div>
+
+    <div id="footer" class="footer js-only"></div>
+    <div id="rightPanel" class="rightPanel js-only"></div>
+
+    <script type="module" src="/projetos/.shared/assets/js/coreFactory.js"></script>
+    <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
