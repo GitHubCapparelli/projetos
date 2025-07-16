@@ -185,12 +185,12 @@ function initializeBody() {
   }
 
   switch (domain) {
-    case 'paif'             : menuKey = 'techApres'; break;
-    case 'paif.tech'        : menuKey = 'techApres'; break;
-    case 'paif.user'        : menuKey = 'userApres'; break;
-    case 'paif.user.telas'  : menuKey = 'userTelas'; break;
-    case 'projetos'         : menuKey = 'projetos';  break;
-    default                 : menuKey = ''; break;
+    case 'projetos'         : menuKey = 'projetos';       break;
+    case 'paif'             : menuKey = 'paif';           break;
+    case 'paif.tech'        : menuKey = 'paifTech';       break;
+    case 'paif.user'        : menuKey = 'paifUser';       break;
+    case 'paif.user.telas'  : menuKey = 'paifUserTelas';  break;
+    default                 : menuKey = '';               break;
   }
 
   if (menuKey === 'techApres') {
@@ -201,8 +201,8 @@ function initializeBody() {
   };
 
   if (menuKey === 'userTelas') {
-      document.getElementById('leftBar').innerHTML    = pageItems.constHTML.leftBar;
-      document.getElementById('rightPanel').innerHTML = pageItems.constHTML.rightPanel;
+      document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
+      document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
       document.getElementById('footer').innerHTML     = pageItems.footerHTML[menuKey];
 
       document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
