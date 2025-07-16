@@ -1,56 +1,23 @@
 import * as pageItems from './pageItems.js';
 import * as coreFuncs from './coreFunctions.js';
 
+const domain   = document.body.getAttribute('domain');
+const tela     = document.body.getAttribute('tela');
+const building = document.body.getAttribute('building');
+
+var menuKey = '';
+
 ///////////////////////////////////////////////////////////////////
+// building shared components based on the user's option (use case ?)
 
-function initialize(domain) {
-  switch (domain) {
-    case 'tech':
-      pageItems.menuKey = 'techApres';
-      coreFuncs.initBoxes();
-      coreFuncs.setDarkMode(localStorage.getItem('theme'));
-      break;
-
-    case 'user':
-      pageItems.menuKey = 'userApres';
-      coreFuncs.setDarkMode('light');
-      break;
-
-    case 'user.telas':
-      pageItems.menuKey = 'userTelas';
-      document.getElementById('leftBar').innerHTML    = pageItems.constHTML.leftBar;
-      document.getElementById('rightPanel').innerHTML = pageItems.constHTML.rightPanel;
-      document.getElementById('footer').innerHTML     = pageItems.footerHTML[pageItems.menuKey];
-
-      const tela = document.body.getAttribute('tela');
-      document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
-      document.getElementById('header').innerHTML     = getHeaderHTML(tela);
-
-      coreFuncs.setDarkMode('light');
-      break;
-
-    case 'projetos':
-      pageItems.menuKey = 'projetos';
-      coreFuncs.setDarkMode('light');
-      break;
-
-    default:
-      pageItems.menuKey = '';
-      coreFuncs.setDarkMode('light');
-      break;
-  };
-}
-
-//////////////////////////////////////////////////////////////////////
-
-export function getStickyHTML(tela) {
+function getStickyHTML(tela) {
   return `<div class="stickyTop-titles">
             <h5 class="mb-0">${pageItems.paifName}</h5>
             <h6 class="mb-0">${pageItems.paifTitles[tela]}</h6>
           </div>`;
 }
 
-export function getHeaderHTML(tela) {
+function getHeaderHTML(tela) {
   return `<div class="header-left">
               <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
               <div class="header-titles">
@@ -63,23 +30,224 @@ export function getHeaderHTML(tela) {
           </div>`;
 }
 
-///////////////////////////////////////////////////////////////////
-// event listeners
-// 
-// stick header on scroll
-window.addEventListener('scroll', () => {
-  const header = document.getElementById('stickyTop');
+function getBuildingHTML() {
+  return `<div class="building">
+            <div class="icon">🚧</div>
+            <h1>Página em Construção </h1>
+            <p>Estamos trabalhando para trazer algo incrível para você.</p>
+            <p>Volte em breve!</p>
+            <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i>  Voltar</a>
+        </div>`;
+}
 
-  if (window.scrollY > 60 ) { 
-    header.classList.add('show');
-  } else {
-    header.classList.remove('show');
+///////////////////////////////////////////////////////////////////
+
+// dynamic toggle handler for boxes (single accordion 'components')
+function initBoxes() {
+  document.querySelectorAll('.box-header').forEach(header => {
+    const selector = header.getAttribute('data-bs-target');
+    const collapser = document.querySelector(selector);
+
+    const toggleBtn = header.querySelector('.toggle-btn');
+    const copyBtn = header.querySelector('.copy-btn');
+    const body = collapser.querySelector('.box-body') || collapser;
+
+    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapser, { toggle: false });
+
+    // toggle on header click
+    header.addEventListener('click', () => {
+      bsCollapse.toggle();
+    });
+
+    collapser.addEventListener('show.bs.collapse', () => {
+      toggleBtn?.classList.replace('fa-plus', 'fa-minus');
+      header.classList.remove('collapsed');
+    });
+
+    collapser.addEventListener('hide.bs.collapse', () => {
+      toggleBtn?.classList.replace('fa-minus', 'fa-plus');
+      header.classList.add('collapsed');
+    });
+
+    // Initial state
+    if (collapser.classList.contains('show')) {
+      toggleBtn?.classList.replace('fa-plus', 'fa-minus');
+      header.classList.remove('collapsed');
+    } else {
+      toggleBtn?.classList.replace('fa-minus', 'fa-plus');
+      header.classList.add('collapsed');
+    }
+
+    // copy button
+    // navigator.clipboard.writeText requires HTTPS or localhost in most browsers.
+    copyBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      navigator.clipboard.writeText(body.innerText.trim()).then(() => {
+        copyBtn.classList.replace('fa-clipboard', 'fa-check');
+
+        const bgColor = body.style.backgroundColor;
+        const sdColor = getComputedStyle(document.documentElement).getPropertyValue('--color-secondary').trim();
+        body.style.backgroundColor = sdColor;
+
+        setTimeout(() => {
+          copyBtn.classList.replace('fa-check', 'fa-clipboard');
+          body.style.backgroundColor = bgColor;
+        }, 500);
+      }).catch(() => {
+        alert('Copy failed');
+      });
+    });
+  });
+};
+
+// dynamic toggle handler for left-side tree menu
+function initTreeToggles() {
+  document.querySelectorAll('.tree-toggle').forEach(el => {
+    el.addEventListener('click', () => {
+      const siblingList = el.nextElementSibling;
+      if (siblingList && siblingList.classList.contains('nested')) {
+        siblingList.classList.toggle('d-none');
+        const icon = el.querySelector('i.fas');
+        if (icon) {
+          icon.classList.toggle('fa-folder');
+          icon.classList.toggle('fa-folder-open');
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('.leftPanel .btn-hide').forEach(el => {
+    el.addEventListener('click', hideLeftPanel);
+  });
+
+  document.querySelectorAll('.rightPanel .btn-hide').forEach(el => {
+    el.addEventListener('click', hideNote);
+  });
+}
+
+///////////////////////////////////////////////////////////////////
+// helper functions
+
+function formatTitle(tela) {
+  if (!tela) return '';
+  return tela
+    .replace(/^tela/, '')                      // Remove "tela" prefix
+    .replace(/([A-Z])/g, ' $1')                // Add spaces before caps
+    .trim();                                   // Remove leading/trailing spaces
+}
+
+///////////////////////////////////////////////////////////////////
+
+function initialize() {
+  initializeHead();
+  initializeBody();
+  initializeEvents();
+}
+
+function initializeHead() {
+  const head = document.head;
+  document.documentElement.classList.add('js-enabled');
+
+  // favicon
+  let link = document.querySelector('link[rel="icon"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    head.appendChild(link);
   }
-});
+  link.href = pageItems.favIco;
+
+  // stylesheets
+  const appendStyles = (list) => {
+    list.forEach(href => {
+      const link = document.createElement('link');
+      link.rel   = 'stylesheet';
+      link.type  = 'text/css';
+      link.href  = href;
+      head.appendChild(link);
+    });
+  };
+
+  appendStyles(pageItems.sharedStyles);
+
+  if (pageItems.domainStyles[domain]) {
+    appendStyles(pageItems.domainStyles[domain]);
+  }
+}
+
+function initializeBody() {
+  if (tela) {
+    document.title = (domain === 'projetos') 
+                   ? 'GERVIS - Soluções' 
+                   : `PAIF - ${formatTitle(tela)}`;
+  }
+
+  switch (domain) {
+    case 'tech'       : menuKey = 'techApres'; break;
+    case 'user'       : menuKey = 'userApres'; break;
+    case 'user.telas' : menuKey = 'userTelas'; break;
+    case 'projetos'   : menuKey = 'projetos';  break;
+    default           : menuKey = ''; break;
+  }
+
+  if (menuKey === 'techApres') {
+    coreFuncs.setDarkMode(localStorage.getItem('theme'));
+    initBoxes();
+  } else {
+    coreFuncs.setDarkMode('light');
+  };
+
+  if (menuKey === 'userTelas') {
+      document.getElementById('leftBar').innerHTML    = pageItems.constHTML.leftBar;
+      document.getElementById('rightPanel').innerHTML = pageItems.constHTML.rightPanel;
+      document.getElementById('footer').innerHTML     = pageItems.footerHTML[menuKey];
+
+      document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
+      document.getElementById('header').innerHTML     = getHeaderHTML(tela);
+  };
+
+  if(building) {
+    document.getElementById('pageContent').innerHTML = getBuildingHTML();
+  }
+}
+
+function initializeEvents() {
+  initTreeToggles();
+
+  // left panel toggle
+  document.querySelectorAll('.nav-item[data-panel="tree"]').forEach(el => {
+    el.addEventListener('click', () => { coreFuncs.toggleLeftPanel(el, menuKey); });
+  });
+
+  // hide left panel
+  document.querySelectorAll('[data-action="hide-left-panel"]').forEach(el => {
+    el.addEventListener('click', coreFuncs.hideLeftPanel);
+  });
+
+  // hide right panel
+  document.querySelectorAll('[data-action="hide-note"]').forEach(el => {
+    el.addEventListener('click', coreFuncs.hideNote);
+  });
+
+  // stick header on scroll
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('stickyTop');
+
+    if (window.scrollY > 60 ) { 
+      header.classList.add('show');
+    } else {
+      header.classList.remove('show');
+    }
+  });
+}
+
+//////////////////////////////////////////////////////////////////////
+
+// initializing...
+window.addEventListener('DOMContentLoaded', initialize);
 
 ///////////////////////////////////////////////////////////////////
-// initializing...
 
-window.addEventListener('DOMContentLoaded', () => {
-  initialize(document.body.getAttribute('domain'));
-});
+

@@ -4,37 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página em construção</title>
-
-    <link href="/projetos/.shared/assets/img/logo/gdf.png" rel="icon" type="image/x-icon">
-
-    <link href="/projetos/.shared/assets/css/core.css" rel="stylesheet">
-    <link href="/projetos/.shared/assets/css/paif.css" rel="stylesheet">
-
-    <link href="/projetos/.shared/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/projetos/.shared/assets/css/all.fontAwesome.min.css" rel="stylesheet">
 </head>
 
-<body domain="user.telas">
-    <div id="leftBar" class="leftBar"></div>
-    <div id="stickyTop" class="stickyTop"></div>
-    <div id="header" class="header"></div>
+<body domain="user.telas" tela="telaRMA" building>
+    <noscript>
+        <div class="no-js no-js-warning">Habilite o JavaScript do seu navegador para acessar o conteúdo desta página.</div>
+    </noscript>
     
-    <!-- Insira o conteúdo da página aqui -->
-    <div class="pageContent">
-        <div class="building">
-            <div class="icon">🚧</div>
-            <h1>Página em Construção </h1>
-            <p>Estamos trabalhando para trazer algo incrível para você.</p>
-            <p>Volte em breve!</p>
-            <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i>  Voltar</a>
-        </div>
+    <div id="leftBar"   class="leftBar js-only"></div>
+    <div id="stickyTop" class="stickyTop js-only"></div>
+    <div id="header"    class="header js-only"></div>
+    
+    <div id="pageContent" class="pageContent js-only">
+        <!-- Insira o conteúdo da página aqui -->    
     </div>
 
-    <div id="footer" class="footer"></div>
-    <div id="rightPanel" class="rightPanel"></div>
-    <script src="/projetos/.shared/assets/js/pageItems.js"></script>
-    <script src="/projetos/.shared/assets/js/coreFunctions.js"></script>
+    <div id="footer"     class="footer js-only"></div>
+    <div id="rightPanel" class="rightPanel js-only"></div>
+
+    <script type="module" src="/projetos/.shared/assets/js/coreFactory.js"></script>
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

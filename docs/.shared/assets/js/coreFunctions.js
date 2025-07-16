@@ -1,5 +1,3 @@
-import * as pageItems from './pageItems.js';
-
 ///////////////////////////////////////////////////////////////////
 // Dark mode 
 export function setDarkMode(theme) {
@@ -31,7 +29,7 @@ export function toggleDarkMode() {
 ///////////////////////////////////////////////////////////////////
 // left (menu) sidebar
 
-export function showLeftPanel(el) {
+export function showLeftPanel(el, menuKey) {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
@@ -50,14 +48,14 @@ export function hideLeftPanel() {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
 }
 
-export function toggleLeftPanel(el) {
+export function toggleLeftPanel(el, menuKey) {
   const panel = document.getElementById('leftPanel');
   const isVisible = panel.classList.contains('show');
 
   if (isVisible) {
     hideLeftPanel();
   } else {
-    showLeftPanel(el);
+    showLeftPanel(el, menuKey);
   }
 }
 
@@ -99,65 +97,5 @@ export function showNote(el) {
 export function hideNote() {
   document.getElementById('rightPanel').classList.remove('show');
 }
-
-///////////////////////////////////////////////////////////////////
-
-export function initBoxes() {
-  document.querySelectorAll('.box-header').forEach(header => {
-    const selector  = header.getAttribute('data-bs-target');
-    const collapser = document.querySelector(selector);
-
-    const toggleBtn = header.querySelector('.toggle-btn');
-    const copyBtn   = header.querySelector('.copy-btn');
-    const body      = collapser.querySelector('.box-body') || collapser;
-
-    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapser, { toggle: false });
-
-    // Toggle on header click
-    header.addEventListener('click', () => {
-      bsCollapse.toggle();
-    });
-
-    collapser.addEventListener('show.bs.collapse', () => {
-      toggleBtn?.classList.replace('fa-plus', 'fa-minus');
-      header.classList.remove('collapsed');
-    });
-
-    collapser.addEventListener('hide.bs.collapse', () => {
-      toggleBtn?.classList.replace('fa-minus', 'fa-plus');
-      header.classList.add('collapsed');
-    });
-
-    // Initial state
-    if (collapser.classList.contains('show')) {
-      toggleBtn?.classList.replace('fa-plus', 'fa-minus');
-      header.classList.remove('collapsed');
-    } else {
-      toggleBtn?.classList.replace('fa-minus', 'fa-plus');
-      header.classList.add('collapsed');
-    }
-
-    // Copy button
-    copyBtn?.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-
-      navigator.clipboard.writeText(body.innerText.trim()).then(() => {
-        copyBtn.classList.replace('fa-clipboard', 'fa-check');
-
-        const bgColor = body.style.backgroundColor;
-        const sdColor = getComputedStyle(document.documentElement).getPropertyValue('--color-secondary').trim();
-        body.style.backgroundColor = sdColor;
-        
-        setTimeout(() => {
-          copyBtn.classList.replace('fa-check', 'fa-clipboard');
-          body.style.backgroundColor = bgColor;
-        }, 500);
-      }).catch(() => {
-        alert('Copy failed');
-      });
-    });
-  });
-};
 
 ///////////////////////////////////////////////////////////////////

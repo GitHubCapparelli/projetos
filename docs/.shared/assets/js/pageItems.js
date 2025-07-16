@@ -1,7 +1,17 @@
-// dynamic variables
-export var menuKey = '';
+export const favIco  = '/projetos/.shared/assets/img/logo/gdf.png';
 
-// constants
+export const sharedStyles = [
+  '/projetos/.shared/assets/css/core.css',
+  '/projetos/.shared/assets/css/bootstrap.css',
+  '/projetos/.shared/assets/css/all.fontAwesome.min.css'
+];
+
+export const domainStyles = {
+  'user.telas': ['/projetos/.shared/assets/css/paif.css'],
+  'user':       ['/projetos/.shared/assets/css/paif.css'],
+  'tech':       ['/projetos/.shared/assets/css/tech.css']
+};
+
 export const paifName = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
 
 export const paifTags = {
@@ -36,19 +46,19 @@ export const menuHTML = {
   techApres: `
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual técnico
     </span>
-    <ul class="nested list-unstyled ps-4">
+    <ul id="folderManualTecnico" class="nested list-unstyled ps-4">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Requerimentos e especificações</a></li>
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Arquitetura, escopo e restrições</a></li>
       <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
+        <span class="tree-toggle">
           <i class="fas fa-folder me-2"></i>Casos de uso
         </span>
-        <ul class="nested list-unstyled ps-4 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Acompanhamento de atendimentos</li>
+        <ul id="folderCasosDeUso" class="nested list-unstyled ps-4 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Acompanhamento de atendimentos</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Manutenção de acompanhamentos</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação mensal</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Registro de substituições</a></li>
@@ -58,15 +68,15 @@ export const menuHTML = {
         </ul>
       </li>
       <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
+        <span class="tree-toggle">
           <i class="fas fa-folder me-2"></i>Código
         </span>
-        <ul class="nested list-unstyled ps-4 d-none">
+        <ul id="folderCodigo" class="nested list-unstyled ps-4 d-none">
           <li>
-            <span class="tree-toggle" onclick="toggleNode(this)">
+            <span class="tree-toggle">
               <i class="fas fa-folder me-2"></i>Ações do usuário
             </span>
-            <ul class="nested list-unstyled ps-4 d-none">
+            <ul id="folderAcoesDoUsuario" class="nested list-unstyled ps-4 d-none">
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamentos</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamento</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Validações</a></li>
@@ -77,10 +87,10 @@ export const menuHTML = {
             </ul>
           </li>
           <li>
-            <span class="tree-toggle" onclick="toggleNode(this)">
+            <span class="tree-toggle">
               <i class="fas fa-folder me-2"></i>Ações do sistema
             </span>
-            <ul class="nested list-unstyled ps-4 d-none">
+            <ul id="folderAcoesDoSistema" class="nested list-unstyled ps-4 d-none">
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente e memória</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Carga e edição dos dados</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação e crítica dos dados</a></li>
@@ -91,10 +101,10 @@ export const menuHTML = {
         </ul>
       </li>
       <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
+        <span class="tree-toggle">
           <i class="fas fa-folder me-2"></i>Apêndices
         </span>
-        <ul class="nested list-unstyled ps-4 d-none">
+        <ul id="folderApendices" class="nested list-unstyled ps-4 d-none">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</a></li>
         </ul>
@@ -104,10 +114,10 @@ export const menuHTML = {
 </ul>
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Mais...
     </span>
-    <ul class="nested list-unstyled ps-4 d-none">
+    <ul id="folderMais" class="nested list-unstyled ps-4 d-none">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
@@ -115,17 +125,17 @@ export const menuHTML = {
   userApres: `
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-4">
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
       <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
+        <span class="tree-toggle">
           <i class="fas fa-folder me-2"></i>Telas
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
-          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-2"></i>Acompanhamentos</li>
+          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-2"></i>Acompanhamentos</a></li>
           <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-2"></i>Acompanhamento</a></li>
           <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-2"></i>Validações</a></li>
           <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-2"></i>Substituições</a></li>
@@ -138,7 +148,7 @@ export const menuHTML = {
 </ul>
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
@@ -149,17 +159,17 @@ export const menuHTML = {
   userTelas: `
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual do usuário
     </span>
     <ul class="nested list-unstyled ps-4">
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
       <li>
-        <span class="tree-toggle" onclick="toggleNode(this)">
+        <span class="tree-toggle">
           <i class="fas fa-folder-open me-2"></i>Telas
         </span>
         <ul class="nested list-unstyled ps-4">
-          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-2"></i>Acompanhamentos</li>
+          <li><a href="/projetos/PAIF/user/telas/telaAcompanhamentos.html"><i class="fas fa-file-alt me-2"></i>Acompanhamentos</a></li>
           <li><a href="/projetos/PAIF/user/telas/telaAcompanhamento.html"><i class="fas fa-file-alt me-2"></i>Acompanhamento</a></li>
           <li><a href="/projetos/PAIF/user/telas/telaValidacoes.html"><i class="fas fa-file-alt me-2"></i>Validações</a></li>
           <li><a href="/projetos/PAIF/user/telas/telaSubstituicoes.html"><i class="fas fa-file-alt me-2"></i>Substituições</a></li>
@@ -172,7 +182,7 @@ export const menuHTML = {
 </ul>
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
@@ -183,7 +193,7 @@ export const menuHTML = {
   projetos: `
 <ul class="treeview list-unstyled p-0 m-0">
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
@@ -191,7 +201,7 @@ export const menuHTML = {
     </ul>
   </li>
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>PAIF
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
@@ -201,7 +211,7 @@ export const menuHTML = {
     </ul>
   </li>
   <li>
-    <span class="tree-toggle" onclick="toggleNode(this)">
+    <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>PAEFI
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
