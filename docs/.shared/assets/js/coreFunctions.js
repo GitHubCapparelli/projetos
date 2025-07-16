@@ -1,5 +1,7 @@
-///////////////////////////////////////////////////////////////////
-// Dark mode 
+import * as dict from './notes.js';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////// 
+// dark mode 
 export function setDarkMode(theme) {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme !== theme) {
@@ -59,9 +61,6 @@ export function toggleLeftPanel(el, menuKey) {
   }
 }
 
-//////////////////////////////////////////////////////////////////////////////////
-// left (sidebar) menu tree-view
-
 export function toggleNode(el) {
   const icon = el.querySelector('i');
   const folderIcon = el.querySelector('.fas.fa-folder, .fas.fa-folder-open');
@@ -90,8 +89,8 @@ export function showNote(el) {
   panel.classList.add('show');
 
   const key = el.getAttribute('noteKey');
-  document.getElementById('rightPanel-title').textContent = noteTitle[key];
-  document.getElementById('rightPanel-body').innerHTML    = noteHTML[key];
+  document.getElementById('rightPanel-title').textContent = dict.noteTitle[key];
+  document.getElementById('rightPanel-body').innerHTML    = dict.noteHTML[key];
 }
 
 export function hideNote() {

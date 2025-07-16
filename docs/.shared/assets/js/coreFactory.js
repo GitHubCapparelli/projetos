@@ -26,7 +26,7 @@ function getHeaderHTML(tela) {
               </div>
           </div>
           <div class="header-right">
-              <h5 class="mb-0">${pageItems.paifTag[tela]}</h5>
+              <h5 class="mb-0">${pageItems.paifTags[tela]}</h5>
           </div>`;
 }
 
@@ -185,11 +185,12 @@ function initializeBody() {
   }
 
   switch (domain) {
-    case 'tech'       : menuKey = 'techApres'; break;
-    case 'user'       : menuKey = 'userApres'; break;
-    case 'user.telas' : menuKey = 'userTelas'; break;
-    case 'projetos'   : menuKey = 'projetos';  break;
-    default           : menuKey = ''; break;
+    case 'paif'             : menuKey = 'techApres'; break;
+    case 'paif.tech'        : menuKey = 'techApres'; break;
+    case 'paif.user'        : menuKey = 'userApres'; break;
+    case 'paif.user.telas'  : menuKey = 'userTelas'; break;
+    case 'projetos'         : menuKey = 'projetos';  break;
+    default                 : menuKey = ''; break;
   }
 
   if (menuKey === 'techApres') {

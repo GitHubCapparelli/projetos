@@ -1,60 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAIF - Manual técnico</title>
-
-    <link href="/projetos/.shared/assets/img/logo/gdf.png" rel="icon" type="image/x-icon">
-
-    <link href="/projetos/.shared/assets/css/core.css" rel="stylesheet">
-    <link href="/projetos/.shared/assets/css/paif.css" rel="stylesheet">
-    <link href="/projetos/.shared/assets/css/tech.css" rel="stylesheet">
-    
-    <link href="/projetos/.shared/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/projetos/.shared/assets/css/all.fontAwesome.min.css" rel="stylesheet">
 </head>
+<body domain="paif.tech">
+    <noscript>
+        <div class="no-js no-js-warning">Habilite o JavaScript do seu navegador para acessar o conteúdo desta página.</div>
+    </noscript>
 
-<body domain="tech">
-    <div class="leftBar">
-        <div class="leftMenu">
-            <div class="leftMenu-top">
-                <div class="nav-item active" data-panel="tree" onclick="toggleLeftPanel(this)" title="Menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-            <div class="leftMenu-bottom">
-                <div class="nav-item" data-panel="settings" onclick="toggleDarkMode()" title="Dark mode">
-                    <i class="fa-solid fa-moon"></i>
-                </div>
-            </div>
-        </div>
-        <div id="leftPanel" class="leftPanel">
-            <div class="leftPanel-header">
-                <h6 id="leftPanel-title"></h6>
-                <button class="btn btn-sm btn-hide" onclick="hideLeftPanel()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="leftPanel-body" id="leftPanel-body"></div>
-        </div>
-    </div>
+    <div id="leftBar" class="leftBar js-only"></div>
+    <div id="stickyTop" class="stickyTop js-only"></div>
+    <div id="header" class="header js-only"></div>
 
-    <div class="header">
-        <div class="header-left">
-            <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
-            <div class="header-titles">
-                <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
-                <h5 class="mb-0">PAIF – Serviço de Proteção e Atendimento Integral à Família</h5>
-            </div>
-        </div>
-        <div class="header-right">
-            <h5 class="mb-0">Manual técnico</h5>
-        </div>
-    </div>
-
-    <div class="pageContent">
+    <div id="pageContent" class="pageContent js-only">
         <div class="sectionContent">
             <span class="tags"><span class="tag">Público alvo</span><span class="tag">Audiência</span><span
                     class="tag">Atores</span><span class="tag">Perfis</span></span>
@@ -63,7 +22,8 @@
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
                 dolor
                 error repellat totam assumenda excepturi sit.</p>
-            <p>Lorem <a class="note" noteKey="test" onclick="showNote(this)">consectetur</a> ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
+            <p>Lorem <a class="note" noteKey="test" onclick="showNote(this)">consectetur</a> ipsum dolor sit amet,
+                consectetur adipisicing elit. Quibusdam praesentium
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
                 dolor
                 error repellat totam assumenda excepturi sit.</p>
@@ -123,59 +83,10 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="footer-top">
-            <div class="footer-top-left">
-                <h6>Links úteis</h6>
-                <ul>
-                    <li><a href="https://make.powerapps.com/e/Default-316e2fe4-d0ac-443c-88e0-c16d89e31e83/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F34b7d3f8-ca22-4c8c-91a3-203ef99218e2&utm_source=office&utm_medium=app_launcher&utm_campaign=office_referrals"
-                            target="_blank" rel="noopener noreferrer">Power Apps Canvas (IDE)</a></li>
-                    <li><a href="https://make.powerautomate.com/environments/Default-316e2fe4-d0ac-443c-88e0-c16d89e31e83/flows"
-                            target="_blank" rel="noopener noreferrer">Power Automate Flows (Serviços)</a></li>
-                    <li><a href="https://sedesgdf-my.sharepoint.com/personal/carlos_capparelli_sedes_df_gov_br/_layouts/15/Lists.aspx"
-                            target="_blank" rel="noopener noreferrer">SharePoint Lists (Dados)</a></li>
-                </ul>
-            </div>
-            <div class="footer-top-left">
-                <h6>SharePoint sites</h6>
-                <ul>
-                    <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                            rel="noopener noreferrer">GERVIS</a></li>
-                    <li><a href="https://sedesgdf.sharepoint.com/sites/dadosInternos/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FdadosInternos%2FShared%20Documents%2Fdocs&viewid=83c09c25%2Dcd66%2D4b53%2D8f4e%2D57da96d2660b"
-                            target="_blank" rel="noopener noreferrer">Dados internos</a></li>
-                </ul>
-            </div>
-            <div class="footer-top-right">
-                <img class="img-logo" src="/projetos/.shared/assets/img/sedes/sedes-logo-redondo.png"
-                    alt="sedes-logo-redondo">
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
-            <span class="footer-bottom-right">v.1.0</span>
-        </div>
-    </div>
+    <div id="footer" class="footer js-only"></div>
+    <div id="rightPanel" class="rightPanel js-only"></div>
 
-    <div id="stickyTop" class="stickyTop">
-        <div class="stickyTop-titles">
-            <h5 class="mb-0">PAIF – Serviço de Proteção e Atendimento Integral à Família</h5>
-            <h6 class="mb-0">-- Manual técnico --</h6>
-        </div>
-    </div>
-
-    <div id="rightPanel" class="rightPanel">
-        <div class="rightPanel-header">
-            <h6 id="rightPanel-title"></h6>
-            <button class="btn btn-sm btn-hide" onclick="hideNote()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="rightPanel-body" id="rightPanel-body"></div>
-    </div>
-
-    <script src="/projetos/.shared/assets/js/pageContext.js"></script>
-    <script src="/projetos/.shared/assets/js/shared.js"></script>
+    <script type="module" src="/projetos/.shared/assets/js/coreFactory.js"></script>
     <script src="/projetos/.shared/assets/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
