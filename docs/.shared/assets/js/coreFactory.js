@@ -189,20 +189,41 @@ function initializeBody() {
 }
 
 function initializeEvents() {
-  console.log('Tree toggles found:', document.querySelectorAll('.tree-toggle').length);
-  document.querySelectorAll('.tree-toggle').forEach(el => {
-    el.addEventListener('click', () => {
-      const siblingList = el.nextElementSibling;
+  // console.log('Tree toggles found:', document.querySelectorAll('.tree-toggle').length);
+  // document.querySelectorAll('.tree-toggle').forEach(el => {
+  //   el.addEventListener('click', () => {
+  //     const siblingList = el.nextElementSibling;
+  //     if (siblingList && siblingList.classList.contains('nested')) {
+  //       siblingList.classList.toggle('d-none');
+  //       const icon = el.querySelector('i.fas');
+  //       if (icon) {
+  //         icon.classList.toggle('fa-folder');
+  //         icon.classList.toggle('fa-folder-open');
+  //       }
+  //     }
+  //   });
+  // });
+
+  const leftPanelBody = document.getElementById('leftPanel-body');
+  if (leftPanelBody) {
+    leftPanelBody.addEventListener('click', (event) => {
+      const toggle = event.target.closest('.tree-toggle');
+      if (!toggle) {
+        console.log('.tree-togle not found');
+        return;
+      }
+
+      const siblingList = toggle.nextElementSibling;
       if (siblingList && siblingList.classList.contains('nested')) {
         siblingList.classList.toggle('d-none');
-        const icon = el.querySelector('i.fas');
+        const icon = toggle.querySelector('i.fas');
         if (icon) {
           icon.classList.toggle('fa-folder');
           icon.classList.toggle('fa-folder-open');
         }
       }
     });
-  });
+  }
 
   // left panel toggle
   document.querySelectorAll('.nav-item[data-panel="tree"]').forEach(el => {
