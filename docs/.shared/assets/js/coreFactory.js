@@ -198,7 +198,7 @@ function initializeEvents() {
 
   // left panel
   document.querySelectorAll('.nav-item[data-panel="tree"]')
-    .forEach(el => el.addEventListener('click', () => { coreFuncs.toggleLeftPanel(el, menuKey); }) );
+    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, menuKey)) );
   
   document.querySelectorAll('.leftPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));
@@ -206,12 +206,15 @@ function initializeEvents() {
   // menu tree
   document.getElementById('leftPanel-body').addEventListener('click', (event) => {
     const toggle      = event.target.closest('.tree-toggle');
-    const siblingList = toggle.nextElementSibling;
+    if (!toggle) throw new Error('Expected .tree-toggle element not found on click event.');
 
+    const siblingList = toggle.nextElementSibling;
     if (siblingList && siblingList.classList.contains('nested')) {
       siblingList.classList.toggle('d-none');
 
       const icon = toggle.querySelector('i.fas');
+      if (!icon) throw new Error('Expected i.fas element not found.');
+
       icon.classList.toggle('fa-folder');
       icon.classList.toggle('fa-folder-open');
     }
@@ -219,7 +222,7 @@ function initializeEvents() {
 
   // right panel
   document.querySelectorAll('.note')
-    .forEach(el => el.addEventListener('click', () => { coreFuncs.showNote(el); }));
+    .forEach(el => el.addEventListener('click', () => coreFuncs.showNote(el)));
   
   document.querySelectorAll('.rightPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideNote));
