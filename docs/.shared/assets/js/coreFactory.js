@@ -81,10 +81,10 @@ function initialize() {
 
 function initializeVars() {
   switch (dominio) {
-    case 'projetos'         : tela = 'projetos';      break;
     case 'paif'             : tela = 'paif';          break;
     case 'paif.tech'        : tela = 'paifTech';      break;
     case 'paif.user'        : tela = 'paifUser';      break;
+    case 'projetos'         : tela = 'projetos';      break;
   }
 }
 
