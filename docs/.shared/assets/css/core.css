@@ -294,27 +294,31 @@ a:hover {
   background-color: var(--color-secondary);
 }
 
-.header-left,
-.header-right,
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1; /* <--- push right panel to the edge */
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 .header-titles {
   display: flex;
   justify-content: start;
   flex-direction: column;
   align-items: start;
+  padding-left: 10px;
 }
-
-.header-left  { flex-direction: row; }
-.header-right { align-items: end; }
-
 .header-logo {
   width: 50px;
   height: 50px;
   border: 1px solid var(--color-primary);
-}
-
-.header-titles {
-  padding-left: 10px;
-  justify-content: center;
 }
 
 .header-titles h6 {
