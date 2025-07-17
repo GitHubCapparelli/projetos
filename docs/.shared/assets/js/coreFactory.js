@@ -86,7 +86,11 @@ function initialize() {
 
   if (dominio === 'paif.user') {
     const folderTelas = document.getElementById('folderTelas');
-    coreFuncs.toggleNode(folderTelas);
+    if (folderTelas) {
+      toggleNode(folderTelas);  // This will toggle the visibility of the submenu
+    } else {
+      console.log('folderTelas not found');
+    }
   }
 }
 
