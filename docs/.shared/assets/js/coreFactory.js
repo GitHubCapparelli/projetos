@@ -2,8 +2,8 @@ import * as coreFuncs from './coreFunctions.js';
 window.coreFuncs = coreFuncs;
 
 var tela        = document.body.getAttribute('tela');
+var foco        = '';
 
-const foco      = tela.startsWith('tela') ? 'paifUserTelas' : tela;
 const dominio   = document.body.getAttribute('domain');
 const building  = document.body.hasAttribute('building');
 
@@ -80,6 +80,8 @@ function initialize() {
     case 'paif.user' : tela = 'paifUser'; break;
     case 'projetos'  : tela = 'projetos'; break;
   }
+  foco = tela.startsWith('tela') ? 'paifUserTelas' : tela;
+  
   initializeHead();
   initializeBody();
   initializeEvents();
