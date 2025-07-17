@@ -8,7 +8,8 @@
 
   /* cor secundária + transparência */
   --color-parallax-back: rgba(128, 192, 192, 0.9);
-  --color-shadow: rgba(128, 192, 192, 0.5);
+  /* --color-shadow: rgba(128, 192, 192, 0.5); */
+  --color-shadow: black;
 
   /* Teal */
   --teal-W5: rgb(204, 230, 230);
