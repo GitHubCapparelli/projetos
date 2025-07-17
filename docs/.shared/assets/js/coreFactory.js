@@ -85,8 +85,6 @@ function initializeVars() {
     case 'paif'             : tela = 'paif';          break;
     case 'paif.tech'        : tela = 'paifTech';      break;
     case 'paif.user'        : tela = 'paifUser';      break;
-    case 'paif.user.telas'  : tela = 'paifUserTelas'; break;
-    default                 : tela = dominio;         break;
   }
 }
 
