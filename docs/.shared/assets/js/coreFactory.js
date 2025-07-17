@@ -263,7 +263,7 @@ function initializeEvents() {
     }
   });
 
-  document.getElementById('rightPanel').classList.remove('show');
+  // document.getElementById('rightPanel').classList.remove('preload-hidden');
 }
 
 //////////////////////////////////////////////////////////////////////
