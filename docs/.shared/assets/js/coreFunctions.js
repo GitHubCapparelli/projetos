@@ -66,13 +66,12 @@ export function toggleLeftPanel(el, menuKey) {
 }
 
 export function toggleNode(el) {
-  const folderIcon = el.querySelector('.fas.fa-folder, .fas.fa-folder-open');
   const nested = el.nextElementSibling;
-
   if (nested && nested.classList.contains('nested')) {
     nested.classList.toggle('d-none');
 
     // Toggle folder icon
+    const folderIcon = el.querySelector('.fas.fa-folder, .fas.fa-folder-open');
     if (folderIcon) {
       if (folderIcon.classList.contains('fa-folder')) {
         folderIcon.classList.remove('fa-folder');
