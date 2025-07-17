@@ -107,7 +107,6 @@ function initializeHead() {
       head.appendChild(link);
     });
   };
-
   appendStyles(pageItems.sharedStyles);
 
   if (pageItems.domainStyles[tela]) {
