@@ -303,13 +303,8 @@ a:hover {
   align-items: start;
 }
 
-.header-left {
-  flex-direction: row;
-}
-
-.header-right {
-  align-items: end;
-}
+.header-left  { flex-direction: row; }
+.header-right { align-items: end; }
 
 .header-logo {
   width: 50px;

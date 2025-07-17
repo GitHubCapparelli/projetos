@@ -6,6 +6,8 @@ const tela     = document.body.getAttribute('tela');
 const building = document.body.hasAttribute('building');
 
 var menuKey = '';
+window.coreFuncs = coreFuncs;
+window.pageItems = pageItems;
 
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
