@@ -2,13 +2,16 @@
   /* https://www.colorxs.com/palette/color/royal-blue */
   --color-black: rgb(20, 20, 20);
 
-  --color-secondary: rgb(173, 181, 189); /* #adb5bd 500*/
-  --color-primary: rgb(73, 80, 87); /* #495057 700 */
-  --color-primary-dark: rgb(33, 37, 41);/* #212529 900 */
+  --color-secondary: rgb(173, 181, 189);
+  /* #adb5bd 500*/
+  --color-primary: rgb(73, 80, 87);
+  /* #495057 700 */
+  --color-primary-dark: rgb(33, 37, 41);
+  /* #212529 900 */
 
   /* cor secundária + transparência */
-  --color-parallax-back: rgba(128, 192, 192, 0.9);
-  /* --color-shadow: rgba(128, 192, 192, 0.5); */
+  --color-parallax-back: rgba(173, 181, 189, 0.9);
+  /* --color-shadow: rgba(173, 181, 189, 0.5); */
   --color-shadow: black;
 
   /* Teal */
@@ -295,7 +298,7 @@ a:hover {
   background-color: var(--color-secondary);
 }
 
-.header-left, 
+.header-left,
 .header-titles {
   display: flex;
   align-items: start;
