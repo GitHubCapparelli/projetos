@@ -73,19 +73,15 @@ function initBoxes() {
 ///////////////////////////////////////////////////////////////////
 
 function initialize() {
-  initializeVars();
+  switch (dominio) {
+    case 'paif'      : tela = 'paif';     break;
+    case 'paif.tech' : tela = 'paifTech'; break;
+    case 'paif.user' : tela = 'paifUser'; break;
+    case 'projetos'  : tela = 'projetos'; break;
+  }
   initializeHead();
   initializeBody();
   initializeEvents();
-}
-
-function initializeVars() {
-  switch (dominio) {
-    case 'paif'             : tela = 'paif';          break;
-    case 'paif.tech'        : tela = 'paifTech';      break;
-    case 'paif.user'        : tela = 'paifUser';      break;
-    case 'projetos'         : tela = 'projetos';      break;
-  }
 }
 
 function initializeHead() {
