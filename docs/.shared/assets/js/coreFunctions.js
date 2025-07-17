@@ -1,5 +1,8 @@
-import * as app  from './pageItems.js';
-import * as dict from './notes.js';
+import * as pageItems  from './pageItems.js';
+import * as notes from './notes.js';
+
+window.pageItems = pageItems;
+window.notes     = notes;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // dark mode 
@@ -36,7 +39,7 @@ export function showLeftPanel(el, menuKey) {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
-  document.getElementById('leftPanel-body').innerHTML = app.menuHTML[menuKey];
+  document.getElementById('leftPanel-body').innerHTML = pageItems.menuHTML[menuKey];
 
   const panel = document.getElementById('leftPanel');
   panel.classList.add('show');
@@ -90,8 +93,8 @@ export function showNote(el) {
   panel.classList.add('show');
 
   const key = el.getAttribute('noteKey');
-  document.getElementById('rightPanel-title').textContent = dict.noteTitle[key];
-  document.getElementById('rightPanel-body').innerHTML    = dict.noteHTML[key];
+  document.getElementById('rightPanel-title').textContent = notes.noteTitle[key];
+  document.getElementById('rightPanel-body').innerHTML    = notes.noteHTML[key];
 }
 
 export function hideNote() {

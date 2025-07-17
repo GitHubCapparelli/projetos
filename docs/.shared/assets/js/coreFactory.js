@@ -1,13 +1,11 @@
-import * as pageItems from './pageItems.js';
 import * as coreFuncs from './coreFunctions.js';
+window.coreFuncs = coreFuncs;
 
 const domain   = document.body.getAttribute('domain');
 const tela     = document.body.getAttribute('tela');
 const building = document.body.hasAttribute('building');
 
 var menuKey = '';
-window.coreFuncs = coreFuncs;
-window.pageItems = pageItems;
 
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
