@@ -140,7 +140,7 @@ function initializeHead() {
 
 function initializeBody() {
   document.title = (focoAtual === 'paifUserTelas')
-                 ? pageItems.paifTags[focoAtual].replace(/^tela/, '').trim() 
+                 ? pageItems.paifTags[tela].replace(/^tela/, '').trim() 
                  : pageItems.paifTags[focoAtual];
 
   document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(focoAtual);
