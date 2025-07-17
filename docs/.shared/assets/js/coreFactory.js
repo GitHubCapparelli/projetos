@@ -113,7 +113,6 @@ function formatTitle() {
 
 function initialize() {
   initializeVars();
-
   initializeHead();
   initializeBody();
   initializeEvents();
@@ -123,19 +122,19 @@ function initializeVars() {
   switch (dominio) {
     case 'projetos'         : 
       focoAtual = 'projetos';
-      telas     = 'projetos';
+      tela      = 'projetos';
       break;
     case 'paif'             : 
       focoAtual = 'paif';           
-      telas     = 'paif';
+      tela      = 'paif';
       break;
     case 'paif.tech'        : 
       focoAtual = 'paifTech';       
-      telas     = 'paifTech';
+      tela      = 'paifTech';
       break;
     case 'paif.user'        : 
       focoAtual = 'paifUser';       
-      telas     = 'paifUser';
+      tela      = 'paifUser';
       break;
     case 'paif.user.telas'  : 
       focoAtual = 'paifUserTelas';  

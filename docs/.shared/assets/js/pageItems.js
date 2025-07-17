@@ -43,11 +43,11 @@ export const sharedStyles = [
 ];
 
 export const domainStyles = {
-  // projetos: ``, // core
   paifTech      : ['/projetos/.shared/assets/css/tech.css'],
   paif          : ['/projetos/.shared/assets/css/paif.css'],
   paifUser      : ['/projetos/.shared/assets/css/paif.css'],
   paifUserTelas : ['/projetos/.shared/assets/css/paif.css']
+  // projetos: ``, // core
 };
 
 export const paifTags = {
