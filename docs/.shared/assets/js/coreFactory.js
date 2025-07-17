@@ -102,31 +102,6 @@ function initBoxes() {
   });
 };
 
-// dynamic toggle handler for left-side tree menu
-function initTreeToggles() {
-  document.querySelectorAll('.tree-toggle').forEach(el => {
-    el.addEventListener('click', () => {
-      const siblingList = el.nextElementSibling;
-      if (siblingList && siblingList.classList.contains('nested')) {
-        siblingList.classList.toggle('d-none');
-        const icon = el.querySelector('i.fas');
-        if (icon) {
-          icon.classList.toggle('fa-folder');
-          icon.classList.toggle('fa-folder-open');
-        }
-      }
-    });
-  });
-
-  document.querySelectorAll('.leftPanel .btn-hide').forEach(el => {
-    el.addEventListener('click', coreFuncs.hideLeftPanel);
-  });
-
-  document.querySelectorAll('.rightPanel .btn-hide').forEach(el => {
-    el.addEventListener('click', coreFuncs.hideNote);
-  });
-}
-
 ///////////////////////////////////////////////////////////////////
 // helper functions
 
@@ -214,7 +189,20 @@ function initializeBody() {
 }
 
 function initializeEvents() {
-  initTreeToggles();
+  console.log('Tree toggles found:', document.querySelectorAll('.tree-toggle').length);
+  document.querySelectorAll('.tree-toggle').forEach(el => {
+    el.addEventListener('click', () => {
+      const siblingList = el.nextElementSibling;
+      if (siblingList && siblingList.classList.contains('nested')) {
+        siblingList.classList.toggle('d-none');
+        const icon = el.querySelector('i.fas');
+        if (icon) {
+          icon.classList.toggle('fa-folder');
+          icon.classList.toggle('fa-folder-open');
+        }
+      }
+    });
+  });
 
   // left panel toggle
   document.querySelectorAll('.nav-item[data-panel="tree"]').forEach(el => {
@@ -226,6 +214,10 @@ function initializeEvents() {
     el.addEventListener('click', coreFuncs.hideLeftPanel);
   });
 
+  document.querySelectorAll('.leftPanel .btn-hide').forEach(el => {
+    el.addEventListener('click', coreFuncs.hideLeftPanel);
+  });
+
   // show note - right panel
   document.querySelectorAll('.note').forEach(el => {
     el.addEventListener('click', () => { coreFuncs.showNote(el); });
@@ -233,6 +225,10 @@ function initializeEvents() {
 
   // hide note - right panel
   document.querySelectorAll('[data-action="hide-note"]').forEach(el => {
+    el.addEventListener('click', coreFuncs.hideNote);
+  });
+
+  document.querySelectorAll('.rightPanel .btn-hide').forEach(el => {
     el.addEventListener('click', coreFuncs.hideNote);
   });
 
