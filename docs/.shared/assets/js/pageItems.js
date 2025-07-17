@@ -33,7 +33,7 @@ export const footerHTML = {
 
 export const sharedHTML = {
   leftBar       : html.sharedMenu,
-  rightPanel    : html.sharedBox
+  rightPanel    : html.sharedBox,
   emConstrucao  : html.emConstrucao
 };
 
