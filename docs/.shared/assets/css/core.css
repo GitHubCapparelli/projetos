@@ -1,27 +1,27 @@
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
-    --color-black: rgb(20, 20, 20);
+  --color-black: rgb(20, 20, 20);
 
-    --color-secondary: rgb(128, 192, 192);
-    --color-primary: rgb(0, 128, 128);
-    --color-primary-dark: rgb(0, 64, 64);
+  --color-secondary: rgb(128, 192, 192);
+  --color-primary: rgb(0, 128, 128);
+  --color-primary-dark: rgb(0, 64, 64);
 
-    /* cor secundária + transparência */
-    --color-parallax-back: rgba(128, 192, 192, 0.9);
-    --color-shadow: rgba(128, 192, 192, 0.5);
-  
-    /* Teal */
-    --teal-W5: rgb(204, 230, 230);
-    --teal-W4: rgb(178, 217, 217);
-    --teal-W3: rgb(128, 192, 192);
-    --teal-W2: rgb(102, 179, 179);
-    --teal-W1: rgb(51, 153, 153);
-    --teal-0: rgb(0, 128, 128);
-    --teal-B1: rgb(0, 102, 102);
-    --teal-B2: rgb(0, 77, 77);
-    --teal-B3: rgb(0, 64, 64);
-    --teal-B4: rgb(0, 38, 38);
-    --teal-B5: rgb(0, 26, 26);
+  /* cor secundária + transparência */
+  --color-parallax-back: rgba(128, 192, 192, 0.9);
+  --color-shadow: rgba(128, 192, 192, 0.5);
+
+  /* Teal */
+  --teal-W5: rgb(204, 230, 230);
+  --teal-W4: rgb(178, 217, 217);
+  --teal-W3: rgb(128, 192, 192);
+  --teal-W2: rgb(102, 179, 179);
+  --teal-W1: rgb(51, 153, 153);
+  --teal-0: rgb(0, 128, 128);
+  --teal-B1: rgb(0, 102, 102);
+  --teal-B2: rgb(0, 77, 77);
+  --teal-B3: rgb(0, 64, 64);
+  --teal-B4: rgb(0, 38, 38);
+  --teal-B5: rgb(0, 26, 26);
 
   --topBars-height: 60px;
   --footer-height: 180px;
@@ -288,6 +288,8 @@ a:hover {
   width: calc(100% - var(--sidebarButtons-width));
   height: var(--topBars-height);
   display: flex;
+  flex-wrap: nowrap;
+  /* <--- key line */
   justify-content: space-between;
   align-items: center;
   z-index: 999;
@@ -298,7 +300,12 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 1; /* <--- push right panel to the edge */
+  flex: 1;
+  /* <--- push right panel to the edge */
+  min-width: 0;
+  /* allow shrinkage */
+  overflow: hidden;
+  /* optional: clip long text */
 }
 
 .header-right {
@@ -315,6 +322,7 @@ a:hover {
   align-items: start;
   padding-left: 10px;
 }
+
 .header-logo {
   width: 50px;
   height: 50px;
@@ -328,6 +336,11 @@ a:hover {
 .header-titles h5,
 .header-right h5 {
   color: var(--color-primary);
+}
+
+.header-left,
+.header-right {
+  border: 1px solid red;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -571,12 +584,21 @@ body.panel-open .footer {
   align-items: center;
   height: calc(100vh - var(--topBars-height) - var(--footer-height));
 }
-.building .icon { font-size: 5rem; }
-.building h1    { color: var(--color-primary); }
-.building p     { font-size: 1.2rem; }
-.building a  
-{ 
-  cursor: pointer; 
+
+.building .icon {
+  font-size: 5rem;
+}
+
+.building h1 {
+  color: var(--color-primary);
+}
+
+.building p {
+  font-size: 1.2rem;
+}
+
+.building a {
+  cursor: pointer;
   color: var(--color-primary);
 }
 
@@ -593,10 +615,22 @@ body.panel-open .footer {
   font-weight: bold;
   font-family: Arial, sans-serif;
 }
-.no-js-warning              { display: block; }
-.js-enabled .no-js-warning  { display: none; }
-.js-enabled .js-only        { display: block; }
-.js-only                    { display: none; }
+
+.no-js-warning {
+  display: block;
+}
+
+.js-enabled .no-js-warning {
+  display: none;
+}
+
+.js-enabled .js-only {
+  display: block;
+}
+
+.js-only {
+  display: none;
+}
 
 /* ---------------------------------------------------------------------------------- */
 
