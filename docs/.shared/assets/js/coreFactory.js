@@ -149,9 +149,9 @@ function initialize() {
     case 'paif.user.telas'  : menuKey = 'paifUserTelas';  break;
     default                 : menuKey = '';               break;
   }
-  await initializeHead();
-  await initializeBody();
-  await initializeEvents();
+  initializeHead();
+  initializeBody();
+  initializeEvents();
 }
 
 function initializeHead() {
