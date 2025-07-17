@@ -115,9 +115,7 @@ function initializeHead() {
 }
 
 function initializeBody() {
-  document.title = (tela === 'paifUserTelas')
-                 ? pageItems.paifTags[tela].replace(/^tela/, '').trim() 
-                 : pageItems.paifTags[tela];
+  document.title = pageItems.paifTags[tela];
 
   document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(tela);
   document.getElementById('header').innerHTML     = pageItems.headerHTML(tela);

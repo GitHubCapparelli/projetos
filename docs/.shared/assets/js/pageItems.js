@@ -52,12 +52,12 @@ export const domainStyles = {
 };
 
 export const paifTags = {
-  telaAcompanhamentos   : 'Tela Acompanhamentos',
-  telaAcompanhamento    : 'Tela Acompanhamento',
-  telaValidacoes        : 'Tela Validações',
-  telaSubstituicoes     : 'Tela Substituiçoes',
-  telaRMA               : 'Tela RMA',
-  telaRMAs              : 'Tela RMAs',
+  telaAcompanhamentos   : 'Acompanhamentos',
+  telaAcompanhamento    : 'Acompanhamento',
+  telaValidacoes        : 'Validações',
+  telaSubstituicoes     : 'Substituiçoes',
+  telaRMA               : 'RMA',
+  telaRMAs              : 'RMAs',
   projetos              : 'GERVIS - Projetos',
   paif                  : 'Projeto PAIF',
   paifTech              : 'Manual técnico',
