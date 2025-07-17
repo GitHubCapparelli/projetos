@@ -213,15 +213,15 @@ function initializeEvents() {
   // menu tree
   const leftPanelBody = document.getElementById('leftPanel-body');
   leftPanelBody.addEventListener('click', (event) => {
-    const toggle = event.target.closest('.tree-toggle');
+    const toggle      = event.target.closest('.tree-toggle');
     const siblingList = toggle.nextElementSibling;
+
     if (siblingList && siblingList.classList.contains('nested')) {
       siblingList.classList.toggle('d-none');
+      
       const icon = toggle.querySelector('i.fas');
-      if (icon) {
-        icon.classList.toggle('fa-folder');
-        icon.classList.toggle('fa-folder-open');
-      }
+      icon.classList.toggle('fa-folder');
+      icon.classList.toggle('fa-folder-open');
     }
   });
 
