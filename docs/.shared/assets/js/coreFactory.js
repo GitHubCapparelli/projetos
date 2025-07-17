@@ -118,12 +118,13 @@ function initializeHead() {
 function initializeBody() {
   document.title = pageItems.paifTags[tela];
 
-  const key = tela.startsWith('tela') ? 'paifUserTelas' : tela;
-  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(key);
-  document.getElementById('header').innerHTML     = pageItems.headerHTML(key);
-  document.getElementById('footer').innerHTML     = pageItems.footerHTML[key];
+  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(tela);
+  document.getElementById('header').innerHTML     = pageItems.headerHTML(tela);
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
+
+  const key = tela.startsWith('tela') ? 'paifUserTelas' : tela;
+  document.getElementById('footer').innerHTML = pageItems.footerHTML[key];
 
   if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
