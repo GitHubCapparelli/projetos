@@ -41,6 +41,11 @@ export function showLeftPanel(el, menuKey) {
 
   document.getElementById('leftPanel-body').innerHTML = pageItems.menuHTML[menuKey];
 
+  if (menuKey === 'paifUser') { 
+    const folderTelas = document.getElementById('folderTelas');
+    toggleNode(folderTelas);  
+  }
+
   const panel = document.getElementById('leftPanel');
   panel.classList.add('show');
   document.body.classList.add('panel-open');

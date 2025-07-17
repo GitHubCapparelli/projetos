@@ -83,15 +83,6 @@ function initialize() {
   initializeHead();
   initializeBody();
   initializeEvents();
-
-  if (dominio === 'paif.user') {
-    const folderTelas = document.getElementById('folderTelas');
-    if (folderTelas) {
-      toggleNode(folderTelas);  // This will toggle the visibility of the submenu
-    } else {
-      console.log('folderTelas not found');
-    }
-  }
 }
 
 function initializeHead() {
