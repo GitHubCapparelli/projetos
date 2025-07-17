@@ -161,11 +161,16 @@ function initializeHead() {
 }
 
 function initializeBody() {
-  if (tela) {
-    document.title = (domain === 'projetos') 
-                   ? 'GERVIS - Soluções' 
-                   : `PAIF - ${formatTitle(tela)}`;
-  }
+  document.title = (domain === 'projetos') 
+                  ? 'GERVIS - Soluções' 
+                  : `PAIF - ${formatTitle(tela)}`;
+
+  document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
+  document.getElementById('header').innerHTML     = getHeaderHTML(tela);
+
+  document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
+  document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
+  document.getElementById('footer').innerHTML     = pageItems.footerHTML[menuKey];
 
   if (menuKey === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
@@ -174,18 +179,8 @@ function initializeBody() {
     coreFuncs.setDarkMode('light');
   };
 
-  if (menuKey === 'paifUserTelas') {
-      document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
-      document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
-      document.getElementById('footer').innerHTML     = pageItems.footerHTML[menuKey];
-
-      document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
-      document.getElementById('header').innerHTML     = getHeaderHTML(tela);
-  };
-
-  if(building) {
+  if(building) 
     document.getElementById('pageContent').innerHTML = getBuildingHTML();
-  }
 }
 
 function initializeEvents() {
