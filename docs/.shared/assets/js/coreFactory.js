@@ -149,9 +149,9 @@ function initialize() {
     case 'paif.user.telas'  : menuKey = 'paifUserTelas';  break;
     default                 : menuKey = '';               break;
   }
-  initializeHead();
-  initializeBody();
-  initializeEvents();
+  await initializeHead();
+  await initializeBody();
+  await initializeEvents();
 }
 
 function initializeHead() {
@@ -167,22 +167,38 @@ function initializeHead() {
   }
   link.href = pageItems.favIco;
 
-  // stylesheets
-  const appendStyles = (list) => {
-    list.forEach(href => {
+  // Helper to add <link> and return a load Promise
+  const loadStyle = (href) => {
+    return new Promise((resolve, reject) => {
       const link = document.createElement('link');
-      link.rel   = 'stylesheet';
-      link.type  = 'text/css';
-      link.href  = href;
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = href;
+      link.onload = () => resolve(href);
+      link.onerror = () => reject(new Error(`Failed to load CSS: ${href}`));
       head.appendChild(link);
     });
   };
 
-  appendStyles(pageItems.sharedStyles);
+  // Gather all styles to load
+  const stylesToLoad = [...pageItems.sharedStyles];
 
   if (pageItems.domainStyles[menuKey]) {
-    appendStyles(pageItems.domainStyles[menuKey]);
+    stylesToLoad.push(...pageItems.domainStyles[menuKey]);
   }
+
+  // Load all styles, then continue initializing
+  return Promise.all(stylesToLoad.map(loadStyle))
+    .then(() => {
+      console.log('All stylesheets loaded!');
+      initializeBody();
+      initializeEvents();
+    })
+    .catch((err) => {
+      console.error('Error loading styles:', err);
+      initializeBody();       // Fallback init even if CSS fails
+      initializeEvents();
+    });
 }
 
 function initializeBody() {
@@ -246,6 +262,8 @@ function initializeEvents() {
       header.classList.remove('show');
     }
   });
+
+  document.getElementById('rightPanel').classList.remove('show');
 }
 
 //////////////////////////////////////////////////////////////////////
