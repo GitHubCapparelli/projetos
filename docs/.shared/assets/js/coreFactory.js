@@ -110,7 +110,8 @@ function initializeHead() {
   appendStyles(pageItems.sharedStyles);
 
   if (dominio.startsWith('paif')) {
-    appendStyles(pageItems.domainStyles[tela]);
+    const key = tela.startsWith('tela') ? 'paifUserTelas' : tela;
+    appendStyles(pageItems.domainStyles[key]);
   }
 }
 
