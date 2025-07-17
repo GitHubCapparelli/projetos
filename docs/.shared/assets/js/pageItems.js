@@ -34,6 +34,7 @@ export const footerHTML = {
 export const sharedHTML = {
   leftBar       : html.sharedMenu,
   rightPanel    : html.sharedBox
+  emConstrucao  : html.emConstrucao
 };
 
 export const sharedStyles = [
@@ -77,3 +78,23 @@ export const paifTitles = {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+export const stickyHTML = (focoAtual) => `
+  <div class="stickyTop-titles">
+    <h5 class="mb-0">${paifName}</h5>
+    <h6 class="mb-0">${paifTitles[focoAtual]}</h6>
+  </div>`;
+
+export const headerHTML = (focoAtual) => `<div class="header-left">
+      <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
+      <div class="header-titles">
+          <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
+          <h5 class="mb-0">${paifName}</h5>
+      </div>
+  </div>
+  <div class="header-right">
+      <h5 class="mb-0">${paifTags[focoAtual]}</h5>
+  </div>`;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////// 
+

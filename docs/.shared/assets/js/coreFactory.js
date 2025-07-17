@@ -10,37 +10,6 @@ var focoAtual  = '';
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
 
-function getStickyHTML() {
-  return `<div class="stickyTop-titles">
-            <h5 class="mb-0">${pageItems.paifName}</h5>
-            <h6 class="mb-0">${pageItems.paifTitles[tela]}</h6>
-          </div>`;
-}
-
-function getHeaderHTML() {
-  return `<div class="header-left">
-              <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
-              <div class="header-titles">
-                  <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
-                  <h5 class="mb-0">${pageItems.paifName}</h5>
-              </div>
-          </div>
-          <div class="header-right">
-              <h5 class="mb-0">${pageItems.paifTags[tela]}</h5>
-          </div>`;
-}
-
-function getBuildingHTML() {
-  return `<div class="building">
-            <div class="icon">🚧</div>
-            <h1>Página em Construção </h1>
-            <p>Estamos trabalhando para trazer algo incrível para você.</p>
-            <p>Volte em breve!</p>
-            <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i>  Voltar</a>
-        </div>`;
-}
-
-///////////////////////////////////////////////////////////////////
 
 // dynamic toggle handler for boxes (single accordion 'components')
 function initBoxes() {
@@ -101,13 +70,6 @@ function initBoxes() {
     });
   });
 };
-
-///////////////////////////////////////////////////////////////////
-// helper functions
-
-function formatTitle() {
-  return (tela) ? tela.replace(/^tela/, '') : dominio;
-}
 
 ///////////////////////////////////////////////////////////////////
 
@@ -177,16 +139,15 @@ function initializeHead() {
 }
 
 function initializeBody() {
-  document.title = (dominio === 'projetos') 
-                 ? 'GERVIS - Soluções' 
-                 : `PAIF - ${formatTitle()}`;
+  document.title = (focoAtual === paifUserTelas)
+                 ? paifTags[focoAtual].replace(/^tela/, '').trim() 
+                 : paifTags[focoAtual];
 
-  document.getElementById('stickyTop').innerHTML  = getStickyHTML();
-  document.getElementById('header').innerHTML     = getHeaderHTML();
-
-  document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
-  document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
+  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(focoAtual);
+  document.getElementById('header').innerHTML     = pageItems.headerHTML(focoAtual);
   document.getElementById('footer').innerHTML     = pageItems.footerHTML[focoAtual];
+  document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
+  document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
 
   if (focoAtual === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
@@ -196,7 +157,7 @@ function initializeBody() {
   };
 
   if(building) 
-    document.getElementById('pageContent').innerHTML = getBuildingHTML();
+    document.getElementById('pageContent').innerHTML = pageItems.sharedHTML.emConstrucao;
 }
 
 function initializeEvents() {
