@@ -139,7 +139,7 @@ function initializeHead() {
 }
 
 function initializeBody() {
-  document.title = (focoAtual === paifUserTelas)
+  document.title = (focoAtual === 'paifUserTelas')
                  ? paifTags[focoAtual].replace(/^tela/, '').trim() 
                  : paifTags[focoAtual];
 
