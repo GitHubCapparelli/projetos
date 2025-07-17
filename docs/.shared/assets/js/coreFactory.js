@@ -10,14 +10,14 @@ var focoAtual  = '';
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
 
-function getStickyHTML(tela) {
+function getStickyHTML() {
   return `<div class="stickyTop-titles">
             <h5 class="mb-0">${pageItems.paifName}</h5>
             <h6 class="mb-0">${pageItems.paifTitles[tela]}</h6>
           </div>`;
 }
 
-function getHeaderHTML(tela) {
+function getHeaderHTML() {
   return `<div class="header-left">
               <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
               <div class="header-titles">
@@ -105,28 +105,45 @@ function initBoxes() {
 ///////////////////////////////////////////////////////////////////
 // helper functions
 
-function formatTitle(tela) {
-  if (!tela) return '';
-  return tela
-    .replace(/^tela/, '')                      // Remove "tela" prefix
-    .replace(/([A-Z])/g, ' $1')                // Add spaces before caps
-    .trim();                                   // Remove leading/trailing spaces
+function formatTitle() {
+  return (tela) ? tela.replace(/^tela/, '') : dominio;
 }
 
 ///////////////////////////////////////////////////////////////////
 
 function initialize() {
-  switch (dominio) {
-    case 'projetos'         : focoAtual = 'projetos';       break;
-    case 'paif'             : focoAtual = 'paif';           break;
-    case 'paif.tech'        : focoAtual = 'paifTech';       break;
-    case 'paif.user'        : focoAtual = 'paifUser';       break;
-    case 'paif.user.telas'  : focoAtual = 'paifUserTelas';  break;
-    default                 : focoAtual = '';               break;
-  }
+  initializeVars();
+
   initializeHead();
   initializeBody();
   initializeEvents();
+}
+
+function initializeVars() {
+  switch (dominio) {
+    case 'projetos'         : 
+      focoAtual = 'projetos';
+      telas     = 'projetos';
+      break;
+    case 'paif'             : 
+      focoAtual = 'paif';           
+      telas     = 'paif';
+      break;
+    case 'paif.tech'        : 
+      focoAtual = 'paifTech';       
+      telas     = 'paifTech';
+      break;
+    case 'paif.user'        : 
+      focoAtual = 'paifUser';       
+      telas     = 'paifUser';
+      break;
+    case 'paif.user.telas'  : 
+      focoAtual = 'paifUserTelas';  
+      break;
+    default                 : 
+      focoAtual = '';               
+      break;
+  }
 }
 
 function initializeHead() {
@@ -163,10 +180,10 @@ function initializeHead() {
 function initializeBody() {
   document.title = (dominio === 'projetos') 
                  ? 'GERVIS - Soluções' 
-                 : `PAIF - ${formatTitle(tela)}`;
+                 : `PAIF - ${formatTitle()}`;
 
-  document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
-  document.getElementById('header').innerHTML     = getHeaderHTML(tela);
+  document.getElementById('stickyTop').innerHTML  = getStickyHTML();
+  document.getElementById('header').innerHTML     = getHeaderHTML();
 
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
