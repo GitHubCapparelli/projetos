@@ -196,48 +196,33 @@ function initializeEvents() {
     } else {                    header.classList.remove('show'); }
   });
 
-  // left panel - toggle
-  document.querySelectorAll('.nav-item[data-panel="tree"]').forEach(el => {
-    el.addEventListener('click', () => { coreFuncs.toggleLeftPanel(el, menuKey); });
-  });
-
-  // left panel - hide 
-  document.querySelectorAll('[data-action="hide-left-panel"]').forEach(el => {
-    el.addEventListener('click', coreFuncs.hideLeftPanel);
-  });
-
-  document.querySelectorAll('.leftPanel .btn-hide').forEach(el => {
-    el.addEventListener('click', coreFuncs.hideLeftPanel);
-  });
+  // left panel
+  document.querySelectorAll('.nav-item[data-panel="tree"]')
+    .forEach(el => el.addEventListener('click', () => { coreFuncs.toggleLeftPanel(el, menuKey); }) );
+  
+  document.querySelectorAll('.leftPanel .btn-hide')
+    .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));
 
   // menu tree
-  const leftPanelBody = document.getElementById('leftPanel-body');
-  leftPanelBody.addEventListener('click', (event) => {
+  document.getElementById('leftPanel-body').addEventListener('click', (event) => {
     const toggle      = event.target.closest('.tree-toggle');
     const siblingList = toggle.nextElementSibling;
 
     if (siblingList && siblingList.classList.contains('nested')) {
       siblingList.classList.toggle('d-none');
-      
+
       const icon = toggle.querySelector('i.fas');
       icon.classList.toggle('fa-folder');
       icon.classList.toggle('fa-folder-open');
     }
   });
 
-  // right panel - show note
-  document.querySelectorAll('.note').forEach(el => {
-    el.addEventListener('click', () => { coreFuncs.showNote(el); });
-  });
-
-  // right panel - hide note
-  document.querySelectorAll('[data-action="hide-note"]').forEach(el => {
-    el.addEventListener('click', coreFuncs.hideNote);
-  });
-
-  document.querySelectorAll('.rightPanel .btn-hide').forEach(el => {
-    el.addEventListener('click', coreFuncs.hideNote);
-  });
+  // right panel
+  document.querySelectorAll('.note')
+    .forEach(el => el.addEventListener('click', () => { coreFuncs.showNote(el); }));
+  
+  document.querySelectorAll('.rightPanel .btn-hide')
+    .forEach(el => el.addEventListener('click', coreFuncs.hideNote));
 }
 
 //////////////////////////////////////////////////////////////////////

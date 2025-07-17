@@ -208,7 +208,7 @@ export const sharedMenu = `<div class="leftMenu">
 
 export const sharedBox = `<div class="rightPanel-header">
     <h6 id="rightPanel-title"></h6>
-    <button class="btn btn-sm btn-hide" data-action="hide-note">
+    <button class="btn btn-sm btn-hide">
         <i class="fas fa-times"></i>
     </button>
 </div>
