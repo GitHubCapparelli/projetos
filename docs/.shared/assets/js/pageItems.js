@@ -65,12 +65,12 @@ export const paifTags = {
 }
 
 export const paifTitles = {
-  telaAcompanhamentos   : `-- ${paifTags.telaAcompanhamentos} : acompanhamento dos dados de atendimentos familiares --`,
-  telaAcompanhamento    : `-- ${paifTags.telaAcompanhamento} : inclusão e/ou alteração dos dados de atendimentos familiares --`,
-  telaValidacoes        : `-- ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
-  telaSubstituicoes     : `-- ${paifTags.telaSubstituicoes} : registro de períodos de substituição da gerência da unidade assistencial --`,
-  telaRMA               : `-- ${paifTags.telaRMA} : registro mensal de dados requeridos pelo MDS --`,
-  telaRMAS              : `-- ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`,
+  telaAcompanhamentos   : `-- Tela ${paifTags.telaAcompanhamentos} : acompanhamento dos dados de atendimentos familiares --`,
+  telaAcompanhamento    : `-- Tela ${paifTags.telaAcompanhamento} : inclusão e/ou alteração dos dados de atendimentos familiares --`,
+  telaValidacoes        : `-- Tela ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
+  telaSubstituicoes     : `-- Tela ${paifTags.telaSubstituicoes} : registro de períodos de substituição da gerência da unidade assistencial --`,
+  telaRMA               : `-- Tela ${paifTags.telaRMA} : registro mensal de dados requeridos pelo MDS --`,
+  telaRMAS              : `-- Tela ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`,
   projetos              : `-- ${paifTags.projetos} --`,
   paif                  : `-- ${paifTags.paif} --`,
   paifTech              : `-- ${paifTags.paifTech} --`,
