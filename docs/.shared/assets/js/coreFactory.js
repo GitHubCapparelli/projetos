@@ -189,48 +189,19 @@ function initializeBody() {
 }
 
 function initializeEvents() {
-  // console.log('Tree toggles found:', document.querySelectorAll('.tree-toggle').length);
-  // document.querySelectorAll('.tree-toggle').forEach(el => {
-  //   el.addEventListener('click', () => {
-  //     const siblingList = el.nextElementSibling;
-  //     if (siblingList && siblingList.classList.contains('nested')) {
-  //       siblingList.classList.toggle('d-none');
-  //       const icon = el.querySelector('i.fas');
-  //       if (icon) {
-  //         icon.classList.toggle('fa-folder');
-  //         icon.classList.toggle('fa-folder-open');
-  //       }
-  //     }
-  //   });
-  // });
+  // sticky header on scroll
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('stickyTop');
+    if (window.scrollY > 60 ) { header.classList.add('show'); 
+    } else {                    header.classList.remove('show'); }
+  });
 
-  const leftPanelBody = document.getElementById('leftPanel-body');
-  if (leftPanelBody) {
-    leftPanelBody.addEventListener('click', (event) => {
-      const toggle = event.target.closest('.tree-toggle');
-      if (!toggle) {
-        console.log('.tree-togle not found');
-        return;
-      }
-
-      const siblingList = toggle.nextElementSibling;
-      if (siblingList && siblingList.classList.contains('nested')) {
-        siblingList.classList.toggle('d-none');
-        const icon = toggle.querySelector('i.fas');
-        if (icon) {
-          icon.classList.toggle('fa-folder');
-          icon.classList.toggle('fa-folder-open');
-        }
-      }
-    });
-  }
-
-  // left panel toggle
+  // left panel - toggle
   document.querySelectorAll('.nav-item[data-panel="tree"]').forEach(el => {
     el.addEventListener('click', () => { coreFuncs.toggleLeftPanel(el, menuKey); });
   });
 
-  // hide left panel
+  // left panel - hide 
   document.querySelectorAll('[data-action="hide-left-panel"]').forEach(el => {
     el.addEventListener('click', coreFuncs.hideLeftPanel);
   });
@@ -239,29 +210,33 @@ function initializeEvents() {
     el.addEventListener('click', coreFuncs.hideLeftPanel);
   });
 
-  // show note - right panel
+  // menu tree
+  const leftPanelBody = document.getElementById('leftPanel-body');
+  leftPanelBody.addEventListener('click', (event) => {
+    const toggle = event.target.closest('.tree-toggle');
+    const siblingList = toggle.nextElementSibling;
+    if (siblingList && siblingList.classList.contains('nested')) {
+      siblingList.classList.toggle('d-none');
+      const icon = toggle.querySelector('i.fas');
+      if (icon) {
+        icon.classList.toggle('fa-folder');
+        icon.classList.toggle('fa-folder-open');
+      }
+    }
+  });
+
+  // right panel - show note
   document.querySelectorAll('.note').forEach(el => {
     el.addEventListener('click', () => { coreFuncs.showNote(el); });
   });
 
-  // hide note - right panel
+  // right panel - hide note
   document.querySelectorAll('[data-action="hide-note"]').forEach(el => {
     el.addEventListener('click', coreFuncs.hideNote);
   });
 
   document.querySelectorAll('.rightPanel .btn-hide').forEach(el => {
     el.addEventListener('click', coreFuncs.hideNote);
-  });
-
-  // stick header on scroll
-  window.addEventListener('scroll', () => {
-    const header = document.getElementById('stickyTop');
-
-    if (window.scrollY > 60 ) { 
-      header.classList.add('show');
-    } else {
-      header.classList.remove('show');
-    }
   });
 }
 
