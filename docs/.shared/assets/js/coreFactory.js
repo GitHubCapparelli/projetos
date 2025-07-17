@@ -1,11 +1,11 @@
 import * as coreFuncs from './coreFunctions.js';
 window.coreFuncs = coreFuncs;
 
-const domain   = document.body.getAttribute('domain');
+const dominio  = document.body.getAttribute('domain');
 const tela     = document.body.getAttribute('tela');
 const building = document.body.hasAttribute('building');
 
-var menuKey = '';
+var focoAtual  = '';
 
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
@@ -116,13 +116,13 @@ function formatTitle(tela) {
 ///////////////////////////////////////////////////////////////////
 
 function initialize() {
-  switch (domain) {
-    case 'projetos'         : menuKey = 'projetos';       break;
-    case 'paif'             : menuKey = 'paif';           break;
-    case 'paif.tech'        : menuKey = 'paifTech';       break;
-    case 'paif.user'        : menuKey = 'paifUser';       break;
-    case 'paif.user.telas'  : menuKey = 'paifUserTelas';  break;
-    default                 : menuKey = '';               break;
+  switch (dominio) {
+    case 'projetos'         : focoAtual = 'projetos';       break;
+    case 'paif'             : focoAtual = 'paif';           break;
+    case 'paif.tech'        : focoAtual = 'paifTech';       break;
+    case 'paif.user'        : focoAtual = 'paifUser';       break;
+    case 'paif.user.telas'  : focoAtual = 'paifUserTelas';  break;
+    default                 : focoAtual = '';               break;
   }
   initializeHead();
   initializeBody();
@@ -155,13 +155,13 @@ function initializeHead() {
 
   appendStyles(pageItems.sharedStyles);
 
-  if (pageItems.domainStyles[menuKey]) {
-    appendStyles(pageItems.domainStyles[menuKey]);
+  if (pageItems.domainStyles[foco]) {
+    appendStyles(pageItems.domainStyles[foco]);
   }
 }
 
 function initializeBody() {
-  document.title = (domain === 'projetos') 
+  document.title = (dominio === 'projetos') 
                  ? 'GERVIS - Soluções' 
                  : `PAIF - ${formatTitle(tela)}`;
 
@@ -170,9 +170,9 @@ function initializeBody() {
 
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
-  document.getElementById('footer').innerHTML     = pageItems.footerHTML[menuKey];
+  document.getElementById('footer').innerHTML     = pageItems.footerHTML[foco];
 
-  if (menuKey === 'paifTech') {
+  if (focoAtual === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
     initBoxes();
   } else {
@@ -193,7 +193,7 @@ function initializeEvents() {
 
   // left panel
   document.querySelectorAll('.nav-item[data-panel="tree"]')
-    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, menuKey)) );
+    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, foco)) );
   
   document.querySelectorAll('.leftPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));

@@ -56,7 +56,11 @@ export const paifTags = {
   telaValidacoes        : 'Tela Validações',
   telaSubstituicoes     : 'Tela Substituiçoes',
   telaRMA               : 'Tela RMA',
-  telaRMAS              : 'Tela RMAs'
+  telaRMAS              : 'Tela RMAs',
+  telaManualUsuario     : 'Manual do usuário',
+  telaManualTecnico     : 'Manual técnico',
+  telaPAIF              : 'PAIF',
+  telaGERVIS            : 'GERVIS'
 }
 
 export const paifTitles = {
@@ -65,7 +69,11 @@ export const paifTitles = {
   telaValidacoes        : `-- ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
   telaSubstituicoes     : `-- ${paifTags.telaSubstituicoes} : registro de períodos de substituição da gerência da unidade assistencial --`,
   telaRMA               : `-- ${paifTags.telaRMA} : registro mensal de dados requeridos pelo MDS --`,
-  telaRMAS              : `-- ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`
+  telaRMAS              : `-- ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`,
+  telaManualUsuario     : 'Manual do usuário',
+  telaManualTecnico     : 'Manual técnico',
+  telaPAIF              : 'PAIF',
+  telaGERVIS            : 'GERVIS'
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
