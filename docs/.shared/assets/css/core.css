@@ -2,9 +2,9 @@
   /* https://www.colorxs.com/palette/color/royal-blue */
   --color-black: rgb(20, 20, 20);
 
-  --color-secondary: rgb(128, 192, 192);
-  --color-primary: rgb(0, 128, 128);
-  --color-primary-dark: rgb(0, 64, 64);
+  --color-secondary: rgb(173, 181, 189); /* #adb5bd 500*/
+  --color-primary: rgb(73, 80, 87); /* #495057 700 */
+  --color-primary-dark: rgb(33, 37, 41);/* #212529 900 */
 
   /* cor secundária + transparência */
   --color-parallax-back: rgba(128, 192, 192, 0.9);
