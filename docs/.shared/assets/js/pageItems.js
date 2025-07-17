@@ -48,16 +48,15 @@ export const domainStyles = {
   paif          : ['/projetos/.shared/assets/css/paif.css'],
   paifUser      : ['/projetos/.shared/assets/css/paif.css'],
   paifUserTelas : ['/projetos/.shared/assets/css/paif.css']
-  // projetos: ``, // core
 };
 
 export const paifTags = {
-  telaAcompanhamentos   : 'Acompanhamentos',
-  telaAcompanhamento    : 'Acompanhamento',
-  telaValidacoes        : 'Validações',
-  telaSubstituicoes     : 'Substituiçoes',
-  telaRMA               : 'RMA',
-  telaRMAs              : 'RMAs',
+  telaAcompanhamentos   : 'Tela Acompanhamentos',
+  telaAcompanhamento    : 'Tela Acompanhamento',
+  telaValidacoes        : 'Tela Validações',
+  telaSubstituicoes     : 'Tela Substituiçoes',
+  telaRMA               : 'Tela RMA',
+  telaRMAs              : 'Tela RMAs',
   projetos              : 'GERVIS - Projetos',
   paif                  : 'Projeto PAIF',
   paifTech              : 'Manual técnico',
@@ -65,12 +64,12 @@ export const paifTags = {
 }
 
 export const paifTitles = {
-  telaAcompanhamentos   : `-- Tela ${paifTags.telaAcompanhamentos} : acompanhamento dos dados de atendimentos familiares --`,
-  telaAcompanhamento    : `-- Tela ${paifTags.telaAcompanhamento} : inclusão e/ou alteração dos dados de atendimentos familiares --`,
-  telaValidacoes        : `-- Tela ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
-  telaSubstituicoes     : `-- Tela ${paifTags.telaSubstituicoes} : registro de períodos de substituição da gerência da unidade assistencial --`,
-  telaRMA               : `-- Tela ${paifTags.telaRMA} : registro mensal de dados requeridos pelo MDS --`,
-  telaRMAS              : `-- Tela ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`,
+  telaAcompanhamentos   : `-- ${paifTags.telaAcompanhamentos} : acompanhamento dos dados de atendimentos familiares --`,
+  telaAcompanhamento    : `-- ${paifTags.telaAcompanhamento} : inclusão e/ou alteração dos dados de atendimentos familiares --`,
+  telaValidacoes        : `-- ${paifTags.telaValidacoes} : validação mensal das informações cadastradas --`,
+  telaSubstituicoes     : `-- ${paifTags.telaSubstituicoes} : registro de períodos de substituição da gerência da unidade assistencial --`,
+  telaRMA               : `-- ${paifTags.telaRMA} : registro mensal de dados requeridos pelo MDS --`,
+  telaRMAS              : `-- ${paifTags.telaRMAS} : consolidação dos registros mensais de dados enviados ao MDS --`,
   projetos              : `-- ${paifTags.projetos} --`,
   paif                  : `-- ${paifTags.paif} --`,
   paifTech              : `-- ${paifTags.paifTech} --`,

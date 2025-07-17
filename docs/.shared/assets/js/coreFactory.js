@@ -109,7 +109,7 @@ function initializeHead() {
   };
   appendStyles(pageItems.sharedStyles);
 
-  if (pageItems.domainStyles[tela]) {
+  if (dominio.startsWith('paif')) {
     appendStyles(pageItems.domainStyles[tela]);
   }
 }
@@ -117,9 +117,10 @@ function initializeHead() {
 function initializeBody() {
   document.title = pageItems.paifTags[tela];
 
-  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(tela);
-  document.getElementById('header').innerHTML     = pageItems.headerHTML(tela);
-  document.getElementById('footer').innerHTML     = pageItems.footerHTML[tela];
+  const key = tela.startsWith('tela') ? 'paifUserTelas' : tela;
+  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(key);
+  document.getElementById('header').innerHTML     = pageItems.headerHTML(key);
+  document.getElementById('footer').innerHTML     = pageItems.footerHTML[key];
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
 
