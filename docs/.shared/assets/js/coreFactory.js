@@ -155,8 +155,8 @@ function initializeHead() {
 
   appendStyles(pageItems.sharedStyles);
 
-  if (pageItems.domainStyles[foco]) {
-    appendStyles(pageItems.domainStyles[foco]);
+  if (pageItems.domainStyles[focoAtual]) {
+    appendStyles(pageItems.domainStyles[focoAtual]);
   }
 }
 
@@ -170,7 +170,7 @@ function initializeBody() {
 
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
-  document.getElementById('footer').innerHTML     = pageItems.footerHTML[foco];
+  document.getElementById('footer').innerHTML     = pageItems.footerHTML[focoAtual];
 
   if (focoAtual === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
@@ -193,7 +193,7 @@ function initializeEvents() {
 
   // left panel
   document.querySelectorAll('.nav-item[data-panel="tree"]')
-    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, foco)) );
+    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, focoAtual)) );
   
   document.querySelectorAll('.leftPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));
