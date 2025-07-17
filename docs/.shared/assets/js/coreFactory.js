@@ -1,10 +1,11 @@
 import * as coreFuncs from './coreFunctions.js';
 window.coreFuncs = coreFuncs;
 
-const dominio  = document.body.getAttribute('domain');
-const building = document.body.hasAttribute('building');
+var tela        = document.body.getAttribute('tela');
 
-var tela       = document.body.getAttribute('tela');
+const foco      = tela.startsWith('tela') ? 'paifUserTelas' : tela;
+const dominio   = document.body.getAttribute('domain');
+const building  = document.body.hasAttribute('building');
 
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
@@ -110,8 +111,7 @@ function initializeHead() {
   appendStyles(pageItems.sharedStyles);
 
   if (dominio.startsWith('paif')) {
-    const key = tela.startsWith('tela') ? 'paifUserTelas' : tela;
-    appendStyles(pageItems.domainStyles[key]);
+    appendStyles(pageItems.domainStyles[foco]);
   }
 }
 
@@ -122,9 +122,7 @@ function initializeBody() {
   document.getElementById('header').innerHTML     = pageItems.headerHTML(tela);
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
-
-  const key = tela.startsWith('tela') ? 'paifUserTelas' : tela;
-  document.getElementById('footer').innerHTML = pageItems.footerHTML[key];
+  document.getElementById('footer').innerHTML     = pageItems.footerHTML[foco];
 
   if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
@@ -147,7 +145,7 @@ function initializeEvents() {
 
   // left panel
   document.querySelectorAll('.nav-item[data-panel="tree"]')
-    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, tela)) );
+    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, foco)) );
   
   document.querySelectorAll('.leftPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));

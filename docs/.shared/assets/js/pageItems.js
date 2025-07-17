@@ -1,16 +1,6 @@
 import * as html from './htmlSnippets.js';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
-/*
-const namespaces = { // template
-  projetos: ``,
-  paif: ``,
-  paifTech: ``,
-  paifUser: ``,
-  paifUserTelas: ``
-};
-*/
-////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 export const paifName = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
 export const favIco   = '/projetos/.shared/assets/img/logo/gdf.png';
