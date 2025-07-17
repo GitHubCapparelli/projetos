@@ -167,38 +167,22 @@ function initializeHead() {
   }
   link.href = pageItems.favIco;
 
-  // Helper to add <link> and return a load Promise
-  const loadStyle = (href) => {
-    return new Promise((resolve, reject) => {
+  // stylesheets
+  const appendStyles = (list) => {
+    list.forEach(href => {
       const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = href;
-      link.onload = () => resolve(href);
-      link.onerror = () => reject(new Error(`Failed to load CSS: ${href}`));
+      link.rel   = 'stylesheet';
+      link.type  = 'text/css';
+      link.href  = href;
       head.appendChild(link);
     });
   };
 
-  // Gather all styles to load
-  const stylesToLoad = [...pageItems.sharedStyles];
+  appendStyles(pageItems.sharedStyles);
 
   if (pageItems.domainStyles[menuKey]) {
-    stylesToLoad.push(...pageItems.domainStyles[menuKey]);
+    appendStyles(pageItems.domainStyles[menuKey]);
   }
-
-  // Load all styles, then continue initializing
-  return Promise.all(stylesToLoad.map(loadStyle))
-    .then(() => {
-      console.log('All stylesheets loaded!');
-      initializeBody();
-      initializeEvents();
-    })
-    .catch((err) => {
-      console.error('Error loading styles:', err);
-      initializeBody();       // Fallback init even if CSS fails
-      initializeEvents();
-    });
 }
 
 function initializeBody() {
@@ -262,8 +246,6 @@ function initializeEvents() {
       header.classList.remove('show');
     }
   });
-
-  document.getElementById('rightPanel').classList.remove('preload-hidden');
 }
 
 //////////////////////////////////////////////////////////////////////
