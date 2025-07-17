@@ -294,9 +294,15 @@ a:hover {
   background-color: var(--color-secondary);
 }
 
-.header-left {
+.header-left, 
+.header-titles {
   display: flex;
-  align-items: center;
+  align-items: start;
+}
+
+.header-titles {
+  flex-direction: column;
+  padding-left: 10px;
 }
 
 .header-right {
@@ -304,14 +310,6 @@ a:hover {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-}
-
-.header-titles {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 10px;
 }
 
 .header-logo {
