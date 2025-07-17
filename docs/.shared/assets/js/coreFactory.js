@@ -2,10 +2,9 @@ import * as coreFuncs from './coreFunctions.js';
 window.coreFuncs = coreFuncs;
 
 const dominio  = document.body.getAttribute('domain');
-const tela     = document.body.getAttribute('tela');
 const building = document.body.hasAttribute('building');
 
-var focoAtual  = '';
+var tela       = document.body.getAttribute('tela');
 
 ///////////////////////////////////////////////////////////////////
 // building shared components based on the user's option (use case ?)
@@ -82,28 +81,12 @@ function initialize() {
 
 function initializeVars() {
   switch (dominio) {
-    case 'projetos'         : 
-      focoAtual = 'projetos';
-      tela      = 'projetos';
-      break;
-    case 'paif'             : 
-      focoAtual = 'paif';           
-      tela      = 'paif';
-      break;
-    case 'paif.tech'        : 
-      focoAtual = 'paifTech';       
-      tela      = 'paifTech';
-      break;
-    case 'paif.user'        : 
-      focoAtual = 'paifUser';       
-      tela      = 'paifUser';
-      break;
-    case 'paif.user.telas'  : 
-      focoAtual = 'paifUserTelas';  
-      break;
-    default                 : 
-      focoAtual = '';               
-      break;
+    case 'projetos'         : tela = 'projetos';      break;
+    case 'paif'             : tela = 'paif';          break;
+    case 'paif.tech'        : tela = 'paifTech';      break;
+    case 'paif.user'        : tela = 'paifUser';      break;
+    case 'paif.user.telas'  : tela = 'paifUserTelas'; break;
+    default                 : tela = dominio;         break;
   }
 }
 
@@ -133,23 +116,23 @@ function initializeHead() {
 
   appendStyles(pageItems.sharedStyles);
 
-  if (pageItems.domainStyles[focoAtual]) {
-    appendStyles(pageItems.domainStyles[focoAtual]);
+  if (pageItems.domainStyles[tela]) {
+    appendStyles(pageItems.domainStyles[tela]);
   }
 }
 
 function initializeBody() {
-  document.title = (focoAtual === 'paifUserTelas')
+  document.title = (tela === 'paifUserTelas')
                  ? pageItems.paifTags[tela].replace(/^tela/, '').trim() 
-                 : pageItems.paifTags[focoAtual];
+                 : pageItems.paifTags[tela];
 
-  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(focoAtual);
-  document.getElementById('header').innerHTML     = pageItems.headerHTML(focoAtual);
-  document.getElementById('footer').innerHTML     = pageItems.footerHTML[focoAtual];
+  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(tela);
+  document.getElementById('header').innerHTML     = pageItems.headerHTML(tela);
+  document.getElementById('footer').innerHTML     = pageItems.footerHTML[tela];
   document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
   document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
 
-  if (focoAtual === 'paifTech') {
+  if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
     initBoxes();
   } else {
@@ -170,7 +153,7 @@ function initializeEvents() {
 
   // left panel
   document.querySelectorAll('.nav-item[data-panel="tree"]')
-    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, focoAtual)) );
+    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, tela)) );
   
   document.querySelectorAll('.leftPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));
