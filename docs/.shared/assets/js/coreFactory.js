@@ -162,8 +162,8 @@ function initializeHead() {
 
 function initializeBody() {
   document.title = (domain === 'projetos') 
-                  ? 'GERVIS - Soluções' 
-                  : `PAIF - ${formatTitle(tela)}`;
+                 ? 'GERVIS - Soluções' 
+                 : `PAIF - ${formatTitle(tela)}`;
 
   document.getElementById('stickyTop').innerHTML  = getStickyHTML(tela);
   document.getElementById('header').innerHTML     = getHeaderHTML(tela);
