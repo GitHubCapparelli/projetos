@@ -8,8 +8,6 @@ const dominio   = document.body.getAttribute('domain');
 const building  = document.body.hasAttribute('building');
 
 ///////////////////////////////////////////////////////////////////
-// building shared components based on the user's option (use case ?)
-
 
 // dynamic toggle handler for boxes (single accordion 'components')
 function initBoxes() {
@@ -85,6 +83,11 @@ function initialize() {
   initializeHead();
   initializeBody();
   initializeEvents();
+
+  if (dominio === 'paif.user') {
+    const folderTelas = document.getElementById('folderTelas');
+    coreFuncs.toggleNode(folderTelas);
+  }
 }
 
 function initializeHead() {

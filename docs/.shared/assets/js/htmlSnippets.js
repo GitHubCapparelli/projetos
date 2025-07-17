@@ -37,7 +37,7 @@ export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
     <ul class="nested list-unstyled ps-4">
       <li><a href="/projetos/PAIF/user"><i class="fas fa-file-alt me-2"></i>Introdução</a></li>
       <li>
-        <span class="tree-toggle">
+        <span id="folderTelas" class="tree-toggle">
           <i class="fas fa-folder-open me-2"></i>Telas
         </span>
         <ul class="nested list-unstyled ps-4">
@@ -58,6 +58,7 @@ export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
+      <li><a href="/projetos/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
@@ -137,6 +138,7 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <i class="fas fa-folder me-2"></i>Mais...
     </span>
     <ul id="folderMais" class="nested list-unstyled ps-4 d-none">
+      <li><a href="/projetos/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
