@@ -125,12 +125,17 @@ function initializeHead() {
 
 function initializeBody() {
   document.title = objModel.paifTags[tela];
+  const sticky = document.getElementById('stickyTop');
+  const header = document.getElementById('header');
+  const rightPanel = document.getElementById('rightPanel');
+  const leftBar = document.getElementById('leftBar');
+  const footer = document.getElementById('footer');
 
-  document.getElementById('stickyTop').innerHTML  = objModel.stickyHTML(tela);
-  document.getElementById('header').innerHTML     = objModel.headerHTML(tela);
-  document.getElementById('rightPanel').innerHTML = objModel.sharedHTML.rightPanel;
-  document.getElementById('leftBar').innerHTML    = objModel.sharedHTML.leftBar;
-  document.getElementById('footer').innerHTML     = objModel.footerHTML[foco];
+  if (!sticky.hasChaldNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
+  if (!header.hasChaldNodes())      header.innerHTML      = objModel.headerHTML(tela);
+  if (!rightPanel.hasChaldNodes())  rightPanel.innerHTML  = objModel.sharedHTML.rightPanel;
+  if (!leftBar.hasChaldNodes())     leftBar.innerHTML     = objModel.sharedHTML.leftBar;
+  if (!footer.hasChaldNodes())      footer.innerHTML      = objModel.footerHTML[foco];
 
   if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
