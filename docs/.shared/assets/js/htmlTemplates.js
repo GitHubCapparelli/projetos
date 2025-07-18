@@ -96,9 +96,9 @@ export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
           <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Incluir um novo acompanhamento</a></li>
-          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Alterar um acompanhamento existente</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Alterar acompanhamento existente</a></li>
           <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Preencher o Formulário RMA</a></li>
-          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Enviar o Formulário RMA para a GERVIS</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Enviar o formulário para a GERVIS</a></li>
           <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>...</a></li>
         </ul>
       </li>

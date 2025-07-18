@@ -192,7 +192,7 @@ ul li a:hover {
 }
 
 .leftPanel-body {
-  padding: 1rem;
+  padding: .5rem;
   overflow-y: auto;
   flex-grow: 1;
   background-color: var(--color-secondary);
