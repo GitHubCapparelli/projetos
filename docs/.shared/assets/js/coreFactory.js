@@ -131,11 +131,11 @@ function initializeBody() {
   const leftBar = document.getElementById('leftBar');
   const footer = document.getElementById('footer');
 
-  if (!sticky.hasChaldNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
-  if (!header.hasChaldNodes())      header.innerHTML      = objModel.headerHTML(tela);
-  if (!rightPanel.hasChaldNodes())  rightPanel.innerHTML  = objModel.sharedHTML.rightPanel;
-  if (!leftBar.hasChaldNodes())     leftBar.innerHTML     = objModel.sharedHTML.leftBar;
-  if (!footer.hasChaldNodes())      footer.innerHTML      = objModel.footerHTML[foco];
+  if (!sticky.hasChildNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
+  if (!header.hasChildNodes())      header.innerHTML      = objModel.headerHTML(tela);
+  if (!rightPanel.hasChildNodes())  rightPanel.innerHTML  = objModel.sharedHTML.rightPanel;
+  if (!leftBar.hasChildNodes())     leftBar.innerHTML     = objModel.sharedHTML.leftBar;
+  if (!footer.hasChildNodes())      footer.innerHTML      = objModel.footerHTML[foco];
 
   if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
