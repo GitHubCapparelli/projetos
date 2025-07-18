@@ -50,7 +50,7 @@ export const paifTags = {
   telaSubstituicoes     : 'Tela Substituiçoes',
   telaRMA               : 'Tela RMA',
   telaRMAs              : 'Tela RMAs',
-  projetos              : 'GERVIS - Projetos',
+  projetos              : 'Projetos',
   paif                  : 'Projeto PAIF',
   paifTech              : 'Manual técnico',
   paifUser              : 'Manual do usuário'
