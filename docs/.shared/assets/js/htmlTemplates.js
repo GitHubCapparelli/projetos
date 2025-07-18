@@ -133,7 +133,7 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
               <i class="fas fa-folder me-2"></i>Ações do sistema
             </span>
             <ul id="folderAcoesDoSistema" class="nested list-unstyled ps-4 d-none">
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente e memória</a></li>
+              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Carga e edição dos dados</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação e crítica dos dados</a></li>
               <li><a href="#"><i class="fas fa-file-alt me-2"></i>Funções de apoio e suporte</a></li>
