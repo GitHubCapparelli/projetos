@@ -218,7 +218,7 @@ export const projetosFooter = `<div class="footer-top">
       <h6>-- Venha nos visitar --</h6>
       <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
           <img class="img-logo-redondo" src="/projetos/.shared/assets/img/sedes/sedes-logo-redondo.png" alt="sedes-logo-redondo"
-              <br>title="SEDES (515 Norte)">
+              title="SEDES (515 Norte)"><br>
           Google Maps
       </a>
   </div>
