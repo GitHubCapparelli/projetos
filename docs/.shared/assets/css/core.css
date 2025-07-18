@@ -204,6 +204,7 @@ a:hover {
   left: calc(100vw - var(--notePanel-width) - 20px);
   border-radius: 10px;
   box-shadow: 0 8px 20px var(--color-shadow);
+  background-color: var(--color-secondary);
   flex-direction: column;
   transform: translateY(100%);
   opacity: 0;
