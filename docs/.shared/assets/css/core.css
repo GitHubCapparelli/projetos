@@ -75,8 +75,8 @@ a:hover,
 p a:hover,
 li a:hover,
 ul li a:hover {
-  text-decoration: underline;
-  /* font-weight: bold; */
+  /* text-decoration: underline; */
+  font-weight: bold;
 }
 
 /* ---------------------------------------------------------------------------------- */
