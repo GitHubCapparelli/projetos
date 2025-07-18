@@ -149,7 +149,7 @@ function initializeBody() {
   };
 
   if(building) 
-    document.getElementById('pageContent').innerHTML = (domain === '')
+    document.getElementById('pageContent').innerHTML = (tela === 'empty')
       ? objModel.sharedHTML.emAnalise
       : objModel.sharedHTML.emConstrucao;
 
