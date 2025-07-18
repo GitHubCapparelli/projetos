@@ -131,8 +131,8 @@ function initializeBody() {
   const leftBar     = document.getElementById('leftBar');
   const footer      = document.getElementById('footer');
 
-  sticky.classList.add('no-animation');
-  rightPanel.classList.add('no-animation');
+  const noAnimation = [sticky, rightPanel];
+  noAnimation.forEach(el => el.classList.add('no-animation'));
 
   if (!sticky.hasChildNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
   if (!header.hasChildNodes())      header.innerHTML      = objModel.headerHTML(tela);
@@ -150,12 +150,7 @@ function initializeBody() {
   if(building) 
     document.getElementById('pageContent').innerHTML = objModel.sharedHTML.emConstrucao;
 
-  requestAnimationFrame(() => {
-    setTimeout(() => {
-      sticky.classList.remove('no-animation');
-      rightPanel.classList.remove('no-animation');
-    }, 50); 
-  });
+  requestAnimationFrame(() => setTimeout(() => noAnimation.forEach(el => el.classList.remove('no-animation')), 50));
 }
 
 function initializeEvents() {
