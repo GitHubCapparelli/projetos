@@ -1,12 +1,12 @@
-:root {
+/* :root {
     --footer-height: 150px;
-
     --navPanel-width: 400px;
-}
+} */
 
 .sectionContent p {
     font-family: 'Times New Roman', Times, serif;
 }
+
 .sectionContent h1 {
     color: var(--color-primary);
 }
@@ -15,11 +15,12 @@
     justify-content: center;
 }
 
-.box { margin-bottom: 1rem; }
+.box {
+    margin-bottom: 1rem;
+}
 
 .box-header {
     width: 25%;
-    /* padding: 0.25rem 0px; */
     color: var(--color-primary);
     cursor: pointer;
     display: flex;
@@ -28,18 +29,25 @@
     gap: 0.5rem;
     border-radius: 0.5rem;
 }
+
 .box-header:not(.collapsed) .copy-btn {
     opacity: 1;
     pointer-events: auto;
 }
+
 .box-header h6 {
     margin: 0;
     padding: 0;
     font-style: italic;
 }
 
-.box-btn { cursor: pointer; }
-.box-btn:hover { color: var(--color-primary-dark); }
+.box-btn {
+    cursor: pointer;
+}
+
+.box-btn:hover {
+    color: var(--color-primary-dark);
+}
 
 .copy-btn {
     opacity: 0;
