@@ -39,7 +39,7 @@ export function showLeftPanel(el, menuKey) {
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   el.classList.add('active');
 
-  document.getElementById('leftPanel-body').innerHTML = pageItems.menuHTML[menuKey];
+  document.getElementById('leftPanel-body').innerHTML = objModel.menuHTML[menuKey];
 
   if (menuKey === 'paifUser') { 
     const folderTelas = document.getElementById('folderTelas');
