@@ -339,7 +339,7 @@ export const emConstrucao = `<div class="building">
 // https://unicode.org/emoji/charts/full-emoji-list.html
 
 export const emAnalise = `<div class="building">
-      <div class="icon mt-0 mb-0">😉</div>
+      <div class="icon mt-0 mb-0">🧐</div>
       <h1 class="mt-0 mb-0">Página em Análise </h1>
       <p class="mt-0 mb-0">Estamos trabalhando para trazer algo ainda mais incrível para você.</p>
       <p class="mt-0 mb-0">Aguarde!</p>
