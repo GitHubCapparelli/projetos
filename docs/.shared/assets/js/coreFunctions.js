@@ -1,8 +1,5 @@
-import * as pageItems  from './pageItems.js';
-import * as notes from './notes.js';
-
-window.pageItems = pageItems;
-window.notes     = notes;
+import * as objModel from './htmlObjects.js';
+window.objModel = objModel;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // dark mode 

@@ -1,5 +1,4 @@
-export const projetosMenu = `
-<ul class="treeview list-unstyled p-0 m-0">
+export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Projetos
@@ -53,8 +52,7 @@ export const projetosMenu = `
 
 export const paifMenu = ``;
 
-export const paifUserMenu = `
-<ul class="treeview list-unstyled p-0 m-0">
+export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual do usuário
@@ -76,8 +74,6 @@ export const paifUserMenu = `
       </li>
     </ul>
   </li>
-</ul>
-<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Mais...
@@ -87,7 +83,8 @@ export const paifUserMenu = `
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
-</ul>`;
+</ul>
+`;
 
 export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
@@ -156,8 +153,6 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
       </li>
     </ul>
   </li>
-</ul>
-<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder me-2"></i>Mais...
@@ -167,7 +162,8 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
-</ul>`;
+</ul>
+`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// ç
 

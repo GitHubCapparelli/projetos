@@ -104,7 +104,7 @@ function initializeHead() {
     link.rel = 'icon';
     head.appendChild(link);
   }
-  link.href = pageItems.favIco;
+  link.href = objModel.favIco;
 
   // stylesheets
   const appendStyles = (list) => {
@@ -116,21 +116,21 @@ function initializeHead() {
       head.appendChild(link);
     });
   };
-  appendStyles(pageItems.sharedStyles);
+  appendStyles(objModel.sharedStyles);
 
   if (dominio.startsWith('paif')) {
-    appendStyles(pageItems.domainStyles[foco]);
+    appendStyles(objModel.domainStyles[foco]);
   }
 }
 
 function initializeBody() {
-  document.title = pageItems.paifTags[tela];
+  document.title = objModel.paifTags[tela];
 
-  document.getElementById('stickyTop').innerHTML  = pageItems.stickyHTML(tela);
-  document.getElementById('header').innerHTML     = pageItems.headerHTML(tela);
-  document.getElementById('rightPanel').innerHTML = pageItems.sharedHTML.rightPanel;
-  document.getElementById('leftBar').innerHTML    = pageItems.sharedHTML.leftBar;
-  document.getElementById('footer').innerHTML     = pageItems.footerHTML[foco];
+  document.getElementById('stickyTop').innerHTML  = objModel.stickyHTML(tela);
+  document.getElementById('header').innerHTML     = objModel.headerHTML(tela);
+  document.getElementById('rightPanel').innerHTML = objModel.sharedHTML.rightPanel;
+  document.getElementById('leftBar').innerHTML    = objModel.sharedHTML.leftBar;
+  document.getElementById('footer').innerHTML     = objModel.footerHTML[foco];
 
   if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
@@ -140,7 +140,7 @@ function initializeBody() {
   };
 
   if(building) 
-    document.getElementById('pageContent').innerHTML = pageItems.sharedHTML.emConstrucao;
+    document.getElementById('pageContent').innerHTML = objModel.sharedHTML.emConstrucao;
 }
 
 function initializeEvents() {
