@@ -7,7 +7,7 @@ window.notes     = notes;
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
 // dark mode 
 export function setDarkMode(theme) {
-  const savedTheme = localStorage.getItem('theme');
+  const savedTheme = storeGet('theme');
   if (savedTheme !== theme) {
     toggleDarkMode();
   }
@@ -15,10 +15,10 @@ export function setDarkMode(theme) {
 
 export function toggleDarkMode() {
   const currentTheme = document.body.getAttribute('data-bs-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  const newTheme     = currentTheme === 'dark' ? 'light' : 'dark';
 
   document.body.setAttribute('data-bs-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
+  storeSet('theme', newTheme);
 
   const themeIcon = document.querySelector('[data-panel="settings"] i');
   if (themeIcon) {
@@ -31,6 +31,9 @@ export function toggleDarkMode() {
     }
   }
 }
+
+function storeGet(key)        => localStorage.getItem(key);
+function storeSet(key, value) => localStorage.setItem(key, value);
 
 ///////////////////////////////////////////////////////////////////
 // left (menu) sidebar
@@ -49,11 +52,13 @@ export function showLeftPanel(el, menuKey) {
   const panel = document.getElementById('leftPanel');
   panel.classList.add('show');
   document.body.classList.add('panel-open');
+  storeSet('leftPanel_visible', true);
 }
 
 export function hideLeftPanel() {
   document.getElementById('leftPanel').classList.remove('show');
   document.body.classList.remove('panel-open');
+  storeSet('leftPanel_visible', false);
 
   // Remove active state
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
