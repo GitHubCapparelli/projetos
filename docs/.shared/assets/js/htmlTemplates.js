@@ -238,10 +238,10 @@ export const sharedBox = `<div class="rightPanel-header">
 <div class="rightPanel-body" id="rightPanel-body"></div>`;
 
 export const emConstrucao = `<div class="building">
-      <div class="icon">🚧</div>
-      <h1>Página em Construção </h1>
-      <p>Estamos trabalhando para trazer algo incrível para você.</p>
-      <p>Volte em breve!</p>
+      <div class="icon mt-0 mb-0">🚧</div>
+      <h1 class="mt-0 mb-0">Página em Construção </h1>
+      <p class="mt-0 mb-0">Estamos trabalhando para trazer algo incrível para você.</p>
+      <p class="mt-0 mb-0">Volte em breve!</p>
       <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i>  Voltar</a>
   </div>`;
 

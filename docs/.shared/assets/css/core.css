@@ -206,7 +206,7 @@ a:hover {
   display: none;
   flex-direction: column;
   z-index: 1000;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, display 0.3s ease;
 }
 
 .rightPanel.show {
