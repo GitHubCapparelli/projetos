@@ -1,35 +1,62 @@
-export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
+export const projetosMenu = `
+<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
+      <i class="fas fa-folder-open me-2"></i>Projetos
     </span>
-    <ul class="nested list-unstyled ps-4 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
+    <ul class="treeview list-unstyled p-0 m-0">
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>PAIF
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
+          <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
+          <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>PAEFI
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
+</ul>
+<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>PAIF
+      <i class="fas fa-folder-open me-2"></i>Outros documentos
     </span>
-    <ul class="nested list-unstyled ps-4 d-none">
-      <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
-      <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
-      <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
+    <ul class="treeview list-unstyled p-0 m-0">
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Chat GPT
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>...</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li>
-    <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>PAEFI
-    </span>
-    <ul class="nested list-unstyled ps-4 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
-    </ul>
-  </li>
-</ul>`;
+</ul>
+`;
 
 export const paifMenu = ``;
 
-export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
+export const paifUserMenu = `
+<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
       <i class="fas fa-folder-open me-2"></i>Manual do usuário
