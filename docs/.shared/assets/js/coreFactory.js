@@ -84,7 +84,7 @@ function initialize() {
   initializeBody();
   initializeEvents();
 
-  const wasVisible = storeGet('leftPanel_visible') === 'true';
+  const wasVisible = coreFuncs.storeGet('leftPanel_visible') === 'true';
   if (wasVisible) {
     const navItem = document.querySelector(`.nav-item[data-panel="tree"]`);
     if (navItem) {
