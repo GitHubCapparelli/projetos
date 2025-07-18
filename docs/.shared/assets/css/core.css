@@ -203,17 +203,15 @@ a:hover {
   left: calc(100vw - var(--notePanel-width) - 20px);
   border-radius: 10px;
   box-shadow: 0 8px 20px var(--color-shadow);
-  display: none;
   flex-direction: column;
   z-index: 1000;
-  transform: translateY(-100%); /* slide in from top (or use 100% for bottom) */
+  transform: translateY(100%);
   opacity: 0;
-  transition: transform 7s ease, opacity 7s ease;
-  pointer-events: none; 
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
 }
 
 .rightPanel.show {
-  display: flex;
   transform: translateY(0); /* bring into view */
   opacity: 1;
   pointer-events: auto;
