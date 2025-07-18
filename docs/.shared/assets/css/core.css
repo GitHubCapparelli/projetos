@@ -560,12 +560,19 @@ body.panel-open .footer {
 }
 
 .btn-hide {
-  color: var(--color-secondary);
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-.btn-hide:hover {
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+.btn-hide i {
+  color: var(--color-secondary);
+  transition: color 0.2s ease;
+}
+
+.btn-hide:hover i {
+  color: black;
+  border: 1px solid black;
 }
 
 /* ---------------------------------------------------------------------------------- */
