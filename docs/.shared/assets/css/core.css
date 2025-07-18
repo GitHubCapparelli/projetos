@@ -420,7 +420,9 @@ a:hover {
   display: block;
 } */
 
-.paralaxSectionContent h1 {
+.paralaxSectionContent h1,
+.paralaxSectionContent h2,
+.paralaxSectionContent h3 {
   margin: 0px;
   color: var(--color-primary);
 }
