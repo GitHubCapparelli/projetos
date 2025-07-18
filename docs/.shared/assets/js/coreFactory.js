@@ -145,15 +145,7 @@ function initializeEvents() {
 
   // left panel
   document.querySelectorAll('.nav-item[data-panel="tree"]')
-    .forEach(el => el.addEventListener('click', () => 
-    { 
-      coreFuncs.toggleLeftPanel(el, foco);
-      
-      if (coreFuncs.storeGet('leftPanel_visible') === true)
-        coreFuncs.toggleLeftPanel(el, foco);
-    }));
-
-  
+    .forEach(el => el.addEventListener('click', () => coreFuncs.toggleLeftPanel(el, foco)) );
   
   document.querySelectorAll('.leftPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideLeftPanel));
