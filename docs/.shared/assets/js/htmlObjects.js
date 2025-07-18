@@ -37,7 +37,7 @@ export const sharedStyles = [
 ];
 
 export const domainStyles = {
-  paifTech      : ['/projetos/.shared/assets/css/tech.css'],
+  paifTech      : ['/projetos/.shared/assets/css/paif.css', '/projetos/.shared/assets/css/tech.css'],
   paif          : ['/projetos/.shared/assets/css/paif.css'],
   paifUser      : ['/projetos/.shared/assets/css/paif.css'],
   paifUserTelas : ['/projetos/.shared/assets/css/paif.css']
