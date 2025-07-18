@@ -83,6 +83,14 @@ function initialize() {
   initializeHead();
   initializeBody();
   initializeEvents();
+
+  const wasVisible = storeGet('leftPanel_visible') === 'true';
+  if (wasVisible) {
+    const navItem = document.querySelector(`.nav-item[data-panel="tree"]`);
+    if (navItem) {
+      coreFuncs.showLeftPanel(navItem, foco);
+    }
+  }
 }
 
 function initializeHead() {
