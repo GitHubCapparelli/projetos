@@ -77,6 +77,7 @@ function initialize() {
     case 'paif.tech' : tela = 'paifTech'; break;
     case 'paif.user' : tela = 'paifUser'; break;
     case 'projetos'  : tela = 'projetos'; break;
+    default          : tela = 'empty';    break;
   }
   foco = tela.startsWith('tela') ? 'paifUserTelas' : tela;
   
@@ -148,7 +149,9 @@ function initializeBody() {
   };
 
   if(building) 
-    document.getElementById('pageContent').innerHTML = objModel.sharedHTML.emConstrucao;
+    document.getElementById('pageContent').innerHTML = (domain === '')
+      ? objModel.sharedHTML.emAnalise
+      : objModel.sharedHTML.emConstrucao;
 
   requestAnimationFrame(() => setTimeout(() => noAnimation.forEach(el => el.classList.remove('no-animation')), 50));
 }

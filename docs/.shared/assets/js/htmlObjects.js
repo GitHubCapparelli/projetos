@@ -27,7 +27,8 @@ export const footerHTML = {
 export const sharedHTML = {
   leftBar       : html.sharedMenu,
   rightPanel    : html.sharedBox,
-  emConstrucao  : html.emConstrucao
+  emConstrucao  : html.emConstrucao,
+  emAnalise     : html.emAnalise
 };
 
 export const sharedStyles = [
@@ -53,7 +54,8 @@ export const paifTags = {
   projetos              : 'Projetos',
   paif                  : 'Projeto PAIF',
   paifTech              : 'Manual técnico',
-  paifUser              : 'Manual do usuário'
+  paifUser              : 'Manual do usuário',
+  empty                 : 'Em análise'
 }
 
 export const paifTitles = {
@@ -66,7 +68,8 @@ export const paifTitles = {
   projetos              : `-- ${paifTags.projetos} --`,
   paif                  : `-- ${paifTags.paif} --`,
   paifTech              : `-- ${paifTags.paifTech} --`,
-  paifUser              : `-- ${paifTags.paifUser} --`
+  paifUser              : `-- ${paifTags.paifUser} --`,
+  empty                 : `-- ${paifTags.empty} --`
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
