@@ -633,6 +633,10 @@ body.panel-open .footer {
   display: none;
 }
 
+.no-animation {
+  transition: none !important;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 
