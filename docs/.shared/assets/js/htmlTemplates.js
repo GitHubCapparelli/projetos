@@ -9,7 +9,7 @@ export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <i class="fas fa-folder me-2"></i>Dist. Territorial - Cad Único
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
         </ul>
       </li>
       <li>
@@ -27,7 +27,7 @@ export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <i class="fas fa-folder me-2"></i>PAEFI
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Proposta de implementação</a></li>
         </ul>
       </li>
     </ul>
@@ -42,7 +42,7 @@ export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <i class="fas fa-folder me-2"></i>Chat GPT
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>...</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>...</a></li>
         </ul>
       </li>
     </ul>
@@ -65,7 +65,7 @@ export const paifMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <i class="fas fa-folder me-2"></i>Referências
     </span>
     <ul class="nested list-unstyled ps-4 d-none">
-      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Decretos etc.</a></li>
+      <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Decretos etc.</a></li>
     </ul>
   </li>
 </ul>`;
@@ -148,13 +148,13 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
               <i class="fas fa-folder me-2"></i>Ações do usuário
             </span>
             <ul id="folderAcoesDoUsuario" class="nested list-unstyled ps-4 d-none">
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamentos</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamento</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Validações</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Substituições</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela RMA</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela RMAs</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Tela Outras</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamentos</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela Acompanhamento</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela Validações</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela Substituições</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela RMA</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela RMAs</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Tela Outras</a></li>
             </ul>
           </li>
           <li>
@@ -162,11 +162,11 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
               <i class="fas fa-folder me-2"></i>Ações do sistema
             </span>
             <ul id="folderAcoesDoSistema" class="nested list-unstyled ps-4 d-none">
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Carga e edição dos dados</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação e crítica dos dados</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Funções de apoio e suporte</a></li>
-              <li><a href="#"><i class="fas fa-file-alt me-2"></i>Funções administrativas</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Configuração do ambiente</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Carga e edição dos dados</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Validação e crítica dos dados</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Funções de apoio e suporte</a></li>
+              <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Funções administrativas</a></li>
             </ul>
           </li>
         </ul>
@@ -176,8 +176,8 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <i class="fas fa-folder-open me-2"></i>Apêndices
         </span>
         <ul id="folderApendices" class="nested list-unstyled ps-4">
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</a></li>
         </ul>
       </li>
     </ul>
