@@ -213,7 +213,8 @@ a:hover {
 }
 
 .rightPanel.show {
-  transform: translateY(0); /* bring into view */
+  transform: translateY(0);
+  /* bring into view */
   opacity: 1;
   pointer-events: auto;
   z-index: 2000;
@@ -572,7 +573,6 @@ body.panel-open .footer {
 
 .btn-hide:hover i {
   color: black;
-  border: 1px solid black;
 }
 
 /* ---------------------------------------------------------------------------------- */
