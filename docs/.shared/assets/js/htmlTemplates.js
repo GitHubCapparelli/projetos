@@ -47,10 +47,28 @@ export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
       </li>
     </ul>
   </li>
-</ul>
-`;
+</ul>`;
 
-export const paifMenu = ``;
+export const paifMenu = `<ul class="treeview list-unstyled p-0 m-0">
+  <li>
+    <span class="tree-toggle">
+      <i class="fas fa-folder me-2"></i>Projeto PAIF
+    </span>
+    <ul class="nested list-unstyled ps-4 d-none">
+      <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
+      <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
+      <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
+    </ul>
+  </li>
+  <li>
+    <span class="tree-toggle">
+      <i class="fas fa-folder me-2"></i>Referências
+    </span>
+    <ul class="nested list-unstyled ps-4 d-none">
+      <li><a href="#"><i class="fas fa-file-alt me-2"></i>Decretos etc.</a></li>
+    </ul>
+  </li>
+</ul>`;
 
 export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
@@ -83,8 +101,7 @@ export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
-</ul>
-`;
+</ul>`;
 
 export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
@@ -162,52 +179,114 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
     </ul>
   </li>
-</ul>
-`;
+</ul>`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// ç
 
-export const projetosFooter = ``;
-
-export const paifTechFooter = ``;
-
-export const paifUserFooter = `<div class="footer-top">
-<div class="footer-top-left">
-    <h6>Links úteis</h6>
-    <ul>
-        <li><a href="https://sei.df.gov.br/sei/" target="_blank" rel="noopener noreferrer">SEI</a></li>
-        <li><a href="https://sistemas2.df.gov.br/Prontuario/Home" target="_blank"
-                rel="noopener noreferrer">SIDIS</a></li>
-        <li><a href="https://sistemas2.df.gov.br/Prontuario/ProntuarioHome?filtro=AssistenciaSocial"
-                target="_blank" rel="noopener noreferrer">Prontuário Assistencial</a></li>
-        <li><a href="https://sistemas2.df.gov.br/PortalDeServicos/GaleriaSistemas" target="_blank"
-                rel="noopener noreferrer">Outros sistemas</a></li>
-    </ul>
-    <ul class="mt-3">
-        <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
-    </ul>
-</div>
-<div class="footer-top-left">
-    <h6>SharePoint sites</h6>
-    <ul>
-        <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                rel="noopener noreferrer">GERVIS</a>
-        </li>
-    </ul>
-</div>
-<div class="footer-top-right">
-    <h6>-- Venha nos visitar --</h6>
-    <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
-        <img class="img-map" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
-            title="SEDES (515 Norte)">
-        Google Maps
-    </a>
-</div>
+export const projetosFooter = `<div class="footer-top">
+  <div class="footer-top-left">
+      <h6>Links úteis</h6>
+      <ul>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Nome</a></li>
+      </ul>
+      <ul class="mt-3">
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
+      </ul>
+  </div>
+  <div class="footer-top-left">
+      <h6>SharePoint sites</h6>
+      <ul>
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS</a>
+          </li>
+      </ul>
+  </div>
+  <div class="footer-top-right">
+      <h6>-- Venha nos visitar --</h6>
+      <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
+          <img class="img-map" src="/projetos/.shared/assets/img/sedes/sedes-logo-redondo" alt="sedes-logo-redondo"
+              title="SEDES (515 Norte)">
+          Google Maps
+      </a>
+  </div>
 </div>
 <div class="footer-bottom">
-<span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
-<span class="footer-bottom-right">v.1.0</span>
+  <span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
+  <span class="footer-bottom-right">v.1.0</span>
+</div>`;
+
+export const paifTechFooter = `<div class="footer-top">
+  <div class="footer-top-left">
+      <h6>Links úteis</h6>
+      <ul>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Nome</a></li>
+      </ul>
+      <ul class="mt-3">
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
+      </ul>
+  </div>
+  <div class="footer-top-left">
+      <h6>SharePoint sites</h6>
+      <ul>
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS</a>
+          </li>
+      </ul>
+  </div>
+  <div class="footer-top-right">
+      <h6>-- Venha nos visitar --</h6>
+      <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
+          <img class="img-map" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
+              title="SEDES (515 Norte)">
+          Google Maps
+      </a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
+  <span class="footer-bottom-right">v.1.0</span>
+</div>`;
+
+export const paifUserFooter = `
+<div class="footer-top">
+  <div class="footer-top-left">
+      <h6>Links úteis</h6>
+      <ul>
+          <li><a href="https://sei.df.gov.br/sei/" target="_blank" rel="noopener noreferrer">SEI</a></li>
+          <li><a href="https://sistemas2.df.gov.br/Prontuario/Home" target="_blank"
+                  rel="noopener noreferrer">SIDIS</a></li>
+          <li><a href="https://sistemas2.df.gov.br/Prontuario/ProntuarioHome?filtro=AssistenciaSocial"
+                  target="_blank" rel="noopener noreferrer">Prontuário Assistencial</a></li>
+          <li><a href="https://sistemas2.df.gov.br/PortalDeServicos/GaleriaSistemas" target="_blank"
+                  rel="noopener noreferrer">Outros sistemas</a></li>
+      </ul>
+      <ul class="mt-3">
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
+      </ul>
+  </div>
+  <div class="footer-top-left">
+      <h6>SharePoint sites</h6>
+      <ul>
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS</a>
+          </li>
+      </ul>
+  </div>
+  <div class="footer-top-right">
+      <h6>-- Venha nos visitar --</h6>
+      <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
+          <img class="img-map" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
+              title="SEDES (515 Norte)">
+          Google Maps
+      </a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span class="footer-bottom-left">© 2025 SEDES/SUBSAS/GERVIS</span>
+  <span class="footer-bottom-right">v.1.0</span>
 </div>`;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// ç
@@ -244,5 +323,6 @@ export const emConstrucao = `<div class="building">
       <p class="mt-0 mb-0">Volte em breve!</p>
       <a onclick="window.history.back();"><i class="fa-solid fa-arrow-left"></i>  Voltar</a>
   </div>`;
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// ç
