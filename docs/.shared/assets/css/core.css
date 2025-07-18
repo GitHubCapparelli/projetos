@@ -208,7 +208,7 @@ a:hover {
   z-index: 1000;
   transform: translateY(-100%); /* slide in from top (or use 100% for bottom) */
   opacity: 0;
-  transition: transform 3s ease, opacity 3s ease;
+  transition: transform 7s ease, opacity 7s ease;
   pointer-events: none; 
 }
 
