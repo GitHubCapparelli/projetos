@@ -90,6 +90,18 @@ export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <li><a href="/projetos/PAIF/user/telas/telaRMAs.html"><i class="fas fa-file-alt me-2"></i>RMAs</a></li>
         </ul>
       </li>
+      <li>
+        <span id="folderTelas" class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Passo a passo
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Incluir um novo acompanhamento</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Alterar um acompanhamento existente</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Preencher o Formulário RMA</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Enviar o Formulário RMA para a GERVIS</a></li>
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>...</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>
