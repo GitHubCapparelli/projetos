@@ -27,5 +27,5 @@ export const noteHTML = {
     <li><b>SUBSAS</b> Subsecretaria de Assistência Social </li>
   </ul>
   </div>
-  <div style="font-size: 0.5rem;"><p class="mt-0 mb-0">* Agosto 2025</p><p class="mt-0 mb-0">Mais em <a href="#" target="_blank">link</a></p></div></div>`
+  <div style="font-size: 0.5rem;"><p class="mt-0 mb-0">* Agosto 2025 | Mais em <a href="#" target="_blank">link</a></p></div></div>`
 };
