@@ -206,11 +206,17 @@ a:hover {
   display: none;
   flex-direction: column;
   z-index: 1000;
-  transition: transform 0.3s ease, display 0.3s ease;
+  transform: translateY(-100%); /* slide in from top (or use 100% for bottom) */
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none; 
 }
 
 .rightPanel.show {
   display: flex;
+  transform: translateY(0); /* bring into view */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .rightPanel-header {
