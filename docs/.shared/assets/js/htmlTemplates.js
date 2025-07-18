@@ -97,9 +97,9 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="#"><i class="fas fa-file-alt me-2"></i>Arquitetura, escopo e restrições</a></li>
       <li>
         <span class="tree-toggle">
-          <i class="fas fa-folder me-2"></i>Casos de uso
+          <i class="fas fa-folder-open me-2"></i>Casos de uso
         </span>
-        <ul id="folderCasosDeUso" class="nested list-unstyled ps-4 d-none">
+        <ul id="folderCasosDeUso" class="nested list-unstyled ps-4">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Acompanhamento de atendimentos</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Manutenção de acompanhamentos</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação mensal</a></li>
@@ -144,9 +144,9 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
       </li>
       <li>
         <span class="tree-toggle">
-          <i class="fas fa-folder me-2"></i>Apêndices
+          <i class="fas fa-folder-open me-2"></i>Apêndices
         </span>
-        <ul id="folderApendices" class="nested list-unstyled ps-4 d-none">
+        <ul id="folderApendices" class="nested list-unstyled ps-4">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Falhas conhecidas</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</a></li>
         </ul>
