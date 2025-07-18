@@ -55,7 +55,7 @@ export const paifTags = {
   paif                  : 'Projeto PAIF',
   paifTech              : 'Manual técnico',
   paifUser              : 'Manual do usuário',
-  empty                 : 'Em análise'
+  analise               : 'Em análise'
 }
 
 export const paifTitles = {
@@ -69,7 +69,7 @@ export const paifTitles = {
   paif                  : `-- ${paifTags.paif} --`,
   paifTech              : `-- ${paifTags.paifTech} --`,
   paifUser              : `-- ${paifTags.paifUser} --`,
-  empty                 : `-- ${paifTags.empty} --`
+  analise               : `-- ${paifTags.analise} --`
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 

@@ -77,6 +77,7 @@ function initialize() {
     case 'paif.tech' : tela = 'paifTech'; break;
     case 'paif.user' : tela = 'paifUser'; break;
     case 'projetos'  : tela = 'projetos'; break;
+    case 'analise'   : tela = 'analise';  break;
   }
   foco = tela.startsWith('tela')  ? 'paifUserTelas' : tela;
   
@@ -148,7 +149,7 @@ function initializeBody() {
   };
 
   if(building) 
-    document.getElementById('pageContent').innerHTML = (dominio === '')
+    document.getElementById('pageContent').innerHTML = (tela === 'empty')
       ? objModel.sharedHTML.emAnalise
       : objModel.sharedHTML.emConstrucao;
 
