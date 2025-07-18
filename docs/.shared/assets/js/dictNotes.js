@@ -16,7 +16,7 @@ export const noteHTML = {
     <li><b>GERVIS</b> Gerência de Vigilância Socioassistencial</li>
   </ul>
   </div>
-  <div style="font-size: 0.5rem;"><p class="mt-0 mb-0">* Agosto 2025</p><p class="mt-0 mb-0">Mais em <a href="#" target="_blank">link</a></p></div></div>`,
+  <div style="font-size: 0.65rem;"><p class="mt-0 mb-0">* Agosto 2025</p><p class="mt-0 mb-0">Mais em <a href="#" target="_blank">link</a></p></div></div>`,
 
   sedesOrgaos: `<div class="d-flex flex-column justify-content-between h-100"><div><p class="mt-0 mb-0">O gabinete da <b>SEDES</b> (Secretaria de Estado de Desenvolvimento Social) do <b>GDF</b> conta atualmente* com as seguintes unidades administrativas:</p>
   <ul class="ms-0 ps-3 mb-0">
@@ -27,5 +27,5 @@ export const noteHTML = {
     <li><b>SUBSAS</b> Subsecretaria de Assistência Social </li>
   </ul>
   </div>
-  <div style="font-size: 0.5rem;"><p class="mt-0 mb-0">* Agosto 2025 | Mais em <a href="#" target="_blank">link</a></p></div></div>`
+  <div style="font-size: 0.65rem;"><p class="mt-0 mb-0">* Agosto 2025 | Mais em <a href="#" target="_blank">link</a></p></div></div>`
 };
