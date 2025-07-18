@@ -7,7 +7,7 @@ export const projetosMenu = `
     <ul class="nested list-unstyled ps-4">
       <li>
         <span class="tree-toggle">
-          <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
+          <i class="fas fa-folder me-2"></i>Dist. Territorial - Cad Único
         </span>
         <ul class="nested list-unstyled ps-4 d-none">
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
@@ -35,9 +35,9 @@ export const projetosMenu = `
   </li>
   <li>
     <span class="tree-toggle">
-      <i class="fas fa-folder-open me-2"></i>Referências
+      <i class="fas fa-folder me-2"></i>Referências
     </span>
-    <ul class="nested list-unstyled ps-4">
+    <ul class="nested list-unstyled ps-4 d-none">
       <li>
         <span class="tree-toggle">
           <i class="fas fa-folder me-2"></i>Chat GPT
