@@ -4,7 +4,7 @@ export const noteTitle = {
 };
 
 export const noteHTML = {
-  subsasUnidadesGestao: `<div class="d-flex flex-column justify-content-between"><div><p class="mt-0 mb-0">A <b>SUBSAS</b> (Subsecretaria de Assistência Social) conta atualmente* com as seguintes unidades de gestão:</p>
+  subsasUnidadesGestao: `<div class="d-flex flex-column justify-content-between h-100"><div><p class="mt-0 mb-0">A <b>SUBSAS</b> (Subsecretaria de Assistência Social) conta atualmente* com as seguintes unidades de gestão:</p>
   <ul>
     <li><b>CPSB</b> Coordenação de Proteção Social Básica</li>
     <li><b>CPSM</b> Coordenação de Proteção Social Especial de Média Complexidade</li>
@@ -17,9 +17,8 @@ export const noteHTML = {
   </ul>
   </div><div><p class="mt-0 mb-0">* Agosto 2025</p><p class="mt-0 mb-0">Mais em <a href="#" target="_blank">link</a></p></div></div>`,
 
-  sedesOrgaos: `<div class="d-flex flex-column justify-content-between"><div><p class="mt-0 mb-0">A <b>SEDES</b> (Secretaria de Estado de Desenvolvimento Social) do <b>GDF</b> conta atualmente* com as seguintes unidades administrativas:</p>
+  sedesOrgaos: `<div class="d-flex flex-column justify-content-between h-100"><div><p class="mt-0 mb-0">O gabinete da <b>SEDES</b> (Secretaria de Estado de Desenvolvimento Social) do <b>GDF</b> conta atualmente* com as seguintes unidades administrativas:</p>
   <ul>
-    <li><b>Gabinete</b></li>
     <li><b>SEEDS</b> Subsecretaria de Administração Geral</li>
     <li><b>SUAG</b> Coordenação de Proteção Social Básica</li>
     <li><b>SUGIP</b> Subsecretaria de Governança, Inovação e Educação Permanente</li>

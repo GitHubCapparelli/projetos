@@ -219,8 +219,7 @@ ul li a:hover {
 }
 
 .rightPanel.show {
-  transform: translateY(0);
-  /* bring into view */
+  transform: translateY(0); 
   opacity: 1;
   pointer-events: auto;
   z-index: 2000;
