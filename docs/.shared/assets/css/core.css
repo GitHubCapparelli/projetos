@@ -197,6 +197,7 @@ a:hover {
 /* Right Panel */
 .rightPanel {
   position: fixed;
+  z-index: 2000;
   width: var(--notePanel-width);
   top: calc(var(--topBars-height) + 10px);
   height: calc(100vh - var(--topBars-height) - 20px);
@@ -204,7 +205,6 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 8px 20px var(--color-shadow);
   flex-direction: column;
-  z-index: 1000;
   transform: translateY(100%);
   opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -215,6 +215,7 @@ a:hover {
   transform: translateY(0); /* bring into view */
   opacity: 1;
   pointer-events: auto;
+  z-index: 2000;
 }
 
 .rightPanel-header {
