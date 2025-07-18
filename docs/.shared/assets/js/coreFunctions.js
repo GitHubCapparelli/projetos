@@ -32,8 +32,8 @@ export function toggleDarkMode() {
   }
 }
 
-function storeGet(key)        => localStorage.getItem(key);
-function storeSet(key, value) => localStorage.setItem(key, value);
+export const storeGet = (key)        => localStorage.getItem(key);
+export const storeSet = (key, value) => localStorage.setItem(key, value);
 
 ///////////////////////////////////////////////////////////////////
 // left (menu) sidebar

@@ -1,5 +1,10 @@
 export const projetosMenu = `
-    <ul class="treeview list-unstyled p-0 m-0">
+<ul class="treeview list-unstyled p-0 m-0">
+  <li>
+    <span class="tree-toggle">
+      <i class="fas fa-folder-open me-2"></i>Projetos
+    </span>
+    <ul class="nested list-unstyled ps-4">
       <li>
         <span class="tree-toggle">
           <i class="fas fa-folder me-2"></i>Dist. Territorial - Cadastro Único
@@ -27,6 +32,23 @@ export const projetosMenu = `
         </ul>
       </li>
     </ul>
+  </li>
+  <li>
+    <span class="tree-toggle">
+      <i class="fas fa-folder-open me-2"></i>Referências
+    </span>
+    <ul class="nested list-unstyled ps-4">
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Chat GPT
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>...</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 `;
 
 export const paifMenu = ``;
