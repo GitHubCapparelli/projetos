@@ -207,7 +207,7 @@ ul li a:hover {
   width: var(--notePanel-width);
   top: calc(var(--topBars-height) + 10px);
   height: calc(100vh - var(--topBars-height) - 20px);
-  left: calc(100vw - var(--notePanel-width) - 20px);
+  left: calc(100vw - var(--notePanel-width) - 50px);
   border-radius: 10px;
   box-shadow: 0 8px 20px var(--color-shadow);
   background-color: var(--color-secondary);
