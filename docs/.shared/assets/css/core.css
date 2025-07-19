@@ -441,22 +441,6 @@ p, .text-justify {
   position: relative;
 }
 
-.paralaxSectionInner {
-  height: 100%;
-  overflow-y: auto;
-  padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
-  border-radius: inherit; /* Keeps rounded corners */
-}
-
-/* ::-webkit-scrollbar {
-  width: 10px;
-  display: block;
-} */
-
-.paralaxSectionInner::-webkit-scrollbar-button {
-  display: none;
-}
-
 .paralaxSectionContent h1,
 .paralaxSectionContent h2,
 .paralaxSectionContent h3 {
@@ -482,6 +466,41 @@ p, .text-justify {
 
 .backSedesFachada {
   background-image: url('/projetos/.shared/assets/img/sedes/sedes-fachada.avif');
+}
+
+.paralaxSectionInner {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
+  border-radius: inherit; /* Keeps rounded corners */
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+  display: block;
+} */
+
+/* Hide scrollbar arrows (buttons) — Chrome, Edge, Safari */
+.paralaxSectionInner::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Optional: Make scrollbar thinner */
+.paralaxSectionInner::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Optional: Customize scrollbar thumb */
+.paralaxSectionInner::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Optional: Customize scrollbar track */
+.paralaxSectionInner::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 /* ---------------------------------------------------------------------------------- */
