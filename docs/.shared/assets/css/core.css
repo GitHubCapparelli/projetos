@@ -64,7 +64,7 @@ body {
 } */
 
 /* Hide scrollbar arrows (buttons) — Chrome, Edge, Safari */
-html::-webkit-scrollbar-button,
+/* html::-webkit-scrollbar-button, */
 body::-webkit-scrollbar-button {
   display: none;
   height: 0;
@@ -72,20 +72,22 @@ body::-webkit-scrollbar-button {
 }
 
 /* Optional: Make scrollbar thinner */
-html::-webkit-scrollbar,
+/* html::-webkit-scrollbar, */
 body::-webkit-scrollbar {
   width: 8px;
 }
 
 /* Optional: Customize scrollbar thumb */
-html::-webkit-scrollbar-thumb,
+/* html::-webkit-scrollbar-thumb, */
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-emphasis);
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Optional: Customize scrollbar track */
-html::-webkit-scrollbar-track,
+/* html::-webkit-scrollbar-track, */
 body::-webkit-scrollbar-track {
   background-color: transparent;
 }
