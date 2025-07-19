@@ -136,11 +136,11 @@ function initializeBody() {
   noAnimation.forEach(el => el.classList.add('no-animation'));
 
   if (!header.hasChildNodes())        header.innerHTML      = objModel.headerHTML(tela);
+  if (!leftBar.hasChildNodes())       leftBar.innerHTML     = objModel.sharedHTML.leftBar;
 
   if (tela !== 'analise') {
     if (!sticky.hasChildNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
     if (!rightPanel.hasChildNodes())  rightPanel.innerHTML  = objModel.sharedHTML.rightPanel;
-    if (!leftBar.hasChildNodes())     leftBar.innerHTML     = objModel.sharedHTML.leftBar;
     if (!footer.hasChildNodes())      footer.innerHTML      = objModel.footerHTML[foco];
   }
 
