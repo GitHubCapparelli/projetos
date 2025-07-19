@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  padding-right: 8px;
+  padding-right: 10px;
   box-sizing: border-box;
   font-family: system-ui, sans-serif;
 }
@@ -472,6 +472,8 @@ p, .text-justify {
   border-radius: 10px;
   overflow: clip; /* Prevents scrollbar from bleeding out */
   position: relative;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .paralaxSectionContent h1,
@@ -506,8 +508,6 @@ p, .text-justify {
   overflow-y: auto;
   padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
   border-radius: inherit; /* Keeps rounded corners */
-  padding-right: 8px;
-  box-sizing: border-box;
 }
 
 /* ::-webkit-scrollbar {
