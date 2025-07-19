@@ -106,7 +106,7 @@ p, .text-justify {
 
 .fn-1 {
   border-top: 1px solid black;
-  margin-top: 0.5rem;
+  margin-top: 0.5rem 0px;
   font-size: 0.65rem;
 }
 
