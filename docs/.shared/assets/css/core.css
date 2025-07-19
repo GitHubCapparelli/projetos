@@ -448,10 +448,10 @@ p, .text-justify {
   border-radius: inherit; /* Keeps rounded corners */
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
   display: block;
-} */
+}
 
 ::-webkit-scrollbar-button {
   display: none;
