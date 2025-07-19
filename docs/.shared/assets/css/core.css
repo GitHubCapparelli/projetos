@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 /* Optional: Customize scrollbar thumb */
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
+  background-color: var(--color-emphasis);
   border-radius: 10px;
 }
 
@@ -523,7 +523,7 @@ p, .text-justify {
 
 /* Optional: Customize scrollbar thumb */
 .paralaxSectionInner::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
+  background-color: var(--color-emphasis);
   border-radius: 10px;
 }
 
