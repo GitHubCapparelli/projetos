@@ -37,6 +37,31 @@
   --notePanel-width: 300px;
 }
 
+/* ---------------------------------------------------------------------------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bs-gray-300);
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-right: 8px;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
 /* ::-webkit-scrollbar {
   width: 0px;
   display: none;
@@ -67,27 +92,6 @@ body::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track {
   background-color: transparent;
-}
-
-/* ---------------------------------------------------------------------------------- */
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  background-color: var(--bs-gray-300);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: system-ui, sans-serif;
 }
 
 a,
@@ -502,6 +506,8 @@ p, .text-justify {
   overflow-y: auto;
   padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
   border-radius: inherit; /* Keeps rounded corners */
+  padding-right: 8px;
+  box-sizing: border-box;
 }
 
 /* ::-webkit-scrollbar {
