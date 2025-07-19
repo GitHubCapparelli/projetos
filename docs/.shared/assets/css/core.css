@@ -42,6 +42,29 @@
   display: none;
 } */
 
+/* Hide scrollbar arrows (buttons) — Chrome, Edge, Safari */
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Optional: Make scrollbar thinner */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Optional: Customize scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Optional: Customize scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 * {
