@@ -683,14 +683,10 @@ body.panel-open .footer {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  border-radius: 10px;
-  border: 1px solid var(--color-primary);
-  box-shadow: 0 8px 20px var(--color-enphasis);
   gap:10px;
 }
 .card-h-l {
   width: 60%;
-  padding: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -698,7 +694,6 @@ body.panel-open .footer {
 }
 .card-h-r {
   width: 40%;
-  padding: .5rem;
   display: flex;
   justify-content: center;
   align-items: center; 
