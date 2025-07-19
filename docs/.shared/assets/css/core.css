@@ -100,6 +100,10 @@ ul li a:hover {
   padding-right: 5px;
 }
 
+p {
+  text-align: justify;
+}
+
 /* ---------------------------------------------------------------------------------- */
 /* Sidebar */
 .leftMenu {
