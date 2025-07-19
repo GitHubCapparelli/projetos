@@ -52,7 +52,6 @@ body {
 
 html {
   scrollbar-gutter: stable both-edges;
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
