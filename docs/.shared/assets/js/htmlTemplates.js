@@ -58,14 +58,14 @@ export const paifMenu = `<ul class="treeview list-unstyled p-0 m-0">
       <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
       <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
       <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
-    </ul>
-  </li>
-  <li>
-    <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>Referências
-    </span>
-    <ul class="nested list-unstyled ps-4 d-none">
-      <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Decretos etc.</a></li>
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Referências
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Decretos etc.</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>`;
@@ -102,15 +102,15 @@ export const paifUserMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>...</a></li>
         </ul>
       </li>
-    </ul>
-  </li>
-  <li>
-    <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>Mais...
-    </span>
-    <ul class="nested list-unstyled ps-4 d-none">
-      <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
-      <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Mais...
+        </span>
+        <ul class="nested list-unstyled ps-4 d-none">
+          <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
+          <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>`;
@@ -180,15 +180,15 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Propostas de melhoria</a></li>
         </ul>
       </li>
-    </ul>
-  </li>
-  <li>
-    <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>Mais...
-    </span>
-    <ul id="folderMais" class="nested list-unstyled ps-4 d-none">
-      <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
-      <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
+      <li>
+        <span class="tree-toggle">
+          <i class="fas fa-folder me-2"></i>Mais...
+        </span>
+        <ul id="folderMais" class="nested list-unstyled ps-4 d-none">
+          <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
+          <li><a href="/projetos/"><i class="fas fa-file-alt me-2"></i>Outras soluções GERVIS</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>`;
