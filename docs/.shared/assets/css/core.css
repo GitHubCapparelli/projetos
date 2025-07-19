@@ -676,7 +676,8 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border-right: 1px solid var(--color-primary);
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 8px 20px var(--color-enphasis);
   border-radius: 10px;
   gap:10px;
 }
