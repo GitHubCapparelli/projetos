@@ -5,7 +5,8 @@ export const noteTitle = {
 };
 
 export const noteHTML = {
-  clientesUsuarios: `<div class="d-flex flex-column justify-content-between h-100  text-start small"><div><p class="mb-1"><b>Cliente:</b> Pessoa, empresa ou organização que adquire ou contrata um produto, sistema ou serviço.</p>
+  clientesUsuarios: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
+  <p class="mb-1"><b>Cliente:</b> Pessoa, empresa ou organização que adquire ou contrata um produto, sistema ou serviço.</p>
   <p class="mb-1">É quem define os requisitos, financia o desenvolvimento e detém os direitos contratuais sobre o que está sendo entregue.</p>
   <p class="mb-1">Nem sempre o cliente é quem vai utilizar diretamente o sistema; sua visão pode ser mais estratégica ou gerencial.</p>
   <p class="mb-1">Por isso, entender claramente as necessidades do cliente é essencial, mas também é necessário alinhar essas necessidades com a realidade de quem vai operar o sistema no dia a dia.</p>
@@ -18,7 +19,7 @@ export const noteHTML = {
   </div>
   <div class="fn-1"><p class="mt-0 mb-0">Fonte: ChatGPT</p></div></div>`,
 
-  subsasUnidadesGestao: `<div class="d-flex flex-column justify-content-between h-100 text-start"><div><p class="mt-0 mb-0">A <b>SUBSAS</b> (Subsecretaria de Assistência Social) conta atualmente* com as seguintes unidades de gestão:</p>
+  subsasUnidadesGestao: `<div class="d-flex flex-column justify-content-between h-100"><div class="tx-ss"><p class="mt-0 mb-0">A <b>SUBSAS</b> (Subsecretaria de Assistência Social) conta atualmente* com as seguintes unidades de gestão:</p>
   <ul class="ms-0 ps-3 mb-0">
     <li><b>CPSB</b> Coordenação de Proteção Social Básica</li>
     <li><b>CPSM</b> Coordenação de Proteção Social Especial de Média Complexidade</li>
@@ -32,7 +33,7 @@ export const noteHTML = {
   </div>
   <div class="fn-1"><p class="mt-0 mb-0">* Agosto 2025 | Mais em <a href="#" target="_blank">link</a></p></div></div>`,
 
-  sedesOrgaos: `<div class="d-flex flex-column justify-content-between h-100"><div><p class="mt-0 mb-0">O gabinete da <b>SEDES</b> (Secretaria de Estado de Desenvolvimento Social) do <b>GDF</b> conta atualmente* com as seguintes unidades administrativas:</p>
+  sedesOrgaos: `<div class="d-flex flex-column justify-content-between h-100"><div class="tx-ss"><p class="mt-0 mb-0">O gabinete da <b>SEDES</b> (Secretaria de Estado de Desenvolvimento Social) do <b>GDF</b> conta atualmente* com as seguintes unidades administrativas:</p>
   <ul class="ms-0 ps-3 mb-0">
     <li><b>SEEDS</b> Subsecretaria de Administração Geral</li>
     <li><b>SUAG</b> Coordenação de Proteção Social Básica</li>
