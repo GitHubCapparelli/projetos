@@ -437,13 +437,25 @@ p, .text-justify {
   background-color: var(--color-parallax-back);
   box-shadow: 0px 8px 20px var(--color-shadow);
   border-radius: 10px;
-  overflow-y: auto;
+  overflow: clip; /* Prevents scrollbar from bleeding out */
+  position: relative;
 }
 
-/* .paralaxSectionContent::-webkit-scrollbar {
+.paralaxSectionInner {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
+  border-radius: inherit; /* Keeps rounded corners */
+}
+
+::-webkit-scrollbar {
   width: 10px;
   display: block;
-} */
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
 
 .paralaxSectionContent h1,
 .paralaxSectionContent h2,
