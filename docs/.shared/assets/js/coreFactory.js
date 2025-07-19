@@ -83,7 +83,9 @@ function initialize() {
   
   initializeHead();
   initializeBody();
-  initializeEvents();
+  
+  if (tela !== 'analise') 
+    initializeEvents();
 
   const wasVisible = coreFuncs.storeGet('leftPanel_visible') === 'true';
   if (wasVisible) {
