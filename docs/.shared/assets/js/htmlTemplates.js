@@ -129,8 +129,8 @@ export const paifTechMenu = `<ul class="treeview list-unstyled p-0 m-0">
           <i class="fas fa-folder-open me-2"></i>Casos de uso
         </span>
         <ul id="folderCasosDeUso" class="nested list-unstyled ps-4">
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Acompanhamento de atendimentos</a></li>
-          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Manutenção de acompanhamentos</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Consulta de acompanhamentos</a></li>
+          <li><a href="#"><i class="fas fa-file-alt me-2"></i>Edição de acompanhamento</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Validação mensal</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Registro de substituições</a></li>
           <li><a href="#"><i class="fas fa-file-alt me-2"></i>Processamento mensal de dados</a></li>
