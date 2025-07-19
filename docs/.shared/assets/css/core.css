@@ -725,11 +725,12 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap:30px;
+  gap:10px;
 }
 .card-h {
   width: 100%;
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   gap:10px;
