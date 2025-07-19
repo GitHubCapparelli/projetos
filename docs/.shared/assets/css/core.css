@@ -567,7 +567,7 @@ p, .text-justify {
 .footer h6 {
   margin: 0px;
   padding: 5px 0px;
-  color: var(--color-secondary);
+  color: var(--color-emphasis-light);
   font-style: italic;
 }
 
