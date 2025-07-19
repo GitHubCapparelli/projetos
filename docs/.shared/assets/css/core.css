@@ -680,7 +680,6 @@ body.panel-open .footer {
 }
 .card-h {
   width: 100%;
-  padding: .5rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -691,6 +690,7 @@ body.panel-open .footer {
 }
 .card-h-l {
   width: 60%;
+  padding: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -698,8 +698,9 @@ body.panel-open .footer {
 }
 .card-h-r {
   width: 40%;
+  padding: .5rem;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center; 
 }
 
