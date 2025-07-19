@@ -100,8 +100,14 @@ ul li a:hover {
   padding-right: 5px;
 }
 
-p {
+p, .text-justify {
   text-align: justify;
+}
+
+.fn-1 {
+  border-top: 1px solid black;
+  margin-top: 0.5rem;
+  font-size: 0.65rem;
 }
 
 /* ---------------------------------------------------------------------------------- */
