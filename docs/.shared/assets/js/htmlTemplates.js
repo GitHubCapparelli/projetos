@@ -217,8 +217,7 @@ export const projetosFooter = `<div class="footer-top">
   <div class="footer-top-right">
       <h6>-- Venha nos visitar --</h6>
       <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
-          <img class="ico-p100" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
-              title="SEDES (515 Norte)">
+          <img class="ico-p100" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada" title="SEDES (515 Norte)">
           <br>Google Maps
       </a>
       <a class="mt-2" href="mailto:gervis@sedes.df.gov.br">
@@ -253,8 +252,7 @@ export const paifTechFooter = `<div class="footer-top">
   <div class="footer-top-right">
       <h6>-- Venha nos visitar --</h6>
       <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
-          <img class="img-ls-1 r-10" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
-              title="SEDES (515 Norte)">
+          <img class="img-ls-1 r-10" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada" title="SEDES (515 Norte)">
           <br>Google Maps
       </a>
       <a class="mt-2" href="mailto:gervis@sedes.df.gov.br">
@@ -296,8 +294,7 @@ export const paifUserFooter = `
   <div class="footer-top-right">
       <h6>-- Venha nos visitar --</h6>
       <a href="https://maps.app.goo.gl/4BTBZMGCMgPL3Kyg6" target="_blank" rel="noopener noreferrer">
-          <img class="img-ls-1 r-10" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada"
-              title="SEDES (515 Norte)">
+          <img class="img-ls-1 r-10" src="/projetos/.shared/assets/img/sedes/sedes-fachada.avif" alt="sedes-fachada" title="SEDES (515 Norte)">
           <br>Google Maps
       </a>
       <a class="mt-2" href="mailto:gervis@sedes.df.gov.br">
