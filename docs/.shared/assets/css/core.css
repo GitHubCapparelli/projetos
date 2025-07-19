@@ -680,7 +680,7 @@ body.panel-open .footer {
 }
 .card-h {
   width: 100%;
-  margin: .5rem;
+  padding: .5rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
