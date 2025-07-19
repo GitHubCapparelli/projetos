@@ -585,6 +585,22 @@ p, .text-justify {
   height: 150px;
 }
 
+.img-ls-2 {
+  width: 300px;
+  height: 200px;
+}
+.img-ls-3 {
+  width: 400px;
+  height: 300px;
+}
+.img-ls-4 {
+  width: 500px;
+  height: 400px;
+}
+.img-ls-5 {
+  width: 600px;
+  height: 400px;
+}
 .r-10 {
   border-radius: 10px;
 }
