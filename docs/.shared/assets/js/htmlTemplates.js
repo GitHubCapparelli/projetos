@@ -221,7 +221,7 @@ export const projetosFooter = `<div class="footer-top">
               title="SEDES (515 Norte)">
           <br>Google Maps
       </a>
-      <a href="mailto:gervis@sedes.df.gov.br">
+      <a class="mt-2" href="mailto:gervis@sedes.df.gov.br">
         <i class="fas fa-envelope"></i> Contacte-nos
       </a>
   </div>
@@ -257,7 +257,7 @@ export const paifTechFooter = `<div class="footer-top">
               title="SEDES (515 Norte)">
           <br>Google Maps
       </a>
-      <a href="mailto:gervis@sedes.df.gov.br">
+      <a class="mt-2" href="mailto:gervis@sedes.df.gov.br">
         <i class="fas fa-envelope"></i> Contacte-nos
       </a>
   </div>
@@ -300,7 +300,7 @@ export const paifUserFooter = `
               title="SEDES (515 Norte)">
           <br>Google Maps
       </a>
-      <a href="mailto:gervis@sedes.df.gov.br">
+      <a class="mt-2" href="mailto:gervis@sedes.df.gov.br">
         <i class="fas fa-envelope"></i> Contacte-nos
       </a>
   </div>
