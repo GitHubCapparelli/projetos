@@ -37,10 +37,10 @@
   --notePanel-width: 300px;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   display: none;
-} */
+}
 
 /* Hide scrollbar arrows (buttons) — Chrome, Edge, Safari */
 ::-webkit-scrollbar-button {
