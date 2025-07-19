@@ -91,7 +91,9 @@ export const headerHTML = (tela) => `<div class="header-left">
       <h5 class="mb-0">${paifTags[tela]}</h5>
   </div>`;
 
-const getTitle = (tela) => tela === 'projetos' ? gervisName : paifName;
+const getTitle = (tela) => (tela === 'projetos' || tela === 'analise' )
+               ? gervisName 
+               : paifName;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
 

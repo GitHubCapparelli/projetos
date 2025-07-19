@@ -126,20 +126,23 @@ function initializeHead() {
 
 function initializeBody() {
   document.title = objModel.paifTags[tela];
+
   const sticky      = document.getElementById('stickyTop');
   const header      = document.getElementById('header');
   const rightPanel  = document.getElementById('rightPanel');
   const leftBar     = document.getElementById('leftBar');
   const footer      = document.getElementById('footer');
-
   const noAnimation = [sticky, rightPanel];
   noAnimation.forEach(el => el.classList.add('no-animation'));
 
-  if (!sticky.hasChildNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
-  if (!header.hasChildNodes())      header.innerHTML      = objModel.headerHTML(tela);
-  if (!rightPanel.hasChildNodes())  rightPanel.innerHTML  = objModel.sharedHTML.rightPanel;
-  if (!leftBar.hasChildNodes())     leftBar.innerHTML     = objModel.sharedHTML.leftBar;
-  if (!footer.hasChildNodes())      footer.innerHTML      = objModel.footerHTML[foco];
+  if (!header.hasChildNodes())        header.innerHTML      = objModel.headerHTML(tela);
+
+  if (tela !== 'analise') {
+    if (!sticky.hasChildNodes())      sticky.innerHTML      = objModel.stickyHTML(tela);
+    if (!rightPanel.hasChildNodes())  rightPanel.innerHTML  = objModel.sharedHTML.rightPanel;
+    if (!leftBar.hasChildNodes())     leftBar.innerHTML     = objModel.sharedHTML.leftBar;
+    if (!footer.hasChildNodes())      footer.innerHTML      = objModel.footerHTML[foco];
+  }
 
   if (tela === 'paifTech') {
     coreFuncs.setDarkMode(localStorage.getItem('theme'));
