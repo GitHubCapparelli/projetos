@@ -676,7 +676,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap:10px;
+  gap:30px;
 }
 .card-h {
   width: 100%;
