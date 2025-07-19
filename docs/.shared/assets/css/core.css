@@ -66,7 +66,8 @@ body {
 a,
 p a,
 li a,
-ul li a {
+ul li a,
+div a {
   color: var(--color-emphasis);
   text-decoration: none;
 }
@@ -74,7 +75,8 @@ ul li a {
 a:hover,
 p a:hover,
 li a:hover,
-ul li a:hover {
+ul li a:hover,
+div a:hover {
   /* text-decoration: underline; */
   font-weight: bold;
 }
@@ -729,7 +731,7 @@ body.panel-open .footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   gap:10px;
 }
 .card-h-l {
