@@ -704,6 +704,10 @@ body.panel-open .footer {
   align-items: center; 
 }
 
+.cards-v .card-h:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 
