@@ -7,14 +7,14 @@ export const noteTitle = {
 export const noteHTML = {
   clientesUsuarios: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
   <p class="mb-1"><b>Cliente:</b> Pessoa, empresa ou organização que adquire ou contrata um produto, sistema ou serviço.</p>
-  <p class="mb-1">É quem define os requisitos, financia o desenvolvimento e detém os direitos contratuais sobre o que está sendo entregue.</p>
-  <p class="mb-1">Nem sempre o cliente é quem vai utilizar diretamente o sistema; sua visão pode ser mais estratégica ou gerencial.</p>
+  <p class="mb-1">Define os requisitos, financia o desenvolvimento e detém os direitos contratuais sobre o que está sendo entregue.</p>
+  <p class="mb-1">Nem sempre é quem utiliza diretamente o sistema; sua visão pode ser mais estratégica ou gerencial.</p>
   <p class="mb-1">Por isso, entender claramente as necessidades do cliente é essencial, mas também é necessário alinhar essas necessidades com a realidade de quem vai operar o sistema no dia a dia.</p>
     
   <p class="mb-1 mt-3 small"><b>Usuário (final):</b> Pessoa que utiliza diretamente o produto ou sistema em seu dia a dia. </p>
-  <p class="mb-1">Responsável por operar as funcionalidades oferecidas e interagir com a interface, sendo o principal afetado pela usabilidade, eficiência e eficácia do sistema.</p>
-  <p class="mb-1">Deve ser o foco das decisões de design de interface, acessibilidade e experiência de uso.</p>
-  <p class="mb-1">Muitas vezes, há uma diferença entre o que o cliente deseja e o que o usuário final realmente precisa. Por isso, é comum que projetos bem-sucedidos envolvam testes com usuários reais, entrevistas e coleta de feedback ao longo do desenvolvimento.</li>
+  <p class="mb-1">Opera as funcionalidades oferecidas e interage com a interface, sendo o principal afetado pela usabilidade, eficiência e eficácia do sistema.</p>
+  <p class="mb-1">Foco das decisões de design de interface, acessibilidade e experiência de uso.</p>
+  <p class="mb-1">Muitas vezes, há uma diferença entre o que o cliente deseja e o que o usuário final realmente precisa. Por isso, projetos bem-sucedidos envolvem testes com usuários reais, entrevistas e coleta de feedback ao longo do desenvolvimento.</li>
   </ul>
   </div>
   <div class="fn-1"><p class="mt-0 mb-0">Fonte: ChatGPT</p></div></div>`,
