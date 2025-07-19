@@ -548,13 +548,16 @@ p, .text-justify {
   font-size: small;
 }
 
-.img-map {
-  width: 100%;
-  height: calc(var(--footer-height) - 70px);
+.img-ls-1 {
+  width: 200px;
+  height: 150px;
+}
+
+.r-10 {
   border-radius: 10px;
 }
 
-.img-logo-redondo {
+.ico-p100 {
   width: 100px;
   height: 100px;
 }
