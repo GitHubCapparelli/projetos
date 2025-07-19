@@ -730,7 +730,7 @@ body.panel-open .footer {
 .card-h {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; 
+  /* flex-wrap: wrap;  */
   justify-content: space-between;
   align-items: center;
   gap:10px;
@@ -755,6 +755,17 @@ body.panel-open .footer {
 
 /* ---------------------------------------------------------------------------------- */
 
+@media (max-width: 768px) {
+  .card-h {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card-h-l,
+  .card-h-r {
+    width: 100%;
+  }
+}
 
 /* ---------------------------------------------------------------------------------- */
 
