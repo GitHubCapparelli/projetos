@@ -796,7 +796,7 @@ body.panel-open .footer {
 }
 
 .a-tip::after {
-  content: attr(title);
+  content: attr(tip);
   position: absolute;
   bottom: -150%; 
   left: 80%;
