@@ -798,7 +798,7 @@ body.panel-open .footer {
 .a-tip::after {
   content: attr(title);
   position: absolute;
-  top: 125%; /* Position above the link */
+  bottom: -125%; /* Position above the link */
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--color-primary-light);
