@@ -816,7 +816,7 @@ body.panel-open .footer {
   opacity: 1;
 }
 
-.btn {
+.btn-primary {
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
 }
