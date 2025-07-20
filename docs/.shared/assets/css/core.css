@@ -790,12 +790,12 @@ body.panel-open .footer {
 
 /* ---------------------------------------------------------------------------------- */
 
-.a-tip {
+.tip {
   position: relative;
   cursor: pointer;
 }
 
-.a-tip::after {
+.tip::after {
   content: attr(tip);
   position: absolute;
   bottom: -150%; 
@@ -812,7 +812,7 @@ body.panel-open .footer {
   z-index: 9000;
 }
 
-.a-tip:hover::after {
+.tip:hover::after {
   opacity: 1;
 }
 
