@@ -817,7 +817,7 @@ body.panel-open .footer {
 }
 
 .cards-h .card-v:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
 }
 
 /* ---------------------------------------------------------------------------------- */
