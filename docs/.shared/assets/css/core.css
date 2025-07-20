@@ -790,5 +790,37 @@ body.panel-open .footer {
 
 /* ---------------------------------------------------------------------------------- */
 
+.a-tip {
+  position: relative;
+  cursor: pointer;
+}
+
+.a-tip::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%; /* Position above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333; /* Tooltip background */
+  color: #fff;            /* Tooltip text color */
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+.a-tip:hover::after {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------------------------- */
