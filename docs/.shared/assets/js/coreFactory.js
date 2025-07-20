@@ -71,7 +71,7 @@ function initBoxes() {
 
 function enableBigScroll() {
   let isScrolling = false;
-  let stepHeight  = window.innerHeight - 60;
+  const stepHeight = window.innerHeight - 60;
 
   function isScrollable(el) {
     const style = getComputedStyle(el);
@@ -79,21 +79,36 @@ function enableBigScroll() {
     return (overflowY === 'auto' || overflowY === 'scroll') && el.scrollHeight > el.clientHeight;
   }
 
-  function hasScrollableParent(el) {
+  function getScrollableParent(el) {
     while (el && el !== document.body) {
-      if (isScrollable(el)) return true;
+      if (isScrollable(el)) return el;
       el = el.parentElement;
     }
-    return false;
+    return null;
   }
 
   function onWheel(e) {
     if (isScrolling) return;
-    if (hasScrollableParent(e.target)) return;
-    e.preventDefault(); // Prevent default scroll
+
+    const scrollableParent = getScrollableParent(e.target);
+
+    if (scrollableParent) {
+      const atTop = scrollableParent.scrollTop === 0;
+      const atBottom = scrollableParent.scrollTop + scrollableParent.clientHeight >= scrollableParent.scrollHeight;
+      const direction = e.deltaY > 0 ? 1 : -1;
+
+      // If user is scrolling up at top OR down at bottom, trigger big scroll
+      if ((direction === -1 && atTop) || (direction === 1 && atBottom)) {
+        e.preventDefault(); // Prevent native scroll bounce
+      } else {
+        return; // Let the scroll happen inside the element
+      }
+    } else {
+      e.preventDefault(); // No scrollable parent, prevent native scroll
+    }
 
     const direction = e.deltaY > 0 ? 1 : -1;
-    const targetY   = window.scrollY + direction * stepHeight;
+    const targetY = window.scrollY + direction * stepHeight;
 
     isScrolling = true;
     window.scrollTo({
@@ -101,7 +116,9 @@ function enableBigScroll() {
       behavior: 'smooth'
     });
 
-    setTimeout(() => { isScrolling = false; }, 800);
+    setTimeout(() => {
+      isScrolling = false;
+    }, 800);
   }
 
   window.addEventListener('wheel', onWheel, { passive: false });
