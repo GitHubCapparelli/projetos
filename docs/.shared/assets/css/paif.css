@@ -1,7 +1,7 @@
 :root {
     /* https://www.colorxs.com/palette/color/royal-blue */
   --color-primary-dark    : rgb(12, 126, 44);
-  --color-primary         : rgb(137, 196, 154);
+  --color-primary         : rgb(100, 200, 128);
   --color-primary-light   : rgb(206, 229, 213);
 
   --color-parallax-back : rgba(206, 229, 213, 0.9);
