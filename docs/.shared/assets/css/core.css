@@ -7,9 +7,9 @@
   --color-gray-light      : rgb(200, 200, 200);
   --color-white           : rgb(230, 230, 230,);
   
-  --color-primary-dark    : rgb(50, 120, 50);
-  --color-primary         : rgb(30, 200, 100);
-  --color-primary-light   : rgb(150, 255, 150);
+  --color-primary-dark    : rgb(50, 50, 50);
+  --color-primary         : rgb(100, 100, 100);
+  --color-primary-light   : rgb(200, 200, 200);
 
   --color-parallax-back   : rgba(150, 255, 150, 0.9);
   --color-shadow          : black;
