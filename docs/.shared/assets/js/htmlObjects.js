@@ -32,9 +32,9 @@ export const sharedHTML = {
 };
 
 export const sharedStyles = [
-  '/projetos/.shared/assets/css/core.css',
+  '/projetos/.shared/assets/css/all.fontAwesome.min.css',
   '/projetos/.shared/assets/css/bootstrap.css',
-  '/projetos/.shared/assets/css/all.fontAwesome.min.css'
+  '/projetos/.shared/assets/css/core.css'
 ];
 
 export const domainStyles = {
