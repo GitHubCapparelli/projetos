@@ -819,7 +819,10 @@ body.panel-open .footer {
 .btn-primary {
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
+  border: none;
+  margin-left: auto;
 }
+
 
 /* ---------------------------------------------------------------------------------- */
 
