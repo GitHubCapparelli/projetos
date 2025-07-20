@@ -798,18 +798,18 @@ body.panel-open .footer {
 .a-tip::after {
   content: attr(title);
   position: absolute;
-  bottom: -125%; /* Position above the link */
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -150%; 
+  left: 100%;
+  /* transform: translateX(-50%); */
   background-color: var(--color-primary-light);
   color: var(--color-primary-dark);            
   padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .a-tip:hover::after {
