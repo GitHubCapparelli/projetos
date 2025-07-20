@@ -73,11 +73,26 @@ function enableBigScroll() {
   let isScrolling = false;
   let stepHeight  = window.innerHeight - 60;
 
+  function isScrollable(el) {
+    const style = getComputedStyle(el);
+    const overflowY = style.overflowY;
+    return (overflowY === 'auto' || overflowY === 'scroll') && el.scrollHeight > el.clientHeight;
+  }
+
+  function hasScrollableParent(el) {
+    while (el && el !== document.body) {
+      if (isScrollable(el)) return true;
+      el = el.parentElement;
+    }
+    return false;
+  }
+
   function onWheel(e) {
     if (isScrolling) return;
-    e.preventDefault(); // Stop default scroll
+    if (hasScrollableParent(e.target)) return;
+    e.preventDefault(); // Prevent default scroll
 
-    const direction = e.deltaY > 0 ? 1 : -1; // down or up
+    const direction = e.deltaY > 0 ? 1 : -1;
     const targetY   = window.scrollY + direction * stepHeight;
 
     isScrolling = true;
@@ -85,9 +100,10 @@ function enableBigScroll() {
       top: targetY,
       behavior: 'smooth'
     });
+
     setTimeout(() => { isScrolling = false; }, 800);
   }
-  
+
   window.addEventListener('wheel', onWheel, { passive: false });
 }
 
