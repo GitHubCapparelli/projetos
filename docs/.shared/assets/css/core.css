@@ -1,21 +1,18 @@
 :root {
   /* https://www.colorxs.com/palette/color/royal-blue */
-  --color-black: rgb(20, 20, 20);
 
-  --color-secondary: rgb(173, 181, 189);
-  /* #adb5bd 500*/
-  --color-primary: rgb(73, 80, 87);
-  /* #495057 700 */
-  --color-primary-dark: rgb(33, 37, 41);
-  /* #212529 900 */
+  --color-black           : rgb(20, 20, 20);
+  --color-gray-dark       : rgb(50, 50, 50);
+  --color-gray            : rgb(100, 100, 100);
+  --color-gray-light      : rgb(200, 200, 200);
+  --color-white           : rgb(230, 230, 230,);
   
-  --color-emphasis: rgb(5, 81, 96);
-  --color-emphasis-light: rgb(47, 157, 179);
+  --color-emphasis-dark   : rgb(30, 100, 100);
+  --color-emphasis        : rgb(30, 200, 100);
+  --color-emphasis-light  : rgb(30, 255, 100);
 
-  /* cor secundária + transparência */
-  --color-parallax-back: rgba(173, 181, 189, 0.9);
-  /* --color-shadow: rgba(173, 181, 189, 0.5); */
-  --color-shadow: black;
+  --color-parallax-back   : rgba(173, 181, 189, 0.9);
+  --color-shadow          : black;
 
   /* Teal */
   --teal-W5: rgb(204, 230, 230);
@@ -90,7 +87,7 @@ p a,
 li a,
 ul li a,
 div a {
-  color: var(--color-emphasis);
+  color: var(--color-emphasis-dark);
   text-decoration: none;
 }
 
@@ -105,7 +102,7 @@ div a:hover {
 
 /* ---------------------------------------------------------------------------------- */
 .nav-item:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-emphasis);
 }
 
 .nav-item .label {
@@ -119,7 +116,7 @@ div a:hover {
 }
 
 .treeview li span:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-emphasis);
   border-radius: 4px;
   padding-right: 5px;
 }
@@ -186,7 +183,7 @@ p, .text-justify {
   top: 0;
   width: 3px;
   height: 100%;
-  background-color: var(--color-primary);
+  background-color: var(--color-emphasis-dark);
 }
 
 .leftMenu .nav-item i {
@@ -206,7 +203,7 @@ p, .text-justify {
   left: var(--sidebarButtons-width);
   width: var(--navPanel-width);
   height: 100vh;
-  border-right: 1px solid var(--color-primary);
+  border-right: 1px solid var(--color-emphasis-dark);
   display: none;
   flex-direction: column;
   z-index: 1000;
@@ -223,9 +220,9 @@ p, .text-justify {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
-  border-right: 1px solid var(--color-secondary);
+  color: var(--color-emphasis-light);
+  background-color: var(--color-emphasis-dark);
+  border-right: 1px solid var(--color-emphasis-light);
 }
 
 .leftPanel-header h6 {
@@ -237,7 +234,7 @@ p, .text-justify {
   padding: .5rem;
   overflow-y: auto;
   flex-grow: 1;
-  background-color: var(--color-secondary);
+  background-color: var(--color-emphasis-light);
   font-size: small;
 }
 
@@ -253,7 +250,7 @@ p, .text-justify {
   left: calc(100vw - var(--notePanel-width) - 50px);
   border-radius: 10px;
   box-shadow: 0 8px 20px var(--color-shadow);
-  background-color: var(--color-secondary);
+  background-color: var(--color-emphasis-light);
   display: flex;
   flex-direction: column;
   transform: translateY(100%);
@@ -276,10 +273,10 @@ p, .text-justify {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--color-secondary);
+  color: var(--color-emphasis-light);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: var(--color-primary);
+  background-color: var(--color-emphasis-dark);
 }
 
 .rightPanel-header h6 {
@@ -293,7 +290,7 @@ p, .text-justify {
   overflow-y: auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-emphasis-light);
 }
 
 .note {
@@ -333,7 +330,7 @@ p, .text-justify {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-primary);
+  background-color: var(--color-emphasis-dark);
 }
 
 .footer-top-section h6,
@@ -352,7 +349,7 @@ p, .text-justify {
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  background-color: var(--color-secondary);
+  background-color: var(--color-emphasis-light);
 }
 
 .header-left,
@@ -376,7 +373,7 @@ p, .text-justify {
 .header-logo {
   width: 50px;
   height: 50px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-emphasis-dark);
 }
 
 .header-titles h6 {
@@ -385,7 +382,7 @@ p, .text-justify {
 
 .header-titles h5,
 .header-right h5 {
-  color: var(--color-primary);
+  color: var(--color-emphasis-dark);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -397,7 +394,7 @@ p, .text-justify {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: var(--color-secondary);
+  background-color: var(--color-emphasis-light);
   transition: transform 0.3s ease, margin-left 0.3s ease, width 0.3s ease;
 }
 
@@ -433,7 +430,7 @@ p, .text-justify {
   margin-right: 10px;
   font-size: x-small;
   font-weight: bold;
-  color: var(--color-secondary);
+  color: var(--color-emphasis-light);
   background-color: var(--color-primary-dark);
   border-radius: 4px;
   cursor: default;
@@ -471,7 +468,7 @@ p, .text-justify {
 .paralaxSectionContent h2,
 .paralaxSectionContent h3 {
   margin: 0px;
-  color: var(--color-primary);
+  color: var(--color-emphasis-dark);
 }
 
 .backCrasArte {
@@ -555,7 +552,7 @@ p, .text-justify {
 }
 
 .footer a {
-  color: var(--color-secondary);
+  color: var(--color-emphasis-light);
   text-decoration: none;
   font-size: small;
 }
@@ -576,7 +573,7 @@ p, .text-justify {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: var(--color-secondary);
+  color: var(--color-emphasis-light);
   align-items: start;
   gap: 20px;
 }
@@ -637,7 +634,7 @@ p, .text-justify {
 }
 
 .footer-bottom {
-  color: var(--color-primary-dark);
+  color: var(--color-emphasis-dark);
   font-weight: bold;
   height: 15px;
   font-size: 10px;
@@ -671,7 +668,7 @@ body.panel-open .footer {
 }
 
 .btn-hide i {
-  color: var(--color-secondary);
+  color: var(--color-emphasis-light);
   transition: color 0.2s ease;
 }
 
@@ -695,7 +692,7 @@ body.panel-open .footer {
 }
 
 .building h1 {
-  color: var(--color-primary);
+  color: var(--color-emphasis-dark);
 }
 
 .building p {
@@ -704,7 +701,7 @@ body.panel-open .footer {
 
 .building a {
   cursor: pointer;
-  color: var(--color-primary);
+  color: var(--color-emphasis-dark);
 }
 
 /* ---------------------------------------------------------------------------------- */
