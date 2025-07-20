@@ -826,7 +826,8 @@ body.panel-open .footer {
 .btn-primary:hover {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
-  border: 1px solid var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
+  font-weight: normal;
 }
 
 /* ---------------------------------------------------------------------------------- */
