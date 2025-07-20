@@ -809,7 +809,7 @@ body.panel-open .footer {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
-  z-index: 9000;
+  z-index: 1000;
 }
 
 .tip:hover::after {
