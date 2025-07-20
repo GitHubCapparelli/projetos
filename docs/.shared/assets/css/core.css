@@ -12,6 +12,7 @@
   --color-primary-light   : rgb(200, 200, 200);
 
   --color-parallax-back   : rgba(200, 200, 200, 0.9);
+  --color-parallax-back   : rgba(200, 200, 200, 0.9);
   --color-shadow          : black;
 
   /* Teal */
@@ -464,6 +465,13 @@ p, .text-justify {
   box-sizing: border-box;
 }
 
+.paralaxSectionInner {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
+  border-radius: inherit; /* Keeps rounded corners */
+}
+
 .paralaxSectionContent h1,
 .paralaxSectionContent h2,
 .paralaxSectionContent h3 {
@@ -489,13 +497,6 @@ p, .text-justify {
 
 .backSedesFachada {
   background-image: url('/projetos/.shared/assets/img/sedes/sedes-fachada.avif');
-}
-
-.paralaxSectionInner {
-  height: 100%;
-  overflow-y: auto;
-  padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
-  border-radius: inherit; /* Keeps rounded corners */
 }
 
 /* ::-webkit-scrollbar {
@@ -537,7 +538,7 @@ p, .text-justify {
   justify-content: space-between;
   align-items: center;
   transition: transform 0.5s ease, margin-left 0.5s ease, width 0.5s ease;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
 }
 
 .footer p {
