@@ -747,7 +747,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap:40px;
+  gap:10px;
 }
 .card-h {
   width: 100%;
@@ -785,11 +785,11 @@ body.panel-open .footer {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap:40px;
+  gap:10px;
 }
 
 .card-v {
-  width: 100%;
+  width: 33%;
   margin: .5rem;
   display: flex;
   flex-direction: column;
@@ -810,7 +810,7 @@ body.panel-open .footer {
 }
 .card-v-b {
   width: 100%;
-  display: 40%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center; 
