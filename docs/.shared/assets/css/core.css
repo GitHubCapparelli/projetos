@@ -747,19 +747,11 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap:10px;
+  gap:40px;
 }
-.cards-h {
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap:10px;
-}
-
 .card-h {
   width: 100%;
-  padding: .5rem;
+  margin: .5rem;
   display: flex;
   /* flex-wrap: wrap;  */
   justify-content: space-between;
@@ -776,6 +768,46 @@ body.panel-open .footer {
   align-items: start;
 }
 .card-h-r {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.cards-v .card-h:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.cards-h{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:40px;
+}
+
+.card-v {
+  width: 100%;
+  margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;  */
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;rgb(102, 34, 34)
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.card-v-t {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.card-v-b {
   width: 40%;
   display: flex;
   justify-content: center;
@@ -832,7 +864,7 @@ body.panel-open .footer {
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
   border: none;
-  align-self: center;
+  /* align-self: center; */
 }
 
 .btn-primary:hover,
