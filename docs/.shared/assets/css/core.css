@@ -751,14 +751,14 @@ body.panel-open .footer {
 }
 .card-h {
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
   /* flex-wrap: wrap;  */
   justify-content: space-between;
   align-items: center;
   gap:10px;
-  border: 1px solid black;
-  border-radius: 10px;
+  /* border: 1px solid black;
+  border-radius: 10px; */
 }
 .card-h-l {
   width: 60%;
@@ -791,15 +791,15 @@ body.panel-open .footer {
 .card-v {
   width: 33%;
   height: max-content;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap;  */
   justify-content: space-between;
   align-items: center;
   gap:10px;
-  border: 1px solid black;
-  border-radius: 10px;
+  /* border: 1px solid black;
+  border-radius: 10px; */
 }
 .card-v-t {
   width: 100%;
