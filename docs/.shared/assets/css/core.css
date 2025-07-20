@@ -801,8 +801,8 @@ body.panel-open .footer {
   bottom: 125%; /* Position above the link */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333; /* Tooltip background */
-  color: #fff;            /* Tooltip text color */
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);            
   padding: 6px 10px;
   border-radius: 4px;
   white-space: nowrap;
