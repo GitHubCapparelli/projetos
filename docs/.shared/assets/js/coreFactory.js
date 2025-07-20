@@ -69,6 +69,28 @@ function initBoxes() {
   });
 };
 
+function enableBigScroll() {
+  let isScrolling = false;
+  let stepHeight  = window.innerHeight - 60;
+
+  function onWheel(e) {
+    if (isScrolling) return;
+    e.preventDefault(); // Stop default scroll
+
+    const direction = e.deltaY > 0 ? 1 : -1; // down or up
+    const targetY   = window.scrollY + direction * stepHeight;
+
+    isScrolling = true;
+    window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
+    });
+    setTimeout(() => { isScrolling = false; }, 800);
+  }
+  
+  window.addEventListener('wheel', onWheel, { passive: false });
+}
+
 ///////////////////////////////////////////////////////////////////
 
 function initialize() {
@@ -146,13 +168,6 @@ function initializeBody() {
     if (!footer.hasChildNodes())      footer.innerHTML      = objModel.footerHTML[foco];
   }
 
-  if (tela === 'paifTech') {
-    coreFuncs.setDarkMode(localStorage.getItem('theme'));
-    initBoxes();
-  } else {
-    coreFuncs.setDarkMode('light');
-  };
-
   if(building) 
     document.getElementById('pageContent').innerHTML = (tela === 'analise')
       ? objModel.sharedHTML.emAnalise
@@ -199,6 +214,14 @@ function initializeEvents() {
   
   document.querySelectorAll('.rightPanel .btn-hide')
     .forEach(el => el.addEventListener('click', coreFuncs.hideNote));
+
+  if (tela === 'paifTech') {
+    coreFuncs.setDarkMode(localStorage.getItem('theme'));
+    initBoxes();
+  } else {
+    coreFuncs.setDarkMode('light');
+    enableBigScroll();
+  };
 }
 
 //////////////////////////////////////////////////////////////////////
