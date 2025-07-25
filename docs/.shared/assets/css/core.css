@@ -851,12 +851,12 @@ body.panel-open .footer {
   background-color: var(--color-primary-light);
   color: var(--color-primary-dark);            
   padding: 3px 8px;
-  border-radius: 8px;
+  border-radius: 50%;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .tip:hover::after {
