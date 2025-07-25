@@ -781,9 +781,9 @@ body.panel-open .footer {
 /* ---------------------------------------------------------------------------------- */
 
 .cards-h{
-  width: 100%;
+  width: 33%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
   gap:20px;
@@ -829,16 +829,11 @@ body.panel-open .footer {
   flex: 2;
 }
 
-@media (max-width: 768px) {
-  .card-v {
-    width: 100%;
-  }
-}
 
 /* ---------------------------------------------------------------------------------- */
-
 @media (max-width: 768px) {
   .card-h {
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
   }
@@ -879,19 +874,14 @@ body.panel-open .footer {
 
 .btn-primary {
   display: inline-block;
-  /* allows width, height, padding */
   padding: 10px 20px;
-  /* space inside button */
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
   border: none;
   border-radius: 5px;
-  /* optional, for nice corners */
   text-decoration: none;
-  /* remove underline */
   cursor: pointer;
   font-weight: 600;
-  /* visible font weight */
   text-align: center;
 }
 
