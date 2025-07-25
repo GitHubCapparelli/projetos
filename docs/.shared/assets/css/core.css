@@ -878,10 +878,21 @@ body.panel-open .footer {
 }
 
 .btn-primary {
+  display: inline-block;
+  /* allows width, height, padding */
+  padding: 10px 20px;
+  /* space inside button */
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
   border: none;
-  /* align-self: center; */
+  border-radius: 5px;
+  /* optional, for nice corners */
+  text-decoration: none;
+  /* remove underline */
+  cursor: pointer;
+  font-weight: 600;
+  /* visible font weight */
+  text-align: center;
 }
 
 .btn-primary:hover,
