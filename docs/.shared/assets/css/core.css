@@ -821,6 +821,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  height: 100%;
 }
 .card-HLT, 
 .card-HLB {
