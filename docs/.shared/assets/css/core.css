@@ -822,7 +822,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  height: 100%;
+  height: auto;
 }
 .card-HLT, 
 .card-HLB {
@@ -887,7 +887,7 @@ body.panel-open .footer {
 
 .btn-primary {
   /* display: inline-block; */
-  padding: 10px 20px;
+  padding: 0px 20px;
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
   border: none;
