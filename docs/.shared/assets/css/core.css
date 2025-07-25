@@ -758,7 +758,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap:20px;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -773,6 +773,7 @@ body.panel-open .footer {
 .card-v-b {
   width: 100%;
   height: 40%;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -781,14 +782,14 @@ body.panel-open .footer {
 .cards-h .card-v:nth-child(even) {
   flex-direction: column-reverse;
 }
-/* 
+
 .card-v-t {
   flex: 3;
 }
 
 .card-v-b {
   flex: 2;
-} */
+}
 
 /* ---------------------------------------------------------------------------------- */
 
