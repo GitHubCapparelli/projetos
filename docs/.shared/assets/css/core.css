@@ -789,7 +789,7 @@ body.panel-open .footer {
 }
 
 .card-v {
-  width: 33%;
+  width: 300px;
   height: max-content;
   padding: 1rem;
   display: flex;
@@ -819,6 +819,20 @@ body.panel-open .footer {
 
 .cards-h .card-v:nth-child(even) {
   flex-direction: column-reverse;
+}
+
+.card-v-t {
+  flex: 3;
+}
+
+.card-v-b {
+  flex: 2;
+}
+
+@media (max-width: 768px) {
+  .card-v {
+    width: 100%;
+  }
 }
 
 /* ---------------------------------------------------------------------------------- */
