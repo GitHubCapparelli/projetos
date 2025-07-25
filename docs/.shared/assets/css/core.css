@@ -813,6 +813,7 @@ body.panel-open .footer {
   gap: 10px;
   border: 1px solid black;
   border-radius: 10px;
+  height: 100%;
 }
 
 .card-h-l {
