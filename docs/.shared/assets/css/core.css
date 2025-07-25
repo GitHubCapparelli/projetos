@@ -865,7 +865,7 @@ body.panel-open .footer {
   background-color: var(--color-primary-light);
   color: var(--color-primary-dark);            
   padding: 3px 8px;
-  border-radius: 50%;
+  border-radius: 8px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
