@@ -747,7 +747,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap:10px;
+  gap:20px;
 }
 .card-h {
   width: 100%;
@@ -757,8 +757,8 @@ body.panel-open .footer {
   justify-content: space-between;
   align-items: center;
   gap:10px;
-  /* border: 1px solid black;
-  border-radius: 10px; */
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .card-h-l {
   width: 60%;
@@ -785,7 +785,7 @@ body.panel-open .footer {
   display: flex;
   justify-content: start;
   align-items: start;
-  gap:10px;
+  gap:20px;
 }
 
 .card-v {
@@ -798,8 +798,8 @@ body.panel-open .footer {
   justify-content: space-between;
   align-items: center;
   gap:10px;
-  /* border: 1px solid black;
-  border-radius: 10px; */
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .card-v-t {
   width: 100%;
