@@ -927,6 +927,10 @@ body.panel-open .footer {
     gap: 8px;
   }
 
+  .cardV {
+    width: 100%;
+  }
+
   .cardH-LB, .cardV-B {
     width: 100%;
     align-items: stretch;
@@ -934,6 +938,10 @@ body.panel-open .footer {
 
   .card-img {
     border-radius: 6px;
+  }
+
+  .btn-primary {
+    align-self: center;
   }
 }
 
