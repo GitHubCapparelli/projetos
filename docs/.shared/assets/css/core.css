@@ -800,7 +800,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   flex-wrap: wrap; 
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
 }
 
@@ -823,6 +823,9 @@ body.panel-open .footer {
   /* justify-content: space-between; */
   align-items: start;
   flex: 1;
+}
+.cardH:last-child {
+  margin-bottom: 1rem;
 }
 .cardH-LT {
   width: 100%;
