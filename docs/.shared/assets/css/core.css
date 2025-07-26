@@ -794,7 +794,7 @@ body.panel-open .footer {
 
 /* ---------------------------------------------------------------------------------- */
 
-.cards-v {
+.cardsV {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -804,7 +804,7 @@ body.panel-open .footer {
   gap: 20px;
 }
 
-.card-h {
+.cardH {
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -816,7 +816,7 @@ body.panel-open .footer {
   height: 100%;
 }
 
-.card-h-l {
+.cardH-L {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -824,22 +824,28 @@ body.panel-open .footer {
   align-items: start;
   height: auto;
 }
-.card-HLT, 
-.card-HLB {
+.cardH-LT, 
+.cardH-LB {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
 }
-.card-h-r {
+.cardH_LT {
+  background-color: aqua;
+}
+.cardH-LB {
+  background-color: aquamarine;
+}
+.cardH-R {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cards-v .card-h:nth-child(even) {
+.cardsV .cardH:nth-child(even) {
   flex-direction: row-reverse;
 }
 
