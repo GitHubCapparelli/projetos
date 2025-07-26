@@ -837,7 +837,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  align-self: flex-start; /* default (left) */
+  align-self: flex-end;
   margin-top: 1rem;
 }
 .cardH-LB {
@@ -856,7 +856,7 @@ body.panel-open .footer {
   flex-direction: row-reverse;
 }
 .cardsV .cardH:nth-child(even) .cardH-LB {
-  align-self: flex-end; /* moves button to the "right" (next to image) */
+  align-self: flex-start; 
 }
 
 /* ---------------------------------------------------------------------------------- */
