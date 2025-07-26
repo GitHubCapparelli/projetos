@@ -450,7 +450,6 @@ p, .text-justify {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 .paralaxSectionContent {
