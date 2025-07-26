@@ -451,6 +451,7 @@ p, .text-justify {
   align-items: stretch;
   justify-content: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .paralaxSectionContent {
