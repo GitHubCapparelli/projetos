@@ -822,7 +822,7 @@ body.panel-open .footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  height: auto;
+  height: 200px;
 }
 .cardH-LT, 
 .cardH-LB {
@@ -832,11 +832,11 @@ body.panel-open .footer {
   justify-content: start;
   align-items: start;
 }
-.cardH_LT {
-  background-color: aqua;
+.cardH-LT {
+  backgound-color: aqua;
 }
 .cardH-LB {
-  background-color: aquamarine;
+  background-color: burlywood;
 }
 .cardH-R {
   width: 30%;
