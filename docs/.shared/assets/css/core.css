@@ -755,7 +755,7 @@ body.panel-open .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: stretch;
   gap: 20px;
@@ -938,10 +938,6 @@ body.panel-open .footer {
 
   .card-img {
     border-radius: 6px;
-  }
-
-  .btn-primary {
-    align-self: center;
   }
 }
 
