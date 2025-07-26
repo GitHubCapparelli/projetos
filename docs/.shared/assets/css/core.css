@@ -824,7 +824,6 @@ body.panel-open .footer {
   align-items: start;
 }
 .cardH-LT {
-  background-color: aqua;
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -833,7 +832,6 @@ body.panel-open .footer {
   align-items: start;
 }
 .cardH-LB {
-  background-color: burlywood;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -844,8 +842,8 @@ body.panel-open .footer {
 .cardH-R {
   width: 30%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: start;
 }
 
 .cardsV .cardH:nth-child(even) {
