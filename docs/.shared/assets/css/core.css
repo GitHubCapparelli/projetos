@@ -57,6 +57,7 @@ html {
 body {
   font-family: system-ui, sans-serif;
   background-color: var(--bs-gray-800);
+  overflow-x: hidden;
 }
 
 /* Hide scrollbar arrows (buttons) — Chrome, Edge, Safari */
@@ -449,10 +450,11 @@ p, .text-justify {
   display: flex;
   align-items: stretch;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .paralaxSectionContent {
-  width: 100%;
+  max-width: 100%;
   padding: 1rem;
   margin: 2rem;
   height: calc(100vh - var(--topBars-height) - 40px);
