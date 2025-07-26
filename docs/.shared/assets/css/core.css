@@ -755,7 +755,7 @@ body.panel-open .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   align-items: stretch;
   gap: 20px;
@@ -766,7 +766,7 @@ body.panel-open .footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   align-items: stretch;
   gap: 20px;
 }
