@@ -471,8 +471,9 @@ p, .text-justify {
 .paralaxSectionInner {
   height: 100%;
   overflow-y: auto;
-  padding-right: 1rem; /* Optional: Adds breathing room between content and scrollbar */
-  border-radius: inherit; /* Keeps rounded corners */
+  padding-right: 1rem; 
+  border-radius: inherit; 
+  overflow-x: hidden;
 }
 
 .paralaxSectionContent h1,
