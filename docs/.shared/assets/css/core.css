@@ -442,7 +442,7 @@ p, .text-justify {
 /*  */
 .parallax-section {
   position: relative;
-  height: calc(100vh - var(--topBars-height));
+  height: calc(100vh - var(--topBars-height) - 2rem);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -452,10 +452,6 @@ p, .text-justify {
   justify-content: center;
   overflow-x: hidden;
   overflow-y: hidden;
-}
-
-.parallax-section:last-child {
-  margin-bottom: 2rem;
 }
 
 .paralaxSectionContent {
