@@ -837,6 +837,7 @@ body.panel-open .footer {
   border-radius: 10px;
   height: 100%;
   min-height: 320px;
+  text-align: start;
 }
 
 .cardV-T {
