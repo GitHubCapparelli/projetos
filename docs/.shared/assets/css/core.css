@@ -888,6 +888,14 @@ body.panel-open .footer {
   border-radius: 10px;
 }
 
+/* -------------------- Responsive: (≤ 840px) -------------------- */
+
+@media (max-width: 840px) {
+  .cardV {
+    width: 100%;
+  }
+}
+
 /* -------------------- Responsive: Tablets (≤ 768px) -------------------- */
 
 @media (max-width: 768px) {
