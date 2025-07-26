@@ -820,8 +820,9 @@ body.panel-open .footer {
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: start;
+  flex: 1;
 }
 .cardH-LT {
   width: 100%;
@@ -832,11 +833,16 @@ body.panel-open .footer {
   align-items: start;
 }
 .cardH-LB {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  align-self: flex-start; /* default (left) */
+  margin-top: 1rem;
+}
+.cardH-LB {
+  background-color: burlywood;
+  /* Remove width to allow alignment */
   margin-top: 1rem;
 }
 .cardH-R {
@@ -848,6 +854,9 @@ body.panel-open .footer {
 
 .cardsV .cardH:nth-child(even) {
   flex-direction: row-reverse;
+}
+.cardsV .cardH:nth-child(even) .cardH-LB {
+  align-self: flex-end; /* moves button to the "right" (next to image) */
 }
 
 /* ---------------------------------------------------------------------------------- */
