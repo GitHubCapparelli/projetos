@@ -919,6 +919,11 @@ body.panel-open .footer {
   .cardsV .cardH:nth-child(even) .cardH-LB {
     align-self: flex-end;
   }
+
+  .cardH-LB {
+    width: 100%;
+    align-items: stretch;
+  }
 }
 
 /* -------------------- Responsive: Mobile (≤ 480px) -------------------- */
