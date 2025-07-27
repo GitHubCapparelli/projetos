@@ -894,6 +894,10 @@ body.panel-open .footer {
   .cardV {
     width: 100%;
   }
+  
+  .card-img {
+    align-self: center;
+  }
 }
 
 /* -------------------- Responsive: Tablets (≤ 768px) -------------------- */
