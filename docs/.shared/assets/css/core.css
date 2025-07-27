@@ -900,6 +900,8 @@ body.panel-open .footer {
   }
 }
 
+.stretch { align-self: stretch; }
+
 /* -------------------- Responsive: Tablets (≤ 768px) -------------------- */
 
 @media (max-width: 768px) {
