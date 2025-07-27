@@ -12,6 +12,7 @@
   --color-primary-light   : rgb(200, 200, 200);
 
   --color-parallax-back   : rgba(200, 200, 200, 0.9);
+  --color-parallax-back2   : rgba(230, 230, 230, 0.5);
   --color-shadow          : black;
 
   /* Teal */
@@ -455,7 +456,7 @@ p, .text-justify {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -464,10 +465,13 @@ p, .text-justify {
   overflow-y: hidden;
 }
 
-.parallaxSectionA {
+.parallaxSectionA p {
   font-size: larger;
+  font-weight: bold;
   text-align: end;
   padding: 2rem;
+  margin: 2rem;
+  background-color: var(--color-parallax-back2);
 }
 .paralaxSectionContent {
   max-width: 100%;
