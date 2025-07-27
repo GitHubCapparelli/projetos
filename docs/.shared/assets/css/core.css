@@ -442,7 +442,7 @@ p, .text-justify {
 /*  */
 .parallax-section {
   position: relative;
-  height: calc(100vh - var(--topBars-height) - 2rem);
+  height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ p, .text-justify {
   max-width: 100%;
   padding: 1rem;
   margin: 2rem;
-  height: calc(100vh - var(--topBars-height) - 40px);
+  height: calc(100vh - var(--topBars-height) - 5rem);
   background-color: var(--color-parallax-back);
   box-shadow: 0px 8px 20px var(--color-shadow);
   border-radius: 10px;
@@ -837,6 +837,8 @@ body.panel-open .footer {
   border-radius: 10px;
   height: 100%;
   min-height: 320px;
+}
+.cardV p {
   text-align: start;
 }
 
