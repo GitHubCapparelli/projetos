@@ -243,11 +243,11 @@ export const paifTechFooter = `<div class="footer-top">
       <div class="footer-tech-btns">
           <a class="footer-tech-btn28" href="#" target="_blank"
                       rel="noopener noreferrer">
-              <img class="footer-tech-btn28" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="PowerApps">
+              <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="PowerApps">
           </a>
           <a class="footer-tech-btn28" href="#" target="_blank"
                       rel="noopener noreferrer">
-              <img class="footer-tech-btn28" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="SharePoint Lists">
+              <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="SharePoint Lists">
           </a>
       </div>
   </div>
