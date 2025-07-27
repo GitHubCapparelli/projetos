@@ -44,11 +44,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  background-color: var(--bs-gray-300);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -416,6 +411,7 @@ p, .text-justify {
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease, margin-left 0.5s ease, width 0.5s ease;
+  background-color: var(--color-primary-light);
 }
 
 .sectionContent {
@@ -637,7 +633,7 @@ p, .text-justify {
 }
 
 .footer-bottom {
-  color: var(--color-gray);
+  color: var(--bs-gray-500);
   font-weight: bold;
   height: 15px;
   font-size: 10px;
