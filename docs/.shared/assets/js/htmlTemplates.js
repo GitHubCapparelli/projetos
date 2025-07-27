@@ -231,24 +231,29 @@ export const projetosFooter = `<div class="footer-top">
 </div>`;
 
 export const paifTechFooter = `<div class="footer-top">
-  <div class="footer-top-stretch">
-      <div class="footer-top-left">
-          <h6>SharePoint sites</h6>
-          <ul>
-              <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                      rel="noopener noreferrer">GERVIS</a>
-              </li>
-          </ul>
-      </div>
-      <div class="footer-tech-btns">
-          <a class="footer-tech-btn28" href="#" target="_blank"
-                      rel="noopener noreferrer">
-              <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="PowerApps">
-          </a>
-          <a class="footer-tech-btn28" href="#" target="_blank"
-                      rel="noopener noreferrer">
-              <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="SharePoint Lists">
-          </a>
+  <div class="footer-top-left">
+      <div class="footer-top-stretch">
+          <div class="footer-top-left w-100">
+              <h6>SharePoint sites</h6>
+              <ul>
+                  <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                          rel="noopener noreferrer">GERVIS</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-top-left w-100">
+              <h6>Rápido acesso</h6>
+              <div class="footer-tech-btns">
+                  <a class="footer-tech-btn28" href="#" target="_blank"
+                              rel="noopener noreferrer">
+                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="PowerApps">
+                  </a>
+                  <a class="footer-tech-btn28" href="#" target="_blank"
+                              rel="noopener noreferrer">
+                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="SharePoint Lists">
+                  </a>
+              </div>
+          </div>
       </div>
   </div>
   <div class="footer-top-left">
