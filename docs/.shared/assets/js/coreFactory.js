@@ -55,7 +55,7 @@ function initBoxes() {
         copyBtn.classList.replace('fa-clipboard', 'fa-check');
 
         const bgColor = body.style.backgroundColor;
-        const sdColor = getComputedStyle(document.documentElement).getPropertyValue('--color-secondary').trim();
+        const sdColor = getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim();
         body.style.backgroundColor = sdColor;
 
         setTimeout(() => {
