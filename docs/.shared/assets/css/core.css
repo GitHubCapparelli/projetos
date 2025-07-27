@@ -472,6 +472,7 @@ p, .text-justify {
   text-align: end;
   padding: 0.5rem 2rem;
   background-color: var(--color-parallax-back);
+  color:var(--color-primary);
 }
 .paralaxSectionContent {
   max-width: 100%;
