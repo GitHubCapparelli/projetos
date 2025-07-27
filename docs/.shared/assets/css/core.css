@@ -451,11 +451,9 @@ p, .text-justify {
 
 .parallax-section-100 {
   position: relative;
-  margin-left: var(--sidebarButtons-width);
-  width: calc(100% - var(--sidebarButtons-width));
   height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: 90%;
   display: flex;
@@ -687,8 +685,7 @@ p, .text-justify {
 body.panel-open .stickHeader,
 body.panel-open .header,
 body.panel-open .pageContent,
-body.panel-open .footer,
-body.parallax-section-100 {
+body.panel-open .footer {
   margin-left: calc(var(--sidebarButtons-width) + var(--navPanel-width));
   width: calc(100% - var(--navPanel-width) - var(--sidebarButtons-width));
 }
