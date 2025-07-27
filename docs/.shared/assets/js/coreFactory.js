@@ -121,7 +121,7 @@ function enableBigScroll() {
     }, 800);
   }
 
-  window.addEventListener('wheel', onWheel, { passive: false });
+  //window.addEventListener('wheel', onWheel, { passive: false });
 }
 
 ///////////////////////////////////////////////////////////////////
