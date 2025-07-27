@@ -478,6 +478,10 @@ p, .text-justify {
   color: var(--color-primary-dark);
 }
 
+.backPaifTelaAcompanhamentos {
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaA.png');
+}
+
 .backCrasArte {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/cras/cras - arte.webp');
 }
