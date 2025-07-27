@@ -242,15 +242,19 @@ export const paifTechFooter = `<div class="footer-top">
               </ul>
           </div>
           <div class="footer-top-left w-100">
-              <h6>Rápido acesso</h6>
+              <h6>Acesso rápido</h6>
               <div class="footer-tech-btns">
                   <a class="footer-tech-btn28" href="#" target="_blank"
                               rel="noopener noreferrer">
-                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="PowerApps">
+                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="Dados | Sharepoint Lists">
                   </a>
                   <a class="footer-tech-btn28" href="#" target="_blank"
                               rel="noopener noreferrer">
-                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="SharePoint Lists">
+                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="Solução | PowerApps">
+                  </a>
+                  <a class="footer-tech-btn28" href="#" target="_blank"
+                              rel="noopener noreferrer">
+                      <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerAutomate.png" alt="PowerApps ico" title="Serviços | PowerAutomate">
                   </a>
               </div>
           </div>
