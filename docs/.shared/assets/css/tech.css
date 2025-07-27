@@ -15,12 +15,12 @@
 }
 
 .box-header {
-    width: 25%;
+    width: 100%;
     color: var(--color-primary);
     cursor: pointer;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
     gap: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -57,4 +57,26 @@
     border-radius: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
+}
+
+/**/
+
+.footer-top-stretch {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+.footer-tech-btns {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer-tech-btn28 {
+    height: 28px;
+    width: 28px;
+    border-radius: 8px;
 }
