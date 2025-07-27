@@ -577,7 +577,6 @@ p, .text-justify {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: var(--color-gray);
   align-items: start;
   gap: 20px;
 }
@@ -638,7 +637,7 @@ p, .text-justify {
 }
 
 .footer-bottom {
-  color: var(--color-primary-light);
+  color: var(--color-gray);
   font-weight: bold;
   height: 15px;
   font-size: 10px;
