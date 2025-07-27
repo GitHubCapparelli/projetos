@@ -450,27 +450,27 @@ p, .text-justify {
   overflow-y: hidden;
 }
 
-.parallax-section-fill {
+.parallax-section-100 {
   position: relative;
   height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: end;
   overflow-x: hidden;
   overflow-y: hidden;
+  gap: 10px;
 }
 
 .parallaxSectionA p {
-  font-size: larger;
+  font-size: 48px;
   font-weight: bold;
   text-align: end;
   padding: 2rem;
-  margin: 2rem;
   background-color: var(--color-parallax-back2);
 }
 .paralaxSectionContent {
