@@ -440,14 +440,13 @@ p, .text-justify {
   position: relative;
   height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   display: flex;
   align-items: stretch;
   justify-content: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .parallax-section-100 {
@@ -471,7 +470,7 @@ p, .text-justify {
   font-weight: bold;
   text-align: end;
   padding: 0.5rem 2rem;
-  background-color: var(--color-parallax-back2);
+  background-color: var(--color-parallax-back);
 }
 .paralaxSectionContent {
   max-width: 100%;
