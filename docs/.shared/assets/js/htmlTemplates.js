@@ -231,16 +231,6 @@ export const projetosFooter = `<div class="footer-top">
 </div>`;
 
 export const paifTechFooter = `<div class="footer-top">
-  <div class="footer-top-left">
-      <h6>Links úteis</h6>
-      <ul>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Nome</a></li>
-      </ul>
-      <ul class="mt-3">
-          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                  rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
-      </ul>
-  </div>
   <div class="footer-top-stretch">
       <div class="footer-top-left">
           <h6>SharePoint sites</h6>
@@ -251,11 +241,25 @@ export const paifTechFooter = `<div class="footer-top">
           </ul>
       </div>
       <div class="footer-tech-btns">
-          <a class="footer-tech-btn28" href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                      rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
-          <a class="footer-tech-btn28" href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                      rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+          <a class="footer-tech-btn28" href="#" target="_blank"
+                      rel="noopener noreferrer">
+              <img class="footer-tech-btn28" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="PowerApps">
+          </a>
+          <a class="footer-tech-btn28" href="#" target="_blank"
+                      rel="noopener noreferrer">
+              <img class="footer-tech-btn28" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="SharePoint Lists">
+          </a>
       </div>
+  </div>
+  <div class="footer-top-left">
+      <h6>Links úteis</h6>
+      <ul>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Nome</a></li>
+      </ul>
+      <ul class="mt-3">
+          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
+                  rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
+      </ul>
   </div>
   <div class="footer-top-right">
       <h6>-- Venha nos visitar --</h6>
