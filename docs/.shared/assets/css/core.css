@@ -456,7 +456,7 @@ p, .text-justify {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: end;
