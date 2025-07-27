@@ -52,17 +52,17 @@ export const projetosMenu = `<ul class="treeview list-unstyled p-0 m-0">
 export const paifMenu = `<ul class="treeview list-unstyled p-0 m-0">
   <li>
     <span class="tree-toggle">
-      <i class="fas fa-folder me-2"></i>Projeto PAIF
+      <i class="fas fa-folder-open me-2"></i>Projeto PAIF
     </span>
-    <ul class="nested list-unstyled ps-4 d-none">
+    <ul class="nested list-unstyled ps-4">
       <li><a href="/projetos/PAIF/"><i class="fas fa-file-alt me-2"></i>Apresentação</a></li>
       <li><a href="/projetos/PAIF/tech/"><i class="fas fa-file-alt me-2"></i>Manual técnico</a></li>
       <li><a href="/projetos/PAIF/user/"><i class="fas fa-file-alt me-2"></i>Manual do usuário</a></li>
       <li>
         <span class="tree-toggle">
-          <i class="fas fa-folder me-2"></i>Referências
+          <i class="fas fa-folder-open me-2"></i>Referências
         </span>
-        <ul class="nested list-unstyled ps-4 d-none">
+        <ul class="nested list-unstyled ps-4">
           <li><a href="/projetos/empty.html"><i class="fas fa-file-alt me-2"></i>Decretos etc.</a></li>
         </ul>
       </li>
