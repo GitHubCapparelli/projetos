@@ -453,7 +453,7 @@ p, .text-justify {
   position: relative;
   height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
-  background-position: right center;
+  background-position: calc(100% - 2rem) center;
   background-repeat: no-repeat;
   background-size: 90%;
   display: flex;
