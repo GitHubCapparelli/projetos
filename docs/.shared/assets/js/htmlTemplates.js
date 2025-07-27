@@ -244,16 +244,13 @@ export const paifTechFooter = `<div class="footer-top">
           <div class="footer-top-left w-100">
               <h6>Acesso rápido</h6>
               <div class="footer-tech-btns">
-                  <a class="footer-tech-btn28" href="#" target="_blank"
-                              rel="noopener noreferrer">
+                  <a class="footer-tech-btn28" href="#" target="_blank" rel="noopener noreferrer">
                       <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="Dados | Sharepoint Lists">
                   </a>
-                  <a class="footer-tech-btn28" href="#" target="_blank"
-                              rel="noopener noreferrer">
+                  <a class="footer-tech-btn28" href="#" target="_blank" rel="noopener noreferrer">
                       <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerApps.png" alt="PowerApps ico" title="Solução | PowerApps">
                   </a>
-                  <a class="footer-tech-btn28" href="#" target="_blank"
-                              rel="noopener noreferrer">
+                  <a class="footer-tech-btn28" href="#" target="_blank" rel="noopener noreferrer">
                       <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/PowerAutomate.png" alt="PowerApps ico" title="Serviços | PowerAutomate">
                   </a>
               </div>
@@ -263,7 +260,7 @@ export const paifTechFooter = `<div class="footer-top">
   <div class="footer-top-left">
       <h6>Links úteis</h6>
       <ul>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Nome</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">...</a></li>
       </ul>
       <ul class="mt-3">
           <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
