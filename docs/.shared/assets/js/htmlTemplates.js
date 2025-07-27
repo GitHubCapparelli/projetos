@@ -262,10 +262,6 @@ export const paifTechFooter = `<div class="footer-top">
       <ul>
           <li><a href="#" target="_blank" rel="noopener noreferrer">...</a></li>
       </ul>
-      <ul class="mt-3">
-          <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
-                  rel="noopener noreferrer">GERVIS (SharePoint)</a></li>
-      </ul>
   </div>
   <div class="footer-top-right">
       <h6>-- Venha nos visitar --</h6>

@@ -19,8 +19,8 @@
     color: var(--color-primary);
     cursor: pointer;
     display: flex;
-    justify-content: start;
-    align-items: end;
+    justify-content: end;
+    align-items: center;
     gap: 0.5rem;
     border-radius: 0.5rem;
 }
