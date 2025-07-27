@@ -76,7 +76,7 @@
     justify-content: start;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0px;
 }
 .footer-tech-btn22 {
     height: 22px;
