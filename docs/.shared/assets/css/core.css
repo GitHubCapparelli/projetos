@@ -449,6 +449,26 @@ p, .text-justify {
   overflow-y: hidden;
 }
 
+.parallax-section-fill {
+  position: relative;
+  height: calc(100vh - var(--topBars-height));
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.parallaxSectionA {
+  font-size: larger;
+  text-align: end;
+  padding: 2rem;
+}
 .paralaxSectionContent {
   max-width: 100%;
   padding: 1rem;
@@ -479,7 +499,7 @@ p, .text-justify {
 }
 
 .backPaifTelaAcompanhamentos {
-  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaA.png');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
 }
 
 .backCrasArte {
