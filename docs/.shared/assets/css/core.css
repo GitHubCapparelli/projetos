@@ -12,7 +12,6 @@
   --color-primary-light   : rgb(200, 200, 200);
 
   --color-parallax-back   : rgba(200, 200, 200, 0.9);
-  --color-parallax-back   : rgba(200, 200, 200, 0.9);
   --color-shadow          : black;
 
   /* Teal */
@@ -578,7 +577,7 @@ p, .text-justify {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: var(--color-primary-light);
+  color: var(--color-gray);
   align-items: start;
   gap: 20px;
 }
