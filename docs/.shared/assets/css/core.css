@@ -688,7 +688,7 @@ body.panel-open .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   height: calc(100vh - var(--topBars-height) - var(--footer-height));
   background-color: var(--color-primary-light);
 }
