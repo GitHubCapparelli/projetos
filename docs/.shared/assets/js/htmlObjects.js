@@ -6,7 +6,7 @@ window.notes = notes;
 
 export const gervisName = 'Gerência de Vigilância Socioassistencial';
 export const paifName   = 'PAIF – Serviço de Proteção e Atendimento Integral à Família';
-export const favIco     = '/projetos/.shared/assets/img/logo/gdf.png';
+export const favIco     = '/projetos/.shared/assets/img/sedes/logo/gdf.png';
 
 export const menuHTML = {
   projetos      : html.projetosMenu,
@@ -81,7 +81,7 @@ export const stickyHTML = (tela) => `
   </div>`;
 
 export const headerHTML = (tela) => `<div class="header-left">
-      <img class="header-logo" src="/projetos/.shared/assets/img/logo/gdf.png" alt="logo">
+      <img class="header-logo" src="/projetos/.shared/assets/img/sedes/logo/gdf.png" alt="logo">
       <div class="header-titles">
           <h6 class="mb-0">GDF/SEDES/SUBSAS/GERVIS</h6>
           <h5 class="mb-0">${getTitle(tela)}</h5>
