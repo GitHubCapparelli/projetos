@@ -479,23 +479,23 @@ p, .text-justify {
 }
 
 .backCrasArte {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - arte.webp');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/cras/cras - arte.webp');
 }
 
 .backCrasBanner {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - banner.webp');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/cras/cras - banner.webp');
 }
 
 .backCrasLogo {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - logo.png');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/cras/cras - logo.png');
 }
 
 .backCrasVarjao {
-  background-image: url('/projetos/.shared/assets/img/cras/cras - varjao.jpg');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/cras/cras - varjao.jpg');
 }
 
 .backSedesFachada {
-  background-image: url('/projetos/.shared/assets/img/sedes/sedes-fachada.avif');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/sedes/sedes-fachada.avif');
 }
 
 /* ::-webkit-scrollbar {
