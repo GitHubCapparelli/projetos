@@ -21,7 +21,7 @@ body {
 
 .box-header {
     width: 100%;
-    color: var(--color-primary-light);
+    color: var(--color-primary-dark);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ body {
 }
 
 .box-btn:hover {
-    color: var(--color-primary-dark);
+    color: var(--color-primary);
 }
 
 .copy-btn {
