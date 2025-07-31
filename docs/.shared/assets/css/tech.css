@@ -39,8 +39,8 @@ body {
 }
 
 .box-header h6 {
-    margin: 0px 0.5rem;
-    padding: 0;
+    margin: 0;
+    padding: 0 0.5rem;
     font-style: italic;
 }
 
@@ -63,7 +63,7 @@ body {
     padding: 0.5rem;
     /* margin: 0.1rem 1rem; */
     border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-bradius: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
     background-color: var(--color-primary-light);
