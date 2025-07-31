@@ -25,7 +25,6 @@ body {
 
 .box-header {
     width: 100%;
-    padding: 0.5rem;
     color: var(--color-primary-dark);
     cursor: pointer;
     display: flex;
@@ -46,6 +45,7 @@ body {
 
 .box-btn {
     cursor: pointer;
+    padding: 0px 1rem;
 }
 
 .box-btn:hover {
@@ -54,7 +54,6 @@ body {
 
 .copy-btn {
     opacity: 0;
-    margin-left: 1rem;
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
