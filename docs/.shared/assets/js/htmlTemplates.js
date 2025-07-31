@@ -233,7 +233,7 @@ export const projetosFooter = `<div class="footer-top">
 export const paifTechFooter = `<div class="footer-top">
   <div class="footer-top-left">
       <div class="footer-top-stretch">
-          <div class="footer-top-left w-100">
+          <div class="w-100">
               <h6>SharePoint sites</h6>
               <ul>
                   <li><a href="https://sedesgdf.sharepoint.com/sites/GERVIS" target="_blank"
@@ -241,7 +241,7 @@ export const paifTechFooter = `<div class="footer-top">
                   </li>
               </ul>
           </div>
-          <div class="footer-top-left w-100">
+          <div class="w-100">
               <h6>Acesso rápido</h6>
               <div class="footer-tech-btns">
                   <a class="footer-tech-btn28" href="#" target="_blank" rel="noopener noreferrer">
