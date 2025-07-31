@@ -442,7 +442,7 @@ p, .text-justify {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   align-items: stretch;
   justify-content: center;
