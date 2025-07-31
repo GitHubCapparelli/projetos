@@ -1,3 +1,6 @@
+body {
+    background-color: var(--color-white);
+}
 .pageContent {
     background-color: var(--color-white);
 }
