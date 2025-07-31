@@ -1,11 +1,11 @@
 .pageContent {
-    background-color: var(--color-gray-light);
+    background-color: var(--color-white);
 }
 .sectionContent p {
     font-family: 'Times New Roman', Times, serif;
 }
 .sectionContent h1 {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
 }
 
 .footer-top-right {
@@ -18,7 +18,7 @@
 
 .box-header {
     width: 100%;
-    color: var(--color-primary);
+    color: var(--color-primary-light);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
