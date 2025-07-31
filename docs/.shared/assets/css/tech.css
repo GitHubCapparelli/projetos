@@ -45,7 +45,7 @@ body {
 
 .box-btn {
     cursor: pointer;
-    padding: 0px 1rem;
+    padding: 0px 0.5rem;
 }
 
 .box-btn:hover {
