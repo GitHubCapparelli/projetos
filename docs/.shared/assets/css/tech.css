@@ -24,6 +24,7 @@ body {
 
 .box-header {
     width: 100%;
+    margin: 0.25rem;
     color: var(--color-primary-dark);
     cursor: pointer;
     display: flex;
@@ -39,8 +40,6 @@ body {
 }
 
 .box-header h6 {
-    margin: 0;
-    padding: 0.5rem;
     font-style: italic;
 }
 
@@ -61,7 +60,6 @@ body {
 
 .box-body {
     padding: 0.5rem;
-    /* margin: 0.1rem 1rem; */
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
