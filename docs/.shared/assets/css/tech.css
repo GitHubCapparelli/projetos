@@ -19,12 +19,13 @@ body {
 }
 
 .box {
+    margin: 0.25rem;
     margin-bottom: 1rem;
 }
 
 .box-header {
     width: 100%;
-    margin: 0.25rem;
+    padding: 0.5rem;
     color: var(--color-primary-dark);
     cursor: pointer;
     display: flex;
