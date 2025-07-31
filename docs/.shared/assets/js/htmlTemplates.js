@@ -242,7 +242,7 @@ export const paifTechFooter = `<div class="footer-top">
               </ul>
           </div>
           <div class="w-100">
-              <h6>Acesso rápido</h6>
+              <h6>Links rápidos</h6>
               <div class="footer-tech-btns">
                   <a class="footer-tech-btn28" href="#" target="_blank" rel="noopener noreferrer">
                       <img class="footer-tech-btn22" src="/projetos/.shared/assets/img/ico/Lists.png" alt="Lists ico" title="Dados | Sharepoint Lists">
