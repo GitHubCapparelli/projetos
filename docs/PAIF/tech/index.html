@@ -28,16 +28,158 @@
                 dolor
                 error repellat totam assumenda excepturi sit.</p>
 
+            <p>Acompanhamentos Power Flow</p>
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_1">
                     <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                    <h6>Title Box 1</h6>
+                    <h6>Acompanhamentos - contrato PowerFlow</h6>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_1" class="box-body box-collapse collapse">
+                <div id="box_1" class="box-body box-collapse collapse"><pre>
+{
+    "type": "object",
+    "properties": {
+        "Id": {
+            "type": "integer"
+        },
+        "Unidade": {
+            "type": "object",
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Id"
+            ]
+        },
+        "Inicio": {
+            "type": "string",
+            "format": "date"
+        },
+        "Fim": {
+            "type": "string",
+            "format": "date"
+        },
+        "Pobreza": {
+            "type": "boolean"
+        },
+        "PBF": {
+            "type": "boolean"
+        },
+        "DescumprePBF": {
+            "type": "boolean"
+        },
+        "BPC": {
+            "type": "boolean"
+        },
+        "TrabalhoInfantil": {
+            "type": "boolean"
+        },
+        "EmAcolhimento": {
+            "type": "boolean"
+        },
+        "Beneficiario": {
+            "type": "object",
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Id"
+            ]
+        },
+        "Especialista": {
+            "type": "object",
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Id"
+            ]
+        },
+        "InseridoPor": {
+            "type": "object",
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Id"
+            ]
+        },
+        "AtualizadoPor": {
+            "type": "object",
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Id"
+            ]
+        },
+        "EncerradoPor": {
+            "type": "object",
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Id"
+            ]
+        }
+    },
+    "additionalProperties": false
+}
+                </pre>
                     This is the first box body content...z...
                 </div>
             </div>
+
+
+            <p>Acompanhamentos Power Flow</p>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_1">
+                    <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                    <h6>Acompanhamentos - contrato PowerFlow</h6>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_1" class="box-body box-collapse collapse"><pre>
+Acompanhamento_requestIncluir() :Text = { 
+    With({ usuario  : LookUp(listUsuarios, Id = current_usuario.Info.Id) },
+    With({ entity   : { Unidade             : { Id: current_acompanhamento.Unidade.Id },
+                        Inicio              : current_acompanhamento.Inicio,
+                        Fim                 : current_acompanhamento.Fim,
+                        Pobreza             : current_acompanhamento.Pobreza,
+                        PBF                 : current_acompanhamento.PBF,
+                        DescumprePBF        : current_acompanhamento.DescumprePBF,
+                        BPC                 : current_acompanhamento.BPC,
+                        TrabalhoInfantil    : current_acompanhamento.TrabalhoInfantil,
+                        EmAcolhimento       : current_acompanhamento.EmAcolhimento,
+                        Beneficiario        : { Id: current_acompanhamento.Beneficiario.Id },
+                        Especialista        : { Id: current_acompanhamento.Especialista.Id },
+                        InseridoPor         : { Id: usuario.Id } } },
+    With({values    : JSON(entity       , JSONFormat.IncludeBinaryData) },
+    With({result    : JSON({user        : { id: Login(User().Email) },
+                            data        : { crudMode: "Post", 
+                                            newValues: values }}, 
+                                            JSONFormat.IncludeBinaryData) },
+        PowerFlow_setRequest(result);
+        result;
+    ))));
+};
+                </pre>
+                    This is the first box body content...z...
+                </div>
+            </div>
+
+
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
