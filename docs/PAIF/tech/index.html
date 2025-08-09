@@ -38,102 +38,34 @@
                 <div id="box_1" class="box-body box-collapse collapse"><pre>
 {
     "type": "object",
-    "properties": {
-        "Id": {
-            "type": "integer"
-        },
-        "Unidade": {
-            "type": "object",
-            "properties": {
-                "Id": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "Id"
-            ]
-        },
-        "Inicio": {
-            "type": "string",
-            "format": "date"
-        },
-        "Fim": {
-            "type": "string",
-            "format": "date"
-        },
-        "Pobreza": {
-            "type": "boolean"
-        },
-        "PBF": {
-            "type": "boolean"
-        },
-        "DescumprePBF": {
-            "type": "boolean"
-        },
-        "BPC": {
-            "type": "boolean"
-        },
-        "TrabalhoInfantil": {
-            "type": "boolean"
-        },
-        "EmAcolhimento": {
-            "type": "boolean"
-        },
-        "Beneficiario": {
-            "type": "object",
-            "properties": {
-                "Id": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "Id"
-            ]
-        },
-        "Especialista": {
-            "type": "object",
-            "properties": {
-                "Id": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "Id"
-            ]
-        },
-        "InseridoPor": {
-            "type": "object",
-            "properties": {
-                "Id": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "Id"
-            ]
-        },
-        "AtualizadoPor": {
-            "type": "object",
-            "properties": {
-                "Id": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "Id"
-            ]
-        },
-        "EncerradoPor": {
-            "type": "object",
-            "properties": {
-                "Id": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "Id"
-            ]
-        }
+    "properties": { 
+        "Id"                : { "type": "integer" },
+        "Unidade"           : { "object",
+                                "properties"    : { "Id": { "type": "integer" } },
+                                "required"      : [ "Id" ] },
+        "Inicio"            : { "type": "string", "format": "date" },
+        "Fim"               : { "type": "string", "format": "date" },
+        "Pobreza"           : { "type": "boolean" },
+        "PBF"               : { "type": "boolean" },
+        "DescumprePBF"      : { "type": "boolean" },
+        "BPC"               : { "type"  "boolean" },
+        "TrabalhoInfantil"  : { "type": "boolean" },
+        "EmAcolhimento"     : { "type": "boolean" },
+        "Beneficiario"      : { "type": "object",
+                                "properties": { "Id": { "type": "integer" } },
+                                "required": [ "Id" ] },
+        "Especialista"      : { "type": "object",
+                                "properties": { "Id": { "type": "integer" } },
+                                "required": [ "Id" ] },
+        "InseridoPor"       : { "type": "object",
+                                "properties": { "Id": { "type": "integer" } },
+                                "required": [ "Id" ] },
+        "AtualizadoPor"     : { "type": "object",
+                                "properties": { "Id": { "type": "integer" } },
+                                "required": [ "Id" ] },
+        "EncerradoPor"      : { "type": "object",
+                                "properties": { "Id": { "type": "integer" } },
+                                "required": [ "Id" ] }
     },
     "additionalProperties": false
 }
