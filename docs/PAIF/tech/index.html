@@ -144,12 +144,12 @@
 
             <p>Acompanhamentos Power Apps</p>
             <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_1">
+                <div class="box-header collapsed" data-bs-target="#box_2">
                     <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
                     <h6>Acompanhamentos - Power Apps</h6>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_1" class="box-body box-collapse collapse"><pre>
+                <div id="box_2" class="box-body box-collapse collapse"><pre>
 Acompanhamento_requestIncluir() :Text = { 
     With({ usuario  : LookUp(listUsuarios, Id = current_usuario.Info.Id) },
     With({ entity   : { Unidade             : { Id: current_acompanhamento.Unidade.Id },
