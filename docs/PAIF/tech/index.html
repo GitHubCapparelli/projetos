@@ -28,12 +28,51 @@
                 dolor
                 error repellat totam assumenda excepturi sit.</p>
 
-            <p>Acompanhamentos Power Flow</p>
+            <h4>Acompanhamentos</h4>
+            <h5>PowerApps</h5>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_2">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>Request incluir</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_2" class="box-body box-collapse collapse">
+                    <pre>
+Acompanhamento_requestIncluir() :Text = { 
+    With({ usuario  : LookUp(listUsuarios, Id = current_usuario.Info.Id) },
+    With({ entity   : { Unidade             : { Id: current_acompanhamento.Unidade.Id },
+                        Inicio              : current_acompanhamento.Inicio,
+                        Fim                 : current_acompanhamento.Fim,
+                        Pobreza             : current_acompanhamento.Pobreza,
+                        PBF                 : current_acompanhamento.PBF,
+                        DescumprePBF        : current_acompanhamento.DescumprePBF,
+                        BPC                 : current_acompanhamento.BPC,
+                        TrabalhoInfantil    : current_acompanhamento.TrabalhoInfantil,
+                        EmAcolhimento       : current_acompanhamento.EmAcolhimento,
+                        Beneficiario        : { Id: current_acompanhamento.Beneficiario.Id },
+                        Especialista        : { Id: current_acompanhamento.Especialista.Id },
+                        InseridoPor         : { Id: usuario.Id } } },
+    With({values    : JSON(entity       , JSONFormat.IncludeBinaryData) },
+    With({result    : JSON({user        : { id: Login(User().Email) },
+                            data        : { crudMode: "Post", 
+                                            newValues: values }}, 
+                                            JSONFormat.IncludeBinaryData) },
+        PowerFlow_setRequest(result);
+        result;
+    ))));
+};
+                </pre>
+                </div>
+            </div>
+
+            <h5>PowerAutomate</h5>
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_1">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                        <h6>Acompanhamentos: PowerApps - PowerAutomate (contrato)</h6>
+                        <h6>AppValues step (contrato)</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
@@ -65,44 +104,6 @@
                 },
                 "additionalProperties": false
                 }</pre>
-                </div>
-            </div>
-
-
-            <p>Acompanhamentos Power Apps</p>
-            <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_2">
-                    <div class="box-header-left">
-                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                        <h6>Acompanhamentos: PowerAutomate - PowerApps</h6>
-                    </div>
-                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
-                </div>
-                <div id="box_2" class="box-body box-collapse collapse"><pre>
-Acompanhamento_requestIncluir() :Text = { 
-    With({ usuario  : LookUp(listUsuarios, Id = current_usuario.Info.Id) },
-    With({ entity   : { Unidade             : { Id: current_acompanhamento.Unidade.Id },
-                        Inicio              : current_acompanhamento.Inicio,
-                        Fim                 : current_acompanhamento.Fim,
-                        Pobreza             : current_acompanhamento.Pobreza,
-                        PBF                 : current_acompanhamento.PBF,
-                        DescumprePBF        : current_acompanhamento.DescumprePBF,
-                        BPC                 : current_acompanhamento.BPC,
-                        TrabalhoInfantil    : current_acompanhamento.TrabalhoInfantil,
-                        EmAcolhimento       : current_acompanhamento.EmAcolhimento,
-                        Beneficiario        : { Id: current_acompanhamento.Beneficiario.Id },
-                        Especialista        : { Id: current_acompanhamento.Especialista.Id },
-                        InseridoPor         : { Id: usuario.Id } } },
-    With({values    : JSON(entity       , JSONFormat.IncludeBinaryData) },
-    With({result    : JSON({user        : { id: Login(User().Email) },
-                            data        : { crudMode: "Post", 
-                                            newValues: values }}, 
-                                            JSONFormat.IncludeBinaryData) },
-        PowerFlow_setRequest(result);
-        result;
-    ))));
-};
-                </pre>
                 </div>
             </div>
 
