@@ -31,45 +31,40 @@
             <p>Acompanhamentos Power Flow</p>
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_1">
-                    <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                    <h6>PoeAcompanhamentos - contrato PowerFlow</h6>
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>Acompanhamentos - contrato PowerFlow</h6>
+                    </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_1" class="box-body box-collapse collapse"><pre>
-{
-    "type": "object",
-    "properties": { 
-        "Id"                : { "type": "integer" },
-        "Unidade"           : { "object",
-                                "properties"    : { "Id": { "type": "integer" } },
-                                "required"      : [ "Id" ] },
-        "Inicio"            : { "type": "string", "format": "date" },
-        "Fim"               : { "type": "string", "format": "date" },
-        "Pobreza"           : { "type": "boolean" },
-        "PBF"               : { "type": "boolean" },
-        "DescumprePBF"      : { "type": "boolean" },
-        "BPC"               : { "type"  "boolean" },
-        "TrabalhoInfantil"  : { "type": "boolean" },
-        "EmAcolhimento"     : { "type": "boolean" },
-        "Beneficiario"      : { "type": "object",
-                                "properties": { "Id": { "type": "integer" } },
-                                "required": [ "Id" ] },
-        "Especialista"      : { "type": "object",
-                                "properties": { "Id": { "type": "integer" } },
-                                "required": [ "Id" ] },
-        "InseridoPor"       : { "type": "object",
-                                "properties": { "Id": { "type": "integer" } },
-                                "required": [ "Id" ] },
-        "AtualizadoPor"     : { "type": "object",
-                                "properties": { "Id": { "type": "integer" } },
-                                "required": [ "Id" ] },
-        "EncerradoPor"      : { "type": "object",
-                                "properties": { "Id": { "type": "integer" } },
-                                "required": [ "Id" ] }
-    },
-    "additionalProperties": false
-}
-                </pre>
+                <div id="box_1" class="box-body box-collapse collapse">
+                <pre>{
+                "type": "object",
+                "properties" : {
+                "Id" : { "type" : ["integer", "null"] },
+                "Unidade" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+                "Inicio" : { "type" : ["string", "null"], "format": "date" },
+                "Fim" : { "type" : ["string", "null"], "format": "date" },
+                "Pobreza" : { "type" : ["boolean", "null"] },
+                "PBF" : { "type" : ["boolean", "null"] },
+                "DescumprePBF" : { "type" : ["boolean", "null"] },
+                "BPC" : { "type" : ["boolean", "null"] },
+                "TrabalhoInfantil" : { "type" : ["boolean", "null"] },
+                "EmAcolhimento" : { "type" : ["boolean", "null"] },
+                "Beneficiario" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+                "Especialista" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+                "InseridoPor" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+                "AtualizadoPor" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+                "EncerradoPor" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                "Id" : { "type": "integer" } }, "required": ["Id"] } ] }
+                },
+                "additionalProperties": false
+                }</pre>
                 </div>
             </div>
 
