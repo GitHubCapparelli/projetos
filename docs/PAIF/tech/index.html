@@ -89,9 +89,9 @@
                 </div>
             </div>
 
-            <p>Observe aqui que todos os dados são opcionais (aceitam valores nulos). Isso porque há casos em que determinados campos são obrigatórios, outros em que são opcionais, e ainda outros em que não fazem sentido - como o Id ao inserir um novo registro, por exemplo.</p>
+            <p>Observe aqui que todos os dados são opcionais (aceitam valores nulos). Isso porque há casos em que determinados campos são obrigatórios, outros em que são opcionais, e ainda outros em que não fazem sentido - como o Id ao inserir um novo registro. Outro exemplo: ao alterar um registro, não faz (muito?) sentido enviarmos dados [pela rede] que não sofrerão alterações. Nesse caso, podemos informar apenas os dados que deverão ser alterados.</p>
 
-            <p>Outro exemplo: ao alterar um registro, não faz (muito?) sentido enviarmos dados [pela rede] que não sofrerão alterações. Nesse caso, podemos informar apenas o que queremos que seja alterado. </p>
+            <p>Com isso garantimos uma melhor performance e uso de memória e/ou recursos, além de minimizar a área de exposição e, portanto, risco. A meta é entregar um resultado que seja tanto flexível quanto robusto, sustentável e extensível, intuitivo e de fácil entendimento (e, portanto, manutenção). </p>
 
             <p>O código abaixo mostra um exemplo de como o <b>PowerApps</b> adere ao contrato imposto pelo <b>PowerFlow</b>, em um processo de inclusão de um novo registro na base de dados (lista do <b>SharePoint</b>). </p> 
 
@@ -163,9 +163,7 @@ json(concat('{',
                 </div>
             </div>
 
-            <p>Observe que alguns campos têm um nome diferente do original.</p>
-
-            <p>Depois que os dados retornam do <p>SharePoint</p>, o <p>PowerAutomate</p> os converte de volta para o formato <p>PowerApps</p>.</p>
+            <p>Observe que alguns campos têm um nome diferente do original. Depois que os dados retornam do <p>SharePoint</p>, o <p>PowerAutomate</p> os converte de volta para o formato <p>PowerApps</p>.</p>
 
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_mappedData">
