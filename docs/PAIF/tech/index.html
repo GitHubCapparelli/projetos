@@ -34,7 +34,7 @@
                 <div class="box-header collapsed" data-bs-target="#box_img">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                        <h6>Fluxo padronizado dos serviços CRUD</h6>
+                        <h6>Fluxo padronizado dos serviços de acesso e manipulação de dados</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
@@ -43,11 +43,14 @@
                 </div>
             </div>
 
-            <p>Observe que, como saída (<i>output</i>), os nossos serviços sempre retornam um objeto com três propriedades. <i>error</i> indica se ocorreu algum erro durante a execução do fluxo; <i>step</i> informa em que passo ou etapa do processamento o erro ocorreu; e <i>data</i> retorna o resultado do procesamento - que pode ser ou uma mensagem (de erro), um objeto, ou uma coleção de objetos.</p>
+            <p>Observe que, como saída (<i>output</i>), os nossos serviços sempre retornam um objeto com três propriedades.</p>
+            <ul>
+                <li><i>error</i> indica se ocorreu algum erro durante a execução do fluxo;</li>
+                <li><i>step</i> informa em que passo ou etapa do processamento o erro ocorreu; e</li>
+                <li><i>data</i> retorna o resultado do procesamento - que pode ser ou uma mensagem (de erro), um objeto, ou uma coleção de objetos.</li>
+            </ul> 
 
-            <p>Da mesma forma, o <b>PowerAutomate</b> espera que os dados enviados pelo <b>PowerApps</b> estejam devidamente formatados, conforme "contratado" (especificado, ou pré-definido).</p>
-
-            <p>Através da ação <b>AppValues</b>, o <b>PowerAutomate Flow</b> garante que os dados recebidos do <b>PowerApps</b> estejam minimamente em conformidade.</p>
+            <p>O <b>PowerAutomate</b> também espera que os dados enviados pelo <b>PowerApps</b> estejam devidamente formatados, conforme "contratado" (especificado, ou pré-definido). E através da ação <b>AppValues</b>, o <b>PowerAutomate</b> garante que os dados recebidos do <b>PowerApps</b> estejam minimamente em conformidade.</p>
 
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_appValues">
@@ -89,9 +92,9 @@
                 </div>
             </div>
 
-            <p>Observe aqui que todos os dados são opcionais (aceitam valores nulos). Isso porque há casos em que determinados campos são obrigatórios, outros em que são opcionais, e ainda outros em que não fazem sentido - como o Id ao inserir um novo registro. Outro exemplo: ao alterar um registro, não faz (muito?) sentido enviarmos dados [pela rede] que não sofrerão alterações. Nesse caso, podemos informar apenas os dados que deverão ser alterados.</p>
+            <p>Note que todos os dados são opcionais aqui (aceitando valores nulos). Isso porque há casos em que determinados campos são obrigatórios; outros em que são opcionais; e ainda outros em que não fazem muito sentido - como o Id ao inserir um novo registro. Outro exemplo: ao alterar um registro, não faz sentido enviarmos dados [pela rede] que não sofrerão alterações. Nesse caso, devemos informar apenas os dados que deverão sofrer modificações.</p>
 
-            <p>Com isso garantimos uma melhor performance e uso de memória e/ou recursos, além de minimizar a área de exposição e, portanto, risco. A meta é entregar um resultado que seja tanto flexível quanto robusto, sustentável e extensível, intuitivo e de fácil entendimento (e, portanto, manutenção). </p>
+            <p>Com isso garantimos uma melhor performance e um uso otimizado de memória e/ou recursos, além de minimizar a área de exposição e, portanto, de risco. A meta é (sempre) entregar um resultado que seja tanto flexível quanto robusto, sustentável e extensível, intuitivo e de fácil entendimento (e, portanto, manutenção, evolução e versionamento). </p>
 
             <p>O código abaixo mostra um exemplo de como o <b>PowerApps</b> adere ao contrato imposto pelo <b>PowerFlow</b>, em um processo de inclusão de um novo registro na base de dados (lista do <b>SharePoint</b>). </p> 
 
@@ -163,7 +166,7 @@ json(concat('{',
                 </div>
             </div>
 
-            <p>Observe que alguns campos têm um nome diferente do original. Depois que os dados retornam do <p>SharePoint</p>, o <p>PowerAutomate</p> os converte de volta para o formato <p>PowerApps</p>.</p>
+            <p>Observe que alguns campos têm um nome diferente do original. Esta é uma exigência do <b>SharePoint</b> que devemos observar criteriosamente, inclusive em relação ao formato das letras (<i>case sensitive</i>). Depois que os dados retornam do <b>SharePoint</b>, o <p>PowerAutomate</p> os converte de volta para o formato <b>PowerApps</b>, conforme o seguinte exemplo.</p>
 
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_mappedData">
