@@ -23,15 +23,18 @@ body {
     margin-bottom: 1rem;
 }
 
-.box-header {
+.box-header, .box-header-left {
     width: 100%;
     color: var(--color-primary-dark);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     gap: 0.5rem;
     border-radius: 0.5rem;
+}
+.box-header-left {
+    justify-content: start;
 }
 
 .box-header:not(.collapsed) .copy-btn {
