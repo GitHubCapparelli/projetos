@@ -29,7 +29,7 @@
                 error repellat totam assumenda excepturi sit.</p>
 
             <h4>Serviços CRUD - insere, altera, deleta e recupera dados</h4>
-            <p>Todos os nossos serviços de acesso e manipulação de dados seguem o mesmo padrão, conforme imagem abaixo</p>
+            <p>Todos os nossos serviços de acesso e manipulação de dados seguem o mesmo padrão, conforme a seguinte imagem.</p>
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_img">
                     <div class="box-header-left">
@@ -39,11 +39,15 @@
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
                 <div id="box_img" class="box-body box-collapse collapse text-center">
-                    <img class="img-fluid boxedImage75" src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD.png" alt="">
+                    <img class="img-fluid boxedImage60" src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD.png" alt="">
                 </div>
             </div>
 
-            <p>Através da ação <b>AppValues</b> do <b>PowerAutomate Flow</b> garantimos que os dados recebidos do <b>PowerApps</b> estejam em conformidade com os requerimentos do caso de uso.</p>
+            <p>Observe que, como saída (<i>output</i>), os nossos serviços sempre retornam um objeto com três propriedades. <i>error</i> indica se ocorreu algum erro durante a execução do fluxo; <i>step</i> informa em que passo ou etapa do processamento o erro ocorreu; e <i>data</i> retorna o resultado do procesamento - que pode ser ou uma mensagem (de erro), um objeto, ou uma coleção de objetos.</p>
+
+            <p>Da mesma forma, o <b>PowerAutomate</b> espera que os dados enviados pelo <b>PowerApps</b> estejam devidamente formatados, conforme "contratado" (especificado, ou pré-definido).</p>
+
+            <p>Através da ação <b>AppValues</b>, o <b>PowerAutomate Flow</b> garante que os dados recebidos do <b>PowerApps</b> estejam minimamente em conformidade.</p>
 
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_appValues">
@@ -85,7 +89,11 @@
                 </div>
             </div>
 
-            <p>O código abaixo mostra um exemplo de como o <b>PowerApps</b> adere ao contrato imposto pelo <b>PowerFlow</b>. </p>
+            <p>Observe aqui que todos os dados são opcionais (aceitam valores nulos). Isso porque há casos em que determinados campos são obrigatórios, outros em que são opcionais, e ainda outros em que não fazem sentido - como o Id ao inserir um novo registro, por exemplo.</p>
+
+            <p>Outro exemplo: ao alterar um registro, não faz (muito?) sentido enviarmos dados [pela rede] que não sofrerão alterações. Nesse caso, podemos informar apenas o que queremos que seja alterado. </p>
+
+            <p>O código abaixo mostra um exemplo de como o <b>PowerApps</b> adere ao contrato imposto pelo <b>PowerFlow</b>, em um processo de inclusão de um novo registro na base de dados (lista do <b>SharePoint</b>). </p> 
 
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_requestIncluir">
@@ -98,7 +106,6 @@
                 <div id="box_requestIncluir" class="box-body box-collapse collapse">
                     <pre>
 Acompanhamento_requestIncluir() :Text = { 
-    With({ usuario  : LookUp(listUsuarios, Id = current_usuario.Info.Id) },
     With({ entity   : { Unidade             : { Id: current_acompanhamento.Unidade.Id },
                         Inicio              : current_acompanhamento.Inicio,
                         Fim                 : current_acompanhamento.Fim,
@@ -110,7 +117,7 @@ Acompanhamento_requestIncluir() :Text = {
                         EmAcolhimento       : current_acompanhamento.EmAcolhimento,
                         Beneficiario        : { Id: current_acompanhamento.Beneficiario.Id },
                         Especialista        : { Id: current_acompanhamento.Especialista.Id },
-                        InseridoPor         : { Id: usuario.Id } } },
+                        InseridoPor         : { Id: current_usuario.Id } } },
     With({values    : JSON(entity       , JSONFormat.IncludeBinaryData) },
     With({result    : JSON({user        : { id: Login(User().Email) },
                             data        : { crudMode: "Post", 
@@ -118,13 +125,13 @@ Acompanhamento_requestIncluir() :Text = {
                                             JSONFormat.IncludeBinaryData) },
         PowerFlow_setRequest(result);
         result;
-    ))));
+    )));
 };
                 </pre>
                 </div>
             </div>
 
-            <p>Uma vez comprovado que os dados estão em conformidade com o contrato, o <b>PowerFlow</b> faz com que os mesmos satisfaçam as especificações do <b>SharePoint</b>.</p>
+            <p>Uma vez comprovado que os dados estão em conformidade com o contrato, o <b>PowerFlow</b> então faz com que os mesmos também satisfaçam as especificações do <b>SharePoint</b>.</p>
             
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_mappedValues">
