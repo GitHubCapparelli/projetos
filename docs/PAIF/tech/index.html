@@ -77,36 +77,128 @@ Acompanhamento_requestIncluir() :Text = {
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
                 <div id="box_1" class="box-body box-collapse collapse">
-                <pre>{
-                "type": "object",
-                "properties" : {
-                "Id" : { "type" : ["integer", "null"] },
-                "Unidade" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-                "Inicio" : { "type" : ["string", "null"], "format": "date" },
-                "Fim" : { "type" : ["string", "null"], "format": "date" },
-                "Pobreza" : { "type" : ["boolean", "null"] },
-                "PBF" : { "type" : ["boolean", "null"] },
-                "DescumprePBF" : { "type" : ["boolean", "null"] },
-                "BPC" : { "type" : ["boolean", "null"] },
-                "TrabalhoInfantil" : { "type" : ["boolean", "null"] },
-                "EmAcolhimento" : { "type" : ["boolean", "null"] },
-                "Beneficiario" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-                "Especialista" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-                "InseridoPor" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-                "AtualizadoPor" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-                "EncerradoPor" : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                "Id" : { "type": "integer" } }, "required": ["Id"] } ] }
-                },
-                "additionalProperties": false
-                }</pre>
+                <pre>
+{
+    "type": "object",
+    "properties" : {
+        "Id"                    : { "type" : ["integer", "null"] },
+        "Unidade"               : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "Inicio"                : { "type" : ["string", "null"], "format": "date" },
+        "Fim"                   : { "type" : ["string", "null"], "format": "date" },
+        "Pobreza"               : { "type" : ["boolean", "null"] },
+        "PBF"                   : { "type" : ["boolean", "null"] },
+        "DescumprePBF"          : { "type" : ["boolean", "null"] },
+        "BPC"                   : { "type" : ["boolean", "null"] },
+        "TrabalhoInfantil"      : { "type" : ["boolean", "null"] },
+        "EmAcolhimento"         : { "type" : ["boolean", "null"] },
+        "Beneficiario"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "Especialista"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "InseridoPor"           : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "AtualizadoPor"         : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "EncerradoPor"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] }
+    },
+    "additionalProperties": false
+}</pre>
                 </div>
             </div>
 
+            <h5>SharePoint</h5>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_1">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>MappedValues step (contrato)</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_1" class="box-body box-collapse collapse">
+                <pre>
+json(concat('{'
+  ,
+    if(equals(body('AppValues')?['BPC'], null), '', concat('"BPC":', toLower(string(body('AppValues')?['BPC'])), ''))
+  ,
+    if(equals(body('AppValues')?['PBF'], null), '', concat(', "PBF":', toLower(string(body('AppValues')?['PBF'])), ''))
+  ,
+    if(equals(body('AppValues')?['Pobreza'], null), '', concat(', "Pobreza":', toLower(string(body('AppValues')?['Pobreza'])), ''))
+  ,
+    if(equals(body('AppValues')?['DescumprePBF'], null), '', concat(', "DescumprePBF":', toLower(string(body('AppValues')?['DescumprePBF'])), ''))
+  ,
+    if(equals(body('AppValues')?['TrabalhoInfantil'], null), '', concat(', "TrabalhoInfantil":', toLower(string(body('AppValues')?['TrabalhoInfantil'])), ''))
+  ,
+    if(equals(body('AppValues')?['EmAcolhimento'], null), '', concat(', "EmAcolhimento":', toLower(string(body('AppValues')?['EmAcolhimento'])), ''))
+  ,
+    if(equals(body('AppValues')?['Inicio'], null), '', concat(', "Inicio":"', body('AppValues')?['Inicio'], '"'))
+  ,
+    if(equals(body('AppValues')?['Fim'], null), '', concat(', "Fim":"', body('AppValues')?['Fim'], '"'))
+  ,
+    if(equals(body('AppValues')?['Unidade'], null), '', concat(', "UnidadeId":', body('AppValues')?['Unidade']?['Id']))
+  ,
+    if(equals(body('AppValues')?['Beneficiario'], null), '', concat(', "ResponsavelFamiliarId":', body('AppValues')?['Beneficiario']?['Id']))
+  ,
+    if(equals(body('AppValues')?['Especialista'], null), '', concat(', "Especialista0Id":', body('AppValues')?['Especialista']?['Id']))
+  ,
+    if(equals(body('AppValues')?['InseridoPor'], null), '', concat(', "InseridoPor0Id":', body('AppValues')?['InseridoPor']?['Id']))
+  ,
+    if(equals(body('AppValues')?['AtualizadoPor'], null), '', concat(', "AtualizadoPor0Id":', body('AppValues')?['AtualizadoPor']?['Id']))
+  ,
+    if(equals(body('AppValues')?['EncerradoPor'], null), '', concat(', "EncerradoPor0Id":', body('AppValues')?['EncerradoPor']?['Id']))
+  ,
+  '}'
+))</pre>
+                </div>
+            </div>
+
+            <h5>PowerAutomate</h5>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_1">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>MappedData step</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_1" class="box-body box-collapse collapse">
+                <pre>
+{
+  "Id"                 : @{item()?['ID'] },
+  "Unidade"            : { "Id": @{item()?['Unidade']?['Id'] } },
+  "Inicio"             : @{item()?['Inicio'] },
+  "Fim"                : @{item()?['Fim'] },
+  "Pobreza"            : @{item()?['Pobreza'] },
+  "PBF"                : @{item()?['PBF'] },
+  "DescumprePBF"       : @{item()?['DescumprePBF'] },
+  "BPC"                : @{item()?['BPC'] },
+  "TrabalhoInfantil"   : @{item()?['TrabalhoInfantil'] },
+  "EmAcolhimento"      : @{item()?['EmAcolhimento'] },
+  "Beneficiario"       : { "Id": @{item()?['ResponsavelFamiliar']?['Id'] } },
+  "Especialista"       : { "Id": @{item()?['Especialista0']?['Id'] } },
+  "InseridoPor"        : { "Id": @{item()?['InseridoPor0']?['Id'] } },
+  "AtualizadoPor"      : { "Id": @{item()?['AtualizadoPor0']?['Id'] } },
+  "EncerradoPor"       : { "Id": @{item()?['EncerradoPor0']?['Id'] } }
+}</pre>
+                </div>
+            </div>
+
+            <h5>PowerApps</h5>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_1">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>...</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_1" class="box-body box-collapse collapse">
+                <pre>
+...</pre>
+                </div>
+            </div>
 
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
