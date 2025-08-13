@@ -217,11 +217,42 @@ json(concat('{',
                 </div>
             </div>
 
+            <p>Agora então que já discorremos sobre como as mensagens (os dados) transitam entre o <b>PowerApps</b> e o <b>PowerAutomate</b>, vamos explorar o que ocorre mais especificamente durante o processo. A próxima imagem expõe o que acontece dentro do escopo desse exemplo (serviço, <i>flow</i>, processo, ...).</p> 
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_imgScope">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>Fluxo padronizado dos serviços de acesso e manipulação de dados - Escopo</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_imgScope" class="box-body box-collapse collapse text-center">
+                    <img class="img-fluid boxedImage60"
+                        src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD scope.png" alt="">
+                </div>
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
-                dolor
-                error repellat totam assumenda excepturi sit.</p>
+            <p>Como vemos, podemos dividir o escopo de nosso serviço em três ou quatro partes distintas. Em primeiro lugar, existe uma etapa preparatória em que [1] o objeto que "chegou" do <b>PowerApps</b> é desserialiado (transformando-se novamente em um objto); [2] verificamos se a propriedade (cláusula?) <i><b>condition</b></i> está presente; e [3] nos certificamos que o <i><b>crudMode</b></i> está presente.</p>
+
+            <p>Então, se <i><b>newValues</b></i> está presente na mensagem enviada, entram em cena as ações <b>AppValues</b> e <b>MappedValues</b>, descritas acima. E após o processamente propriamente dito (após a troca de mensagens com o <b>Sharepoint</b>) - que ocorre no âmbito da ação <b>Switch</b> - a ação <b>MappedData</b> é executada e os dados são preparadas para serem enviados d volta para o <b>PowerApps</b>, caso necessário (isso é, se realmente existem dados para retornar; ao invés de mensagens de erro ou de sucessso).</p> 
+
+            <p>É então em <b>Switch</b> que a verdadeira magia acontece, conforme o caso:</p>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_imgSwitch">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>Fluxo padronizado dos serviços de acesso e manipulação de dados - Escopo</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_imgSwitch" class="box-body box-collapse collapse text-center">
+                    <img class="img-fluid boxedImage60"
+                        src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD switch.png" alt="">
+                </div>
+            </div>
+
+
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
                 distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
                 dolor
