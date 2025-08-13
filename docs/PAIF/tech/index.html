@@ -28,28 +28,65 @@
                 dolor
                 error repellat totam assumenda excepturi sit.</p>
 
-            <h4>Acompanhamentos</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
-                dolor error repellat totam assumenda excepturi sit.</p>
+            <h4>Serviços CRUD - insere, altera, deleta e recupera dados</h4>
+            <p>Todos os nossos serviços de acesso e manipulação de dados seguem o mesmo padrão, conforme imagem abaixo</p>
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_img">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                        <h6>Imagem</h6>
+                        <h6>Fluxo padronizado dos serviços CRUD</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
                 <div id="box_img" class="box-body box-collapse collapse text-center">
-                    <img class="img-fluid" style="width:50%" src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD.png" alt="">
+                    <img class="img-fluid boxedImage75" src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD.png" alt="">
                 </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
-                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
-                dolor error repellat totam assumenda excepturi sit.</p>
+            <p>Através da ação <b>AppValues</b> do <b>PowerAutomate Flow</b> garantimos que os dados recebidos do <b>PowerApps</b> estejam em conformidade com os requerimentos do caso de uso.</p>
 
-            <h5>PowerApps</h5>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_appValues">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>AppValues step (contrato PowerFlow-PowerApps - exemplo)</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_appValues" class="box-body box-collapse collapse">
+                <pre>
+{
+    "type": "object",
+    "properties" : {
+        "Id"                    : { "type" : ["integer", "null"] },
+        "Unidade"               : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "Inicio"                : { "type" : ["string", "null"], "format": "date" },
+        "Fim"                   : { "type" : ["string", "null"], "format": "date" },
+        "Pobreza"               : { "type" : ["boolean", "null"] },
+        "PBF"                   : { "type" : ["boolean", "null"] },
+        "DescumprePBF"          : { "type" : ["boolean", "null"] },
+        "BPC"                   : { "type" : ["boolean", "null"] },
+        "TrabalhoInfantil"      : { "type" : ["boolean", "null"] },
+        "EmAcolhimento"         : { "type" : ["boolean", "null"] },
+        "Beneficiario"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "Especialista"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "InseridoPor"           : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "AtualizadoPor"         : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
+        "EncerradoPor"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
+                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] }
+    },
+    "additionalProperties": false
+}</pre>
+                </div>
+            </div>
+
+            <p>O código abaixo mostra um exemplo de como o <b>PowerApps</b> adere ao contrato imposto pelo <b>PowerFlow</b>. </p>
+
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_requestIncluir">
                     <div class="box-header-left">
@@ -87,53 +124,13 @@ Acompanhamento_requestIncluir() :Text = {
                 </div>
             </div>
 
-            <h5>PowerAutomate</h5>
-            <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_appValues">
-                    <div class="box-header-left">
-                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                        <h6>AppValues step (contrato)</h6>
-                    </div>
-                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
-                </div>
-                <div id="box_appValues" class="box-body box-collapse collapse">
-                <pre>
-{
-    "type": "object",
-    "properties" : {
-        "Id"                    : { "type" : ["integer", "null"] },
-        "Unidade"               : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-        "Inicio"                : { "type" : ["string", "null"], "format": "date" },
-        "Fim"                   : { "type" : ["string", "null"], "format": "date" },
-        "Pobreza"               : { "type" : ["boolean", "null"] },
-        "PBF"                   : { "type" : ["boolean", "null"] },
-        "DescumprePBF"          : { "type" : ["boolean", "null"] },
-        "BPC"                   : { "type" : ["boolean", "null"] },
-        "TrabalhoInfantil"      : { "type" : ["boolean", "null"] },
-        "EmAcolhimento"         : { "type" : ["boolean", "null"] },
-        "Beneficiario"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-        "Especialista"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-        "InseridoPor"           : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-        "AtualizadoPor"         : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] },
-        "EncerradoPor"          : { "oneOf" : [ {"type": "null" }, {"type": "object", "properties": {
-                                    "Id" : { "type": "integer" } }, "required": ["Id"] } ] }
-    },
-    "additionalProperties": false
-}</pre>
-                </div>
-            </div>
-
-            <h5>SharePoint</h5>
+            <p>Uma vez comprovado que os dados estão em conformidade com o contrato, o <b>PowerFlow</b> faz com que os mesmos satisfaçam as especificações do <b>SharePoint</b>.</p>
+            
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_mappedValues">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
-                        <h6>MappedValues step (contrato)</h6>
+                        <h6>MappedValues step (contrato SharePoint)</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
@@ -159,7 +156,10 @@ json(concat('{',
                 </div>
             </div>
 
-            <h5>PowerAutomate</h5>
+            <p>Observe que alguns campos têm um nome diferente do original.</p>
+
+            <p>Depois que os dados retornam do <p>SharePoint</p>, o <p>PowerAutomate</p> os converte de volta para o formato <p>PowerApps</p>.</p>
+
             <div class="box">
                 <div class="box-header collapsed" data-bs-target="#box_mappedData">
                     <div class="box-header-left">
@@ -189,6 +189,8 @@ json(concat('{',
 }</pre>
                 </div>
             </div>
+
+            <p>Então, ....</p>
 
             <h5>PowerApps</h5>
             <div class="box">

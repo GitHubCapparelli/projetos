@@ -94,3 +94,9 @@ body {
     height: 22px;
     width: 22px;
 }
+
+.boxedImage75 {
+    width: 75%;
+    border: 1px solid var(color-primary-dark);
+    border-radius: 10px;
+}
