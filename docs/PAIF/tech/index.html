@@ -29,16 +29,36 @@
                 error repellat totam assumenda excepturi sit.</p>
 
             <h4>Acompanhamentos</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor error repellat totam assumenda excepturi sit.</p>
+            <div class="box">
+                <div class="box-header collapsed" data-bs-target="#box_requestIncluir">
+                    <div class="box-header-left">
+                        <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
+                        <h6>Imagem</h6>
+                    </div>
+                    <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
+                </div>
+                <div id="box_requestIncluir" class="box-body box-collapse collapse">
+                    <img src="/projetos/.shared/assets/img/sedes/paif/tech/paifAcompanhamentosCRUD.png" alt="">
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam praesentium
+                distinctio laboriosam ullam consectetur quis debitis repudiandae ea quam, quia possimus fugit dolorum
+                dolor error repellat totam assumenda excepturi sit.</p>
+
             <h5>PowerApps</h5>
             <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_2">
+                <div class="box-header collapsed" data-bs-target="#box_requestIncluir">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
                         <h6>Request incluir</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_2" class="box-body box-collapse collapse">
+                <div id="box_requestIncluir" class="box-body box-collapse collapse">
                     <pre>
 Acompanhamento_requestIncluir() :Text = { 
     With({ usuario  : LookUp(listUsuarios, Id = current_usuario.Info.Id) },
@@ -69,14 +89,14 @@ Acompanhamento_requestIncluir() :Text = {
 
             <h5>PowerAutomate</h5>
             <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_1">
+                <div class="box-header collapsed" data-bs-target="#box_appValues">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
                         <h6>AppValues step (contrato)</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_1" class="box-body box-collapse collapse">
+                <div id="box_appValues" class="box-body box-collapse collapse">
                 <pre>
 {
     "type": "object",
@@ -110,45 +130,30 @@ Acompanhamento_requestIncluir() :Text = {
 
             <h5>SharePoint</h5>
             <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_1">
+                <div class="box-header collapsed" data-bs-target="#box_mappedValues">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
                         <h6>MappedValues step (contrato)</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_1" class="box-body box-collapse collapse">
+                <div id="box_mappedValues" class="box-body box-collapse collapse">
                 <pre>
-json(concat('{'
-  ,
-    if(equals(body('AppValues')?['BPC'], null), '', concat('"BPC":', toLower(string(body('AppValues')?['BPC'])), ''))
-  ,
-    if(equals(body('AppValues')?['PBF'], null), '', concat(', "PBF":', toLower(string(body('AppValues')?['PBF'])), ''))
-  ,
-    if(equals(body('AppValues')?['Pobreza'], null), '', concat(', "Pobreza":', toLower(string(body('AppValues')?['Pobreza'])), ''))
-  ,
-    if(equals(body('AppValues')?['DescumprePBF'], null), '', concat(', "DescumprePBF":', toLower(string(body('AppValues')?['DescumprePBF'])), ''))
-  ,
-    if(equals(body('AppValues')?['TrabalhoInfantil'], null), '', concat(', "TrabalhoInfantil":', toLower(string(body('AppValues')?['TrabalhoInfantil'])), ''))
-  ,
-    if(equals(body('AppValues')?['EmAcolhimento'], null), '', concat(', "EmAcolhimento":', toLower(string(body('AppValues')?['EmAcolhimento'])), ''))
-  ,
-    if(equals(body('AppValues')?['Inicio'], null), '', concat(', "Inicio":"', body('AppValues')?['Inicio'], '"'))
-  ,
-    if(equals(body('AppValues')?['Fim'], null), '', concat(', "Fim":"', body('AppValues')?['Fim'], '"'))
-  ,
-    if(equals(body('AppValues')?['Unidade'], null), '', concat(', "UnidadeId":', body('AppValues')?['Unidade']?['Id']))
-  ,
-    if(equals(body('AppValues')?['Beneficiario'], null), '', concat(', "ResponsavelFamiliarId":', body('AppValues')?['Beneficiario']?['Id']))
-  ,
-    if(equals(body('AppValues')?['Especialista'], null), '', concat(', "Especialista0Id":', body('AppValues')?['Especialista']?['Id']))
-  ,
-    if(equals(body('AppValues')?['InseridoPor'], null), '', concat(', "InseridoPor0Id":', body('AppValues')?['InseridoPor']?['Id']))
-  ,
-    if(equals(body('AppValues')?['AtualizadoPor'], null), '', concat(', "AtualizadoPor0Id":', body('AppValues')?['AtualizadoPor']?['Id']))
-  ,
-    if(equals(body('AppValues')?['EncerradoPor'], null), '', concat(', "EncerradoPor0Id":', body('AppValues')?['EncerradoPor']?['Id']))
-  ,
+json(concat('{',
+    if(equals(body('AppValues')?['BPC'], null), '', concat('"BPC":', toLower(string(body('AppValues')?['BPC'])), '')),
+    if(equals(body('AppValues')?['PBF'], null), '', concat(', "PBF":', toLower(string(body('AppValues')?['PBF'])), '')),
+    if(equals(body('AppValues')?['Pobreza'], null), '', concat(', "Pobreza":', toLower(string(body('AppValues')?['Pobreza'])), '')),
+    if(equals(body('AppValues')?['DescumprePBF'], null), '', concat(', "DescumprePBF":', toLower(string(body('AppValues')?['DescumprePBF'])), '')),
+    if(equals(body('AppValues')?['TrabalhoInfantil'], null), '', concat(', "TrabalhoInfantil":', toLower(string(body('AppValues')?['TrabalhoInfantil'])), '')),
+    if(equals(body('AppValues')?['EmAcolhimento'], null), '', concat(', "EmAcolhimento":', toLower(string(body('AppValues')?['EmAcolhimento'])), '')),
+    if(equals(body('AppValues')?['Inicio'], null), '', concat(', "Inicio":"', body('AppValues')?['Inicio'], '"')),
+    if(equals(body('AppValues')?['Fim'], null), '', concat(', "Fim":"', body('AppValues')?['Fim'], '"')),
+    if(equals(body('AppValues')?['Unidade'], null), '', concat(', "UnidadeId":', body('AppValues')?['Unidade']?['Id'])),
+    if(equals(body('AppValues')?['Beneficiario'], null), '', concat(', "ResponsavelFamiliarId":', body('AppValues')?['Beneficiario']?['Id'])),
+    if(equals(body('AppValues')?['Especialista'], null), '', concat(', "Especialista0Id":', body('AppValues')?['Especialista']?['Id'])),
+    if(equals(body('AppValues')?['InseridoPor'], null), '', concat(', "InseridoPor0Id":', body('AppValues')?['InseridoPor']?['Id'])),
+    if(equals(body('AppValues')?['AtualizadoPor'], null), '', concat(', "AtualizadoPor0Id":', body('AppValues')?['AtualizadoPor']?['Id'])),
+    if(equals(body('AppValues')?['EncerradoPor'], null), '', concat(', "EncerradoPor0Id":', body('AppValues')?['EncerradoPor']?['Id'])),
   '}'
 ))</pre>
                 </div>
@@ -156,14 +161,14 @@ json(concat('{'
 
             <h5>PowerAutomate</h5>
             <div class="box">
-                <div class="box-header collapsed" data-bs-target="#box_1">
+                <div class="box-header collapsed" data-bs-target="#box_mappedData">
                     <div class="box-header-left">
                         <i class="box-btn toggle-btn fa-solid fa-plus" title="Mostrar / Ocultar"></i>
                         <h6>MappedData step</h6>
                     </div>
                     <i class="box-btn copy-btn fa-solid fa-clipboard" title="Copiar (Ctrl-C)"></i>
                 </div>
-                <div id="box_1" class="box-body box-collapse collapse">
+                <div id="box_mappedData" class="box-body box-collapse collapse">
                 <pre>
 {
   "Id"                 : @{item()?['ID'] },
