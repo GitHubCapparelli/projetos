@@ -97,6 +97,10 @@ div a:hover {
   font-weight: bold;
 }
 
+pre {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 /* ---------------------------------------------------------------------------------- */
 .nav-item:hover {
   color: var(--color-primary);
