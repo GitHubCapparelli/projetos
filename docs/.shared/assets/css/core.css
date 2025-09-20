@@ -496,6 +496,7 @@ p, .text-justify {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .backCrasArte {
