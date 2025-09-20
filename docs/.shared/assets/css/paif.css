@@ -15,8 +15,8 @@
 
 .carousel-item {
   height: 55vh;
-  background-size: contain;         
-  background-position: center;      
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -32,30 +32,69 @@
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_acessoRestrito.png');
 }
 
+
+/* Ajuste de texto para a legenda */
 .carousel-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 0 10px;
-  max-width: 90%;
-  text-align: center;
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    padding: 0 10px; /* Espaçamento horizontal */
+    max-width: 90%; 
+    text-align: center; 
 }
 
-/* Caption heading */
+/* Ajustando o tamanho da fonte do título e do parágrafo */
 .carousel-caption h1 {
-  font-size: 1.0rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+    font-size: 1.0rem; 
+    font-weight: 600; 
+    margin-bottom: 10px; 
 }
 
-/* Caption paragraph */
 .carousel-caption p {
-  font-size: 0.8rem;
-  opacity: 0.75;
-  margin-bottom: 20px;
+    font-size: 0.8rem; 
+    opacity: 0.75; 
+    margin-bottom: 20px; 
+}
+
+/* Botão */
+.carousel-caption a {
+    font-size: 0.9rem; 
+    padding: 10px 20px; 
+    background-color: rgba(121, 121, 121, 0.4); 
+    border-radius: 5px; 
+    color: white; 
+    text-decoration: none; 
+    border: none; 
+    backdrop-filter: blur(8px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+/* Alteração no efeito de hover */
+.carousel-caption a:hover {
+    background-color: var(--color-primary); 
+    backdrop-filter: blur(12px); 
+}
+
+/* Ajuste nos ícones de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;  
+  height: 30px; 
+  background-color: transparent; 
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  font-size: 0.5rem; 
+  color: var(--color-primary-dark); 
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(25, 0, 0, 0.8); 
 }
 
 @media (max-width: 768px) {
