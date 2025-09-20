@@ -15,8 +15,8 @@
 
 .carousel-item {
   height: 55vh;
-  background-size: cover;           /* Cover entire area */
-  background-position: center;      /* Center the image */
+  background-size: contain;         
+  background-position: center;      
   background-repeat: no-repeat;
   position: relative;
 }
