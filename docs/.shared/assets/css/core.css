@@ -694,12 +694,12 @@ body.panel-open .footer {
   width: calc(100% - var(--navPanel-width) - var(--sidebarButtons-width));
 }
 
-
+/*
 body.panel-open .parallax-section-100 {
   background-position: right center;
   background-size: contain;
 }
-
+*/
 
 .btn-hide {
   background: transparent;
