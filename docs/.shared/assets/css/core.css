@@ -686,7 +686,6 @@ p, .text-justify {
 
 /* ---------------------------------------------------------------------------------- */
 /* Adjusts with sidebar and panel */
-body.panel-open .parallax-section-100,
 body.panel-open .stickHeader,
 body.panel-open .header,
 body.panel-open .pageContent,
@@ -694,6 +693,11 @@ body.panel-open .footer {
   margin-left: calc(var(--sidebarButtons-width) + var(--navPanel-width));
   width: calc(100% - var(--navPanel-width) - var(--sidebarButtons-width));
 }
+
+body.panel-open .parallax-section-100 {
+  width: 100%;
+}
+
 
 .btn-hide {
   background: transparent;
