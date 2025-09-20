@@ -83,6 +83,11 @@
 }
 
 /* Ajuste nos ícones de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%; 
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   width: 30px;  
