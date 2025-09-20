@@ -694,9 +694,9 @@ body.panel-open .footer {
   width: calc(100% - var(--navPanel-width) - var(--sidebarButtons-width));
 }
 
+
 body.panel-open .parallax-section-100 {
-  margin-left: var(--sidebarButtons-width);
-  width: calc(100% - var(--sidebarButtons-width));
+  background-position: calc(100% - 2rem) center;
 }
 
 
