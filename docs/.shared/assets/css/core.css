@@ -463,6 +463,7 @@ p, .text-justify {
   color:var(--color-primary-dark);
   border-radius: 10px;
 }
+
 .paralaxSectionContent {
   width: 100%;
   padding: 1rem;
@@ -477,6 +478,15 @@ p, .text-justify {
   box-sizing: border-box;
 }
 
+.paralaxSectionNoContent {
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem;
+  height: calc(100vh - var(--topBars-height) - 4rem);
+  position: relative;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
 .paralaxSectionInner {
   height: 100%;
   overflow-y: auto;
