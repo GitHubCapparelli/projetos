@@ -483,6 +483,7 @@ p, .text-justify {
   padding: 1rem;
   margin: 2rem;
   height: calc(100vh - var(--topBars-height) - 4rem);
+  border-radius: 10px;
   position: relative;
   padding-right: 10px;
   box-sizing: border-box;
