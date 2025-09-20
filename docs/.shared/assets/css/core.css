@@ -480,11 +480,8 @@ p, .text-justify {
 
 .paralaxSectionNoContent {
   width: 100%;
-  padding: 1rem;
-  margin: 2rem;
   height: calc(100vh - var(--topBars-height) - 4rem);
   position: relative;
-  padding-right: 10px;
   box-sizing: border-box;
 }
 .paralaxSectionInner {
