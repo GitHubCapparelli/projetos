@@ -695,7 +695,8 @@ body.panel-open .footer {
 }
 
 body.panel-open .parallax-section-100 {
-  width: 100%;
+  margin-left: var(--sidebarButtons-width);
+  width: calc(100% - var(--sidebarButtons-width));
 }
 
 
