@@ -29,20 +29,20 @@
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_especialistas.png');
 }
 .bg-slide-gestor {
-  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_gestores.png');
 }
 .bg-slide-sedesEspecialista {
-  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesEspecialista.png');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesComoEspecialista.png');
 }
 .bg-slide-sedesGestor {
-  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesGestor.png');
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesComoGestor.png');
 }
 
 
 /* Ajuste de texto para a legenda */
 .carousel-caption {
     position: absolute;
-    bottom: 50px; 
+    bottom: 30px; 
     left: 50%;
     display:flex;
     flex-direction: column;
