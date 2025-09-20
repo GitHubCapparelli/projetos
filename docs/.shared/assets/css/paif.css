@@ -15,14 +15,13 @@
 
 .carousel-item {
     width: 100%; 
-    height: 55vh; 
+    height: auto; 
     object-fit: cover;
 }
 
 .carousel-item img {
     width: 100%; 
-    height: 55vh; 
-    object-fit: cover;
+    height: auto; 
 }
 
 /* Ajuste de texto para a legenda */
