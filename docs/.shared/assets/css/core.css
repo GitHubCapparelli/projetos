@@ -483,7 +483,6 @@ p, .text-justify {
   padding: 1rem;
   margin: 2rem;
   height: calc(100vh - var(--topBars-height) - 4rem);
-  border-radius: 50px;
   position: relative;
   padding-right: 10px;
   box-sizing: border-box;
@@ -508,6 +507,7 @@ p, .text-justify {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 10px;
 }
 
 .backCrasArte {
