@@ -464,7 +464,7 @@ p, .text-justify {
   border-radius: 10px;
 }
 .paralaxSectionContent {
-  max-width: 100%;
+  width: 100%;
   padding: 1rem;
   margin: 2rem;
   height: calc(100vh - var(--topBars-height) - 4rem);
@@ -494,7 +494,6 @@ p, .text-justify {
 
 .backPaifTelaAcompanhamentos {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
-  width: 100%;
 }
 
 .backCrasArte {
