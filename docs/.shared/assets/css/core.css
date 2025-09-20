@@ -696,7 +696,8 @@ body.panel-open .footer {
 
 
 body.panel-open .parallax-section-100 {
-  background-position: calc(100% - 2rem) center;
+  background-position: right center;
+  background-size: contain;
 }
 
 
