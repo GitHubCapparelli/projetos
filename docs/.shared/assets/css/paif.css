@@ -9,80 +9,85 @@
   --footer-height: 250px;
 }
 
+.carousel {
+    width: 100%; 
+    height: 80vh; 
+    margin-top: 20px;
+}
 .carousel-item {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do carrossel */
-    height: 100vh; /* Ajuste a altura do carrossel */
-    object-fit: cover; /* Mantém a imagem sem distorção */
+    width: 100%; 
+    height: 100vh;
+    object-fit: cover;
 }
 
 .carousel-item img {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do carrossel */
-    height: 100%; /* Ajusta a altura da imagem ao tamanho do item */
-    object-fit: cover; /* Mantém a imagem sem distorção */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Ajuste de texto para a legenda */
 .carousel-caption {
     position: absolute;
-    bottom: 20px; /* Distância do fundo */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
-    color: white; /* Cor do texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para melhor legibilidade */
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     padding: 0 10px; /* Espaçamento horizontal */
-    max-width: 90%; /* Limita a largura máxima do texto */
-    text-align: center; /* Alinha o texto ao centro */
+    max-width: 90%; 
+    text-align: center; 
 }
 
 /* Ajustando o tamanho da fonte do título e do parágrafo */
 .carousel-caption h1 {
-    font-size: 1.0rem; /* Ajuste o tamanho conforme necessário */
-    font-weight: 600; /* Deixa o título em negrito */
-    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-size: 1.0rem; 
+    font-weight: 600; 
+    margin-bottom: 10px; 
 }
 
 .carousel-caption p {
-    font-size: 0.8rem; /* Ajuste o tamanho conforme necessário */
-    opacity: 0.75; /* Opacidade do texto */
-    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+    font-size: 0.8rem; 
+    opacity: 0.75; 
+    margin-bottom: 20px; 
 }
 
 /* Botão */
 .carousel-caption a {
-    font-size: 0.9rem; /* Tamanho do texto do botão */
-    padding: 10px 20px; /* Ajusta o tamanho do botão */
-    background-color: rgba(121, 121, 121, 0.4); /* Cor de fundo com transparência */
-    border-radius: 5px; /* Bordas arredondadas */
-    color: white; /* Cor do texto do botão */
-    text-decoration: none; /* Remove o sublinhado */
-    border: none; /* Remove a borda */
-    backdrop-filter: blur(8px); /* Efeito de desfoque no fundo do botão */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave para um efeito flutuante */
+    font-size: 0.9rem; 
+    padding: 10px 20px; 
+    background-color: rgba(121, 121, 121, 0.4); 
+    border-radius: 5px; 
+    color: white; 
+    text-decoration: none; 
+    border: none; 
+    backdrop-filter: blur(8px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 /* Alteração no efeito de hover */
 .carousel-caption a:hover {
-    background-color: #79797999; /* Cor do botão mais intensa quando em hover */
-    backdrop-filter: blur(12px); /* Aumenta o desfoque no hover */
+    background-color: #79797999; 
+    backdrop-filter: blur(12px); 
 }
 
 /* Ajuste nos ícones de navegação */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 30px;  /* Largura do ícone */
-  height: 30px; /* Altura do ícone */
-  background-color: transparent; /* Remove o fundo */
+  width: 30px;  
+  height: 30px; 
+  background-color: transparent; 
 }
 
 .carousel-control-prev-icon i,
 .carousel-control-next-icon i {
-  font-size: 0.5rem; /* Tamanho do ícone */
-  color: white; /* Cor do ícone */
+  font-size: 0.5rem; 
+  color: white; 
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: rgba(25, 0, 0, 0.8); /* Fundo mais escuro ao passar o mouse */
+  background-color: rgba(25, 0, 0, 0.8); 
 }
 
 /* Exemplo de imagem de fundo em CSS (local):
