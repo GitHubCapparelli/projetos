@@ -494,7 +494,7 @@ p, .text-justify {
 
 .backPaifTelaAcompanhamentos {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
-  background-size: fill;
+  background-size: contain;
 }
 
 .backCrasArte {
