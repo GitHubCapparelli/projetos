@@ -43,7 +43,7 @@
     justify-content: center;
     align-items: center;
     transform: translateX(-50%);
-    color: var(--color-primary); 
+    color: #333; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     padding: 0 10px; /* Espaçamento horizontal */
     max-width: 90%; 
@@ -80,6 +80,12 @@
 .carousel-caption a:hover {
     background-color: var(--color-primary); 
     backdrop-filter: blur(12px); 
+}
+
+.carousel-indicators {
+  position: static;     /* Detach from absolute positioning */
+  margin-top: 10px;
+  justify-content: center;
 }
 
 /* Ajuste nos ícones de navegação */
