@@ -19,16 +19,18 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  border: 1px solid #444;
+  border-radius: 10px;
 }
 
 /* Specific background images */
-.bg-slide-1 {
+.bg-slide-gestor {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
 }
-.bg-slide-2 {
+.bg-slide-especialista {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_especialistas.png');
 }
-.bg-slide-3 {
+.bg-slide-semAcesso {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_acessoRestrito.png');
 }
 
