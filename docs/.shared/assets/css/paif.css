@@ -15,14 +15,17 @@
 
 .carousel-item {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
   height: 55vh;
 }
 
 .carousel-item img {
-  width: auto; 
-  height: 55vh; 
+  max-height: 55vh;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Ajuste de texto para a legenda */
