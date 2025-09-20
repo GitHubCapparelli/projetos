@@ -486,8 +486,6 @@ p, .text-justify {
   position: relative;
   padding-right: 10px;
   box-sizing: border-box;
-  border-radius: 10px;
-  background-color: #FFF;
 }
 .paralaxSectionInner {
   height: 100%;
@@ -686,6 +684,7 @@ p, .text-justify {
 /* ---------------------------------------------------------------------------------- */
 /* Adjusts with sidebar and panel */
 body.panel-open .stickHeader,
+body.panel-open .stickyTop,
 body.panel-open .header,
 body.panel-open .pageContent,
 body.panel-open .footer {
