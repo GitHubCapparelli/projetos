@@ -22,14 +22,20 @@
 }
 
 /* Specific background images */
-.bg-slide-gestor {
-  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
+.bg-slide-semAcesso {
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_acessoRestrito.png');
 }
 .bg-slide-especialista {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_especialistas.png');
 }
-.bg-slide-semAcesso {
-  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_acessoRestrito.png');
+.bg-slide-gestor {
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
+}
+.bg-slide-sedesEspecialista {
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesEspecialista.png');
+}
+.bg-slide-sedesGestor {
+  background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesGestor.png');
 }
 
 
@@ -109,7 +115,7 @@
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: rgba(25, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
 @media (max-width: 768px) {
