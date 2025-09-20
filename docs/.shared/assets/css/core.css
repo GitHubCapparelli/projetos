@@ -442,6 +442,7 @@ p, .text-justify {
 /*  */
 .parallax-section {
   position: relative;
+  width: 100%;
   height: calc(100vh - var(--topBars-height));
   background-attachment: fixed;
   background-position: center center;
@@ -693,13 +694,6 @@ body.panel-open .footer {
   margin-left: calc(var(--sidebarButtons-width) + var(--navPanel-width));
   width: calc(100% - var(--navPanel-width) - var(--sidebarButtons-width));
 }
-
-/*
-body.panel-open .parallax-section-100 {
-  background-position: right center;
-  background-size: contain;
-}
-*/
 
 .btn-hide {
   background: transparent;
