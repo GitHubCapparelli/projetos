@@ -14,7 +14,7 @@
 }
 
 .carousel-item {
-  height: 55vh;
+  height: 52vh;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,11 +38,17 @@
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesComoGestor.png');
 }
 
+.btn-xm {
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  line-height: 1.2;
+  border-radius: 3px;
+}
 
 /* Ajuste de texto para a legenda */
 .carousel-caption {
     position: absolute;
-    bottom: 30px; 
+    bottom: 60px; 
     left: 50%;
     display:flex;
     flex-direction: column;
