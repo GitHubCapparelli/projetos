@@ -454,23 +454,6 @@ p, .text-justify {
   overflow: hidden;
 }
 
-.parallax-section-100 {
-  position: relative;
-  height: calc(100vh - var(--topBars-height));
-  background-attachment: fixed;
-  background-position: calc(100% - 2rem) center;
-  background-repeat: no-repeat;
-  background-size: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  gap: 10px;
-  padding: 2rem;
-}
-
 .parallaxSectionA p {
   font-size: 20px;
   font-weight: bold;
@@ -511,6 +494,7 @@ p, .text-justify {
 
 .backPaifTelaAcompanhamentos {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
+  width: 100%;
 }
 
 .backCrasArte {
