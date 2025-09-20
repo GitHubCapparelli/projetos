@@ -79,7 +79,7 @@
 .carousel-caption a {
     font-size: 0.65rem; 
     padding: 3px 8px; 
-    /* background-color: rgba(121, 121, 121, 0.4);  */
+    background-color: transparent; 
     border-radius: 3px; 
     color: white; 
     text-decoration: none; 
