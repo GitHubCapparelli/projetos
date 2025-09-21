@@ -557,6 +557,30 @@ p, .text-justify {
   background-color: transparent;
 }
 
+.parallax-section {
+  min-height: calc(100vh - var(--topBars-height));
+  height: auto;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: visible; /* was hidden */
+}
+
+.paralaxSectionContent,
+.paralaxSectionNoContent {
+  min-height: calc(100vh - var(--topBars-height) - 4rem);
+  height: auto;
+}
+
+.paralaxSectionInner {
+  height: auto;
+  overflow: visible;
+}
+
 /* ---------------------------------------------------------------------------------- */
 /* Footer */
 .footer {
