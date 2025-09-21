@@ -469,6 +469,9 @@ p, .text-justify {
   background-color: var(--color-parallax-back);
   box-shadow: 0px 8px 20px var(--color-shadow);
 }
+.paralaxSectionNoContent {
+  box-shadow: none;
+}
 
 /* Section Headings */
 .paralaxSectionContent h1,
