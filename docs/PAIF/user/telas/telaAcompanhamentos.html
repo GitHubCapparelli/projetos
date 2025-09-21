@@ -17,21 +17,20 @@
 
     <div id="pageContent" class="pageContent js-only">
         <div class="parallax-section">
-            <div class="paralaxSectionNoContent backPaifTelaAcompanhamentos">
-            </div>
+            <div class="paralaxSectionNoContent backPaifTelaAcompanhamentos"></div>
         </div>
         <div id="divObjetivos" class="parallax-section backCrasArte">
             <div class="paralaxSectionContent">
                 <p class="tags"><span class="tag">Objetivos</span><span class="tag">Justificativas</span><span
                         class="tag">Atribuições</span></p>
                 <h1 class="mb-0 mt-0">A que se destina ?</h1>
-                <p>Essa tela inicial (principal) funciona como ponto de entrada de diversos tipos de usuários às funcionalidades disponibilizadas pelo "sistema", de acordo com as suas respectivas atribuições e responsabilidades (níveis/permissões de acesso).</p>
-                <p>A tela disponibiliza dados de atendimentos familiares realizados pelos Especialistas (Assistente Social, Psicologo, Pedagogo, etc.) das unidades de atendimento (equipamento).</p>
-                <h4 class="mt-5">Notas:</h4>
+                <p>Essa tela inicial serve como ponto de entrada principal a todas as funcionalidades disponibilizadas para diversos tipos de usuários (audiência), de acordo com as suas respectivas atribuições e responsabilidades (níveis ou permissões de acesso).</p>
+                <p>Através da mesma é possivel consultar os dados de atendimentos familiares realizados pelos Especialistas (Assistente Social, Psicologo, Pedagogo, etc.) das unidades de atendimento <a class="tip note" noteKey="termoCRAS" tip="Mais...">CRAS</a>.</p>
+                <h4 class="mt-4">Notas:</h4>
                 <ul>
-                    <li>Os dados agrupados por mês e por unidade organizacional.</li>
+                    <li>Os dados são agrupados por mês e por unidade organizacional.</li>
                     <li>A Usuários sem permissão de acesso é apresentada apenas uma mensagem no centro da tela</li>
-                    <li>Todas as outras telas disponibilizam acesso (retorno) a esta tela inicial, a partir da qual todas as funcionalidades da solução podem ser acessadas (de acordo com as permissões do usuário logado)</li>
+                    <li>Todas as outras telas disponibilizam acesso (retorno) a esta tela principal, a partir da qual todas as funcionalidades da solução podem ser acessadas (de acordo com as permissões do usuário logado)</li>
                 </ul>
             </div>
         </div>
@@ -44,19 +43,19 @@
                 <p>Confira as responsabilidades e funcionalidades disponibilizadas nessa tela, por perfil de usuário</p>
                 <table>
                     <tr>
-                        <td id="tdEspecialistas" class="align-top fw-bold">Especialistas <a class="tip note" noteKey="termoCRAS" tip="Mais...">CRAS</a></td>
+                        <td id="tdEspecialistas" class="align-top fw-bold">Especialistas</td>
                         <td>
                             <ul>
-                                <li>Consulta e conferencia dos dados de atendimentos sob sua responsabilidade</li>
+                                <li>Consulta e conferência dos dados de atendimentos sob sua responsabilidade</li>
                                 <li>Insersão de novos dados de atendimentos</li>
                                 <li>Alteração / atualização de dados previamente cadastrados</li>
                                 <li>Validação mensal de seus próprios dados de atendimentos</li>
-                                <li>Podem atuar como Gestor por um determinado período (desde que previamente autorizados)</li>
                             </ul>
+                            <p>Podem atuar como Gestor por um determinado período (desde que previamente autorizados)</p>
                         </td>
                     </tr>
                     <tr>
-                        <td id="tdGestores" class="align-top fw-bold">Gestores <a class="tip note" noteKey="termoCRAS" tip="Mais...">CRAS</a></td>
+                        <td id="tdGestores" class="align-top fw-bold">Gestores</td>
                         <td>
                             <ul>
                                 <li>Consulta aos dados de atendimento de sua unidade</li>
@@ -64,16 +63,14 @@
                                 <li>Supervisão das validações mensais registradas (ou não) pelos Especialistas de sua unidade</li>
                                 <li>Registro e envio do Relatório Mensal de Atividades (RMA) à GERVIS</li>
                                 <li>Consulta à lista consolidada de RMAs enviados ao <a class="tip note" noteKey="termoMDS" tip="Mais...">MDS</a> pela GERVIS</li>
-                                <li>Podem atuar como Especialista</li>
                             </ul>
+                            <p>Podem atuar como Especialista</p>
                         </td>
                     </tr>
                     <tr>
-                        <td id="tdServidores" class="align-top fw-bold">Servidores <a class="tip note" noteKey="termoCRAS" tip="Mais...">CRAS</a></td>
+                        <td id="tdServidores" class="align-top fw-bold">Servidores</td>
                         <td>
-                            <ul>
-                                <li>Podem atuar como Gestor por um determinado período (desde que previamente autorizados)</li>
-                            </ul>
+                            <p>Podem atuar como Gestor por um determinado período (desde que previamente autorizados)</p>
                         </td>
                     </tr>
                     <tr>
@@ -85,8 +82,8 @@
                                 <li>Consulta às validações mensais</li>
                                 <li>Consulta aos Relatórios Mensais de Atividades (RMA)</li>
                                 <li>Consulta aos RMAs enviados ao MDS</li>
-                                <li><b>Não</b> podem atuar como Especialista ou como Gestor</li>
                             </ul>
+                            <p><b>Não</b> podem atuar nem como Especialista nem como Gestor</p>
                         </td>
                     </tr>
                 </table>
@@ -104,8 +101,8 @@
                         <div class="carousel-item active bg-slide-semAcesso">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h1>Acesso Restrito</h1>
-                                    <p class="opacity-75">Usuário sem permissão de acesso</p>
+                                    <h1>Usuários sem permissão de acesso</h1>
+                                    <p class="opacity-75">Não acessam nenhuma das funcionalidades</p>
                                     <p><a class="btn btn-x btn-primary" href="#divObjetivos">Confira</a></p>
                                 </div>
                             </div>
@@ -115,7 +112,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Especialistas</h1>
-                                    <p>Visão do Especialista da unidade</p>
+                                    <p>Têm funções específicas, facilmente acessíves</p>
                                     <p><a class="btn btn-primary btn-xm" href="#divUsuarios">Confira</a></p>
                                 </div>
                             </div>
@@ -125,7 +122,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Gestores</h1>
-                                    <p>Funcionalidades do Gestor da unidade</p>
+                                    <p>Têm funções específicas, facilmente acessíves</p>
                                     <p><a class="btn btn-primary btn-xm" href="#tdEspecialistas">Confira</a></p>
                                 </div>
                             </div>
@@ -135,7 +132,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>GERVIS, Direção e Coordenação, como Gestor</h1>
-                                    <p>Consulta e acesso a outras telas</p>
+                                    <p>Supervisionam o estado geral das informações</p>
                                     <p><a class="btn btn-primary btn-xm" href="#tdGestores">Confira</a></p>
                                 </div>
                             </div>
@@ -145,7 +142,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>GERVIS, Direção e Coordenação, como Especialista</h1>
-                                    <p>Consulta e acesso a outras telas</p>
+                                    <p>Supervisionam o estado de informações mais específicas</p>
                                     <p><a class="btn btn-primary btn-xm" href="#tdGestores">Confira</a></p>
                                 </div>
                             </div>
