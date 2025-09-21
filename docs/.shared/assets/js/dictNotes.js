@@ -2,15 +2,15 @@ export const noteTitle = {
   subsasUnidadesGestao: 'SUBSAS - Unidades funcionais',
   sedesOrgaos: 'SEDES - Órgãos',
   clientesUsuarios: 'Dicionário de termos',
-  termoMDS: 'MDS',
-  termoCRAS: 'CRAS'
+  termoMDS: 'Dicionário de termos',
+  termoCRAS: 'Dicionário de termos'
 };
 
 export const noteHTML = {
   termoCRAS: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
   <h6>CRAS</h6>
-  <p class="mb-1">Ou, mais especificamente, <b>Centro de Referência da Assistência Social</b>, do governo estadual.</p>
-  <p class="mb-1">unidade pública estatal responsável pela organização e oferta de serviços da proteção social básica do Sistema Único de Assistência Social (SUAS) nas áreas de vulnerabilidade e risco social dos municípios e DF.</p>
+  <p class="mb-1"><b>Centro de Referência da Assistência Social</b>, do governo estadual.</p>
+  <p class="mb-1">Unidade pública estatal responsável pela organização e oferta de serviços da proteção social básica do Sistema Único de Assistência Social (SUAS) nas áreas de vulnerabilidade e risco social dos municípios e DF.</p>
   <p class="mb-1">Dada sua capilaridade nos territórios, se caracteriza como o primeiro contato das famílias com o SUAS, ou seja, é uma unidade que possibilita o acesso de muitas famílias à rede de proteção social de assistência social.</p>
   <p class="mb-1"></p>
   <p class="mb-1"></p>
@@ -18,8 +18,8 @@ export const noteHTML = {
   <div class="fn-1"><p class="mt-0 mb-0">Fonte: <a target="_blank" href="https://www.gov.br/pt-br/servicos/acessar-o-cras-centro-de-referencia-da-assistencia-social">link</a></p></div></div>`,
 
   termoMDS: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
-  <h6>Ministério do Desenvolvimento Social</h6>
-  <p class="mb-1">Ou, mais especificamente, <b>Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome</b> do governo federal.</p>
+  <h6>MDS</h6>
+  <p class="mb-1">Ministério do Desenvolvimento Social. Ou melhor, <b>Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome</b>, do governo federal.</p>
   </div>
   <div class="fn-1"><p class="mt-0 mb-0">Fonte: <a target="_blank" href="https://www.gov.br/mds/pt-br">link</a></p></div></div>`,
 
@@ -39,17 +39,16 @@ export const noteHTML = {
 
   subsasUnidadesGestao: `<div class="d-flex flex-column justify-content-between h-100"><div class="tx-ss"><p class="mt-0 mb-0">A <b>SUBSAS</b> (Subsecretaria de Assistência Social) conta atualmente* com as seguintes unidades de gestão:</p>
   <ul class="ms-0 ps-3 mb-0">
-    <li><b>CPSB</b> Coordenação de Proteção Social Básica</li>
-    <li><b>CPSM</b> Coordenação de Proteção Social Especial de Média Complexidade</li>
-    <li><b>CPSB</b> Coordenação de Proteção Social Básica</li>
-    <li><b>CPSA</b> Coordenação de Proteção Social Especial de Alta Complexidade</li>
+    <li><b>CPSB</b> Coordenação de Proteção Social Básica (unidades CRAS, inclusive)</li>
+    <li><b>CPSM</b> Coordenação de Proteção Social Especial de Média Complexidade (unidades CREAS, inclusive)</li>
+    <li><b>CPSA</b> Coordenação de Proteção Social Especial de Alta Complexidade (unidades de acolhimento, inclusive)</li>
     <li><b>CTRAR</b> Coordenação de Gestão de Transferência de Renda e Cadastro Único</li>
     <li><b>UNIBS</b> Unidade de Benefícios Socioassistenciais</li>
     <li><b>UNIPAR</b> Unidade de Parcerias com as OSC [Organização da Sociedade civil, terceirização de serviços]</li>
     <li><b>GERVIS</b> Gerência de Vigilância Socioassistencial</li>
   </ul>
   </div>
-  <div class="fn-1"><p class="mt-0 mb-0">* Agosto 2025 | Mais em <a href="#" target="_blank">link</a></p></div></div>`,
+  <div class="fn-1"><p class="mt-0 mb-0">* Agosto 2025 | Mais em <a target="_blank">link</a></p></div></div>`,
 
   sedesOrgaos: `<div class="d-flex flex-column justify-content-between h-100"><div class="tx-ss"><p class="mt-0 mb-0">O gabinete da <b>SEDES</b> (Secretaria de Estado de Desenvolvimento Social) do <b>GDF</b> conta atualmente* com as seguintes unidades administrativas:</p>
   <ul class="ms-0 ps-3 mb-0">

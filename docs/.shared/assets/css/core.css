@@ -296,7 +296,7 @@ p, .text-justify {
 
 .note {
   text-decoration: wavy;
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   font-weight: bold;
   font-style: italic;
   cursor: pointer;
