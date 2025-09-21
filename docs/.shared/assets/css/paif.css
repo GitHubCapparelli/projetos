@@ -38,6 +38,11 @@
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs_sedesComoGestor.png');
 }
 
+.popupValidacao {
+  width: 200px; 
+  height: 200px; 
+}
+
 /* Ajuste de texto para a legenda */
 .carousel-caption {
     position: absolute;
