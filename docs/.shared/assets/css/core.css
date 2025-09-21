@@ -809,7 +809,7 @@ body.panel-open .footer {
 .cardsV .cardH:nth-child(even) {
   flex-direction: row-reverse;
 }
-.cardsV .cardH:nth-child(even) .cardH-LB {
+.cardsV .cardH:nth-child(even) .cardH-B {
   align-self: flex-start;
 }
 
