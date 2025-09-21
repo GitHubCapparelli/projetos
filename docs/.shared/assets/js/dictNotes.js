@@ -1,10 +1,29 @@
 export const noteTitle = {
   subsasUnidadesGestao: 'SUBSAS - Unidades funcionais',
   sedesOrgaos: 'SEDES - Órgãos',
-  clientesUsuarios: 'Dicionário de termos'
+  clientesUsuarios: 'Dicionário de termos',
+  termoMDS: 'MDS',
+  termoCRAS: 'CRAS'
 };
 
 export const noteHTML = {
+  termoCRAS: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
+  <h5>CRAS</h5>
+  <p class="mb-1">Ou, mais especificamente, <b>Centro de Referência da Assistência Social</b>, do governo estadual.</p>
+  <p class="mb-1">unidade pública estatal responsável pela organização e oferta de serviços da proteção social básica do Sistema Único de Assistência Social (SUAS) nas áreas de vulnerabilidade e risco social dos municípios e DF.</p>
+  <p class="mb-1">Dada sua capilaridade nos territórios, se caracteriza como o primeiro contato das famílias com o SUAS, ou seja, é uma unidade que possibilita o acesso de muitas famílias à rede de proteção social de assistência social.</p>
+  <p class="mb-1"></p>
+  <p class="mb-1"></p>
+  </div>
+  <div class="fn-1"><p class="mt-0 mb-0">Fonte: <a href="https://www.gov.br/pt-br/servicos/acessar-o-cras-centro-de-referencia-da-assistencia-social">link</a></p></div></div>`,
+
+  termoMDS: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
+  <h5>Ministério do Desenvolvimento Social</h5>
+  <p class="mb-1">Ou, mais especificamente, <b>Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome</b> do governo federal.</p>
+ 
+  </div>
+  <div class="fn-1"><p class="mt-0 mb-0">Fonte: <a href="https://www.gov.br/mds/pt-br">link</a></p></div></div>`,
+
   clientesUsuarios: `<div class="d-flex flex-column justify-content-between h-100 small"><div class="tx-ss">
   <p class="mb-1"><b>Cliente:</b> Pessoa, empresa ou organização que adquire ou contrata um produto, sistema ou serviço.</p>
   <p class="mb-1">Define os requisitos, financia o desenvolvimento e detém os direitos contratuais sobre o que está sendo entregue.</p>
