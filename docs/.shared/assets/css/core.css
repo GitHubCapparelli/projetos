@@ -439,69 +439,63 @@ p, .text-justify {
 }
 
 /* ---------------------------------------------------------------------------------- */
-/*  */
+/* Parallax Section Container */
 .parallax-section {
   position: relative;
   width: 100%;
-  height: calc(100vh - var(--topBars-height));
+  min-height: calc(100vh - var(--topBars-height));
+  height: auto;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: stretch;
   justify-content: center;
-  overflow: hidden;
+  align-items: stretch;
+  overflow: visible;
 }
 
+/* Section Content */
+.paralaxSectionContent,
+.paralaxSectionNoContent {
+  width: 100%;
+  min-height: calc(100vh - var(--topBars-height) - 4rem);
+  height: auto;
+  margin: 2rem;
+  padding: 1rem 10px 1rem 1rem;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  background-color: var(--color-parallax-back);
+  box-shadow: 0px 8px 20px var(--color-shadow);
+}
+
+/* Inner Content Wrapper */
+.paralaxSectionInner {
+  height: auto;
+  overflow: visible;
+}
+
+/* Section Headings */
+.paralaxSectionContent h1,
+.paralaxSectionContent h2,
+.paralaxSectionContent h3 {
+  margin: 0;
+  color: var(--color-primary-dark);
+}
+
+/* Example Styling for Text Blocks */
 .parallaxSectionA p {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   padding: 0 2rem;
   background-color: var(--color-parallax-back);
-  color:var(--color-primary-dark);
-  border-radius: 10px;
-}
-
-.paralaxSectionContent {
-  width: 100%;
-  padding: 1rem;
-  margin: 2rem;
-  height: calc(100vh - var(--topBars-height) - 4rem);
-  background-color: var(--color-parallax-back);
-  box-shadow: 0px 8px 20px var(--color-shadow);
-  border-radius: 10px;
-  overflow: clip; 
-  position: relative;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-
-.paralaxSectionNoContent {
-  width: 100%;
-  padding: 1rem;
-  margin: 2rem;
-  height: calc(100vh - var(--topBars-height) - 4rem);
-  position: relative;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-.paralaxSectionInner {
-  height: 100%;
-  overflow-y: auto;
-  padding-right: 1rem; 
-  border-radius: inherit; 
-  overflow-x: hidden;
-}
-
-.paralaxSectionContent h1,
-.paralaxSectionContent h2,
-.paralaxSectionContent h3 {
-  margin: 0px;
   color: var(--color-primary-dark);
+  border-radius: 10px;
 }
 
+/* Background Images */
 .backPaifTelaAcompanhamentos {
   background-image: url('/projetos/.shared/assets/img/sedes/paif/telas/telaAs.png');
   background-size: contain;
@@ -529,56 +523,24 @@ p, .text-justify {
   background-image: url('/projetos/.shared/assets/img/sedes/sedes-fachada.avif');
 }
 
-/* ::-webkit-scrollbar {
-  width: 10px;
-  display: block;
-} */
-
-/* Hide scrollbar arrows (buttons) — Chrome, Edge, Safari */
-.paralaxSectionInner::-webkit-scrollbar-button {
-  display: none;
-  height: 0;
-  width: 0;
-}
-
-/* Optional: Make scrollbar thinner */
+/* Scrollbar Styling (Optional, Keep if needed) */
 .paralaxSectionInner::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Optional: Customize scrollbar thumb */
 .paralaxSectionInner::-webkit-scrollbar-thumb {
   background-color: var(--color-primary);
   border-radius: 10px;
 }
 
-/* Optional: Customize scrollbar track */
 .paralaxSectionInner::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-.parallax-section {
-  min-height: calc(100vh - var(--topBars-height));
-  height: auto;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  overflow: visible; /* was hidden */
-}
-
-.paralaxSectionContent,
-.paralaxSectionNoContent {
-  min-height: calc(100vh - var(--topBars-height) - 4rem);
-  height: auto;
-}
-
-.paralaxSectionInner {
-  height: auto;
-  overflow: visible;
+.paralaxSectionInner::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 /* ---------------------------------------------------------------------------------- */
