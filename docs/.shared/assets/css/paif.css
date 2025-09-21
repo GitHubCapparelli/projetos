@@ -57,8 +57,9 @@
     color: #333; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     padding: 0 10px; /* Espaçamento horizontal */
-    max-width: 90%; 
+    width: 90%; 
     text-align: center; 
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
 /* Ajustando o tamanho da fonte do título e do parágrafo */
@@ -93,7 +94,9 @@
 /* Alteração no efeito de hover */
 .carousel-caption a:hover,
 .carousel-caption a:active {
-  background-color: rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white; 
+    border: none; 
 }
 
 /* Ajuste nos ícones de navegação */
