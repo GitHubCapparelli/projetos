@@ -47,19 +47,18 @@
 /* Ajuste de texto para a legenda */
 .carousel-caption {
     position: absolute;
-    bottom: 60px; 
-    left: 50%;
+    top: 0px; 
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(-50%);
+    transform: translateX(50%, 50%);
     color: #333; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    padding: 0 10px; /* Espaçamento horizontal */
-    width: 90%; 
+    padding: 10px;
+    min-width: 50%; 
     text-align: center; 
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
 }
 
 /* Ajustando o tamanho da fonte do título e do parágrafo */
