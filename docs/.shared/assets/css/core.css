@@ -780,7 +780,7 @@ body.panel-open .footer {
   flex: 1;
 }
 
-.cardH-LT {
+.cardH-T {
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -789,7 +789,7 @@ body.panel-open .footer {
   align-items: flex-start;
 }
 
-.cardH-LB {
+.cardH-B {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
