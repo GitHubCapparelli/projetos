@@ -75,7 +75,6 @@
 }
 
 /* Botão */
-
 .btn-xm {
   font-size: 0.5rem;
   padding: 3px 5px;
@@ -86,23 +85,15 @@
     font-size: 0.65rem; 
     padding: 3px 8px; 
     background-color: transparent; 
-    border-radius: 3px; 
     color: white; 
     text-decoration: none; 
     border: none; 
-    /* backdrop-filter: blur(8px);  */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 /* Alteração no efeito de hover */
-.carousel-caption a:hover {
+.carousel-caption a:hover,
+.carousel-caption a:active {
   background-color: rgba(0, 0, 0, 0.3); 
-}
-
-.carousel-indicators {
-  position: static;     /* Detach from absolute positioning */
-  /* margin-top: 10px; */
-  justify-content: center;
 }
 
 /* Ajuste nos ícones de navegação */
@@ -127,6 +118,15 @@
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.carousel-indicators {
+  position: static;     
+  justify-content: center;
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-primary-dark);
 }
 
 @media (max-width: 768px) {
